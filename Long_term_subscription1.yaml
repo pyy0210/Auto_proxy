@@ -5,1353 +5,1246 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇨🇳 CN 20 → openitsub.com, server: cm.kapoknode.com, port: 25886, type: vmess, uuid: 095ebde3-074b-4b6e-9d97-7a9d10a0ffe2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.kapoknode.com}}, udp: true}
-  - {name: 🇯🇵 日本专线 A, server: iepl1.nnooddee.pro, port: 7021, type: ssr, cipher: chacha20-ietf, password: lbNVOz, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 114466:LKJ6XS7c77pLk19p, obfs-param: 0b9a2114466.microsoft.com, udp: true}
-  - {name: 🇨🇳 中国(TG频道:@kxswa), server: t.cccao.cyou, port: 16627, type: vmess, uuid: fab16fff-d149-417c-bdef-4bfcf2333bbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: t.cccao.cyou}}, udp: true}
-  - {name: 🇨🇳 中转 🇹🇼 TW 1 Zenlayer Inc TG:@nodpai, server: 14.29.124.168, port: 24006, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: 🇸🇬 新加坡+02, server: dl-sg2.efpan.one, port: 443, type: trojan, password: 4e935756-c838-49df-812f-3e42e6e6411f, sni: data-sg.efpan.one, skip-cert-verify: false, udp: true}
-  - {name: 中转 🇮🇳 IN 13 Oracle Corporation TG:@nodpai��-���j, server: sh73gxpe.0xnwy1fyrtlb.com, port: 11114, type: ssr, cipher: aes-256-cfb, password: iuo7tbw4ks, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 🇭🇰 JCBB_香港04【vip1】, server: cu.kapoknode.com, port: 25898, type: vmess, uuid: 095ebde3-074b-4b6e-9d97-7a9d10a0ffe2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
-  - {name: 🇺🇸 TG频道:@kxswa|美国|AWS|2x, server: us.333210.xyz, port: 50384, type: vmess, uuid: 69cdf1e2-fb14-46f4-b791-25775b42c120, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 中国(TG频道:@kxswa) 2, server: hncu.donghui.tech, port: 33522, type: vmess, uuid: d5e737f2-683a-47b2-e7d9-77734dd92c03, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 11jin.fengcj.xyz}}, udp: true}
-  - {name: V141-1.2x-Sanjose, server: ssrsub.t11.trojan.tel, port: 80, type: trojan, password: 3f6043ee-8d11-498e-8a59-07e3214d3a35, sni: hk.jd.com, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 中转 🇹🇼 TW 7 Scloud Pte Ltd TG:@airproxies, server: nd94jsk0.0xnwy1fyrtlb.com, port: 12105, type: ssr, cipher: aes-256-cfb, password: iuo7tbw4ks, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 🇺🇸 US 86 Sharktech TG:@nodpai, server: b.usa.hideu.tw, port: 10629, type: ssr, cipher: dummy, password: .hideu0430., protocol: auth_chain_a, obfs: plain, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 🇭🇰 TG频道:@kxswa|香港21, server: 124.95.187.124, port: 40251, type: vmess, uuid: cdaf33e6-b62a-3020-b600-a9308f641330, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /80b48db1-7a27-4d2b-a12b-009feb033b04.j.live001.m3u8, headers: {Host: blg768.cdn.node.a.ddns-ounk.com}}, udp: true}
-  - {name: 🇸🇬 新加坡+03, server: dl-sg3.efpan.one, port: 443, type: trojan, password: 4e935756-c838-49df-812f-3e42e6e6411f, sni: data-sg.efpan.one, skip-cert-verify: false, udp: true}
-  - {name: "🇳🇱 TG频道:@kxswa|荷兰 | NLD x1.0{艾可云1}", server: cn-jmcm-1.akijp.net, port: 20002, type: vmess, uuid: 71c75b7e-23e1-4aee-abc0-1a9585efb409, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /images, headers: {Host: v.qq.com}}, udp: true}
-  - {name: 🇨🇴 哥伦比亚BOG02 0.6x, server: ll-iepl.244312.xyz, port: 54809, type: ss, cipher: chacha20-ietf-poly1305, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe, udp: true}
-  - {name: 🇸🇬 中转 🇸🇬 SG 83 Linode  LLC TG:@airproxies, server: r97q.cdn.node.a.ddns-ounk.com, port: 13563, type: vmess, uuid: 8c522af0-30c4-3e38-8d83-0057ab80a39b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, headers: {Host: r97q.cdn.node.a.ddns-ounk.com}}, udp: true}
-  - {name: 🇨🇳 CN 2 → openitsub.com, server: p1.bxy-fun3.com, port: 23106, type: ss, cipher: chacha20-ietf-poly1305, password: d7bee830-09aa-43b2-8945-3b341b8787db, udp: true}
-  - {name: 🇭🇰 香港+04, server: dl-hk4.efpan.one, port: 443, type: trojan, password: 4e935756-c838-49df-812f-3e42e6e6411f, sni: data-hk.efpan.one, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 JP 51 Amazon Technologies Inc. TG:@airproxies, server: jp03-vm0.entry.srthdw.art, port: 446, type: vmess, uuid: b2a2c706-12e0-3335-8a62-31925219a712, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: jp03-vm0.entry.srthdw.art}}, udp: true}
-  - {name: 🇯🇵 TG频道:@kxswa|日本01|流媒体解锁|高速, server: jptr.bfyun.top, port: 5516, type: vmess, uuid: 23265a13-ef63-49d0-a1d9-9cfe4e7d5e17, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 TG频道:@kxswa|香港06, server: 124.95.187.124, port: 40259, type: vmess, uuid: cdaf33e6-b62a-3020-b600-a9308f641330, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /a49dcd8b-ae4f-4c06-bbe3-d8a229363187.j.live002.m3u8, headers: {Host: jkxc1.cdn.node.a.ddns-ounk.com}}, udp: true}
-  - {name: 前南斯拉夫SKP01 0.6x, server: cc-iepl.244312.xyz, port: 54143, type: ss, cipher: chacha20-ietf-poly1305, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe, udp: true}
-  - {name: 🇨🇳 中国(TG频道:@kxswa) 3, server: yes.iamagoodman.net, port: 16642, type: vmess, uuid: fab16fff-d149-417c-bdef-4bfcf2333bbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: yes.iamagoodman.net}}, udp: true}
-  - {name: 🇨🇳 中国(TG频道:@kxswa) 4, server: 120.233.11.136, port: 11935, type: vmess, uuid: 3346872e-3104-3c5b-8f6f-4b809309fa8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 SG 13 Hurricane Electric LLC TG:@nodpai, server: uicdn.cf, port: 80, type: vmess, uuid: c6747da4-fb2e-4a2a-bdb7-8614bdd6b0b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /sshkit/1736960111/63859b5b38f53/, headers: {Host: sg1-v2ray.sshkit.org}}, udp: true}
-  - {name: 🇨🇳 中国(TG频道:@kxswa) 5, server: yes.iamagoodman.net, port: 16633, type: vmess, uuid: fab16fff-d149-417c-bdef-4bfcf2333bbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: yes.iamagoodman.net}}, udp: true}
-  - {name: 🇸🇬 新加坡_tg+univstar_32, server: 18.141.8.87, port: 443, type: trojan, password: iyinglong, skip-cert-verify: false, udp: true}
-  - {name: 🇲🇾 中转 🇲🇾 MY 10 Evoxt Enterprise TG:@airproxies, server: sh73gxpe.0xnwy1fyrtlb.com, port: 11118, type: ssr, cipher: aes-256-cfb, password: iuo7tbw4ks, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 🇸🇬 TG频道:@kxswa|新加坡11, server: 183.255.37.45, port: 40071, type: vmess, uuid: cdaf33e6-b62a-3020-b600-a9308f641330, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /a49dcd8b-ae4f-4c06-bbe3-d8a229363187.j.live002.m3u8, headers: {Host: dtbv9a56r.cdn.node.a.ddns-ounk.com}}, udp: true}
-  - {name: 🇭🇰 中转 🇭🇰 HK 69 Nexet Limited TG:@airproxies, server: iepl.52168.org, port: 13104, type: ssr, cipher: aes-256-cfb, password: iuo7tbw4ks, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 🇯🇵 日本_tg+univstar_22, server: 158.101.149.56, port: 31106, type: trojan, password: 5Yt33J27JP, sni: 11jin.fengcj.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港|tg频道:@ripaojiedian, server: kqs-moble.gatknqh.cn, port: 53304, type: ss, cipher: aes-256-gcm, password: fd46c872-b3c7-4276-a9fd-bc00ba07de8b, udp: true}
-  - {name: 🇨🇳 CN 3 → openitsub.com, server: p1.bxy-fun3.com, port: 26106, type: ss, cipher: chacha20-ietf-poly1305, password: d7bee830-09aa-43b2-8945-3b341b8787db, udp: true}
-  - {name: 🇮🇳 TG频道:@kxswa|印度, server: download.microsoft.com.eejsq.xyz, port: 39207, type: ss, cipher: chacha20-ietf-poly1305, password: 6f62e5f4-d381-4d5a-b145-0bba0377930d, udp: true}
-  - {name: 🇩🇪 TG频道:@kxswa|德国, server: ge.520748.xyz, port: 10002, type: trojan, password: 8030f471-48f1-4952-a245-536c06413aab, sni: ge.520748.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国SJC02 0.6x, server: ll-iepl.244312.xyz, port: 54800, type: ss, cipher: chacha20-ietf-poly1305, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe, udp: true}
-  - {name: 🇭🇰 TG频道:@kxswa|香港07, server: 124.95.187.124, port: 40260, type: vmess, uuid: cdaf33e6-b62a-3020-b600-a9308f641330, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /a49dcd8b-ae4f-4c06-bbe3-d8a229363187.j.live002.m3u8, headers: {Host: jkxc1.cdn.node.a.ddns-ounk.com}}, udp: true}
-  - {name: 🇨🇳 CN 28 → openitsub.com, server: node.ckcloud.info, port: 25926, type: vmess, uuid: 095ebde3-074b-4b6e-9d97-7a9d10a0ffe2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: node.ckcloud.info}}, udp: true}
-  - {name: 🇨🇦 CA01|加拿大|SS|x1.0, server: clientss.asucaeva.net, port: 41005, type: ss, cipher: chacha20-ietf-poly1305, password: 57042b18-79b0-4697-b70b-470b3e7e7bc2, udp: true}
-  - {name: 🇨🇳 TG频道:@kxswa|台湾05, server: 120.232.179.217, port: 40385, type: vmess, uuid: cdaf33e6-b62a-3020-b600-a9308f641330, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /80b48db1-7a27-4d2b-a12b-009feb033b04.j.live001.m3u8, headers: {Host: wevd87.cdn.node.a.ddns-ounk.com}}, udp: true}
-  - {name: 🇺🇸 美国+03, server: dl-us3.efpan.one, port: 443, type: trojan, password: 4e935756-c838-49df-812f-3e42e6e6411f, sni: data-us.efpan.one, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港+05, server: dl-hkcmi1.efpan.one, port: 443, type: trojan, password: 4e935756-c838-49df-812f-3e42e6e6411f, sni: data-hk.efpan.one, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 CN 8 → openitsub.com, server: p1.bxy-fun1.com, port: 44101, type: ss, cipher: chacha20-ietf-poly1305, password: d7bee830-09aa-43b2-8945-3b341b8787db, udp: true}
-  - {name: 🇫🇷 法国+02, server: dl-eu2.efpan.one, port: 443, type: trojan, password: 4e935756-c838-49df-812f-3e42e6e6411f, sni: data-fr.efpan.one, skip-cert-verify: false, udp: true}
-  - {name: 🇲🇳 蒙古ULN02 0.6x, server: ll-iepl.244312.xyz, port: 54105, type: ss, cipher: aes-128-gcm, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe, udp: true}
-  - {name: 🇯🇵 日本中继 C, server: in02.nnooddee.pro, port: 7021, type: ssr, cipher: chacha20-ietf, password: lbNVOz, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 114466:LKJ6XS7c77pLk19p, obfs-param: 0b9a2114466.microsoft.com, udp: true}
-  - {name: 🇨🇳 中国(TG频道:@kxswa) 6, server: yes.iamagoodman.net, port: 16637, type: vmess, uuid: fab16fff-d149-417c-bdef-4bfcf2333bbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: yes.iamagoodman.net}}, udp: true}
-  - {name: 🇩🇪 德国BER01 0.6x, server: cc-iepl.244312.xyz, port: 54147, type: ss, cipher: aes-128-gcm, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe, udp: true}
-  - {name: JP 131 JMF Investment & Technology PTY LTD TG:@airproxies��-���j, server: a.jp.hideu.tw, port: 10629, type: ssr, cipher: dummy, password: .hideu0430., protocol: auth_chain_a, obfs: plain, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 🇸🇬 TG频道:@kxswa|新加坡22, server: 183.255.37.51, port: 40368, type: vmess, uuid: cdaf33e6-b62a-3020-b600-a9308f641330, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /80b48db1-7a27-4d2b-a12b-009feb033b04.j.live001.m3u8, headers: {Host: b9v6w.cdn.node.a.ddns-ounk.com}}, udp: true}
-  - {name: 🇲🇾 中转 🇲🇾 MY 1 Tmnet  Telekom Malaysia Bhd. TG:@nodpai, server: p1.bxy-fun2.com, port: 20472, type: ss, cipher: chacha20-ietf-poly1305, password: d7bee830-09aa-43b2-8945-3b341b8787db, udp: true}
-  - {name: 🇯🇵 日本1, server: mo.loc-m.xyz, port: 443, type: vmess, uuid: 3ce64cd6-8953-4c45-b084-54622c6d0e63, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: jp1.loc-m.xyz, network: ws, ws-opts: {path: /, headers: {Host: jp1.loc-m.xyz}}, udp: true}
-  - {name: 🇸🇬 27 新加坡, server: 27xjp.mealstream.xyz, port: 15027, type: vmess, uuid: 8578dc92-3097-4dd5-941a-5e6ebeaa91ba, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 台湾+04, server: dl-tw4.efpan.one, port: 443, type: trojan, password: 4e935756-c838-49df-812f-3e42e6e6411f, sni: data-tw.efpan.one, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 TG频道:@kxswa|日本 07, server: nwqklcx.lnsqxj.xyz, port: 9030, type: ss, cipher: chacha20-ietf, password: AmyTelecom_11451419I981O, plugin: obfs, plugin-opts: {mode: http, host: 31372-6v920WkWew.download.microsoft.com}, udp: true}
-  - {name: 🇵🇭 菲律宾MNL01 0.6x, server: cc-iepl.244312.xyz, port: 54113, type: ss, cipher: aes-128-gcm, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe, udp: true}
-  - {name: 🇭🇰 香港+01, server: dl-hk1.efpan.one, port: 443, type: trojan, password: 4e935756-c838-49df-812f-3e42e6e6411f, sni: data-hk.efpan.one, skip-cert-verify: false, udp: true}
-  - {name: 🇰🇷 中转 🇰🇷 KR 1 Microsoft Corporation TG:@nodpai, server: gzyd.120.817777.xyz, port: 11000, type: ssr, cipher: aes-256-cfb, password: zxOmdD, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: V141-1.2x-Sanjose 2, server: ssrsub.t11.trojan.tel, port: 80, type: trojan, password: 4753f41a-f6f4-4b7c-8692-7b0ca45dfb4e, sni: hk.jd.com, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 台湾中继 A, server: in01.nnooddee.pro, port: 7051, type: ssr, cipher: chacha20-ietf, password: lbNVOz, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 114466:LKJ6XS7c77pLk19p, obfs-param: 0b9a2114466.microsoft.com, udp: true}
-  - {name: 🇹🇭 泰国BKK01 0.6x, server: cc-iepl.244312.xyz, port: 54107, type: ss, cipher: aes-128-gcm, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe, udp: true}
-  - {name: 🇦🇪 阿联酋+01, server: dl-eu1.efpan.one, port: 443, type: trojan, password: 4e935756-c838-49df-812f-3e42e6e6411f, sni: data-ae.efpan.one, skip-cert-verify: false, udp: true}
-  - {name: "🇮🇳 印度01{移动|V2ray}", server: cm.awslcn.cc, port: 25216, type: vmess, uuid: 8a36a837-429a-4dac-8aa3-296f070095d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.cc}}, udp: true}
-  - {name: 🇨🇳 中转 🇹🇼 TW 17 Chunghwa Telecom Co.  Ltd. TG:@airproxies, server: mjk6.cdn.node.a.ddns-ounk.com, port: 13307, type: vmess, uuid: 8c522af0-30c4-3e38-8d83-0057ab80a39b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, headers: {Host: mjk6.cdn.node.a.ddns-ounk.com}}, udp: true}
-  - {name: 中转 🇹🇷 TR 2 Neterra-bg Group IT Telecom TG:@airproxies��-���j, server: sh73gxpe.0xnwy1fyrtlb.com, port: 11102, type: ssr, cipher: aes-256-cfb, password: iuo7tbw4ks, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: V122-1.2x-Sanjose, server: ssrsub.o12.trojan.tel, port: 80, type: trojan, password: 4753f41a-f6f4-4b7c-8692-7b0ca45dfb4e, sni: hk.jd.com, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 新加坡(TG频道:@kxswa), server: 8.219.96.45, port: 2052, type: vmess, uuid: d59070c2-6e78-4d41-a4ea-f67a0e87858f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hf1.fengcj.xyz}}, udp: true}
-  - {name: V134-1.2x-Seoul, server: ssrsub.t04.trojan.tel, port: 80, type: trojan, password: 069f6b6d-a5bd-4f42-ba99-8aef830c29fc, sni: hk.jd.com, skip-cert-verify: false, udp: true}
-  - {name: US 125 ColoCrossing TG:@nodpai��-���j, server: sh73gxpe.0xnwy1fyrtlb.com, port: 11105, type: ssr, cipher: aes-256-cfb, password: iuo7tbw4ks, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 🇭🇰 香港 02 | IPV6解锁, server: mdss-moble.gatknqh.cn, port: 12002, type: ss, cipher: aes-128-gcm, password: f5f283a7-2413-4ab5-b9c4-52f227a40045, udp: true}
-  - {name: 🇸🇬 TG频道:@kxswa|新加坡02, server: sg1.tejiewm.com, port: 8890, type: vmess, uuid: 23265a13-ef63-49d0-a1d9-9cfe4e7d5e17, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港(TG频道:@kxswa), server: kz.iamnotagoodman.com, port: 443, type: trojan, password: fab16fff-d149-417c-bdef-4bfcf2333bbe, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港(TG频道:@kxswa) 2, server: kr.iamnotagoodman.com, port: 443, type: trojan, password: fab16fff-d149-417c-bdef-4bfcf2333bbe, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 中转 🇭🇰 HK 33 HGC Global Communications Limited TG:@airproxies, server: z5is.cdn.node.a.ddns-ounk.com, port: 13192, type: vmess, uuid: 8c522af0-30c4-3e38-8d83-0057ab80a39b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, headers: {Host: z5is.cdn.node.a.ddns-ounk.com}}, udp: true}
-  - {name: "🇺🇸 美国02{优化2|V2ray}", server: us2.awslcn.cc, port: 25239, type: vmess, uuid: 8a36a837-429a-4dac-8aa3-296f070095d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us2.awslcn.cc}}, udp: true}
-  - {name: 🇯🇵 V135-1.2x-Tokyo, server: ssrsub.t05.trojan.tel, port: 80, type: trojan, password: 069f6b6d-a5bd-4f42-ba99-8aef830c29fc, sni: hk.jd.com, skip-cert-verify: false, udp: true}
-  - {name: 🇩🇪 JCBB_德国01【vip1】, server: cm.kapoknode.com, port: 25883, type: vmess, uuid: 095ebde3-074b-4b6e-9d97-7a9d10a0ffe2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.kapoknode.com}}, udp: true}
-  - {name: 🇫🇷 08 法国, server: 08fg.mealstream.xyz, port: 15108, type: vmess, uuid: 8578dc92-3097-4dd5-941a-5e6ebeaa91ba, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: 🇳🇱 荷兰(TG频道:@kxswa), server: 163.172.220.71, port: 6616, type: vmess, uuid: fab16fff-d149-417c-bdef-4bfcf2333bbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 163.172.220.71}}, udp: true}
-  - {name: 🇺🇸 JCBB_美国04【vip1】, server: cu.kapoknode.com, port: 25885, type: vmess, uuid: 095ebde3-074b-4b6e-9d97-7a9d10a0ffe2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
-  - {name: 🇸🇬 中转 🇸🇬 SG 76 Linode  LLC TG:@nodpai, server: r97q.cdn.node.a.ddns-ounk.com, port: 51198, type: vmess, uuid: 8c522af0-30c4-3e38-8d83-0057ab80a39b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, headers: {Host: r97q.cdn.node.a.ddns-ounk.com}}, udp: true}
-  - {name: 🇨🇦 V103-0.4x-Canada-付费推荐:dlj.tf/ssrsub, server: o03.tgfaka.com, port: 80, type: trojan, password: 069f6b6d-a5bd-4f42-ba99-8aef830c29fc, sni: hk.jd.com, skip-cert-verify: false, udp: true}
-  - {name: "🇸🇬 新加坡07{优化2|V2ray}", server: sg2.awslcn.cc, port: 25254, type: vmess, uuid: 8a36a837-429a-4dac-8aa3-296f070095d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sg2.awslcn.cc}}, udp: true}
-  - {name: 🇸🇬 亚洲 | 新加坡C, server: a-ct1.jsmmm.cyou, port: 39421, type: vmess, uuid: ee8b274d-752d-33f4-9fef-e8a86e4c4cb8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇬🇧 中转 🇬🇧 GB 4 DigitalOcean  LLC TG:@airproxies, server: cu.kapoknode.com, port: 25884, type: vmess, uuid: 095ebde3-074b-4b6e-9d97-7a9d10a0ffe2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
-  - {name: 🇭🇰 中转 🇭🇰 HK 31 HGC Global Communications Limited TG:@airproxies, server: z5is.cdn.node.a.ddns-ounk.com, port: 13195, type: vmess, uuid: 8c522af0-30c4-3e38-8d83-0057ab80a39b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, headers: {Host: z5is.cdn.node.a.ddns-ounk.com}}, udp: true}
-  - {name: 🇨🇳 TG频道:@kxswa|台湾09, server: 218.201.23.161, port: 40340, type: vmess, uuid: cdaf33e6-b62a-3020-b600-a9308f641330, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /80b48db1-7a27-4d2b-a12b-009feb033b04.j.live001.m3u8, headers: {Host: bga5c1.cdn.node.a.ddns-ounk.com}}, udp: true}
-  - {name: 🇺🇸 TG频道:@kxswa|Level1 United States 01, server: 216.73.158.102, port: 40004, type: vmess, uuid: dc1639ca-9ba2-46f6-8a3c-bdef2266f0b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 CN 14 → openitsub.com, server: cu.kapoknode.com, port: 25885, type: vmess, uuid: 095ebde3-074b-4b6e-9d97-7a9d10a0ffe2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
-  - {name: 🇨🇳 TW 29 Chunghwa Telecom Co.  Ltd. TG:@airproxies, server: b.hk.hideu.tw, port: 10629, type: ssr, cipher: dummy, password: .hideu0430., protocol: auth_chain_a, obfs: plain, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 🇭🇰 TG频道:@kxswa|香港 01, server: qulgrpp.gylcxo.xyz, port: 9300, type: ss, cipher: chacha20-ietf, password: AmyTelecom_11451419I981O, plugin: obfs, plugin-opts: {mode: http, host: 31372-6v920WkWew.download.microsoft.com}, udp: true}
-  - {name: 🇯🇵 18 日本, server: 18rb.mealstream.xyz, port: 15018, type: vmess, uuid: 8578dc92-3097-4dd5-941a-5e6ebeaa91ba, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 中转 🇯🇵 JP 113 M247 Ltd TG:@nodpai, server: q8eq.cdn.node.a.ddns-ounk.com, port: 13599, type: vmess, uuid: 8c522af0-30c4-3e38-8d83-0057ab80a39b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, headers: {Host: q8eq.cdn.node.a.ddns-ounk.com}}, udp: true}
-  - {name: V142-1.2x-Sanjose, server: ssrsub.t12.trojan.tel, port: 80, type: trojan, password: 4753f41a-f6f4-4b7c-8692-7b0ca45dfb4e, sni: hk.jd.com, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 TW02|台湾|x1.0, server: client.asucaeva.net, port: 38002, type: trojan, password: 57042b18-79b0-4697-b70b-470b3e7e7bc2, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港HKG02 0.6x, server: ll-iepl.244312.xyz, port: 54101, type: ss, cipher: chacha20-ietf-poly1305, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe, udp: true}
-  - {name: CH 1 Green Floid LLC TG:@nodpai, server: sh73gxpe.0xnwy1fyrtlb.com, port: 11116, type: ssr, cipher: aes-256-cfb, password: iuo7tbw4ks, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 🇳🇱 NL 2 LeaseWeb Netherlands B.V. TG:@airproxies, server: 95.211.249.49, port: 41065, type: vmess, uuid: a81cc101-bc8b-4124-acc6-4b1eba08fefa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /dfgd55dg5dG, headers: {Host: 95.211.249.49}}, udp: true}
-  - {name: 🇭🇰 TG频道:@kxswa|香港24, server: 120.232.179.215, port: 40300, type: vmess, uuid: cdaf33e6-b62a-3020-b600-a9308f641330, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /80b48db1-7a27-4d2b-a12b-009feb033b04.j.live001.m3u8, headers: {Host: gtnjzy.cdn.node.a.ddns-ounk.com}}, udp: true}
-  - {name: 🇸🇬 新加坡_tg+univstar_11, server: 168.138.171.65, port: 443, type: vmess, uuid: 4af6fd9a-e8b4-46f2-da3a-207f4577656c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港HGC, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 80a5fbf0-b54a-4cbe-be3d-9c638ddbc906, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/suti/hkhgc?ed=2048", headers: {Host: hkhgc.guolicheng.cyou}}, udp: true}
-  - {name: 🇬🇧 英国01, server: uk1.czs1000.com, port: 6689, type: vmess, uuid: 41eae6d5-1e82-47b9-a0c2-5fe0125b7220, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国西雅图, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 80a5fbf0-b54a-4cbe-be3d-9c638ddbc906, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/suti/us3?ed=2048", headers: {Host: us3.guolicheng.cyou}}, udp: true}
-  - {name: 🇭🇷 克罗地亚ZAG01 0.6x, server: cc-iepl.244312.xyz, port: 54137, type: ss, cipher: aes-128-gcm, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe, udp: true}
-  - {name: 🇯🇵 日本TOK01 0.6x, server: cc-iepl.244312.xyz, port: 54104, type: ss, cipher: aes-128-gcm, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe, udp: true}
-  - {name: 🇨🇳 中国(TG频道:@kxswa) 7, server: m.lwvzmdu.cn, port: 16617, type: vmess, uuid: fab16fff-d149-417c-bdef-4bfcf2333bbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: m.lwvzmdu.cn}}, udp: true}
-  - {name: 🇨🇳 中国(TG频道:@kxswa) 8, server: 183.245.7.190, port: 25576, type: vmess, uuid: 331a5f51-9863-44eb-ce72-e2616cca9ba0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /xOwC49TUIazwkOFi5o0cUnNNWTcHMngTMaDnyrNrGdCARhPaoo9oUsfQn3jumxvqvm3t3WGcYbVSG1tch0YsJsAerk5Lxu3t, headers: {Host: 183.245.7.190}}, udp: true}
-  - {name: 🇸🇬 中转 🇸🇬 SG 109 Linode  LLC TG:@nodpai, server: qgd6.cdn.node.a.ddns-ounk.com, port: 13059, type: vmess, uuid: 8c522af0-30c4-3e38-8d83-0057ab80a39b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, headers: {Host: qgd6.cdn.node.a.ddns-ounk.com}}, udp: true}
-  - {name: 🇨🇦 加拿大+01, server: dl-am1.efpan.one, port: 443, type: trojan, password: 4e935756-c838-49df-812f-3e42e6e6411f, sni: data-ca.efpan.one, skip-cert-verify: false, udp: true}
-  - {name: 缅甸NYT02 0.6x, server: ll-iepl.244312.xyz, port: 54114, type: ss, cipher: aes-128-gcm, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe, udp: true}
-  - {name: 🇳🇱 TG频道:@kxswa|荷兰01, server: nl1.tejiewm.com, port: 1001, type: vmess, uuid: 23265a13-ef63-49d0-a1d9-9cfe4e7d5e17, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 中转 🇹🇼 TW 25 Chunghwa Telecom Co.  Ltd. TG:@nodpai, server: mjk6.cdn.node.a.ddns-ounk.com, port: 13311, type: vmess, uuid: 8c522af0-30c4-3e38-8d83-0057ab80a39b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, headers: {Host: mjk6.cdn.node.a.ddns-ounk.com}}, udp: true}
-  - {name: 🇨🇳 TG频道:@kxswa|台湾 02 | 1x, server: p1.bxy-fun2.com, port: 23105, type: ss, cipher: chacha20-ietf-poly1305, password: d7bee830-09aa-43b2-8945-3b341b8787db, udp: true}
-  - {name: 🇭🇰 中转 🇭🇰 HK 42 PCCW IMS Limited TG:@airproxies, server: tata12.cdn.node.a.ddns-ounk.com, port: 13275, type: vmess, uuid: 8c522af0-30c4-3e38-8d83-0057ab80a39b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /6f8e-4a63-8f5f-1bd99437b151.v3..live02.m3u8, headers: {Host: tata12.cdn.node.a.ddns-ounk.com}}, udp: true}
-  - {name: 老挝VTE01 0.6x, server: cc-iepl.244312.xyz, port: 54813, type: ss, cipher: chacha20-ietf-poly1305, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe, udp: true}
-  - {name: 🇩🇰 丹麦流媒体 x1, server: 120.240.236.28, port: 32251, type: ss, cipher: chacha20-ietf-poly1305, password: 2ec06ff6-d0f2-4cb6-8ffa-1128c941f066, udp: true}
-  - {name: 🇰🇷 亚洲 | 韩国B, server: a-ct1.jsmmm.cyou, port: 39521, type: vmess, uuid: ee8b274d-752d-33f4-9fef-e8a86e4c4cb8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇦 TG频道:@kxswa|加拿大, server: ca.520748.xyz, port: 10001, type: trojan, password: 8030f471-48f1-4952-a245-536c06413aab, sni: ca.520748.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 中国(TG频道:@kxswa) 9, server: m.lwvzmdu.cn, port: 16624, type: vmess, uuid: fab16fff-d149-417c-bdef-4bfcf2333bbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: m.lwvzmdu.cn}}, udp: true}
-  - {name: 🇯🇵 TG频道:@kxswa|日本07, server: jp7.tejiewm.com, port: 8886, type: vmess, uuid: 23265a13-ef63-49d0-a1d9-9cfe4e7d5e17, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 JP02|日本|x1.0, server: client.asucaeva.net, port: 32002, type: trojan, password: 57042b18-79b0-4697-b70b-470b3e7e7bc2, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 中国_tg+univstar_10, server: 49.232.167.71, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 TG频道:@kxswa|新加坡12, server: 183.255.37.45, port: 40073, type: vmess, uuid: cdaf33e6-b62a-3020-b600-a9308f641330, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /a49dcd8b-ae4f-4c06-bbe3-d8a229363187.j.live002.m3u8, headers: {Host: dtbv9a56r.cdn.node.a.ddns-ounk.com}}, udp: true}
-  - {name: 🇨🇳 中国(TG频道:@kxswa) 10, server: yes.iamagoodman.net, port: 16636, type: vmess, uuid: fab16fff-d149-417c-bdef-4bfcf2333bbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: yes.iamagoodman.net}}, udp: true}
-  - {name: "🇯🇵 日本06{优化2|V2ray}", server: jp2.awslcn.cc, port: 25219, type: vmess, uuid: 8a36a837-429a-4dac-8aa3-296f070095d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jp2.awslcn.cc}}, udp: true}
+  - {name: 🇲🇾 马来西亚02|优选原生IP|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: af4d2493-9156-4514-9f6b-ee5d1a1e4713, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /mlxy01, headers: {Host: www.baidu.com}}, udp: true}
+  - {name: 🇮🇩 印尼JAK02 1.3x, server: ll-iepl.244312.xyz, port: 54117, type: ss, cipher: aes-128-gcm, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe, udp: true}
+  - {name: 🇸🇬 中转 🇸🇬 SG 9 Linode  LLC TG:@nodpai, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: af4d2493-9156-4514-9f6b-ee5d1a1e4713, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /doxjp06, headers: {Host: www.baidu.com}}, udp: true}
+  - {name: 🇺🇸 TG频道:@kxswa|Level1 United States 06 2, server: 216.73.158.23, port: 60089, type: vmess, uuid: 9f7501d6-2524-4403-badc-92130baf720c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: 中转 🇨🇳 CN 1 China Telecom TG:@nodpai��-���j, server: a.bj.hideu.tw, port: 10629, type: ssr, cipher: dummy, password: .hideu0430., protocol: auth_chain_a, obfs: plain, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 🇸🇬 V139-1.5x-Singapore, server: ssrsub.t09.trojan.tel, port: 80, type: trojan, password: 3f6043ee-8d11-498e-8a59-07e3214d3a35, sni: hk.jd.com, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 中转 🇸🇬 SG 6 Linode  LLC TG:@airproxies, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: af4d2493-9156-4514-9f6b-ee5d1a1e4713, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /doxjp03, headers: {Host: www.baidu.com}}, udp: true}
+  - {name: 🇨🇳 中国(TG频道:@kxswa), server: 183.245.7.190, port: 25586, type: vmess, uuid: 21314dac-d346-43a4-9002-ab39fa18e36a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /21314dac-d346-43a4-9002-ab39fa18e36a, headers: {Host: 183.245.7.190}}, udp: true}
+  - {name: 🇮🇳 20 印度, server: 20yd.mealstream.xyz, port: 443, type: vmess, uuid: 8578dc92-3097-4dd5-941a-5e6ebeaa91ba, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: 🇻🇳 越南HCM02 1.3x, server: ll-iepl.244312.xyz, port: 54111, type: ss, cipher: aes-128-gcm, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe, udp: true}
+  - {name: 🇭🇰 香港(TG频道:@kxswa), server: lux.iamnotagoodman.com, port: 443, type: trojan, password: fab16fff-d149-417c-bdef-4bfcf2333bbe, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 新加坡2, server: mo.loc-m.xyz, port: 443, type: vmess, uuid: 3ce64cd6-8953-4c45-b084-54622c6d0e63, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: sg2.loc-m.xyz, network: ws, ws-opts: {path: /, headers: {Host: sg2.loc-m.xyz}}, udp: true}
+  - {name: 🇯🇵 V116-1.2x-Tokyo, server: ssrsub.o06.trojan.tel, port: 80, type: trojan, password: 3f6043ee-8d11-498e-8a59-07e3214d3a35, sni: hk.jd.com, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港 08 | IPV6解锁, server: mdss-moble.gatknqh.cn, port: 12008, type: ss, cipher: aes-128-gcm, password: f5f283a7-2413-4ab5-b9c4-52f227a40045, udp: true}
+  - {name: 🇭🇰 HK04|香港|SS|x1.0, server: clientss.asucaeva.net, port: 40004, type: ss, cipher: chacha20-ietf-poly1305, password: 57042b18-79b0-4697-b70b-470b3e7e7bc2, udp: true}
+  - {name: 🇦🇷 阿根廷+01, server: dl-am1.efpan.one, port: 443, type: trojan, password: 4e935756-c838-49df-812f-3e42e6e6411f, sni: data-ar.efpan.one, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 台湾 04 | 原生解锁, server: mdss-moble.gatknqh.cn, port: 12032, type: ss, cipher: aes-128-gcm, password: f5f283a7-2413-4ab5-b9c4-52f227a40045, udp: true}
   - {name: 🇭🇰 香港 09 | IPV6解锁, server: mdss-moble.gatknqh.cn, port: 12009, type: ss, cipher: aes-128-gcm, password: f5f283a7-2413-4ab5-b9c4-52f227a40045, udp: true}
-  - {name: 🇺🇸 TG频道:@kxswa|美国01, server: 120.232.179.218, port: 40213, type: vmess, uuid: cdaf33e6-b62a-3020-b600-a9308f641330, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /a49dcd8b-ae4f-4c06-bbe3-d8a229363187.j.live002.m3u8, headers: {Host: dt6r.cdn.node.a.ddns-ounk.com}}, udp: true}
-  - {name: 🇭🇰 TG频道:@kxswa|香港02, server: 124.95.187.124, port: 40021, type: vmess, uuid: cdaf33e6-b62a-3020-b600-a9308f641330, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /a49dcd8b-ae4f-4c06-bbe3-d8a229363187.j.live002.m3u8, headers: {Host: jkxc1.cdn.node.a.ddns-ounk.com}}, udp: true}
-  - {name: 🇺🇸 美国(TG频道:@kxswa), server: 13.225.102.6, port: 80, type: vmess, uuid: 134bf972-0520-42b3-da4d-24333dff0dc3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /134bf972-0520-42b3-da4d-24333dff0dc3, headers: {Host: cc.cdn.yjbzl.cn}}, udp: true}
-  - {name: 🇺🇸 US04|美国|SS|x1.0, server: clientss.asucaeva.net, port: 41006, type: ss, cipher: chacha20-ietf-poly1305, password: 57042b18-79b0-4697-b70b-470b3e7e7bc2, udp: true}
-  - {name: 🇯🇵 中转 🇯🇵 JP 12 Linode  LLC TG:@nodpai, server: jp1.speeds99.ml, port: 25919, type: vmess, uuid: 095ebde3-074b-4b6e-9d97-7a9d10a0ffe2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jp1.speeds99.ml}}, udp: true}
-  - {name: 乌兹别克斯坦TAS02 0.6x, server: ll-iepl.244312.xyz, port: 54136, type: ss, cipher: chacha20-ietf-poly1305, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe, udp: true}
-  - {name: 🇻🇳 VN01|越南|SS|x1.0, server: clientss.asucaeva.net, port: 43004, type: ss, cipher: chacha20-ietf-poly1305, password: 57042b18-79b0-4697-b70b-470b3e7e7bc2, udp: true}
-  - {name: 🇸🇬 中转 🇸🇬 SG 85 Linode  LLC TG:@nodpai, server: r97q.cdn.node.a.ddns-ounk.com, port: 12988, type: vmess, uuid: 8c522af0-30c4-3e38-8d83-0057ab80a39b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, headers: {Host: r97q.cdn.node.a.ddns-ounk.com}}, udp: true}
-  - {name: 🇨🇳 TG频道:@kxswa|台湾07, server: 218.201.23.161, port: 40325, type: vmess, uuid: cdaf33e6-b62a-3020-b600-a9308f641330, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /80b48db1-7a27-4d2b-a12b-009feb033b04.j.live001.m3u8, headers: {Host: bga5c1.cdn.node.a.ddns-ounk.com}}, udp: true}
-  - {name: 🇨🇳 中国(TG频道:@kxswa) 11, server: yes.iamagoodman.net, port: 16618, type: vmess, uuid: fab16fff-d149-417c-bdef-4bfcf2333bbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: yes.iamagoodman.net}}, udp: true}
-  - {name: 🇭🇰 香港专线 A, server: iepl1.nnooddee.pro, port: 7011, type: ssr, cipher: chacha20-ietf, password: lbNVOz, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 114466:LKJ6XS7c77pLk19p, obfs-param: 0b9a2114466.microsoft.com, udp: true}
-  - {name: 🇨🇳 CN 22 → openitsub.com, server: cu.kapoknode.com, port: 25882, type: vmess, uuid: 095ebde3-074b-4b6e-9d97-7a9d10a0ffe2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
-  - {name: 🇭🇺 HU01|匈牙利|x1.0, server: client.asucaeva.net, port: 35004, type: trojan, password: 57042b18-79b0-4697-b70b-470b3e7e7bc2, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: false, udp: true}
-  - {name: "🇰🇷 韩国02{移动|V2ray}", server: cm.awslcn.cc, port: 25259, type: vmess, uuid: 8a36a837-429a-4dac-8aa3-296f070095d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.cc}}, udp: true}
-  - {name: 🇯🇵 JP 36 Amazon Technologies Inc. TG:@nodpai, server: 45.64.22.55, port: 443, type: trojan, password: F3CSSRxD8uljgF73IAn34C3aE9wSqAzZDp5ZOCpxDBRacNYelOYayKTe826Xy0, sni: stutter.freetrade.link, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港快|tg频道:@ripaojiedian, server: 96cfae9d-7c6c-0722-5eb8-a2b8e9d53aee.cnnic.rip, port: 80, type: vmess, uuid: 862d1d66-78b7-4a7b-a35b-7553006f3056, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇵🇭 TG频道:@kxswa|菲律宾, server: download.microsoft.com.eejsq.xyz, port: 28178, type: ss, cipher: chacha20-ietf-poly1305, password: 6f62e5f4-d381-4d5a-b145-0bba0377930d, udp: true}
-  - {name: 🇭🇰 TG频道:@kxswa|香港04|高速|流媒体解锁, server: hk4.czs1000.com, port: 8000, type: vmess, uuid: 23265a13-ef63-49d0-a1d9-9cfe4e7d5e17, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: 🇲🇳 蒙古ULN01 0.6x, server: cc-iepl.244312.xyz, port: 54105, type: ss, cipher: aes-128-gcm, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe, udp: true}
-  - {name: 🇯🇵 V117-1.2x-Osaka, server: ssrsub.o07.trojan.tel, port: 80, type: trojan, password: 069f6b6d-a5bd-4f42-ba99-8aef830c29fc, sni: hk.jd.com, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港(TG频道:@kxswa) 3, server: kh.iamnotagoodman.com, port: 443, type: trojan, password: fab16fff-d149-417c-bdef-4bfcf2333bbe, skip-cert-verify: false, udp: true}
-  - {name: 🇬🇧 JCBB_英国02【vip1】, server: cu.kapoknode.com, port: 25884, type: vmess, uuid: 095ebde3-074b-4b6e-9d97-7a9d10a0ffe2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
-  - {name: 中转 🇮🇹 IT 2 Kamatera  Inc. TG:@nodpai, server: sh73gxpe.0xnwy1fyrtlb.com, port: 11108, type: ssr, cipher: aes-256-cfb, password: iuo7tbw4ks, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 🇻🇳 越南HCM02 0.6x, server: ll-iepl.244312.xyz, port: 54111, type: ss, cipher: aes-128-gcm, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe, udp: true}
+  - {name: 🇲🇾 马来西亚01|优选原生IP|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: af4d2493-9156-4514-9f6b-ee5d1a1e4713, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /mlxy01, headers: {Host: www.baidu.com}}, udp: true}
+  - {name: 🇨🇳 TG频道:@kxswa|台湾08, server: 218.201.23.161, port: 40326, type: vmess, uuid: cdaf33e6-b62a-3020-b600-a9308f641330, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /80b48db1-7a27-4d2b-a12b-009feb033b04.j.live001.m3u8, headers: {Host: bga5c1.cdn.node.a.ddns-ounk.com}}, udp: true}
+  - {name: 🇸🇬 新加坡04|三网优化|解锁流媒体|1x, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: af4d2493-9156-4514-9f6b-ee5d1a1e4713, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /doxjp04, headers: {Host: www.baidu.com}}, udp: true}
+  - {name: 🇭🇰 香港_tg+univstar_7, server: 47.242.30.73, port: 57194, type: vmess, uuid: 190f9f72-0144-40c2-862b-8c7fbe7fc34a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 🇯🇵 中转 🇯🇵 JP 239 Linode  LLC TG:@nodpai, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: af4d2493-9156-4514-9f6b-ee5d1a1e4713, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: linodejp03, headers: {Host: gz.daxun.cyou}}, udp: true}
+  - {name: 🇺🇸 TG频道:@kxswa|美国 09, server: nwqklcx.lnsqxj.xyz, port: 9140, type: ss, cipher: chacha20-ietf, password: AmyTelecom_11451419I981O, plugin: obfs, plugin-opts: {mode: http, host: 31372-6v920WkWew.download.microsoft.com}, udp: true}
+  - {name: 🇬🇧 英国-Trojan, server: uk01.awcloud.top, port: 443, type: trojan, password: 8a36a837-429a-4dac-8aa3-296f070095d0, sni: uk01.awcloud.top, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 台湾专线 B, server: iepl2.nnooddee.pro, port: 7051, type: ssr, cipher: chacha20-ietf, password: lbNVOz, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 114466:LKJ6XS7c77pLk19p, obfs-param: 0b9a2114466.microsoft.com, udp: true}
+  - {name: 🇰🇷 韩国专线 B, server: iepl2.nnooddee.pro, port: 7061, type: ssr, cipher: chacha20-ietf, password: lbNVOz, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 114466:LKJ6XS7c77pLk19p, obfs-param: 0b9a2114466.microsoft.com, udp: true}
+  - {name: 🇯🇵 V136-1.2x-Tokyo, server: ssrsub.t06.trojan.tel, port: 80, type: trojan, password: 069f6b6d-a5bd-4f42-ba99-8aef830c29fc, sni: hk.jd.com, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 中国(TG频道:@kxswa) 2, server: yes.iamagoodman.net, port: 26623, type: vmess, uuid: fab16fff-d149-417c-bdef-4bfcf2333bbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: yes.iamagoodman.net}}, udp: true}
+  - {name: 🇺🇸 TG频道:@kxswa|美国 03 | 1x, server: p1.bxy-fun3.com, port: 26106, type: ss, cipher: chacha20-ietf-poly1305, password: d7bee830-09aa-43b2-8945-3b341b8787db, udp: true}
+  - {name: 🇫🇷 法国(TG频道:@kxswa), server: t2.google.bforward2.uk, port: 443, type: trojan, password: 784d5c1f-69d8-4967-bc61-426983744ee5, sni: t2.google.bforward2.uk, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 【共享奈飞】新加坡02 1.3x, server: ll-iepl.244312.xyz, port: 54509, type: ss, cipher: aes-128-gcm, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe, udp: true}
+  - {name: 🇫🇷 法国+02, server: dl-eu2.efpan.one, port: 443, type: trojan, password: 4e935756-c838-49df-812f-3e42e6e6411f, sni: data-fr.efpan.one, skip-cert-verify: false, udp: true}
+  - {name: TG频道:@kxswa|arm3-80, server: 155.248.172.25, port: 80, type: vmess, uuid: f3351c14-60a3-4ef3-bf25-f929d542fd0e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 155.248.172.25}}, udp: true}
+  - {name: 🇦🇺 澳洲ADL01 1.3x, server: cc-iepl.244312.xyz, port: 54118, type: ss, cipher: aes-128-gcm, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe, udp: true}
+  - {name: 🇯🇵 日本 03 | IPV6解锁, server: mdss-unicom.gatknqh.cn, port: 12013, type: ss, cipher: aes-128-gcm, password: f5f283a7-2413-4ab5-b9c4-52f227a40045, udp: true}
+  - {name: V114-1.2x-Seoul, server: ssrsub.o04.trojan.tel, port: 80, type: trojan, password: 069f6b6d-a5bd-4f42-ba99-8aef830c29fc, sni: hk.jd.com, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 TG频道:@kxswa|日本 01, server: clarenn.uapvql.xyz, port: 9002, type: ss, cipher: chacha20-ietf, password: AmyTelecom_11451419I981O, plugin: obfs, plugin-opts: {mode: http, host: 31372-6v920WkWew.download.microsoft.com}, udp: true}
+  - {name: 🇨🇦 TG频道:@kxswa|加拿大, server: download.microsoft.com.eejsq.xyz, port: 12531, type: ss, cipher: chacha20-ietf-poly1305, password: 6f62e5f4-d381-4d5a-b145-0bba0377930d, udp: true}
+  - {name: 🇭🇰 香港中继 A, server: in01.nnooddee.pro, port: 7011, type: ssr, cipher: chacha20-ietf, password: lbNVOz, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 114466:LKJ6XS7c77pLk19p, obfs-param: 0b9a2114466.microsoft.com, udp: true}
+  - {name: V141-1.2x-Sanjose, server: ssrsub.t11.trojan.tel, port: 80, type: trojan, password: 069f6b6d-a5bd-4f42-ba99-8aef830c29fc, sni: hk.jd.com, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 中转 🇸🇬 SG 15 Linode  LLC TG:@nodpai, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: af4d2493-9156-4514-9f6b-ee5d1a1e4713, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /singapore04, headers: {Host: www.baidu.com}}, udp: true}
+  - {name: 🇨🇳 中国(TG频道:@kxswa) 3, server: yes.iamagoodman.net, port: 16626, type: vmess, uuid: fab16fff-d149-417c-bdef-4bfcf2333bbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: yes.iamagoodman.net}}, udp: true}
+  - {name: 🇨🇳 中国_tg+univstar_47, server: cm.kapoknode.com, port: 25897, type: vmess, uuid: d0413204-9076-4b80-b322-e6b62d3284d9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.kapoknode.com}}, udp: true}
+  - {name: 🇲🇾 马来西亚KUL02 1.3x, server: ll-iepl.244312.xyz, port: 54112, type: ss, cipher: aes-128-gcm, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe, udp: true}
+  - {name: 🇬🇧 英国GLA01 1.3x, server: cc-iepl.244312.xyz, port: 54121, type: ss, cipher: aes-128-gcm, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe, udp: true}
+  - {name: 🇯🇵 TG频道:@kxswa|日本04, server: 110.52.234.51, port: 40187, type: vmess, uuid: cdaf33e6-b62a-3020-b600-a9308f641330, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /80b48db1-7a27-4d2b-a12b-009feb033b04.j.live001.m3u8, headers: {Host: 7a6rs.cdn.node.a.ddns-ounk.com}}, udp: true}
+  - {name: 🇭🇰 HK 25 Microsoft Corporation TG:@nodpai, server: hk2.elknode.top, port: 80, type: vmess, uuid: 459270d2-e59b-3823-a170-d5202f04f29a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: baiducdncmn2.inter.iqiyi.com}}, udp: true}
+  - {name: 🇭🇰 TG频道:@kxswa|香港19, server: 124.95.187.124, port: 40249, type: vmess, uuid: cdaf33e6-b62a-3020-b600-a9308f641330, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /80b48db1-7a27-4d2b-a12b-009feb033b04.j.live001.m3u8, headers: {Host: blg768.cdn.node.a.ddns-ounk.com}}, udp: true}
+  - {name: "🇰🇷 韩国01{移动|V2ray}", server: cm.awslcn.cc, port: 25218, type: vmess, uuid: 8a36a837-429a-4dac-8aa3-296f070095d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.awslcn.cc}}, udp: true}
+  - {name: 🇸🇬 TG频道:@kxswa|新加坡3, server: 13.250.98.231, port: 80, type: vmess, uuid: fec544c5-6ec4-45d8-8878-17f799e77e96, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 13.250.98.231}}, udp: true}
   - {name: 🇸🇬 TG频道:@kxswa|新加坡03, server: sg3.czs1000.com, port: 8887, type: vmess, uuid: 23265a13-ef63-49d0-a1d9-9cfe4e7d5e17, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 05 | IPV6解锁, server: mdss-unicom.gatknqh.cn, port: 12027, type: ss, cipher: aes-128-gcm, password: f5f283a7-2413-4ab5-b9c4-52f227a40045, udp: true}
-  - {name: 🇭🇰 香港(TG频道:@kxswa) 4, server: usla.iamnotagoodman.com, port: 443, type: trojan, password: fab16fff-d149-417c-bdef-4bfcf2333bbe, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港HKG05 0.6x, server: cc-iepl.244312.xyz, port: 40002, type: ss, cipher: chacha20-ietf-poly1305, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe, udp: true}
-  - {name: 🇭🇰 香港-Trojan④, server: hk05.awcloud.top, port: 443, type: trojan, password: 8a36a837-429a-4dac-8aa3-296f070095d0, sni: hk05.awcloud.top, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 TG频道:@kxswa|香港 10, server: qulgrpp.gylcxo.xyz, port: 9345, type: ss, cipher: chacha20-ietf, password: AmyTelecom_11451419I981O, plugin: obfs, plugin-opts: {mode: http, host: 31372-6v920WkWew.download.microsoft.com}, udp: true}
-  - {name: 🇭🇰 香港3|HE+HKIX Plus X2, server: hnct.cmcc.wiki, port: 10647, type: ss, cipher: chacha20-ietf-poly1305, password: 2ec06ff6-d0f2-4cb6-8ffa-1128c941f066, udp: true}
-  - {name: 🇸🇬 中转 🇸🇬 SG 88 Linode  LLC TG:@airproxies, server: r97q.cdn.node.a.ddns-ounk.com, port: 13362, type: vmess, uuid: 8c522af0-30c4-3e38-8d83-0057ab80a39b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /2294-44e2-a528-d9fb1adaa35f.v4..live01.m3u8, headers: {Host: r97q.cdn.node.a.ddns-ounk.com}}, udp: true}
-  - {name: 尼泊尔KTM02 0.6x, server: ll-iepl.244312.xyz, port: 54109, type: ss, cipher: aes-128-gcm, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe, udp: true}
-  - {name: 🇳🇱 TG频道:@kxswa|荷兰, server: download.microsoft.com.eejsq.xyz, port: 37382, type: ss, cipher: chacha20-ietf-poly1305, password: 6f62e5f4-d381-4d5a-b145-0bba0377930d, udp: true}
-  - {name: 🇨🇳 TG频道:@kxswa|台湾|流媒体|中转|3x, server: zf1.333210.xyz, port: 50380, type: vmess, uuid: 69cdf1e2-fb14-46f4-b791-25775b42c120, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: "🇸🇬 新加坡03{优化2|V2ray}", server: sg2.awslcn.cc, port: 25221, type: vmess, uuid: 8a36a837-429a-4dac-8aa3-296f070095d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sg2.awslcn.cc}}, udp: true}
+  - {name: "🇸🇬 TG频道:@kxswa|新加坡 | SGP x1.0{艾可云1}", server: cn-gzcm-1.akijp.net, port: 40009, type: vmess, uuid: 71c75b7e-23e1-4aee-abc0-1a9585efb409, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /images, headers: {Host: v.qq.com}}, udp: true}
+  - {name: 🇨🇳 台湾TAI03 1.3x, server: ll-iepl.244312.xyz, port: 54100, type: ss, cipher: aes-128-gcm, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe, udp: true}
+  - {name: 🇯🇵 V118-1.2x-Osaka, server: ssrsub.o08.trojan.tel, port: 80, type: trojan, password: 069f6b6d-a5bd-4f42-ba99-8aef830c29fc, sni: hk.jd.com, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 V136-1.2x-Tokyo 2, server: ssrsub.t06.trojan.tel, port: 80, type: trojan, password: 4753f41a-f6f4-4b7c-8692-7b0ca45dfb4e, sni: hk.jd.com, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 TG频道:@kxswa|新加坡1, server: 13.214.179.207, port: 80, type: vmess, uuid: fec544c5-6ec4-45d8-8878-17f799e77e96, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 13.214.179.207}}, udp: true}
+  - {name: 🇨🇳 CN 2 → openitsub.com, server: bp.i809.ml, port: 12087, type: trojan, password: b9c4f30f-0e95-4c23-80f8-b134414f43ec, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 中国_tg+univstar_10, server: 49.232.167.71, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇦 CA01|加拿大|x1.0, server: client.asucaeva.net, port: 31005, type: trojan, password: 57042b18-79b0-4697-b70b-470b3e7e7bc2, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 TG频道:@kxswa|台湾06, server: 218.201.23.161, port: 40324, type: vmess, uuid: cdaf33e6-b62a-3020-b600-a9308f641330, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /80b48db1-7a27-4d2b-a12b-009feb033b04.j.live001.m3u8, headers: {Host: bga5c1.cdn.node.a.ddns-ounk.com}}, udp: true}
+  - {name: 🇯🇵 JP 3 Amazon Technologies Inc. TG:@nodpai, server: jp03-vm0.entry.srthdw.art, port: 449, type: vmess, uuid: a894f969-3268-3dcb-b180-8331df4b552f, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: jp03-vm0.entry.srthdw.art}}, udp: true}
+  - {name: 🇸🇬 V119-1.5x-Singapore, server: ssrsub.o09.trojan.tel, port: 80, type: trojan, password: 069f6b6d-a5bd-4f42-ba99-8aef830c29fc, sni: hk.jd.com, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 中转 🇨🇳 CN 2 Shenzhen lesuyun Network Technology Co.  Ltd TG:@airproxies, server: kqs-moble.gatknqh.cn, port: 53304, type: ss, cipher: aes-256-gcm, password: fd46c872-b3c7-4276-a9fd-bc00ba07de8b, udp: true}
+  - {name: 🇸🇬 新加坡(TG频道:@kxswa), server: 8.219.81.115, port: 2052, type: vmess, uuid: 9ca3be2d-efb9-49c0-fbfe-05f25f1c0912, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: yq01.fengcj.xyz}}, udp: true}
+  - {name: 🇯🇵 TG频道:@kxswa|日本01, server: 110.52.234.51, port: 40189, type: vmess, uuid: cdaf33e6-b62a-3020-b600-a9308f641330, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /a49dcd8b-ae4f-4c06-bbe3-d8a229363187.j.live002.m3u8, headers: {Host: 7a6rs.cdn.node.a.ddns-ounk.com}}, udp: true}
+  - {name: "🇺🇸 美国01{优化1|V2ray}", server: us1.awslcn.cc, port: 25239, type: vmess, uuid: 8a36a837-429a-4dac-8aa3-296f070095d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us1.awslcn.cc}}, udp: true}
+  - {name: 🇯🇵 github.com/freefq - 日本东京M247 23, server: jpgithub.edgehelper.com, port: 53900, type: vmess, uuid: d8860258-4ce1-4412-9ede-ecfd8d827ca4, alterId: 2, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 TG频道:@kxswa|美国01, server: 120.232.179.218, port: 40213, type: vmess, uuid: cdaf33e6-b62a-3020-b600-a9308f641330, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /a49dcd8b-ae4f-4c06-bbe3-d8a229363187.j.live002.m3u8, headers: {Host: dt6r.cdn.node.a.ddns-ounk.com}}, udp: true}
+  - {name: 🇺🇸 美国SEA01 1.3x, server: cc-iepl.244312.xyz, port: 54801, type: ss, cipher: chacha20-ietf-poly1305, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe, udp: true}
+  - {name: 🇯🇵 日本JP|tg频道:@ripaojiedian, server: 45.64.22.55, port: 443, type: trojan, password: ZEIR0qFZau9jOp7x6e8e4y3AaXwS2SzD3llxTyRYKCF8DCD3c5Y3pgNnaSOBAC, sni: tensely.freetrade.link, skip-cert-verify: false, udp: true}
+  - {name: 🇮🇷 github.com/freefq - 伊朗  24, server: 5.161.131.154, port: 58637, type: vmess, uuid: e741be25-c051-4009-bc12-060ddb41f6cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US03|美国|x1.0, server: client.asucaeva.net, port: 31003, type: trojan, password: 57042b18-79b0-4697-b70b-470b3e7e7bc2, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 JCBB_日本04【vip1】, server: cu.kapoknode.com, port: 25931, type: vmess, uuid: 095ebde3-074b-4b6e-9d97-7a9d10a0ffe2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
+  - {name: 🇭🇰 TG频道:@kxswa|香港21, server: 124.95.187.124, port: 40251, type: vmess, uuid: cdaf33e6-b62a-3020-b600-a9308f641330, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /80b48db1-7a27-4d2b-a12b-009feb033b04.j.live001.m3u8, headers: {Host: blg768.cdn.node.a.ddns-ounk.com}}, udp: true}
+  - {name: 🇺🇸 US 13 ISPLEVEL TG:@nodpai, server: sh73gxpe.0xnwy1fyrtlb.com, port: 11109, type: ssr, cipher: aes-256-cfb, password: iuo7tbw4ks, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: 🇨🇳 台湾 08 | 原生解锁, server: mdss-moble.gatknqh.cn, port: 12036, type: ss, cipher: aes-128-gcm, password: f5f283a7-2413-4ab5-b9c4-52f227a40045, udp: true}
+  - {name: 🇺🇸 TG频道:@kxswa|美国 06, server: nwqklcx.lnsqxj.xyz, port: 9125, type: ss, cipher: chacha20-ietf, password: AmyTelecom_11451419I981O, plugin: obfs, plugin-opts: {mode: http, host: 31372-6v920WkWew.download.microsoft.com}, udp: true}
+  - {name: 🇨🇳 TG频道:@kxswa|台湾01, server: 120.232.179.217, port: 40319, type: vmess, uuid: cdaf33e6-b62a-3020-b600-a9308f641330, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /a49dcd8b-ae4f-4c06-bbe3-d8a229363187.j.live002.m3u8, headers: {Host: wevd87.cdn.node.a.ddns-ounk.com}}, udp: true}
+  - {name: 🇳🇱 荷兰AMS02 1.3x, server: ll-iepl.244312.xyz, port: 54123, type: ss, cipher: aes-128-gcm, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe, udp: true}
+  - {name: 🇭🇰 香港HKG03 1.3x, server: cc-iepl.244312.xyz, port: 40001, type: ss, cipher: chacha20-ietf-poly1305, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe, udp: true}
+  - {name: 🇰🇷 中转 🇰🇷 KR 2 Oracle Corporation TG:@airproxies, server: sqyd.biubiufly.monster, port: 61798, type: vmess, uuid: 9873e9d2-8c01-30cd-be81-aa9dee9d34a8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 TG频道:@kxswa|Level1 United States 05, server: 216.73.158.22, port: 30000, type: vmess, uuid: dc1639ca-9ba2-46f6-8a3c-bdef2266f0b7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: V113-1.2x-Seoul, server: ssrsub.o03.trojan.tel, port: 80, type: trojan, password: 3f6043ee-8d11-498e-8a59-07e3214d3a35, sni: hk.jd.com, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 中转 🇸🇬 SG 8 Linode  LLC TG:@nodpai, server: gz.daxun.cyou, port: 20631, type: vmess, uuid: af4d2493-9156-4514-9f6b-ee5d1a1e4713, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /singapore06, headers: {Host: www.baidu.com}}, udp: true}
+  - {name: 🇭🇰 香港优选|tg频道:@ripaojiedian, server: hk1.sanfen001.pics, port: 443, type: vmess, uuid: 9f3f612a-2fb0-420d-830f-1a502a1db50c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /zh-cn, headers: {Host: www.microsoft.com}}, udp: true}
+  - {name: 🇬🇧 英国, server: mo.loc-m.xyz, port: 443, type: vmess, uuid: 3ce64cd6-8953-4c45-b084-54622c6d0e63, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: uk.loc-m.xyz, network: ws, ws-opts: {path: /, headers: {Host: uk.loc-m.xyz}}, udp: true}
+  - {name: 中转 🇻🇳 VN 2 Thien Quang Digital technology joint stock company TG:@airproxies, server: sqyd.biubiufly.monster, port: 50003, type: vmess, uuid: 9873e9d2-8c01-30cd-be81-aa9dee9d34a8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
   - {name: V121-1.2x-Sanjose, server: ssrsub.o11.trojan.tel, port: 80, type: trojan, password: 3f6043ee-8d11-498e-8a59-07e3214d3a35, sni: hk.jd.com, skip-cert-verify: false, udp: true}
-  - {name: 🇬🇧 TG频道:@kxswa|英国 01 | 1x, server: p1.bxy-fun2.com, port: 20471, type: ss, cipher: chacha20-ietf-poly1305, password: d7bee830-09aa-43b2-8945-3b341b8787db, udp: true}
-  - {name: 🇰🇷 亚洲 | 韩国A, server: a-cm1.jsmmm.cyou, port: 39511, type: vmess, uuid: ee8b274d-752d-33f4-9fef-e8a86e4c4cb8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港(TG频道:@kxswa) 5, server: hkt.iamnotagoodman.com, port: 443, type: trojan, password: fab16fff-d149-417c-bdef-4bfcf2333bbe, sni: hkt.iamnotagoodman.com, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 中国_tg+univstar_39, server: cm.kapoknode.com, port: 25897, type: vmess, uuid: d8ce2bc1-14a2-4693-9739-e73b7b75cd65, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.kapoknode.com}}, udp: true}
+  - {name: 🇦🇺 JCBB_ 悉尼 01【vip3】, server: cu.kapoknode.com, port: 25908, type: vmess, uuid: 095ebde3-074b-4b6e-9d97-7a9d10a0ffe2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}, udp: true}
+  - {name: 🇦🇷 阿根廷+02, server: dl-am2.efpan.one, port: 443, type: trojan, password: 4e935756-c838-49df-812f-3e42e6e6411f, sni: data-ar.efpan.one, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 TG频道:@kxswa|美国 05, server: clarenn.uapvql.xyz, port: 9120, type: ss, cipher: chacha20-ietf, password: AmyTelecom_11451419I981O, plugin: obfs, plugin-opts: {mode: http, host: 31372-6v920WkWew.download.microsoft.com}, udp: true}
+  - {name: 距离下次重置剩余：15 天, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 80a5fbf0-b54a-4cbe-be3d-9c638ddbc906, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/suti/us2?ed=2048", headers: {Host: us2.guolicheng.cyou}}, udp: true}
+  - {name: 🇺🇸 US02|美国|x1.0, server: client.asucaeva.net, port: 31002, type: trojan, password: 57042b18-79b0-4697-b70b-470b3e7e7bc2, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: false, udp: true}
+  - {name: 🇦🇺 21 澳大利亚, server: 21adly.mealstream.xyz, port: 15021, type: vmess, uuid: 8578dc92-3097-4dd5-941a-5e6ebeaa91ba, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: 尼泊尔KTM02 1.3x, server: ll-iepl.244312.xyz, port: 54109, type: ss, cipher: aes-128-gcm, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe, udp: true}
+  - {name: 🇦🇪 阿联酋+01, server: dl-eu1.efpan.one, port: 443, type: trojan, password: 4e935756-c838-49df-812f-3e42e6e6411f, sni: data-ae.efpan.one, skip-cert-verify: false, udp: true}
+  - {name: "🇭🇰 TG频道:@kxswa|香港 | HKG [解锁] x1.2{艾可云1}", server: cn-gzcm-1.akijp.net, port: 30009, type: vmess, uuid: 71c75b7e-23e1-4aee-abc0-1a9585efb409, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /images, headers: {Host: v.qq.com}}, udp: true}
+  - {name: 🇵🇱 波兰WAW01 1.3x, server: cc-iepl.244312.xyz, port: 54124, type: ss, cipher: aes-128-gcm, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe, udp: true}
+  - {name: 🇮🇩 印尼JAK01 1.3x, server: cc-iepl.244312.xyz, port: 54117, type: ss, cipher: aes-128-gcm, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe, udp: true}
+  - {name: 🇮🇩 ID01|印尼|SS|x1.0, server: clientss.asucaeva.net, port: 46001, type: ss, cipher: chacha20-ietf-poly1305, password: 57042b18-79b0-4697-b70b-470b3e7e7bc2, udp: true}
+  - {name: "🇯🇵 TG频道:@kxswa|日本 | JPN x1.0{艾可云1}", server: cn-gzcm-1.akijp.net, port: 30013, type: vmess, uuid: 71c75b7e-23e1-4aee-abc0-1a9585efb409, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /images, headers: {Host: v.qq.com}}, udp: true}
+  - {name: 🇭🇰 亚洲 | 香港D, server: a-ct1.jsmmm.cyou, port: 39122, type: vmess, uuid: ee8b274d-752d-33f4-9fef-e8a86e4c4cb8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 中国_tg+univstar_13, server: 49.234.84.132, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 中国(TG频道:@kxswa) 4, server: shcu.1aba.cn, port: 33521, type: vmess, uuid: 1153304d-d332-47fa-d568-35ff69189351, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 1sj.fengcj.xyz}}, udp: true}
+  - {name: "🇸🇬 新加坡06{优化2|V2ray}", server: sg2.awslcn.cc, port: 25253, type: vmess, uuid: 8a36a837-429a-4dac-8aa3-296f070095d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sg2.awslcn.cc}}, udp: true}
+  - {name: 🇯🇵 日本_tg+univstar_22, server: 158.101.149.56, port: 31106, type: trojan, password: 5Yt33J27JP, sni: 11jin.fengcj.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 新加坡_tg+univstar_11, server: 168.138.171.65, port: 443, type: vmess, uuid: 4af6fd9a-e8b4-46f2-da3a-207f4577656c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 新加坡专线 B, server: iepl2.nnooddee.pro, port: 7041, type: ssr, cipher: chacha20-ietf, password: lbNVOz, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 114466:LKJ6XS7c77pLk19p, obfs-param: 0b9a2114466.microsoft.com, udp: true}
+  - {name: 🇸🇬 TG频道:@kxswa|新加坡29, server: 183.255.37.51, port: 40049, type: vmess, uuid: cdaf33e6-b62a-3020-b600-a9308f641330, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /80b48db1-7a27-4d2b-a12b-009feb033b04.j.live001.m3u8, headers: {Host: b9v6w.cdn.node.a.ddns-ounk.com}}, udp: true}
+  - {name: 🇸🇬 新加坡1, server: mo.loc-m.xyz, port: 443, type: vmess, uuid: 3ce64cd6-8953-4c45-b084-54622c6d0e63, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: sg1.loc-m.xyz, network: ws, ws-opts: {path: /, headers: {Host: sg1.loc-m.xyz}}, udp: true}
+  - {name: 🇨🇳 台湾 02 | 原生解锁, server: mdss-moble.gatknqh.cn, port: 12030, type: ss, cipher: aes-128-gcm, password: f5f283a7-2413-4ab5-b9c4-52f227a40045, udp: true}
+  - {name: 🇸🇬 V120-1.5x-Singapore, server: ssrsub.o10.trojan.tel, port: 80, type: trojan, password: 3f6043ee-8d11-498e-8a59-07e3214d3a35, sni: hk.jd.com, skip-cert-verify: false, udp: true}
+  - {name: 🇩🇪 中转 🇩🇪 DE 3 G-Core Labs S.A. TG:@nodpai, server: 20013.purefast2.com, port: 20013, type: trojan, password: 357827e5-a45d-3f09-9b73-ef4431dfb323, sni: purefast1.com, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 中国(TG频道:@kxswa) 5, server: hncu.donghui.tech, port: 31523, type: trojan, password: wGmZeZP6z8, sni: fxe.fengcj.xyz, skip-cert-verify: false, udp: true}
+  - {name: 格陵兰GOH02 1.3x, server: ll-iepl.244312.xyz, port: 54154, type: ss, cipher: chacha20-ietf-poly1305, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe, udp: true}
+  - {name: 🇫🇷 中转 🇫🇷 FR 1 Feelb Sarl TG:@airproxies, server: sqyd.biubiufly.monster, port: 50027, type: vmess, uuid: 9873e9d2-8c01-30cd-be81-aa9dee9d34a8, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇲🇽 JCBB_墨西哥01【vip3】, server: cm.kapoknode.com, port: 25907, type: vmess, uuid: 095ebde3-074b-4b6e-9d97-7a9d10a0ffe2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.kapoknode.com}}, udp: true}
+  - {name: 🇭🇰 香港专线 C, server: iepl3.nnooddee.pro, port: 7012, type: ssr, cipher: chacha20-ietf, password: lbNVOz, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 114466:LKJ6XS7c77pLk19p, obfs-param: 0b9a2114466.microsoft.com, udp: true}
+  - {name: 🇺🇸 JCBB_美国02【vip1】, server: cm.kapoknode.com, port: 25886, type: vmess, uuid: 095ebde3-074b-4b6e-9d97-7a9d10a0ffe2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.kapoknode.com}}, udp: true}
+  - {name: 🇯🇵 日本 04 | IPV6解锁, server: mdss-unicom.gatknqh.cn, port: 12014, type: ss, cipher: aes-128-gcm, password: f5f283a7-2413-4ab5-b9c4-52f227a40045, udp: true}
+  - {name: 🇯🇵 V118-1.2x-Osaka 2, server: ssrsub.o08.trojan.tel, port: 80, type: trojan, password: 4753f41a-f6f4-4b7c-8692-7b0ca45dfb4e, sni: hk.jd.com, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港HKG02 1.3x, server: ll-iepl.244312.xyz, port: 54101, type: ss, cipher: chacha20-ietf-poly1305, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe, udp: true}
+  - {name: "🇺🇸 美国04{优化1|V2ray}", server: us1.awslcn.cc, port: 25255, type: vmess, uuid: 8a36a837-429a-4dac-8aa3-296f070095d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us1.awslcn.cc}}, udp: true}
+  - {name: 🇭🇰 香港HGC-高速中转|1x, server: 45.118.132.179, port: 48888, type: vmess, uuid: af4d2493-9156-4514-9f6b-ee5d1a1e4713, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /daxun/hkhgc, headers: {Host: www.baidu.com}}, udp: true}
+  - {name: 🇯🇵 26 日本, server: 26rb.mealstream.xyz, port: 15026, type: vmess, uuid: 8578dc92-3097-4dd5-941a-5e6ebeaa91ba, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 TG频道:@kxswa|香港08|高速, server: hk7.czs1000.com, port: 8007, type: vmess, uuid: 23265a13-ef63-49d0-a1d9-9cfe4e7d5e17, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 TG频道:@kxswa|美国01 2, server: us1.czs1000.com, port: 7886, type: vmess, uuid: 23265a13-ef63-49d0-a1d9-9cfe4e7d5e17, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 日本_tg+univstar_28, server: 106.180.225.69, port: 1443, type: trojan, password: 7x42LetRa0, skip-cert-verify: false, udp: true}
+  - {name: 🇵🇭 菲律宾MNL01 1.3x, server: cc-iepl.244312.xyz, port: 54113, type: ss, cipher: aes-128-gcm, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe, udp: true}
+  - {name: 🇰🇷 KR02|韩国|x1.0, server: client.asucaeva.net, port: 34002, type: trojan, password: 57042b18-79b0-4697-b70b-470b3e7e7bc2, sni: colagzcm.jumpwallsocks.online, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 亚洲 | 香港B, server: a-cm1.jsmmm.cyou, port: 39112, type: vmess, uuid: ee8b274d-752d-33f4-9fef-e8a86e4c4cb8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 TG频道:@kxswa|香港10, server: 120.232.179.215, port: 40055, type: vmess, uuid: cdaf33e6-b62a-3020-b600-a9308f641330, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /a49dcd8b-ae4f-4c06-bbe3-d8a229363187.j.live002.m3u8, headers: {Host: gtnjzy.cdn.node.a.ddns-ounk.com}}, udp: true}
+  - {name: 🇩🇪 德国FRA01 1.3x, server: cc-iepl.244312.xyz, port: 54120, type: ss, cipher: aes-128-gcm, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe, udp: true}
+  - {name: 🇨🇳 中国_tg+univstar_9, server: 124.221.131.176, port: 50797, type: vmess, uuid: fa4b6f8f-1264-45ec-9651-6160c12cabc5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 🇨🇳 中国(TG频道:@kxswa) 6, server: t.cccao.cyou, port: 16633, type: vmess, uuid: fab16fff-d149-417c-bdef-4bfcf2333bbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: t.cccao.cyou}}, udp: true}
+  - {name: 🇬🇧 TG频道:@kxswa|英国01, server: uk1.czs1000.com, port: 6689, type: vmess, uuid: 23265a13-ef63-49d0-a1d9-9cfe4e7d5e17, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 亚洲 | 日本C, server: a-ct1.jsmmm.cyou, port: 39321, type: vmess, uuid: ee8b274d-752d-33f4-9fef-e8a86e4c4cb8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇫🇷 法国+01, server: dl-eu1.efpan.one, port: 443, type: trojan, password: 4e935756-c838-49df-812f-3e42e6e6411f, sni: data-fr.efpan.one, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 日本TOK02 1.3x, server: ll-iepl.244312.xyz, port: 54104, type: ss, cipher: aes-128-gcm, password: 4a7b12f2-6705-4953-ab43-d6228758cdbe, udp: true}
+  - {name: 🇨🇳 台湾_tg+univstar_34, server: 2.58.242.43, port: 443, type: trojan, password: 7a9a3bb7-43b4YWVzLTI1Ni1nY206eHBRd3lWNFc1RmRBNk5NQU5KSng3M1VT, skip-cert-verify: false, udp: true}
+  - {name: 🇰🇷 韩国+02, server: dl-kr2.efpan.one, port: 443, type: trojan, password: 4e935756-c838-49df-812f-3e42e6e6411f, sni: data-ockrcc.efpan.one, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 中国(TG频道:@kxswa) 7, server: 123.6.102.119, port: 16618, type: vmess, uuid: fab16fff-d149-417c-bdef-4bfcf2333bbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 123.6.102.119}}, udp: true}
+  - {name: 🇸🇬 TG频道:@kxswa|新加坡19, server: 183.255.37.51, port: 40365, type: vmess, uuid: cdaf33e6-b62a-3020-b600-a9308f641330, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /80b48db1-7a27-4d2b-a12b-009feb033b04.j.live001.m3u8, headers: {Host: b9v6w.cdn.node.a.ddns-ounk.com}}, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare节点 19, server: 141.101.115.133, port: 443, type: vmess, uuid: fcfaec91-6096-44d8-956c-7868d9e874b1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ray, headers: {Host: lg1.cfcdn1.xyz}}, udp: true}
+  - {name: 🇰🇷 韩国快|tg频道:@ripaojiedian, server: kr1.sanfen001.pics, port: 443, type: vmess, uuid: 9f3f612a-2fb0-420d-830f-1a502a1db50c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /zh-cn, headers: {Host: www.microsoft.com}}, udp: true}
+  - {name: 🇭🇰 香港_tg+univstar_12, server: 47.243.104.195, port: 58944, type: vmess, uuid: a0f25e25-9c5d-4d96-9051-5481c46e277d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 🇯🇵 V135-1.2x-Tokyo, server: ssrsub.t05.trojan.tel, port: 80, type: trojan, password: 069f6b6d-a5bd-4f42-ba99-8aef830c29fc, sni: hk.jd.com, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港快|tg频道:@ripaojiedian, server: 96cfae9d-7c6c-0722-5eb8-a2b8e9d53aee.cnnic.rip, port: 80, type: vmess, uuid: 862d1d66-78b7-4a7b-a35b-7553006f3056, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 TG频道:@kxswa|新加坡08|高速|流媒体解锁, server: sg8.czs1000.com, port: 6687, type: vmess, uuid: 23265a13-ef63-49d0-a1d9-9cfe4e7d5e17, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇨🇳 CN 20 → openitsub.com
-      - 🇯🇵 日本专线 A
+      - 🇲🇾 马来西亚02|优选原生IP|1x
+      - 🇮🇩 印尼JAK02 1.3x
+      - 🇸🇬 中转 🇸🇬 SG 9 Linode  LLC TG:@nodpai
+      - 🇺🇸 TG频道:@kxswa|Level1 United States 06 2
+      - 🇸🇬 V139-1.5x-Singapore
+      - 🇸🇬 中转 🇸🇬 SG 6 Linode  LLC TG:@airproxies
       - 🇨🇳 中国(TG频道:@kxswa)
-      - 🇨🇳 中转 🇹🇼 TW 1 Zenlayer Inc TG:@nodpai
-      - 🇸🇬 新加坡+02
-      - 🇭🇰 JCBB_香港04【vip1】
-      - 🇺🇸 TG频道:@kxswa|美国|AWS|2x
-      - 🇨🇳 中国(TG频道:@kxswa) 2
-      - V141-1.2x-Sanjose
-      - 🇨🇳 中转 🇹🇼 TW 7 Scloud Pte Ltd TG:@airproxies
-      - 🇺🇸 US 86 Sharktech TG:@nodpai
-      - 🇭🇰 TG频道:@kxswa|香港21
-      - 🇸🇬 新加坡+03
-      - 🇳🇱 TG频道:@kxswa|荷兰 | NLD x1.0{艾可云1}
-      - 🇨🇴 哥伦比亚BOG02 0.6x
-      - 🇸🇬 中转 🇸🇬 SG 83 Linode  LLC TG:@airproxies
-      - 🇨🇳 CN 2 → openitsub.com
-      - 🇭🇰 香港+04
-      - 🇯🇵 JP 51 Amazon Technologies Inc. TG:@airproxies
-      - 🇯🇵 TG频道:@kxswa|日本01|流媒体解锁|高速
-      - 🇭🇰 TG频道:@kxswa|香港06
-      - 前南斯拉夫SKP01 0.6x
-      - 🇨🇳 中国(TG频道:@kxswa) 3
-      - 🇨🇳 中国(TG频道:@kxswa) 4
-      - 🇸🇬 SG 13 Hurricane Electric LLC TG:@nodpai
-      - 🇨🇳 中国(TG频道:@kxswa) 5
-      - 🇸🇬 新加坡_tg+univstar_32
-      - 🇲🇾 中转 🇲🇾 MY 10 Evoxt Enterprise TG:@airproxies
-      - 🇸🇬 TG频道:@kxswa|新加坡11
-      - 🇭🇰 中转 🇭🇰 HK 69 Nexet Limited TG:@airproxies
-      - 🇯🇵 日本_tg+univstar_22
-      - 🇭🇰 香港|tg频道:@ripaojiedian
-      - 🇨🇳 CN 3 → openitsub.com
-      - 🇮🇳 TG频道:@kxswa|印度
-      - 🇩🇪 TG频道:@kxswa|德国
-      - 🇺🇸 美国SJC02 0.6x
-      - 🇭🇰 TG频道:@kxswa|香港07
-      - 🇨🇳 CN 28 → openitsub.com
-      - 🇨🇦 CA01|加拿大|SS|x1.0
-      - 🇨🇳 TG频道:@kxswa|台湾05
-      - 🇺🇸 美国+03
-      - 🇭🇰 香港+05
-      - 🇨🇳 CN 8 → openitsub.com
-      - 🇫🇷 法国+02
-      - 🇲🇳 蒙古ULN02 0.6x
-      - 🇯🇵 日本中继 C
-      - 🇨🇳 中国(TG频道:@kxswa) 6
-      - 🇩🇪 德国BER01 0.6x
-      - 🇸🇬 TG频道:@kxswa|新加坡22
-      - 🇲🇾 中转 🇲🇾 MY 1 Tmnet  Telekom Malaysia Bhd. TG:@nodpai
-      - 🇯🇵 日本1
-      - 🇸🇬 27 新加坡
-      - 🇨🇳 台湾+04
-      - 🇯🇵 TG频道:@kxswa|日本 07
-      - 🇵🇭 菲律宾MNL01 0.6x
-      - 🇭🇰 香港+01
-      - 🇰🇷 中转 🇰🇷 KR 1 Microsoft Corporation TG:@nodpai
-      - V141-1.2x-Sanjose 2
-      - 🇨🇳 台湾中继 A
-      - 🇹🇭 泰国BKK01 0.6x
-      - 🇦🇪 阿联酋+01
-      - 🇮🇳 印度01{移动|V2ray}
-      - 🇨🇳 中转 🇹🇼 TW 17 Chunghwa Telecom Co.  Ltd. TG:@airproxies
-      - V122-1.2x-Sanjose
-      - 🇸🇬 新加坡(TG频道:@kxswa)
-      - V134-1.2x-Seoul
-      - 🇭🇰 香港 02 | IPV6解锁
-      - 🇸🇬 TG频道:@kxswa|新加坡02
+      - 🇮🇳 20 印度
+      - 🇻🇳 越南HCM02 1.3x
       - 🇭🇰 香港(TG频道:@kxswa)
-      - 🇭🇰 香港(TG频道:@kxswa) 2
-      - 🇭🇰 中转 🇭🇰 HK 33 HGC Global Communications Limited TG:@airproxies
-      - 🇺🇸 美国02{优化2|V2ray}
-      - 🇯🇵 V135-1.2x-Tokyo
-      - 🇩🇪 JCBB_德国01【vip1】
-      - 🇫🇷 08 法国
-      - 🇳🇱 荷兰(TG频道:@kxswa)
-      - 🇺🇸 JCBB_美国04【vip1】
-      - 🇸🇬 中转 🇸🇬 SG 76 Linode  LLC TG:@nodpai
-      - 🇨🇦 V103-0.4x-Canada-付费推荐:dlj.tf/ssrsub
-      - 🇸🇬 新加坡07{优化2|V2ray}
-      - 🇸🇬 亚洲 | 新加坡C
-      - 🇬🇧 中转 🇬🇧 GB 4 DigitalOcean  LLC TG:@airproxies
-      - 🇭🇰 中转 🇭🇰 HK 31 HGC Global Communications Limited TG:@airproxies
-      - 🇨🇳 TG频道:@kxswa|台湾09
-      - 🇺🇸 TG频道:@kxswa|Level1 United States 01
-      - 🇨🇳 CN 14 → openitsub.com
-      - 🇨🇳 TW 29 Chunghwa Telecom Co.  Ltd. TG:@airproxies
-      - 🇭🇰 TG频道:@kxswa|香港 01
-      - 🇯🇵 18 日本
-      - 🇯🇵 中转 🇯🇵 JP 113 M247 Ltd TG:@nodpai
-      - V142-1.2x-Sanjose
-      - 🇨🇳 TW02|台湾|x1.0
-      - 🇭🇰 香港HKG02 0.6x
-      - CH 1 Green Floid LLC TG:@nodpai
-      - 🇳🇱 NL 2 LeaseWeb Netherlands B.V. TG:@airproxies
-      - 🇭🇰 TG频道:@kxswa|香港24
-      - 🇸🇬 新加坡_tg+univstar_11
-      - 🇭🇰 香港HGC
-      - 🇬🇧 英国01
-      - 🇺🇸 美国西雅图
-      - 🇭🇷 克罗地亚ZAG01 0.6x
-      - 🇯🇵 日本TOK01 0.6x
-      - 🇨🇳 中国(TG频道:@kxswa) 7
-      - 🇨🇳 中国(TG频道:@kxswa) 8
-      - 🇸🇬 中转 🇸🇬 SG 109 Linode  LLC TG:@nodpai
-      - 🇨🇦 加拿大+01
-      - 缅甸NYT02 0.6x
-      - 🇳🇱 TG频道:@kxswa|荷兰01
-      - 🇨🇳 中转 🇹🇼 TW 25 Chunghwa Telecom Co.  Ltd. TG:@nodpai
-      - 🇨🇳 TG频道:@kxswa|台湾 02 | 1x
-      - 🇭🇰 中转 🇭🇰 HK 42 PCCW IMS Limited TG:@airproxies
-      - 老挝VTE01 0.6x
-      - 🇩🇰 丹麦流媒体 x1
-      - 🇰🇷 亚洲 | 韩国B
-      - 🇨🇦 TG频道:@kxswa|加拿大
-      - 🇨🇳 中国(TG频道:@kxswa) 9
-      - 🇯🇵 TG频道:@kxswa|日本07
-      - 🇯🇵 JP02|日本|x1.0
-      - 🇨🇳 中国_tg+univstar_10
-      - 🇸🇬 TG频道:@kxswa|新加坡12
-      - 🇨🇳 中国(TG频道:@kxswa) 10
-      - 🇯🇵 日本06{优化2|V2ray}
+      - 🇸🇬 新加坡2
+      - 🇯🇵 V116-1.2x-Tokyo
+      - 🇭🇰 香港 08 | IPV6解锁
+      - 🇭🇰 HK04|香港|SS|x1.0
+      - 🇦🇷 阿根廷+01
+      - 🇨🇳 台湾 04 | 原生解锁
       - 🇭🇰 香港 09 | IPV6解锁
-      - 🇺🇸 TG频道:@kxswa|美国01
-      - 🇭🇰 TG频道:@kxswa|香港02
-      - 🇺🇸 美国(TG频道:@kxswa)
-      - 🇺🇸 US04|美国|SS|x1.0
-      - 🇯🇵 中转 🇯🇵 JP 12 Linode  LLC TG:@nodpai
-      - 乌兹别克斯坦TAS02 0.6x
-      - 🇻🇳 VN01|越南|SS|x1.0
-      - 🇸🇬 中转 🇸🇬 SG 85 Linode  LLC TG:@nodpai
-      - 🇨🇳 TG频道:@kxswa|台湾07
-      - 🇨🇳 中国(TG频道:@kxswa) 11
-      - 🇭🇰 香港专线 A
-      - 🇨🇳 CN 22 → openitsub.com
-      - 🇭🇺 HU01|匈牙利|x1.0
-      - 🇰🇷 韩国02{移动|V2ray}
-      - 🇯🇵 JP 36 Amazon Technologies Inc. TG:@nodpai
-      - 🇭🇰 香港快|tg频道:@ripaojiedian
-      - 🇵🇭 TG频道:@kxswa|菲律宾
-      - 🇭🇰 TG频道:@kxswa|香港04|高速|流媒体解锁
-      - 🇲🇳 蒙古ULN01 0.6x
-      - 🇯🇵 V117-1.2x-Osaka
-      - 🇭🇰 香港(TG频道:@kxswa) 3
-      - 🇬🇧 JCBB_英国02【vip1】
-      - 中转 🇮🇹 IT 2 Kamatera  Inc. TG:@nodpai
-      - 🇻🇳 越南HCM02 0.6x
+      - 🇲🇾 马来西亚01|优选原生IP|1x
+      - 🇨🇳 TG频道:@kxswa|台湾08
+      - 🇸🇬 新加坡04|三网优化|解锁流媒体|1x
+      - 🇭🇰 香港_tg+univstar_7
+      - 🇯🇵 中转 🇯🇵 JP 239 Linode  LLC TG:@nodpai
+      - 🇺🇸 TG频道:@kxswa|美国 09
+      - 🇬🇧 英国-Trojan
+      - 🇨🇳 台湾专线 B
+      - 🇰🇷 韩国专线 B
+      - 🇯🇵 V136-1.2x-Tokyo
+      - 🇨🇳 中国(TG频道:@kxswa) 2
+      - 🇺🇸 TG频道:@kxswa|美国 03 | 1x
+      - 🇫🇷 法国(TG频道:@kxswa)
+      - 🇸🇬 【共享奈飞】新加坡02 1.3x
+      - 🇫🇷 法国+02
+      - TG频道:@kxswa|arm3-80
+      - 🇦🇺 澳洲ADL01 1.3x
+      - 🇯🇵 日本 03 | IPV6解锁
+      - V114-1.2x-Seoul
+      - 🇯🇵 TG频道:@kxswa|日本 01
+      - 🇨🇦 TG频道:@kxswa|加拿大
+      - 🇭🇰 香港中继 A
+      - V141-1.2x-Sanjose
+      - 🇸🇬 中转 🇸🇬 SG 15 Linode  LLC TG:@nodpai
+      - 🇨🇳 中国(TG频道:@kxswa) 3
+      - 🇨🇳 中国_tg+univstar_47
+      - 🇲🇾 马来西亚KUL02 1.3x
+      - 🇬🇧 英国GLA01 1.3x
+      - 🇯🇵 TG频道:@kxswa|日本04
+      - 🇭🇰 HK 25 Microsoft Corporation TG:@nodpai
+      - 🇭🇰 TG频道:@kxswa|香港19
+      - 🇰🇷 韩国01{移动|V2ray}
+      - 🇸🇬 TG频道:@kxswa|新加坡3
       - 🇸🇬 TG频道:@kxswa|新加坡03
-      - 🇺🇸 美国 05 | IPV6解锁
-      - 🇭🇰 香港(TG频道:@kxswa) 4
-      - 🇭🇰 香港HKG05 0.6x
-      - 🇭🇰 香港-Trojan④
-      - 🇭🇰 TG频道:@kxswa|香港 10
-      - 🇭🇰 香港3|HE+HKIX Plus X2
-      - 🇸🇬 中转 🇸🇬 SG 88 Linode  LLC TG:@airproxies
-      - 尼泊尔KTM02 0.6x
-      - 🇳🇱 TG频道:@kxswa|荷兰
-      - 🇨🇳 TG频道:@kxswa|台湾|流媒体|中转|3x
+      - 🇸🇬 新加坡03{优化2|V2ray}
+      - 🇸🇬 TG频道:@kxswa|新加坡 | SGP x1.0{艾可云1}
+      - 🇨🇳 台湾TAI03 1.3x
+      - 🇯🇵 V118-1.2x-Osaka
+      - 🇯🇵 V136-1.2x-Tokyo 2
+      - 🇸🇬 TG频道:@kxswa|新加坡1
+      - 🇨🇳 CN 2 → openitsub.com
+      - 🇨🇳 中国_tg+univstar_10
+      - 🇨🇦 CA01|加拿大|x1.0
+      - 🇨🇳 TG频道:@kxswa|台湾06
+      - 🇯🇵 JP 3 Amazon Technologies Inc. TG:@nodpai
+      - 🇸🇬 V119-1.5x-Singapore
+      - 🇨🇳 中转 🇨🇳 CN 2 Shenzhen lesuyun Network Technology Co.  Ltd TG:@airproxies
+      - 🇸🇬 新加坡(TG频道:@kxswa)
+      - 🇯🇵 TG频道:@kxswa|日本01
+      - 🇺🇸 美国01{优化1|V2ray}
+      - 🇯🇵 github.com/freefq - 日本东京M247 23
+      - 🇺🇸 TG频道:@kxswa|美国01
+      - 🇺🇸 美国SEA01 1.3x
+      - 🇯🇵 日本JP|tg频道:@ripaojiedian
+      - 🇮🇷 github.com/freefq - 伊朗  24
+      - 🇺🇸 US03|美国|x1.0
+      - 🇯🇵 JCBB_日本04【vip1】
+      - 🇭🇰 TG频道:@kxswa|香港21
+      - 🇺🇸 US 13 ISPLEVEL TG:@nodpai
+      - 🇨🇳 台湾 08 | 原生解锁
+      - 🇺🇸 TG频道:@kxswa|美国 06
+      - 🇨🇳 TG频道:@kxswa|台湾01
+      - 🇳🇱 荷兰AMS02 1.3x
+      - 🇭🇰 香港HKG03 1.3x
+      - 🇰🇷 中转 🇰🇷 KR 2 Oracle Corporation TG:@airproxies
+      - 🇺🇸 TG频道:@kxswa|Level1 United States 05
+      - V113-1.2x-Seoul
+      - 🇸🇬 中转 🇸🇬 SG 8 Linode  LLC TG:@nodpai
+      - 🇭🇰 香港优选|tg频道:@ripaojiedian
+      - 🇬🇧 英国
+      - 中转 🇻🇳 VN 2 Thien Quang Digital technology joint stock company TG:@airproxies
       - V121-1.2x-Sanjose
-      - 🇬🇧 TG频道:@kxswa|英国 01 | 1x
-      - 🇰🇷 亚洲 | 韩国A
-      - 🇭🇰 香港(TG频道:@kxswa) 5
-      - 🇨🇳 中国_tg+univstar_39
+      - 🇦🇺 JCBB_ 悉尼 01【vip3】
+      - 🇦🇷 阿根廷+02
+      - 🇺🇸 TG频道:@kxswa|美国 05
+      - 距离下次重置剩余：15 天
+      - 🇺🇸 US02|美国|x1.0
+      - 🇦🇺 21 澳大利亚
+      - 尼泊尔KTM02 1.3x
+      - 🇦🇪 阿联酋+01
+      - 🇭🇰 TG频道:@kxswa|香港 | HKG [解锁] x1.2{艾可云1}
+      - 🇵🇱 波兰WAW01 1.3x
+      - 🇮🇩 印尼JAK01 1.3x
+      - 🇮🇩 ID01|印尼|SS|x1.0
+      - 🇯🇵 TG频道:@kxswa|日本 | JPN x1.0{艾可云1}
+      - 🇭🇰 亚洲 | 香港D
+      - 🇨🇳 中国_tg+univstar_13
+      - 🇨🇳 中国(TG频道:@kxswa) 4
+      - 🇸🇬 新加坡06{优化2|V2ray}
+      - 🇯🇵 日本_tg+univstar_22
+      - 🇸🇬 新加坡_tg+univstar_11
+      - 🇸🇬 新加坡专线 B
+      - 🇸🇬 TG频道:@kxswa|新加坡29
+      - 🇸🇬 新加坡1
+      - 🇨🇳 台湾 02 | 原生解锁
+      - 🇸🇬 V120-1.5x-Singapore
+      - 🇩🇪 中转 🇩🇪 DE 3 G-Core Labs S.A. TG:@nodpai
+      - 🇨🇳 中国(TG频道:@kxswa) 5
+      - 格陵兰GOH02 1.3x
+      - 🇫🇷 中转 🇫🇷 FR 1 Feelb Sarl TG:@airproxies
+      - 🇲🇽 JCBB_墨西哥01【vip3】
+      - 🇭🇰 香港专线 C
+      - 🇺🇸 JCBB_美国02【vip1】
+      - 🇯🇵 日本 04 | IPV6解锁
+      - 🇯🇵 V118-1.2x-Osaka 2
+      - 🇭🇰 香港HKG02 1.3x
+      - 🇺🇸 美国04{优化1|V2ray}
+      - 🇭🇰 香港HGC-高速中转|1x
+      - 🇯🇵 26 日本
+      - 🇭🇰 TG频道:@kxswa|香港08|高速
+      - 🇺🇸 TG频道:@kxswa|美国01 2
+      - 🇯🇵 日本_tg+univstar_28
+      - 🇵🇭 菲律宾MNL01 1.3x
+      - 🇰🇷 KR02|韩国|x1.0
+      - 🇭🇰 亚洲 | 香港B
+      - 🇭🇰 TG频道:@kxswa|香港10
+      - 🇩🇪 德国FRA01 1.3x
+      - 🇨🇳 中国_tg+univstar_9
+      - 🇨🇳 中国(TG频道:@kxswa) 6
+      - 🇬🇧 TG频道:@kxswa|英国01
+      - 🇯🇵 亚洲 | 日本C
+      - 🇫🇷 法国+01
+      - 🇯🇵 日本TOK02 1.3x
+      - 🇨🇳 台湾_tg+univstar_34
+      - 🇰🇷 韩国+02
+      - 🇨🇳 中国(TG频道:@kxswa) 7
+      - 🇸🇬 TG频道:@kxswa|新加坡19
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 19
+      - 🇰🇷 韩国快|tg频道:@ripaojiedian
+      - 🇭🇰 香港_tg+univstar_12
+      - 🇯🇵 V135-1.2x-Tokyo
+      - 🇭🇰 香港快|tg频道:@ripaojiedian
+      - 🇸🇬 TG频道:@kxswa|新加坡08|高速|流媒体解锁
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳 CN 20 → openitsub.com
-      - 🇯🇵 日本专线 A
+      - 🇲🇾 马来西亚02|优选原生IP|1x
+      - 🇮🇩 印尼JAK02 1.3x
+      - 🇸🇬 中转 🇸🇬 SG 9 Linode  LLC TG:@nodpai
+      - 🇺🇸 TG频道:@kxswa|Level1 United States 06 2
+      - 🇸🇬 V139-1.5x-Singapore
+      - 🇸🇬 中转 🇸🇬 SG 6 Linode  LLC TG:@airproxies
       - 🇨🇳 中国(TG频道:@kxswa)
-      - 🇨🇳 中转 🇹🇼 TW 1 Zenlayer Inc TG:@nodpai
-      - 🇸🇬 新加坡+02
-      - 🇭🇰 JCBB_香港04【vip1】
-      - 🇺🇸 TG频道:@kxswa|美国|AWS|2x
-      - 🇨🇳 中国(TG频道:@kxswa) 2
-      - V141-1.2x-Sanjose
-      - 🇨🇳 中转 🇹🇼 TW 7 Scloud Pte Ltd TG:@airproxies
-      - 🇺🇸 US 86 Sharktech TG:@nodpai
-      - 🇭🇰 TG频道:@kxswa|香港21
-      - 🇸🇬 新加坡+03
-      - 🇳🇱 TG频道:@kxswa|荷兰 | NLD x1.0{艾可云1}
-      - 🇨🇴 哥伦比亚BOG02 0.6x
-      - 🇸🇬 中转 🇸🇬 SG 83 Linode  LLC TG:@airproxies
-      - 🇨🇳 CN 2 → openitsub.com
-      - 🇭🇰 香港+04
-      - 🇯🇵 JP 51 Amazon Technologies Inc. TG:@airproxies
-      - 🇯🇵 TG频道:@kxswa|日本01|流媒体解锁|高速
-      - 🇭🇰 TG频道:@kxswa|香港06
-      - 前南斯拉夫SKP01 0.6x
-      - 🇨🇳 中国(TG频道:@kxswa) 3
-      - 🇨🇳 中国(TG频道:@kxswa) 4
-      - 🇸🇬 SG 13 Hurricane Electric LLC TG:@nodpai
-      - 🇨🇳 中国(TG频道:@kxswa) 5
-      - 🇸🇬 新加坡_tg+univstar_32
-      - 🇲🇾 中转 🇲🇾 MY 10 Evoxt Enterprise TG:@airproxies
-      - 🇸🇬 TG频道:@kxswa|新加坡11
-      - 🇭🇰 中转 🇭🇰 HK 69 Nexet Limited TG:@airproxies
-      - 🇯🇵 日本_tg+univstar_22
-      - 🇭🇰 香港|tg频道:@ripaojiedian
-      - 🇨🇳 CN 3 → openitsub.com
-      - 🇮🇳 TG频道:@kxswa|印度
-      - 🇩🇪 TG频道:@kxswa|德国
-      - 🇺🇸 美国SJC02 0.6x
-      - 🇭🇰 TG频道:@kxswa|香港07
-      - 🇨🇳 CN 28 → openitsub.com
-      - 🇨🇦 CA01|加拿大|SS|x1.0
-      - 🇨🇳 TG频道:@kxswa|台湾05
-      - 🇺🇸 美国+03
-      - 🇭🇰 香港+05
-      - 🇨🇳 CN 8 → openitsub.com
-      - 🇫🇷 法国+02
-      - 🇲🇳 蒙古ULN02 0.6x
-      - 🇯🇵 日本中继 C
-      - 🇨🇳 中国(TG频道:@kxswa) 6
-      - 🇩🇪 德国BER01 0.6x
-      - 🇸🇬 TG频道:@kxswa|新加坡22
-      - 🇲🇾 中转 🇲🇾 MY 1 Tmnet  Telekom Malaysia Bhd. TG:@nodpai
-      - 🇯🇵 日本1
-      - 🇸🇬 27 新加坡
-      - 🇨🇳 台湾+04
-      - 🇯🇵 TG频道:@kxswa|日本 07
-      - 🇵🇭 菲律宾MNL01 0.6x
-      - 🇭🇰 香港+01
-      - 🇰🇷 中转 🇰🇷 KR 1 Microsoft Corporation TG:@nodpai
-      - V141-1.2x-Sanjose 2
-      - 🇨🇳 台湾中继 A
-      - 🇹🇭 泰国BKK01 0.6x
-      - 🇦🇪 阿联酋+01
-      - 🇮🇳 印度01{移动|V2ray}
-      - 🇨🇳 中转 🇹🇼 TW 17 Chunghwa Telecom Co.  Ltd. TG:@airproxies
-      - V122-1.2x-Sanjose
-      - 🇸🇬 新加坡(TG频道:@kxswa)
-      - V134-1.2x-Seoul
-      - 🇭🇰 香港 02 | IPV6解锁
-      - 🇸🇬 TG频道:@kxswa|新加坡02
+      - 🇮🇳 20 印度
+      - 🇻🇳 越南HCM02 1.3x
       - 🇭🇰 香港(TG频道:@kxswa)
-      - 🇭🇰 香港(TG频道:@kxswa) 2
-      - 🇭🇰 中转 🇭🇰 HK 33 HGC Global Communications Limited TG:@airproxies
-      - 🇺🇸 美国02{优化2|V2ray}
-      - 🇯🇵 V135-1.2x-Tokyo
-      - 🇩🇪 JCBB_德国01【vip1】
-      - 🇫🇷 08 法国
-      - 🇳🇱 荷兰(TG频道:@kxswa)
-      - 🇺🇸 JCBB_美国04【vip1】
-      - 🇸🇬 中转 🇸🇬 SG 76 Linode  LLC TG:@nodpai
-      - 🇨🇦 V103-0.4x-Canada-付费推荐:dlj.tf/ssrsub
-      - 🇸🇬 新加坡07{优化2|V2ray}
-      - 🇸🇬 亚洲 | 新加坡C
-      - 🇬🇧 中转 🇬🇧 GB 4 DigitalOcean  LLC TG:@airproxies
-      - 🇭🇰 中转 🇭🇰 HK 31 HGC Global Communications Limited TG:@airproxies
-      - 🇨🇳 TG频道:@kxswa|台湾09
-      - 🇺🇸 TG频道:@kxswa|Level1 United States 01
-      - 🇨🇳 CN 14 → openitsub.com
-      - 🇨🇳 TW 29 Chunghwa Telecom Co.  Ltd. TG:@airproxies
-      - 🇭🇰 TG频道:@kxswa|香港 01
-      - 🇯🇵 18 日本
-      - 🇯🇵 中转 🇯🇵 JP 113 M247 Ltd TG:@nodpai
-      - V142-1.2x-Sanjose
-      - 🇨🇳 TW02|台湾|x1.0
-      - 🇭🇰 香港HKG02 0.6x
-      - CH 1 Green Floid LLC TG:@nodpai
-      - 🇳🇱 NL 2 LeaseWeb Netherlands B.V. TG:@airproxies
-      - 🇭🇰 TG频道:@kxswa|香港24
-      - 🇸🇬 新加坡_tg+univstar_11
-      - 🇭🇰 香港HGC
-      - 🇬🇧 英国01
-      - 🇺🇸 美国西雅图
-      - 🇭🇷 克罗地亚ZAG01 0.6x
-      - 🇯🇵 日本TOK01 0.6x
-      - 🇨🇳 中国(TG频道:@kxswa) 7
-      - 🇨🇳 中国(TG频道:@kxswa) 8
-      - 🇸🇬 中转 🇸🇬 SG 109 Linode  LLC TG:@nodpai
-      - 🇨🇦 加拿大+01
-      - 缅甸NYT02 0.6x
-      - 🇳🇱 TG频道:@kxswa|荷兰01
-      - 🇨🇳 中转 🇹🇼 TW 25 Chunghwa Telecom Co.  Ltd. TG:@nodpai
-      - 🇨🇳 TG频道:@kxswa|台湾 02 | 1x
-      - 🇭🇰 中转 🇭🇰 HK 42 PCCW IMS Limited TG:@airproxies
-      - 老挝VTE01 0.6x
-      - 🇩🇰 丹麦流媒体 x1
-      - 🇰🇷 亚洲 | 韩国B
-      - 🇨🇦 TG频道:@kxswa|加拿大
-      - 🇨🇳 中国(TG频道:@kxswa) 9
-      - 🇯🇵 TG频道:@kxswa|日本07
-      - 🇯🇵 JP02|日本|x1.0
-      - 🇨🇳 中国_tg+univstar_10
-      - 🇸🇬 TG频道:@kxswa|新加坡12
-      - 🇨🇳 中国(TG频道:@kxswa) 10
-      - 🇯🇵 日本06{优化2|V2ray}
+      - 🇸🇬 新加坡2
+      - 🇯🇵 V116-1.2x-Tokyo
+      - 🇭🇰 香港 08 | IPV6解锁
+      - 🇭🇰 HK04|香港|SS|x1.0
+      - 🇦🇷 阿根廷+01
+      - 🇨🇳 台湾 04 | 原生解锁
       - 🇭🇰 香港 09 | IPV6解锁
-      - 🇺🇸 TG频道:@kxswa|美国01
-      - 🇭🇰 TG频道:@kxswa|香港02
-      - 🇺🇸 美国(TG频道:@kxswa)
-      - 🇺🇸 US04|美国|SS|x1.0
-      - 🇯🇵 中转 🇯🇵 JP 12 Linode  LLC TG:@nodpai
-      - 乌兹别克斯坦TAS02 0.6x
-      - 🇻🇳 VN01|越南|SS|x1.0
-      - 🇸🇬 中转 🇸🇬 SG 85 Linode  LLC TG:@nodpai
-      - 🇨🇳 TG频道:@kxswa|台湾07
-      - 🇨🇳 中国(TG频道:@kxswa) 11
-      - 🇭🇰 香港专线 A
-      - 🇨🇳 CN 22 → openitsub.com
-      - 🇭🇺 HU01|匈牙利|x1.0
-      - 🇰🇷 韩国02{移动|V2ray}
-      - 🇯🇵 JP 36 Amazon Technologies Inc. TG:@nodpai
-      - 🇭🇰 香港快|tg频道:@ripaojiedian
-      - 🇵🇭 TG频道:@kxswa|菲律宾
-      - 🇭🇰 TG频道:@kxswa|香港04|高速|流媒体解锁
-      - 🇲🇳 蒙古ULN01 0.6x
-      - 🇯🇵 V117-1.2x-Osaka
-      - 🇭🇰 香港(TG频道:@kxswa) 3
-      - 🇬🇧 JCBB_英国02【vip1】
-      - 中转 🇮🇹 IT 2 Kamatera  Inc. TG:@nodpai
-      - 🇻🇳 越南HCM02 0.6x
+      - 🇲🇾 马来西亚01|优选原生IP|1x
+      - 🇨🇳 TG频道:@kxswa|台湾08
+      - 🇸🇬 新加坡04|三网优化|解锁流媒体|1x
+      - 🇭🇰 香港_tg+univstar_7
+      - 🇯🇵 中转 🇯🇵 JP 239 Linode  LLC TG:@nodpai
+      - 🇺🇸 TG频道:@kxswa|美国 09
+      - 🇬🇧 英国-Trojan
+      - 🇨🇳 台湾专线 B
+      - 🇰🇷 韩国专线 B
+      - 🇯🇵 V136-1.2x-Tokyo
+      - 🇨🇳 中国(TG频道:@kxswa) 2
+      - 🇺🇸 TG频道:@kxswa|美国 03 | 1x
+      - 🇫🇷 法国(TG频道:@kxswa)
+      - 🇸🇬 【共享奈飞】新加坡02 1.3x
+      - 🇫🇷 法国+02
+      - TG频道:@kxswa|arm3-80
+      - 🇦🇺 澳洲ADL01 1.3x
+      - 🇯🇵 日本 03 | IPV6解锁
+      - V114-1.2x-Seoul
+      - 🇯🇵 TG频道:@kxswa|日本 01
+      - 🇨🇦 TG频道:@kxswa|加拿大
+      - 🇭🇰 香港中继 A
+      - V141-1.2x-Sanjose
+      - 🇸🇬 中转 🇸🇬 SG 15 Linode  LLC TG:@nodpai
+      - 🇨🇳 中国(TG频道:@kxswa) 3
+      - 🇨🇳 中国_tg+univstar_47
+      - 🇲🇾 马来西亚KUL02 1.3x
+      - 🇬🇧 英国GLA01 1.3x
+      - 🇯🇵 TG频道:@kxswa|日本04
+      - 🇭🇰 HK 25 Microsoft Corporation TG:@nodpai
+      - 🇭🇰 TG频道:@kxswa|香港19
+      - 🇰🇷 韩国01{移动|V2ray}
+      - 🇸🇬 TG频道:@kxswa|新加坡3
       - 🇸🇬 TG频道:@kxswa|新加坡03
-      - 🇺🇸 美国 05 | IPV6解锁
-      - 🇭🇰 香港(TG频道:@kxswa) 4
-      - 🇭🇰 香港HKG05 0.6x
-      - 🇭🇰 香港-Trojan④
-      - 🇭🇰 TG频道:@kxswa|香港 10
-      - 🇭🇰 香港3|HE+HKIX Plus X2
-      - 🇸🇬 中转 🇸🇬 SG 88 Linode  LLC TG:@airproxies
-      - 尼泊尔KTM02 0.6x
-      - 🇳🇱 TG频道:@kxswa|荷兰
-      - 🇨🇳 TG频道:@kxswa|台湾|流媒体|中转|3x
+      - 🇸🇬 新加坡03{优化2|V2ray}
+      - 🇸🇬 TG频道:@kxswa|新加坡 | SGP x1.0{艾可云1}
+      - 🇨🇳 台湾TAI03 1.3x
+      - 🇯🇵 V118-1.2x-Osaka
+      - 🇯🇵 V136-1.2x-Tokyo 2
+      - 🇸🇬 TG频道:@kxswa|新加坡1
+      - 🇨🇳 CN 2 → openitsub.com
+      - 🇨🇳 中国_tg+univstar_10
+      - 🇨🇦 CA01|加拿大|x1.0
+      - 🇨🇳 TG频道:@kxswa|台湾06
+      - 🇯🇵 JP 3 Amazon Technologies Inc. TG:@nodpai
+      - 🇸🇬 V119-1.5x-Singapore
+      - 🇨🇳 中转 🇨🇳 CN 2 Shenzhen lesuyun Network Technology Co.  Ltd TG:@airproxies
+      - 🇸🇬 新加坡(TG频道:@kxswa)
+      - 🇯🇵 TG频道:@kxswa|日本01
+      - 🇺🇸 美国01{优化1|V2ray}
+      - 🇯🇵 github.com/freefq - 日本东京M247 23
+      - 🇺🇸 TG频道:@kxswa|美国01
+      - 🇺🇸 美国SEA01 1.3x
+      - 🇯🇵 日本JP|tg频道:@ripaojiedian
+      - 🇮🇷 github.com/freefq - 伊朗  24
+      - 🇺🇸 US03|美国|x1.0
+      - 🇯🇵 JCBB_日本04【vip1】
+      - 🇭🇰 TG频道:@kxswa|香港21
+      - 🇺🇸 US 13 ISPLEVEL TG:@nodpai
+      - 🇨🇳 台湾 08 | 原生解锁
+      - 🇺🇸 TG频道:@kxswa|美国 06
+      - 🇨🇳 TG频道:@kxswa|台湾01
+      - 🇳🇱 荷兰AMS02 1.3x
+      - 🇭🇰 香港HKG03 1.3x
+      - 🇰🇷 中转 🇰🇷 KR 2 Oracle Corporation TG:@airproxies
+      - 🇺🇸 TG频道:@kxswa|Level1 United States 05
+      - V113-1.2x-Seoul
+      - 🇸🇬 中转 🇸🇬 SG 8 Linode  LLC TG:@nodpai
+      - 🇭🇰 香港优选|tg频道:@ripaojiedian
+      - 🇬🇧 英国
+      - 中转 🇻🇳 VN 2 Thien Quang Digital technology joint stock company TG:@airproxies
       - V121-1.2x-Sanjose
-      - 🇬🇧 TG频道:@kxswa|英国 01 | 1x
-      - 🇰🇷 亚洲 | 韩国A
-      - 🇭🇰 香港(TG频道:@kxswa) 5
-      - 🇨🇳 中国_tg+univstar_39
+      - 🇦🇺 JCBB_ 悉尼 01【vip3】
+      - 🇦🇷 阿根廷+02
+      - 🇺🇸 TG频道:@kxswa|美国 05
+      - 距离下次重置剩余：15 天
+      - 🇺🇸 US02|美国|x1.0
+      - 🇦🇺 21 澳大利亚
+      - 尼泊尔KTM02 1.3x
+      - 🇦🇪 阿联酋+01
+      - 🇭🇰 TG频道:@kxswa|香港 | HKG [解锁] x1.2{艾可云1}
+      - 🇵🇱 波兰WAW01 1.3x
+      - 🇮🇩 印尼JAK01 1.3x
+      - 🇮🇩 ID01|印尼|SS|x1.0
+      - 🇯🇵 TG频道:@kxswa|日本 | JPN x1.0{艾可云1}
+      - 🇭🇰 亚洲 | 香港D
+      - 🇨🇳 中国_tg+univstar_13
+      - 🇨🇳 中国(TG频道:@kxswa) 4
+      - 🇸🇬 新加坡06{优化2|V2ray}
+      - 🇯🇵 日本_tg+univstar_22
+      - 🇸🇬 新加坡_tg+univstar_11
+      - 🇸🇬 新加坡专线 B
+      - 🇸🇬 TG频道:@kxswa|新加坡29
+      - 🇸🇬 新加坡1
+      - 🇨🇳 台湾 02 | 原生解锁
+      - 🇸🇬 V120-1.5x-Singapore
+      - 🇩🇪 中转 🇩🇪 DE 3 G-Core Labs S.A. TG:@nodpai
+      - 🇨🇳 中国(TG频道:@kxswa) 5
+      - 格陵兰GOH02 1.3x
+      - 🇫🇷 中转 🇫🇷 FR 1 Feelb Sarl TG:@airproxies
+      - 🇲🇽 JCBB_墨西哥01【vip3】
+      - 🇭🇰 香港专线 C
+      - 🇺🇸 JCBB_美国02【vip1】
+      - 🇯🇵 日本 04 | IPV6解锁
+      - 🇯🇵 V118-1.2x-Osaka 2
+      - 🇭🇰 香港HKG02 1.3x
+      - 🇺🇸 美国04{优化1|V2ray}
+      - 🇭🇰 香港HGC-高速中转|1x
+      - 🇯🇵 26 日本
+      - 🇭🇰 TG频道:@kxswa|香港08|高速
+      - 🇺🇸 TG频道:@kxswa|美国01 2
+      - 🇯🇵 日本_tg+univstar_28
+      - 🇵🇭 菲律宾MNL01 1.3x
+      - 🇰🇷 KR02|韩国|x1.0
+      - 🇭🇰 亚洲 | 香港B
+      - 🇭🇰 TG频道:@kxswa|香港10
+      - 🇩🇪 德国FRA01 1.3x
+      - 🇨🇳 中国_tg+univstar_9
+      - 🇨🇳 中国(TG频道:@kxswa) 6
+      - 🇬🇧 TG频道:@kxswa|英国01
+      - 🇯🇵 亚洲 | 日本C
+      - 🇫🇷 法国+01
+      - 🇯🇵 日本TOK02 1.3x
+      - 🇨🇳 台湾_tg+univstar_34
+      - 🇰🇷 韩国+02
+      - 🇨🇳 中国(TG频道:@kxswa) 7
+      - 🇸🇬 TG频道:@kxswa|新加坡19
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 19
+      - 🇰🇷 韩国快|tg频道:@ripaojiedian
+      - 🇭🇰 香港_tg+univstar_12
+      - 🇯🇵 V135-1.2x-Tokyo
+      - 🇭🇰 香港快|tg频道:@ripaojiedian
+      - 🇸🇬 TG频道:@kxswa|新加坡08|高速|流媒体解锁
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇨🇳 CN 20 → openitsub.com
-      - 🇯🇵 日本专线 A
+      - 🇲🇾 马来西亚02|优选原生IP|1x
+      - 🇮🇩 印尼JAK02 1.3x
+      - 🇸🇬 中转 🇸🇬 SG 9 Linode  LLC TG:@nodpai
+      - 🇺🇸 TG频道:@kxswa|Level1 United States 06 2
+      - 🇸🇬 V139-1.5x-Singapore
+      - 🇸🇬 中转 🇸🇬 SG 6 Linode  LLC TG:@airproxies
       - 🇨🇳 中国(TG频道:@kxswa)
-      - 🇨🇳 中转 🇹🇼 TW 1 Zenlayer Inc TG:@nodpai
-      - 🇸🇬 新加坡+02
-      - 🇭🇰 JCBB_香港04【vip1】
-      - 🇺🇸 TG频道:@kxswa|美国|AWS|2x
-      - 🇨🇳 中国(TG频道:@kxswa) 2
-      - V141-1.2x-Sanjose
-      - 🇨🇳 中转 🇹🇼 TW 7 Scloud Pte Ltd TG:@airproxies
-      - 🇺🇸 US 86 Sharktech TG:@nodpai
-      - 🇭🇰 TG频道:@kxswa|香港21
-      - 🇸🇬 新加坡+03
-      - 🇳🇱 TG频道:@kxswa|荷兰 | NLD x1.0{艾可云1}
-      - 🇨🇴 哥伦比亚BOG02 0.6x
-      - 🇸🇬 中转 🇸🇬 SG 83 Linode  LLC TG:@airproxies
-      - 🇨🇳 CN 2 → openitsub.com
-      - 🇭🇰 香港+04
-      - 🇯🇵 JP 51 Amazon Technologies Inc. TG:@airproxies
-      - 🇯🇵 TG频道:@kxswa|日本01|流媒体解锁|高速
-      - 🇭🇰 TG频道:@kxswa|香港06
-      - 前南斯拉夫SKP01 0.6x
-      - 🇨🇳 中国(TG频道:@kxswa) 3
-      - 🇨🇳 中国(TG频道:@kxswa) 4
-      - 🇸🇬 SG 13 Hurricane Electric LLC TG:@nodpai
-      - 🇨🇳 中国(TG频道:@kxswa) 5
-      - 🇸🇬 新加坡_tg+univstar_32
-      - 🇲🇾 中转 🇲🇾 MY 10 Evoxt Enterprise TG:@airproxies
-      - 🇸🇬 TG频道:@kxswa|新加坡11
-      - 🇭🇰 中转 🇭🇰 HK 69 Nexet Limited TG:@airproxies
-      - 🇯🇵 日本_tg+univstar_22
-      - 🇭🇰 香港|tg频道:@ripaojiedian
-      - 🇨🇳 CN 3 → openitsub.com
-      - 🇮🇳 TG频道:@kxswa|印度
-      - 🇩🇪 TG频道:@kxswa|德国
-      - 🇺🇸 美国SJC02 0.6x
-      - 🇭🇰 TG频道:@kxswa|香港07
-      - 🇨🇳 CN 28 → openitsub.com
-      - 🇨🇦 CA01|加拿大|SS|x1.0
-      - 🇨🇳 TG频道:@kxswa|台湾05
-      - 🇺🇸 美国+03
-      - 🇭🇰 香港+05
-      - 🇨🇳 CN 8 → openitsub.com
-      - 🇫🇷 法国+02
-      - 🇲🇳 蒙古ULN02 0.6x
-      - 🇯🇵 日本中继 C
-      - 🇨🇳 中国(TG频道:@kxswa) 6
-      - 🇩🇪 德国BER01 0.6x
-      - 🇸🇬 TG频道:@kxswa|新加坡22
-      - 🇲🇾 中转 🇲🇾 MY 1 Tmnet  Telekom Malaysia Bhd. TG:@nodpai
-      - 🇯🇵 日本1
-      - 🇸🇬 27 新加坡
-      - 🇨🇳 台湾+04
-      - 🇯🇵 TG频道:@kxswa|日本 07
-      - 🇵🇭 菲律宾MNL01 0.6x
-      - 🇭🇰 香港+01
-      - 🇰🇷 中转 🇰🇷 KR 1 Microsoft Corporation TG:@nodpai
-      - V141-1.2x-Sanjose 2
-      - 🇨🇳 台湾中继 A
-      - 🇹🇭 泰国BKK01 0.6x
-      - 🇦🇪 阿联酋+01
-      - 🇮🇳 印度01{移动|V2ray}
-      - 🇨🇳 中转 🇹🇼 TW 17 Chunghwa Telecom Co.  Ltd. TG:@airproxies
-      - V122-1.2x-Sanjose
-      - 🇸🇬 新加坡(TG频道:@kxswa)
-      - V134-1.2x-Seoul
-      - 🇭🇰 香港 02 | IPV6解锁
-      - 🇸🇬 TG频道:@kxswa|新加坡02
+      - 🇮🇳 20 印度
+      - 🇻🇳 越南HCM02 1.3x
       - 🇭🇰 香港(TG频道:@kxswa)
-      - 🇭🇰 香港(TG频道:@kxswa) 2
-      - 🇭🇰 中转 🇭🇰 HK 33 HGC Global Communications Limited TG:@airproxies
-      - 🇺🇸 美国02{优化2|V2ray}
-      - 🇯🇵 V135-1.2x-Tokyo
-      - 🇩🇪 JCBB_德国01【vip1】
-      - 🇫🇷 08 法国
-      - 🇳🇱 荷兰(TG频道:@kxswa)
-      - 🇺🇸 JCBB_美国04【vip1】
-      - 🇸🇬 中转 🇸🇬 SG 76 Linode  LLC TG:@nodpai
-      - 🇨🇦 V103-0.4x-Canada-付费推荐:dlj.tf/ssrsub
-      - 🇸🇬 新加坡07{优化2|V2ray}
-      - 🇸🇬 亚洲 | 新加坡C
-      - 🇬🇧 中转 🇬🇧 GB 4 DigitalOcean  LLC TG:@airproxies
-      - 🇭🇰 中转 🇭🇰 HK 31 HGC Global Communications Limited TG:@airproxies
-      - 🇨🇳 TG频道:@kxswa|台湾09
-      - 🇺🇸 TG频道:@kxswa|Level1 United States 01
-      - 🇨🇳 CN 14 → openitsub.com
-      - 🇨🇳 TW 29 Chunghwa Telecom Co.  Ltd. TG:@airproxies
-      - 🇭🇰 TG频道:@kxswa|香港 01
-      - 🇯🇵 18 日本
-      - 🇯🇵 中转 🇯🇵 JP 113 M247 Ltd TG:@nodpai
-      - V142-1.2x-Sanjose
-      - 🇨🇳 TW02|台湾|x1.0
-      - 🇭🇰 香港HKG02 0.6x
-      - CH 1 Green Floid LLC TG:@nodpai
-      - 🇳🇱 NL 2 LeaseWeb Netherlands B.V. TG:@airproxies
-      - 🇭🇰 TG频道:@kxswa|香港24
-      - 🇸🇬 新加坡_tg+univstar_11
-      - 🇭🇰 香港HGC
-      - 🇬🇧 英国01
-      - 🇺🇸 美国西雅图
-      - 🇭🇷 克罗地亚ZAG01 0.6x
-      - 🇯🇵 日本TOK01 0.6x
-      - 🇨🇳 中国(TG频道:@kxswa) 7
-      - 🇨🇳 中国(TG频道:@kxswa) 8
-      - 🇸🇬 中转 🇸🇬 SG 109 Linode  LLC TG:@nodpai
-      - 🇨🇦 加拿大+01
-      - 缅甸NYT02 0.6x
-      - 🇳🇱 TG频道:@kxswa|荷兰01
-      - 🇨🇳 中转 🇹🇼 TW 25 Chunghwa Telecom Co.  Ltd. TG:@nodpai
-      - 🇨🇳 TG频道:@kxswa|台湾 02 | 1x
-      - 🇭🇰 中转 🇭🇰 HK 42 PCCW IMS Limited TG:@airproxies
-      - 老挝VTE01 0.6x
-      - 🇩🇰 丹麦流媒体 x1
-      - 🇰🇷 亚洲 | 韩国B
-      - 🇨🇦 TG频道:@kxswa|加拿大
-      - 🇨🇳 中国(TG频道:@kxswa) 9
-      - 🇯🇵 TG频道:@kxswa|日本07
-      - 🇯🇵 JP02|日本|x1.0
-      - 🇨🇳 中国_tg+univstar_10
-      - 🇸🇬 TG频道:@kxswa|新加坡12
-      - 🇨🇳 中国(TG频道:@kxswa) 10
-      - 🇯🇵 日本06{优化2|V2ray}
+      - 🇸🇬 新加坡2
+      - 🇯🇵 V116-1.2x-Tokyo
+      - 🇭🇰 香港 08 | IPV6解锁
+      - 🇭🇰 HK04|香港|SS|x1.0
+      - 🇦🇷 阿根廷+01
+      - 🇨🇳 台湾 04 | 原生解锁
       - 🇭🇰 香港 09 | IPV6解锁
-      - 🇺🇸 TG频道:@kxswa|美国01
-      - 🇭🇰 TG频道:@kxswa|香港02
-      - 🇺🇸 美国(TG频道:@kxswa)
-      - 🇺🇸 US04|美国|SS|x1.0
-      - 🇯🇵 中转 🇯🇵 JP 12 Linode  LLC TG:@nodpai
-      - 乌兹别克斯坦TAS02 0.6x
-      - 🇻🇳 VN01|越南|SS|x1.0
-      - 🇸🇬 中转 🇸🇬 SG 85 Linode  LLC TG:@nodpai
-      - 🇨🇳 TG频道:@kxswa|台湾07
-      - 🇨🇳 中国(TG频道:@kxswa) 11
-      - 🇭🇰 香港专线 A
-      - 🇨🇳 CN 22 → openitsub.com
-      - 🇭🇺 HU01|匈牙利|x1.0
-      - 🇰🇷 韩国02{移动|V2ray}
-      - 🇯🇵 JP 36 Amazon Technologies Inc. TG:@nodpai
-      - 🇭🇰 香港快|tg频道:@ripaojiedian
-      - 🇵🇭 TG频道:@kxswa|菲律宾
-      - 🇭🇰 TG频道:@kxswa|香港04|高速|流媒体解锁
-      - 🇲🇳 蒙古ULN01 0.6x
-      - 🇯🇵 V117-1.2x-Osaka
-      - 🇭🇰 香港(TG频道:@kxswa) 3
-      - 🇬🇧 JCBB_英国02【vip1】
-      - 中转 🇮🇹 IT 2 Kamatera  Inc. TG:@nodpai
-      - 🇻🇳 越南HCM02 0.6x
+      - 🇲🇾 马来西亚01|优选原生IP|1x
+      - 🇨🇳 TG频道:@kxswa|台湾08
+      - 🇸🇬 新加坡04|三网优化|解锁流媒体|1x
+      - 🇭🇰 香港_tg+univstar_7
+      - 🇯🇵 中转 🇯🇵 JP 239 Linode  LLC TG:@nodpai
+      - 🇺🇸 TG频道:@kxswa|美国 09
+      - 🇬🇧 英国-Trojan
+      - 🇨🇳 台湾专线 B
+      - 🇰🇷 韩国专线 B
+      - 🇯🇵 V136-1.2x-Tokyo
+      - 🇨🇳 中国(TG频道:@kxswa) 2
+      - 🇺🇸 TG频道:@kxswa|美国 03 | 1x
+      - 🇫🇷 法国(TG频道:@kxswa)
+      - 🇸🇬 【共享奈飞】新加坡02 1.3x
+      - 🇫🇷 法国+02
+      - TG频道:@kxswa|arm3-80
+      - 🇦🇺 澳洲ADL01 1.3x
+      - 🇯🇵 日本 03 | IPV6解锁
+      - V114-1.2x-Seoul
+      - 🇯🇵 TG频道:@kxswa|日本 01
+      - 🇨🇦 TG频道:@kxswa|加拿大
+      - 🇭🇰 香港中继 A
+      - V141-1.2x-Sanjose
+      - 🇸🇬 中转 🇸🇬 SG 15 Linode  LLC TG:@nodpai
+      - 🇨🇳 中国(TG频道:@kxswa) 3
+      - 🇨🇳 中国_tg+univstar_47
+      - 🇲🇾 马来西亚KUL02 1.3x
+      - 🇬🇧 英国GLA01 1.3x
+      - 🇯🇵 TG频道:@kxswa|日本04
+      - 🇭🇰 HK 25 Microsoft Corporation TG:@nodpai
+      - 🇭🇰 TG频道:@kxswa|香港19
+      - 🇰🇷 韩国01{移动|V2ray}
+      - 🇸🇬 TG频道:@kxswa|新加坡3
       - 🇸🇬 TG频道:@kxswa|新加坡03
-      - 🇺🇸 美国 05 | IPV6解锁
-      - 🇭🇰 香港(TG频道:@kxswa) 4
-      - 🇭🇰 香港HKG05 0.6x
-      - 🇭🇰 香港-Trojan④
-      - 🇭🇰 TG频道:@kxswa|香港 10
-      - 🇭🇰 香港3|HE+HKIX Plus X2
-      - 🇸🇬 中转 🇸🇬 SG 88 Linode  LLC TG:@airproxies
-      - 尼泊尔KTM02 0.6x
-      - 🇳🇱 TG频道:@kxswa|荷兰
-      - 🇨🇳 TG频道:@kxswa|台湾|流媒体|中转|3x
+      - 🇸🇬 新加坡03{优化2|V2ray}
+      - 🇸🇬 TG频道:@kxswa|新加坡 | SGP x1.0{艾可云1}
+      - 🇨🇳 台湾TAI03 1.3x
+      - 🇯🇵 V118-1.2x-Osaka
+      - 🇯🇵 V136-1.2x-Tokyo 2
+      - 🇸🇬 TG频道:@kxswa|新加坡1
+      - 🇨🇳 CN 2 → openitsub.com
+      - 🇨🇳 中国_tg+univstar_10
+      - 🇨🇦 CA01|加拿大|x1.0
+      - 🇨🇳 TG频道:@kxswa|台湾06
+      - 🇯🇵 JP 3 Amazon Technologies Inc. TG:@nodpai
+      - 🇸🇬 V119-1.5x-Singapore
+      - 🇨🇳 中转 🇨🇳 CN 2 Shenzhen lesuyun Network Technology Co.  Ltd TG:@airproxies
+      - 🇸🇬 新加坡(TG频道:@kxswa)
+      - 🇯🇵 TG频道:@kxswa|日本01
+      - 🇺🇸 美国01{优化1|V2ray}
+      - 🇯🇵 github.com/freefq - 日本东京M247 23
+      - 🇺🇸 TG频道:@kxswa|美国01
+      - 🇺🇸 美国SEA01 1.3x
+      - 🇯🇵 日本JP|tg频道:@ripaojiedian
+      - 🇮🇷 github.com/freefq - 伊朗  24
+      - 🇺🇸 US03|美国|x1.0
+      - 🇯🇵 JCBB_日本04【vip1】
+      - 🇭🇰 TG频道:@kxswa|香港21
+      - 🇺🇸 US 13 ISPLEVEL TG:@nodpai
+      - 🇨🇳 台湾 08 | 原生解锁
+      - 🇺🇸 TG频道:@kxswa|美国 06
+      - 🇨🇳 TG频道:@kxswa|台湾01
+      - 🇳🇱 荷兰AMS02 1.3x
+      - 🇭🇰 香港HKG03 1.3x
+      - 🇰🇷 中转 🇰🇷 KR 2 Oracle Corporation TG:@airproxies
+      - 🇺🇸 TG频道:@kxswa|Level1 United States 05
+      - V113-1.2x-Seoul
+      - 🇸🇬 中转 🇸🇬 SG 8 Linode  LLC TG:@nodpai
+      - 🇭🇰 香港优选|tg频道:@ripaojiedian
+      - 🇬🇧 英国
+      - 中转 🇻🇳 VN 2 Thien Quang Digital technology joint stock company TG:@airproxies
       - V121-1.2x-Sanjose
-      - 🇬🇧 TG频道:@kxswa|英国 01 | 1x
-      - 🇰🇷 亚洲 | 韩国A
-      - 🇭🇰 香港(TG频道:@kxswa) 5
-      - 🇨🇳 中国_tg+univstar_39
+      - 🇦🇺 JCBB_ 悉尼 01【vip3】
+      - 🇦🇷 阿根廷+02
+      - 🇺🇸 TG频道:@kxswa|美国 05
+      - 距离下次重置剩余：15 天
+      - 🇺🇸 US02|美国|x1.0
+      - 🇦🇺 21 澳大利亚
+      - 尼泊尔KTM02 1.3x
+      - 🇦🇪 阿联酋+01
+      - 🇭🇰 TG频道:@kxswa|香港 | HKG [解锁] x1.2{艾可云1}
+      - 🇵🇱 波兰WAW01 1.3x
+      - 🇮🇩 印尼JAK01 1.3x
+      - 🇮🇩 ID01|印尼|SS|x1.0
+      - 🇯🇵 TG频道:@kxswa|日本 | JPN x1.0{艾可云1}
+      - 🇭🇰 亚洲 | 香港D
+      - 🇨🇳 中国_tg+univstar_13
+      - 🇨🇳 中国(TG频道:@kxswa) 4
+      - 🇸🇬 新加坡06{优化2|V2ray}
+      - 🇯🇵 日本_tg+univstar_22
+      - 🇸🇬 新加坡_tg+univstar_11
+      - 🇸🇬 新加坡专线 B
+      - 🇸🇬 TG频道:@kxswa|新加坡29
+      - 🇸🇬 新加坡1
+      - 🇨🇳 台湾 02 | 原生解锁
+      - 🇸🇬 V120-1.5x-Singapore
+      - 🇩🇪 中转 🇩🇪 DE 3 G-Core Labs S.A. TG:@nodpai
+      - 🇨🇳 中国(TG频道:@kxswa) 5
+      - 格陵兰GOH02 1.3x
+      - 🇫🇷 中转 🇫🇷 FR 1 Feelb Sarl TG:@airproxies
+      - 🇲🇽 JCBB_墨西哥01【vip3】
+      - 🇭🇰 香港专线 C
+      - 🇺🇸 JCBB_美国02【vip1】
+      - 🇯🇵 日本 04 | IPV6解锁
+      - 🇯🇵 V118-1.2x-Osaka 2
+      - 🇭🇰 香港HKG02 1.3x
+      - 🇺🇸 美国04{优化1|V2ray}
+      - 🇭🇰 香港HGC-高速中转|1x
+      - 🇯🇵 26 日本
+      - 🇭🇰 TG频道:@kxswa|香港08|高速
+      - 🇺🇸 TG频道:@kxswa|美国01 2
+      - 🇯🇵 日本_tg+univstar_28
+      - 🇵🇭 菲律宾MNL01 1.3x
+      - 🇰🇷 KR02|韩国|x1.0
+      - 🇭🇰 亚洲 | 香港B
+      - 🇭🇰 TG频道:@kxswa|香港10
+      - 🇩🇪 德国FRA01 1.3x
+      - 🇨🇳 中国_tg+univstar_9
+      - 🇨🇳 中国(TG频道:@kxswa) 6
+      - 🇬🇧 TG频道:@kxswa|英国01
+      - 🇯🇵 亚洲 | 日本C
+      - 🇫🇷 法国+01
+      - 🇯🇵 日本TOK02 1.3x
+      - 🇨🇳 台湾_tg+univstar_34
+      - 🇰🇷 韩国+02
+      - 🇨🇳 中国(TG频道:@kxswa) 7
+      - 🇸🇬 TG频道:@kxswa|新加坡19
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 19
+      - 🇰🇷 韩国快|tg频道:@ripaojiedian
+      - 🇭🇰 香港_tg+univstar_12
+      - 🇯🇵 V135-1.2x-Tokyo
+      - 🇭🇰 香港快|tg频道:@ripaojiedian
+      - 🇸🇬 TG频道:@kxswa|新加坡08|高速|流媒体解锁
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳 CN 20 → openitsub.com
-      - 🇯🇵 日本专线 A
+      - 🇲🇾 马来西亚02|优选原生IP|1x
+      - 🇮🇩 印尼JAK02 1.3x
+      - 🇸🇬 中转 🇸🇬 SG 9 Linode  LLC TG:@nodpai
+      - 🇺🇸 TG频道:@kxswa|Level1 United States 06 2
+      - 🇸🇬 V139-1.5x-Singapore
+      - 🇸🇬 中转 🇸🇬 SG 6 Linode  LLC TG:@airproxies
       - 🇨🇳 中国(TG频道:@kxswa)
-      - 🇨🇳 中转 🇹🇼 TW 1 Zenlayer Inc TG:@nodpai
-      - 🇸🇬 新加坡+02
-      - 🇭🇰 JCBB_香港04【vip1】
-      - 🇺🇸 TG频道:@kxswa|美国|AWS|2x
-      - 🇨🇳 中国(TG频道:@kxswa) 2
-      - V141-1.2x-Sanjose
-      - 🇨🇳 中转 🇹🇼 TW 7 Scloud Pte Ltd TG:@airproxies
-      - 🇺🇸 US 86 Sharktech TG:@nodpai
-      - 🇭🇰 TG频道:@kxswa|香港21
-      - 🇸🇬 新加坡+03
-      - 🇳🇱 TG频道:@kxswa|荷兰 | NLD x1.0{艾可云1}
-      - 🇨🇴 哥伦比亚BOG02 0.6x
-      - 🇸🇬 中转 🇸🇬 SG 83 Linode  LLC TG:@airproxies
-      - 🇨🇳 CN 2 → openitsub.com
-      - 🇭🇰 香港+04
-      - 🇯🇵 JP 51 Amazon Technologies Inc. TG:@airproxies
-      - 🇯🇵 TG频道:@kxswa|日本01|流媒体解锁|高速
-      - 🇭🇰 TG频道:@kxswa|香港06
-      - 前南斯拉夫SKP01 0.6x
-      - 🇨🇳 中国(TG频道:@kxswa) 3
-      - 🇨🇳 中国(TG频道:@kxswa) 4
-      - 🇸🇬 SG 13 Hurricane Electric LLC TG:@nodpai
-      - 🇨🇳 中国(TG频道:@kxswa) 5
-      - 🇸🇬 新加坡_tg+univstar_32
-      - 🇲🇾 中转 🇲🇾 MY 10 Evoxt Enterprise TG:@airproxies
-      - 🇸🇬 TG频道:@kxswa|新加坡11
-      - 🇭🇰 中转 🇭🇰 HK 69 Nexet Limited TG:@airproxies
-      - 🇯🇵 日本_tg+univstar_22
-      - 🇭🇰 香港|tg频道:@ripaojiedian
-      - 🇨🇳 CN 3 → openitsub.com
-      - 🇮🇳 TG频道:@kxswa|印度
-      - 🇩🇪 TG频道:@kxswa|德国
-      - 🇺🇸 美国SJC02 0.6x
-      - 🇭🇰 TG频道:@kxswa|香港07
-      - 🇨🇳 CN 28 → openitsub.com
-      - 🇨🇦 CA01|加拿大|SS|x1.0
-      - 🇨🇳 TG频道:@kxswa|台湾05
-      - 🇺🇸 美国+03
-      - 🇭🇰 香港+05
-      - 🇨🇳 CN 8 → openitsub.com
-      - 🇫🇷 法国+02
-      - 🇲🇳 蒙古ULN02 0.6x
-      - 🇯🇵 日本中继 C
-      - 🇨🇳 中国(TG频道:@kxswa) 6
-      - 🇩🇪 德国BER01 0.6x
-      - 🇸🇬 TG频道:@kxswa|新加坡22
-      - 🇲🇾 中转 🇲🇾 MY 1 Tmnet  Telekom Malaysia Bhd. TG:@nodpai
-      - 🇯🇵 日本1
-      - 🇸🇬 27 新加坡
-      - 🇨🇳 台湾+04
-      - 🇯🇵 TG频道:@kxswa|日本 07
-      - 🇵🇭 菲律宾MNL01 0.6x
-      - 🇭🇰 香港+01
-      - 🇰🇷 中转 🇰🇷 KR 1 Microsoft Corporation TG:@nodpai
-      - V141-1.2x-Sanjose 2
-      - 🇨🇳 台湾中继 A
-      - 🇹🇭 泰国BKK01 0.6x
-      - 🇦🇪 阿联酋+01
-      - 🇮🇳 印度01{移动|V2ray}
-      - 🇨🇳 中转 🇹🇼 TW 17 Chunghwa Telecom Co.  Ltd. TG:@airproxies
-      - V122-1.2x-Sanjose
-      - 🇸🇬 新加坡(TG频道:@kxswa)
-      - V134-1.2x-Seoul
-      - 🇭🇰 香港 02 | IPV6解锁
-      - 🇸🇬 TG频道:@kxswa|新加坡02
+      - 🇮🇳 20 印度
+      - 🇻🇳 越南HCM02 1.3x
       - 🇭🇰 香港(TG频道:@kxswa)
-      - 🇭🇰 香港(TG频道:@kxswa) 2
-      - 🇭🇰 中转 🇭🇰 HK 33 HGC Global Communications Limited TG:@airproxies
-      - 🇺🇸 美国02{优化2|V2ray}
-      - 🇯🇵 V135-1.2x-Tokyo
-      - 🇩🇪 JCBB_德国01【vip1】
-      - 🇫🇷 08 法国
-      - 🇳🇱 荷兰(TG频道:@kxswa)
-      - 🇺🇸 JCBB_美国04【vip1】
-      - 🇸🇬 中转 🇸🇬 SG 76 Linode  LLC TG:@nodpai
-      - 🇨🇦 V103-0.4x-Canada-付费推荐:dlj.tf/ssrsub
-      - 🇸🇬 新加坡07{优化2|V2ray}
-      - 🇸🇬 亚洲 | 新加坡C
-      - 🇬🇧 中转 🇬🇧 GB 4 DigitalOcean  LLC TG:@airproxies
-      - 🇭🇰 中转 🇭🇰 HK 31 HGC Global Communications Limited TG:@airproxies
-      - 🇨🇳 TG频道:@kxswa|台湾09
-      - 🇺🇸 TG频道:@kxswa|Level1 United States 01
-      - 🇨🇳 CN 14 → openitsub.com
-      - 🇨🇳 TW 29 Chunghwa Telecom Co.  Ltd. TG:@airproxies
-      - 🇭🇰 TG频道:@kxswa|香港 01
-      - 🇯🇵 18 日本
-      - 🇯🇵 中转 🇯🇵 JP 113 M247 Ltd TG:@nodpai
-      - V142-1.2x-Sanjose
-      - 🇨🇳 TW02|台湾|x1.0
-      - 🇭🇰 香港HKG02 0.6x
-      - CH 1 Green Floid LLC TG:@nodpai
-      - 🇳🇱 NL 2 LeaseWeb Netherlands B.V. TG:@airproxies
-      - 🇭🇰 TG频道:@kxswa|香港24
-      - 🇸🇬 新加坡_tg+univstar_11
-      - 🇭🇰 香港HGC
-      - 🇬🇧 英国01
-      - 🇺🇸 美国西雅图
-      - 🇭🇷 克罗地亚ZAG01 0.6x
-      - 🇯🇵 日本TOK01 0.6x
-      - 🇨🇳 中国(TG频道:@kxswa) 7
-      - 🇨🇳 中国(TG频道:@kxswa) 8
-      - 🇸🇬 中转 🇸🇬 SG 109 Linode  LLC TG:@nodpai
-      - 🇨🇦 加拿大+01
-      - 缅甸NYT02 0.6x
-      - 🇳🇱 TG频道:@kxswa|荷兰01
-      - 🇨🇳 中转 🇹🇼 TW 25 Chunghwa Telecom Co.  Ltd. TG:@nodpai
-      - 🇨🇳 TG频道:@kxswa|台湾 02 | 1x
-      - 🇭🇰 中转 🇭🇰 HK 42 PCCW IMS Limited TG:@airproxies
-      - 老挝VTE01 0.6x
-      - 🇩🇰 丹麦流媒体 x1
-      - 🇰🇷 亚洲 | 韩国B
-      - 🇨🇦 TG频道:@kxswa|加拿大
-      - 🇨🇳 中国(TG频道:@kxswa) 9
-      - 🇯🇵 TG频道:@kxswa|日本07
-      - 🇯🇵 JP02|日本|x1.0
-      - 🇨🇳 中国_tg+univstar_10
-      - 🇸🇬 TG频道:@kxswa|新加坡12
-      - 🇨🇳 中国(TG频道:@kxswa) 10
-      - 🇯🇵 日本06{优化2|V2ray}
+      - 🇸🇬 新加坡2
+      - 🇯🇵 V116-1.2x-Tokyo
+      - 🇭🇰 香港 08 | IPV6解锁
+      - 🇭🇰 HK04|香港|SS|x1.0
+      - 🇦🇷 阿根廷+01
+      - 🇨🇳 台湾 04 | 原生解锁
       - 🇭🇰 香港 09 | IPV6解锁
-      - 🇺🇸 TG频道:@kxswa|美国01
-      - 🇭🇰 TG频道:@kxswa|香港02
-      - 🇺🇸 美国(TG频道:@kxswa)
-      - 🇺🇸 US04|美国|SS|x1.0
-      - 🇯🇵 中转 🇯🇵 JP 12 Linode  LLC TG:@nodpai
-      - 乌兹别克斯坦TAS02 0.6x
-      - 🇻🇳 VN01|越南|SS|x1.0
-      - 🇸🇬 中转 🇸🇬 SG 85 Linode  LLC TG:@nodpai
-      - 🇨🇳 TG频道:@kxswa|台湾07
-      - 🇨🇳 中国(TG频道:@kxswa) 11
-      - 🇭🇰 香港专线 A
-      - 🇨🇳 CN 22 → openitsub.com
-      - 🇭🇺 HU01|匈牙利|x1.0
-      - 🇰🇷 韩国02{移动|V2ray}
-      - 🇯🇵 JP 36 Amazon Technologies Inc. TG:@nodpai
-      - 🇭🇰 香港快|tg频道:@ripaojiedian
-      - 🇵🇭 TG频道:@kxswa|菲律宾
-      - 🇭🇰 TG频道:@kxswa|香港04|高速|流媒体解锁
-      - 🇲🇳 蒙古ULN01 0.6x
-      - 🇯🇵 V117-1.2x-Osaka
-      - 🇭🇰 香港(TG频道:@kxswa) 3
-      - 🇬🇧 JCBB_英国02【vip1】
-      - 中转 🇮🇹 IT 2 Kamatera  Inc. TG:@nodpai
-      - 🇻🇳 越南HCM02 0.6x
+      - 🇲🇾 马来西亚01|优选原生IP|1x
+      - 🇨🇳 TG频道:@kxswa|台湾08
+      - 🇸🇬 新加坡04|三网优化|解锁流媒体|1x
+      - 🇭🇰 香港_tg+univstar_7
+      - 🇯🇵 中转 🇯🇵 JP 239 Linode  LLC TG:@nodpai
+      - 🇺🇸 TG频道:@kxswa|美国 09
+      - 🇬🇧 英国-Trojan
+      - 🇨🇳 台湾专线 B
+      - 🇰🇷 韩国专线 B
+      - 🇯🇵 V136-1.2x-Tokyo
+      - 🇨🇳 中国(TG频道:@kxswa) 2
+      - 🇺🇸 TG频道:@kxswa|美国 03 | 1x
+      - 🇫🇷 法国(TG频道:@kxswa)
+      - 🇸🇬 【共享奈飞】新加坡02 1.3x
+      - 🇫🇷 法国+02
+      - TG频道:@kxswa|arm3-80
+      - 🇦🇺 澳洲ADL01 1.3x
+      - 🇯🇵 日本 03 | IPV6解锁
+      - V114-1.2x-Seoul
+      - 🇯🇵 TG频道:@kxswa|日本 01
+      - 🇨🇦 TG频道:@kxswa|加拿大
+      - 🇭🇰 香港中继 A
+      - V141-1.2x-Sanjose
+      - 🇸🇬 中转 🇸🇬 SG 15 Linode  LLC TG:@nodpai
+      - 🇨🇳 中国(TG频道:@kxswa) 3
+      - 🇨🇳 中国_tg+univstar_47
+      - 🇲🇾 马来西亚KUL02 1.3x
+      - 🇬🇧 英国GLA01 1.3x
+      - 🇯🇵 TG频道:@kxswa|日本04
+      - 🇭🇰 HK 25 Microsoft Corporation TG:@nodpai
+      - 🇭🇰 TG频道:@kxswa|香港19
+      - 🇰🇷 韩国01{移动|V2ray}
+      - 🇸🇬 TG频道:@kxswa|新加坡3
       - 🇸🇬 TG频道:@kxswa|新加坡03
-      - 🇺🇸 美国 05 | IPV6解锁
-      - 🇭🇰 香港(TG频道:@kxswa) 4
-      - 🇭🇰 香港HKG05 0.6x
-      - 🇭🇰 香港-Trojan④
-      - 🇭🇰 TG频道:@kxswa|香港 10
-      - 🇭🇰 香港3|HE+HKIX Plus X2
-      - 🇸🇬 中转 🇸🇬 SG 88 Linode  LLC TG:@airproxies
-      - 尼泊尔KTM02 0.6x
-      - 🇳🇱 TG频道:@kxswa|荷兰
-      - 🇨🇳 TG频道:@kxswa|台湾|流媒体|中转|3x
+      - 🇸🇬 新加坡03{优化2|V2ray}
+      - 🇸🇬 TG频道:@kxswa|新加坡 | SGP x1.0{艾可云1}
+      - 🇨🇳 台湾TAI03 1.3x
+      - 🇯🇵 V118-1.2x-Osaka
+      - 🇯🇵 V136-1.2x-Tokyo 2
+      - 🇸🇬 TG频道:@kxswa|新加坡1
+      - 🇨🇳 CN 2 → openitsub.com
+      - 🇨🇳 中国_tg+univstar_10
+      - 🇨🇦 CA01|加拿大|x1.0
+      - 🇨🇳 TG频道:@kxswa|台湾06
+      - 🇯🇵 JP 3 Amazon Technologies Inc. TG:@nodpai
+      - 🇸🇬 V119-1.5x-Singapore
+      - 🇨🇳 中转 🇨🇳 CN 2 Shenzhen lesuyun Network Technology Co.  Ltd TG:@airproxies
+      - 🇸🇬 新加坡(TG频道:@kxswa)
+      - 🇯🇵 TG频道:@kxswa|日本01
+      - 🇺🇸 美国01{优化1|V2ray}
+      - 🇯🇵 github.com/freefq - 日本东京M247 23
+      - 🇺🇸 TG频道:@kxswa|美国01
+      - 🇺🇸 美国SEA01 1.3x
+      - 🇯🇵 日本JP|tg频道:@ripaojiedian
+      - 🇮🇷 github.com/freefq - 伊朗  24
+      - 🇺🇸 US03|美国|x1.0
+      - 🇯🇵 JCBB_日本04【vip1】
+      - 🇭🇰 TG频道:@kxswa|香港21
+      - 🇺🇸 US 13 ISPLEVEL TG:@nodpai
+      - 🇨🇳 台湾 08 | 原生解锁
+      - 🇺🇸 TG频道:@kxswa|美国 06
+      - 🇨🇳 TG频道:@kxswa|台湾01
+      - 🇳🇱 荷兰AMS02 1.3x
+      - 🇭🇰 香港HKG03 1.3x
+      - 🇰🇷 中转 🇰🇷 KR 2 Oracle Corporation TG:@airproxies
+      - 🇺🇸 TG频道:@kxswa|Level1 United States 05
+      - V113-1.2x-Seoul
+      - 🇸🇬 中转 🇸🇬 SG 8 Linode  LLC TG:@nodpai
+      - 🇭🇰 香港优选|tg频道:@ripaojiedian
+      - 🇬🇧 英国
+      - 中转 🇻🇳 VN 2 Thien Quang Digital technology joint stock company TG:@airproxies
       - V121-1.2x-Sanjose
-      - 🇬🇧 TG频道:@kxswa|英国 01 | 1x
-      - 🇰🇷 亚洲 | 韩国A
-      - 🇭🇰 香港(TG频道:@kxswa) 5
-      - 🇨🇳 中国_tg+univstar_39
+      - 🇦🇺 JCBB_ 悉尼 01【vip3】
+      - 🇦🇷 阿根廷+02
+      - 🇺🇸 TG频道:@kxswa|美国 05
+      - 距离下次重置剩余：15 天
+      - 🇺🇸 US02|美国|x1.0
+      - 🇦🇺 21 澳大利亚
+      - 尼泊尔KTM02 1.3x
+      - 🇦🇪 阿联酋+01
+      - 🇭🇰 TG频道:@kxswa|香港 | HKG [解锁] x1.2{艾可云1}
+      - 🇵🇱 波兰WAW01 1.3x
+      - 🇮🇩 印尼JAK01 1.3x
+      - 🇮🇩 ID01|印尼|SS|x1.0
+      - 🇯🇵 TG频道:@kxswa|日本 | JPN x1.0{艾可云1}
+      - 🇭🇰 亚洲 | 香港D
+      - 🇨🇳 中国_tg+univstar_13
+      - 🇨🇳 中国(TG频道:@kxswa) 4
+      - 🇸🇬 新加坡06{优化2|V2ray}
+      - 🇯🇵 日本_tg+univstar_22
+      - 🇸🇬 新加坡_tg+univstar_11
+      - 🇸🇬 新加坡专线 B
+      - 🇸🇬 TG频道:@kxswa|新加坡29
+      - 🇸🇬 新加坡1
+      - 🇨🇳 台湾 02 | 原生解锁
+      - 🇸🇬 V120-1.5x-Singapore
+      - 🇩🇪 中转 🇩🇪 DE 3 G-Core Labs S.A. TG:@nodpai
+      - 🇨🇳 中国(TG频道:@kxswa) 5
+      - 格陵兰GOH02 1.3x
+      - 🇫🇷 中转 🇫🇷 FR 1 Feelb Sarl TG:@airproxies
+      - 🇲🇽 JCBB_墨西哥01【vip3】
+      - 🇭🇰 香港专线 C
+      - 🇺🇸 JCBB_美国02【vip1】
+      - 🇯🇵 日本 04 | IPV6解锁
+      - 🇯🇵 V118-1.2x-Osaka 2
+      - 🇭🇰 香港HKG02 1.3x
+      - 🇺🇸 美国04{优化1|V2ray}
+      - 🇭🇰 香港HGC-高速中转|1x
+      - 🇯🇵 26 日本
+      - 🇭🇰 TG频道:@kxswa|香港08|高速
+      - 🇺🇸 TG频道:@kxswa|美国01 2
+      - 🇯🇵 日本_tg+univstar_28
+      - 🇵🇭 菲律宾MNL01 1.3x
+      - 🇰🇷 KR02|韩国|x1.0
+      - 🇭🇰 亚洲 | 香港B
+      - 🇭🇰 TG频道:@kxswa|香港10
+      - 🇩🇪 德国FRA01 1.3x
+      - 🇨🇳 中国_tg+univstar_9
+      - 🇨🇳 中国(TG频道:@kxswa) 6
+      - 🇬🇧 TG频道:@kxswa|英国01
+      - 🇯🇵 亚洲 | 日本C
+      - 🇫🇷 法国+01
+      - 🇯🇵 日本TOK02 1.3x
+      - 🇨🇳 台湾_tg+univstar_34
+      - 🇰🇷 韩国+02
+      - 🇨🇳 中国(TG频道:@kxswa) 7
+      - 🇸🇬 TG频道:@kxswa|新加坡19
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 19
+      - 🇰🇷 韩国快|tg频道:@ripaojiedian
+      - 🇭🇰 香港_tg+univstar_12
+      - 🇯🇵 V135-1.2x-Tokyo
+      - 🇭🇰 香港快|tg频道:@ripaojiedian
+      - 🇸🇬 TG频道:@kxswa|新加坡08|高速|流媒体解锁
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇨🇳 CN 20 → openitsub.com
-      - 🇯🇵 日本专线 A
+      - 🇲🇾 马来西亚02|优选原生IP|1x
+      - 🇮🇩 印尼JAK02 1.3x
+      - 🇸🇬 中转 🇸🇬 SG 9 Linode  LLC TG:@nodpai
+      - 🇺🇸 TG频道:@kxswa|Level1 United States 06 2
+      - 🇸🇬 V139-1.5x-Singapore
+      - 🇸🇬 中转 🇸🇬 SG 6 Linode  LLC TG:@airproxies
       - 🇨🇳 中国(TG频道:@kxswa)
-      - 🇨🇳 中转 🇹🇼 TW 1 Zenlayer Inc TG:@nodpai
-      - 🇸🇬 新加坡+02
-      - 🇭🇰 JCBB_香港04【vip1】
-      - 🇺🇸 TG频道:@kxswa|美国|AWS|2x
-      - 🇨🇳 中国(TG频道:@kxswa) 2
-      - V141-1.2x-Sanjose
-      - 🇨🇳 中转 🇹🇼 TW 7 Scloud Pte Ltd TG:@airproxies
-      - 🇺🇸 US 86 Sharktech TG:@nodpai
-      - 🇭🇰 TG频道:@kxswa|香港21
-      - 🇸🇬 新加坡+03
-      - 🇳🇱 TG频道:@kxswa|荷兰 | NLD x1.0{艾可云1}
-      - 🇨🇴 哥伦比亚BOG02 0.6x
-      - 🇸🇬 中转 🇸🇬 SG 83 Linode  LLC TG:@airproxies
-      - 🇨🇳 CN 2 → openitsub.com
-      - 🇭🇰 香港+04
-      - 🇯🇵 JP 51 Amazon Technologies Inc. TG:@airproxies
-      - 🇯🇵 TG频道:@kxswa|日本01|流媒体解锁|高速
-      - 🇭🇰 TG频道:@kxswa|香港06
-      - 前南斯拉夫SKP01 0.6x
-      - 🇨🇳 中国(TG频道:@kxswa) 3
-      - 🇨🇳 中国(TG频道:@kxswa) 4
-      - 🇸🇬 SG 13 Hurricane Electric LLC TG:@nodpai
-      - 🇨🇳 中国(TG频道:@kxswa) 5
-      - 🇸🇬 新加坡_tg+univstar_32
-      - 🇲🇾 中转 🇲🇾 MY 10 Evoxt Enterprise TG:@airproxies
-      - 🇸🇬 TG频道:@kxswa|新加坡11
-      - 🇭🇰 中转 🇭🇰 HK 69 Nexet Limited TG:@airproxies
-      - 🇯🇵 日本_tg+univstar_22
-      - 🇭🇰 香港|tg频道:@ripaojiedian
-      - 🇨🇳 CN 3 → openitsub.com
-      - 🇮🇳 TG频道:@kxswa|印度
-      - 🇩🇪 TG频道:@kxswa|德国
-      - 🇺🇸 美国SJC02 0.6x
-      - 🇭🇰 TG频道:@kxswa|香港07
-      - 🇨🇳 CN 28 → openitsub.com
-      - 🇨🇦 CA01|加拿大|SS|x1.0
-      - 🇨🇳 TG频道:@kxswa|台湾05
-      - 🇺🇸 美国+03
-      - 🇭🇰 香港+05
-      - 🇨🇳 CN 8 → openitsub.com
-      - 🇫🇷 法国+02
-      - 🇲🇳 蒙古ULN02 0.6x
-      - 🇯🇵 日本中继 C
-      - 🇨🇳 中国(TG频道:@kxswa) 6
-      - 🇩🇪 德国BER01 0.6x
-      - 🇸🇬 TG频道:@kxswa|新加坡22
-      - 🇲🇾 中转 🇲🇾 MY 1 Tmnet  Telekom Malaysia Bhd. TG:@nodpai
-      - 🇯🇵 日本1
-      - 🇸🇬 27 新加坡
-      - 🇨🇳 台湾+04
-      - 🇯🇵 TG频道:@kxswa|日本 07
-      - 🇵🇭 菲律宾MNL01 0.6x
-      - 🇭🇰 香港+01
-      - 🇰🇷 中转 🇰🇷 KR 1 Microsoft Corporation TG:@nodpai
-      - V141-1.2x-Sanjose 2
-      - 🇨🇳 台湾中继 A
-      - 🇹🇭 泰国BKK01 0.6x
-      - 🇦🇪 阿联酋+01
-      - 🇮🇳 印度01{移动|V2ray}
-      - 🇨🇳 中转 🇹🇼 TW 17 Chunghwa Telecom Co.  Ltd. TG:@airproxies
-      - V122-1.2x-Sanjose
-      - 🇸🇬 新加坡(TG频道:@kxswa)
-      - V134-1.2x-Seoul
-      - 🇭🇰 香港 02 | IPV6解锁
-      - 🇸🇬 TG频道:@kxswa|新加坡02
+      - 🇮🇳 20 印度
+      - 🇻🇳 越南HCM02 1.3x
       - 🇭🇰 香港(TG频道:@kxswa)
-      - 🇭🇰 香港(TG频道:@kxswa) 2
-      - 🇭🇰 中转 🇭🇰 HK 33 HGC Global Communications Limited TG:@airproxies
-      - 🇺🇸 美国02{优化2|V2ray}
-      - 🇯🇵 V135-1.2x-Tokyo
-      - 🇩🇪 JCBB_德国01【vip1】
-      - 🇫🇷 08 法国
-      - 🇳🇱 荷兰(TG频道:@kxswa)
-      - 🇺🇸 JCBB_美国04【vip1】
-      - 🇸🇬 中转 🇸🇬 SG 76 Linode  LLC TG:@nodpai
-      - 🇨🇦 V103-0.4x-Canada-付费推荐:dlj.tf/ssrsub
-      - 🇸🇬 新加坡07{优化2|V2ray}
-      - 🇸🇬 亚洲 | 新加坡C
-      - 🇬🇧 中转 🇬🇧 GB 4 DigitalOcean  LLC TG:@airproxies
-      - 🇭🇰 中转 🇭🇰 HK 31 HGC Global Communications Limited TG:@airproxies
-      - 🇨🇳 TG频道:@kxswa|台湾09
-      - 🇺🇸 TG频道:@kxswa|Level1 United States 01
-      - 🇨🇳 CN 14 → openitsub.com
-      - 🇨🇳 TW 29 Chunghwa Telecom Co.  Ltd. TG:@airproxies
-      - 🇭🇰 TG频道:@kxswa|香港 01
-      - 🇯🇵 18 日本
-      - 🇯🇵 中转 🇯🇵 JP 113 M247 Ltd TG:@nodpai
-      - V142-1.2x-Sanjose
-      - 🇨🇳 TW02|台湾|x1.0
-      - 🇭🇰 香港HKG02 0.6x
-      - CH 1 Green Floid LLC TG:@nodpai
-      - 🇳🇱 NL 2 LeaseWeb Netherlands B.V. TG:@airproxies
-      - 🇭🇰 TG频道:@kxswa|香港24
-      - 🇸🇬 新加坡_tg+univstar_11
-      - 🇭🇰 香港HGC
-      - 🇬🇧 英国01
-      - 🇺🇸 美国西雅图
-      - 🇭🇷 克罗地亚ZAG01 0.6x
-      - 🇯🇵 日本TOK01 0.6x
-      - 🇨🇳 中国(TG频道:@kxswa) 7
-      - 🇨🇳 中国(TG频道:@kxswa) 8
-      - 🇸🇬 中转 🇸🇬 SG 109 Linode  LLC TG:@nodpai
-      - 🇨🇦 加拿大+01
-      - 缅甸NYT02 0.6x
-      - 🇳🇱 TG频道:@kxswa|荷兰01
-      - 🇨🇳 中转 🇹🇼 TW 25 Chunghwa Telecom Co.  Ltd. TG:@nodpai
-      - 🇨🇳 TG频道:@kxswa|台湾 02 | 1x
-      - 🇭🇰 中转 🇭🇰 HK 42 PCCW IMS Limited TG:@airproxies
-      - 老挝VTE01 0.6x
-      - 🇩🇰 丹麦流媒体 x1
-      - 🇰🇷 亚洲 | 韩国B
-      - 🇨🇦 TG频道:@kxswa|加拿大
-      - 🇨🇳 中国(TG频道:@kxswa) 9
-      - 🇯🇵 TG频道:@kxswa|日本07
-      - 🇯🇵 JP02|日本|x1.0
-      - 🇨🇳 中国_tg+univstar_10
-      - 🇸🇬 TG频道:@kxswa|新加坡12
-      - 🇨🇳 中国(TG频道:@kxswa) 10
-      - 🇯🇵 日本06{优化2|V2ray}
+      - 🇸🇬 新加坡2
+      - 🇯🇵 V116-1.2x-Tokyo
+      - 🇭🇰 香港 08 | IPV6解锁
+      - 🇭🇰 HK04|香港|SS|x1.0
+      - 🇦🇷 阿根廷+01
+      - 🇨🇳 台湾 04 | 原生解锁
       - 🇭🇰 香港 09 | IPV6解锁
-      - 🇺🇸 TG频道:@kxswa|美国01
-      - 🇭🇰 TG频道:@kxswa|香港02
-      - 🇺🇸 美国(TG频道:@kxswa)
-      - 🇺🇸 US04|美国|SS|x1.0
-      - 🇯🇵 中转 🇯🇵 JP 12 Linode  LLC TG:@nodpai
-      - 乌兹别克斯坦TAS02 0.6x
-      - 🇻🇳 VN01|越南|SS|x1.0
-      - 🇸🇬 中转 🇸🇬 SG 85 Linode  LLC TG:@nodpai
-      - 🇨🇳 TG频道:@kxswa|台湾07
-      - 🇨🇳 中国(TG频道:@kxswa) 11
-      - 🇭🇰 香港专线 A
-      - 🇨🇳 CN 22 → openitsub.com
-      - 🇭🇺 HU01|匈牙利|x1.0
-      - 🇰🇷 韩国02{移动|V2ray}
-      - 🇯🇵 JP 36 Amazon Technologies Inc. TG:@nodpai
-      - 🇭🇰 香港快|tg频道:@ripaojiedian
-      - 🇵🇭 TG频道:@kxswa|菲律宾
-      - 🇭🇰 TG频道:@kxswa|香港04|高速|流媒体解锁
-      - 🇲🇳 蒙古ULN01 0.6x
-      - 🇯🇵 V117-1.2x-Osaka
-      - 🇭🇰 香港(TG频道:@kxswa) 3
-      - 🇬🇧 JCBB_英国02【vip1】
-      - 中转 🇮🇹 IT 2 Kamatera  Inc. TG:@nodpai
-      - 🇻🇳 越南HCM02 0.6x
+      - 🇲🇾 马来西亚01|优选原生IP|1x
+      - 🇨🇳 TG频道:@kxswa|台湾08
+      - 🇸🇬 新加坡04|三网优化|解锁流媒体|1x
+      - 🇭🇰 香港_tg+univstar_7
+      - 🇯🇵 中转 🇯🇵 JP 239 Linode  LLC TG:@nodpai
+      - 🇺🇸 TG频道:@kxswa|美国 09
+      - 🇬🇧 英国-Trojan
+      - 🇨🇳 台湾专线 B
+      - 🇰🇷 韩国专线 B
+      - 🇯🇵 V136-1.2x-Tokyo
+      - 🇨🇳 中国(TG频道:@kxswa) 2
+      - 🇺🇸 TG频道:@kxswa|美国 03 | 1x
+      - 🇫🇷 法国(TG频道:@kxswa)
+      - 🇸🇬 【共享奈飞】新加坡02 1.3x
+      - 🇫🇷 法国+02
+      - TG频道:@kxswa|arm3-80
+      - 🇦🇺 澳洲ADL01 1.3x
+      - 🇯🇵 日本 03 | IPV6解锁
+      - V114-1.2x-Seoul
+      - 🇯🇵 TG频道:@kxswa|日本 01
+      - 🇨🇦 TG频道:@kxswa|加拿大
+      - 🇭🇰 香港中继 A
+      - V141-1.2x-Sanjose
+      - 🇸🇬 中转 🇸🇬 SG 15 Linode  LLC TG:@nodpai
+      - 🇨🇳 中国(TG频道:@kxswa) 3
+      - 🇨🇳 中国_tg+univstar_47
+      - 🇲🇾 马来西亚KUL02 1.3x
+      - 🇬🇧 英国GLA01 1.3x
+      - 🇯🇵 TG频道:@kxswa|日本04
+      - 🇭🇰 HK 25 Microsoft Corporation TG:@nodpai
+      - 🇭🇰 TG频道:@kxswa|香港19
+      - 🇰🇷 韩国01{移动|V2ray}
+      - 🇸🇬 TG频道:@kxswa|新加坡3
       - 🇸🇬 TG频道:@kxswa|新加坡03
-      - 🇺🇸 美国 05 | IPV6解锁
-      - 🇭🇰 香港(TG频道:@kxswa) 4
-      - 🇭🇰 香港HKG05 0.6x
-      - 🇭🇰 香港-Trojan④
-      - 🇭🇰 TG频道:@kxswa|香港 10
-      - 🇭🇰 香港3|HE+HKIX Plus X2
-      - 🇸🇬 中转 🇸🇬 SG 88 Linode  LLC TG:@airproxies
-      - 尼泊尔KTM02 0.6x
-      - 🇳🇱 TG频道:@kxswa|荷兰
-      - 🇨🇳 TG频道:@kxswa|台湾|流媒体|中转|3x
+      - 🇸🇬 新加坡03{优化2|V2ray}
+      - 🇸🇬 TG频道:@kxswa|新加坡 | SGP x1.0{艾可云1}
+      - 🇨🇳 台湾TAI03 1.3x
+      - 🇯🇵 V118-1.2x-Osaka
+      - 🇯🇵 V136-1.2x-Tokyo 2
+      - 🇸🇬 TG频道:@kxswa|新加坡1
+      - 🇨🇳 CN 2 → openitsub.com
+      - 🇨🇳 中国_tg+univstar_10
+      - 🇨🇦 CA01|加拿大|x1.0
+      - 🇨🇳 TG频道:@kxswa|台湾06
+      - 🇯🇵 JP 3 Amazon Technologies Inc. TG:@nodpai
+      - 🇸🇬 V119-1.5x-Singapore
+      - 🇨🇳 中转 🇨🇳 CN 2 Shenzhen lesuyun Network Technology Co.  Ltd TG:@airproxies
+      - 🇸🇬 新加坡(TG频道:@kxswa)
+      - 🇯🇵 TG频道:@kxswa|日本01
+      - 🇺🇸 美国01{优化1|V2ray}
+      - 🇯🇵 github.com/freefq - 日本东京M247 23
+      - 🇺🇸 TG频道:@kxswa|美国01
+      - 🇺🇸 美国SEA01 1.3x
+      - 🇯🇵 日本JP|tg频道:@ripaojiedian
+      - 🇮🇷 github.com/freefq - 伊朗  24
+      - 🇺🇸 US03|美国|x1.0
+      - 🇯🇵 JCBB_日本04【vip1】
+      - 🇭🇰 TG频道:@kxswa|香港21
+      - 🇺🇸 US 13 ISPLEVEL TG:@nodpai
+      - 🇨🇳 台湾 08 | 原生解锁
+      - 🇺🇸 TG频道:@kxswa|美国 06
+      - 🇨🇳 TG频道:@kxswa|台湾01
+      - 🇳🇱 荷兰AMS02 1.3x
+      - 🇭🇰 香港HKG03 1.3x
+      - 🇰🇷 中转 🇰🇷 KR 2 Oracle Corporation TG:@airproxies
+      - 🇺🇸 TG频道:@kxswa|Level1 United States 05
+      - V113-1.2x-Seoul
+      - 🇸🇬 中转 🇸🇬 SG 8 Linode  LLC TG:@nodpai
+      - 🇭🇰 香港优选|tg频道:@ripaojiedian
+      - 🇬🇧 英国
+      - 中转 🇻🇳 VN 2 Thien Quang Digital technology joint stock company TG:@airproxies
       - V121-1.2x-Sanjose
-      - 🇬🇧 TG频道:@kxswa|英国 01 | 1x
-      - 🇰🇷 亚洲 | 韩国A
-      - 🇭🇰 香港(TG频道:@kxswa) 5
-      - 🇨🇳 中国_tg+univstar_39
+      - 🇦🇺 JCBB_ 悉尼 01【vip3】
+      - 🇦🇷 阿根廷+02
+      - 🇺🇸 TG频道:@kxswa|美国 05
+      - 距离下次重置剩余：15 天
+      - 🇺🇸 US02|美国|x1.0
+      - 🇦🇺 21 澳大利亚
+      - 尼泊尔KTM02 1.3x
+      - 🇦🇪 阿联酋+01
+      - 🇭🇰 TG频道:@kxswa|香港 | HKG [解锁] x1.2{艾可云1}
+      - 🇵🇱 波兰WAW01 1.3x
+      - 🇮🇩 印尼JAK01 1.3x
+      - 🇮🇩 ID01|印尼|SS|x1.0
+      - 🇯🇵 TG频道:@kxswa|日本 | JPN x1.0{艾可云1}
+      - 🇭🇰 亚洲 | 香港D
+      - 🇨🇳 中国_tg+univstar_13
+      - 🇨🇳 中国(TG频道:@kxswa) 4
+      - 🇸🇬 新加坡06{优化2|V2ray}
+      - 🇯🇵 日本_tg+univstar_22
+      - 🇸🇬 新加坡_tg+univstar_11
+      - 🇸🇬 新加坡专线 B
+      - 🇸🇬 TG频道:@kxswa|新加坡29
+      - 🇸🇬 新加坡1
+      - 🇨🇳 台湾 02 | 原生解锁
+      - 🇸🇬 V120-1.5x-Singapore
+      - 🇩🇪 中转 🇩🇪 DE 3 G-Core Labs S.A. TG:@nodpai
+      - 🇨🇳 中国(TG频道:@kxswa) 5
+      - 格陵兰GOH02 1.3x
+      - 🇫🇷 中转 🇫🇷 FR 1 Feelb Sarl TG:@airproxies
+      - 🇲🇽 JCBB_墨西哥01【vip3】
+      - 🇭🇰 香港专线 C
+      - 🇺🇸 JCBB_美国02【vip1】
+      - 🇯🇵 日本 04 | IPV6解锁
+      - 🇯🇵 V118-1.2x-Osaka 2
+      - 🇭🇰 香港HKG02 1.3x
+      - 🇺🇸 美国04{优化1|V2ray}
+      - 🇭🇰 香港HGC-高速中转|1x
+      - 🇯🇵 26 日本
+      - 🇭🇰 TG频道:@kxswa|香港08|高速
+      - 🇺🇸 TG频道:@kxswa|美国01 2
+      - 🇯🇵 日本_tg+univstar_28
+      - 🇵🇭 菲律宾MNL01 1.3x
+      - 🇰🇷 KR02|韩国|x1.0
+      - 🇭🇰 亚洲 | 香港B
+      - 🇭🇰 TG频道:@kxswa|香港10
+      - 🇩🇪 德国FRA01 1.3x
+      - 🇨🇳 中国_tg+univstar_9
+      - 🇨🇳 中国(TG频道:@kxswa) 6
+      - 🇬🇧 TG频道:@kxswa|英国01
+      - 🇯🇵 亚洲 | 日本C
+      - 🇫🇷 法国+01
+      - 🇯🇵 日本TOK02 1.3x
+      - 🇨🇳 台湾_tg+univstar_34
+      - 🇰🇷 韩国+02
+      - 🇨🇳 中国(TG频道:@kxswa) 7
+      - 🇸🇬 TG频道:@kxswa|新加坡19
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 19
+      - 🇰🇷 韩国快|tg频道:@ripaojiedian
+      - 🇭🇰 香港_tg+univstar_12
+      - 🇯🇵 V135-1.2x-Tokyo
+      - 🇭🇰 香港快|tg频道:@ripaojiedian
+      - 🇸🇬 TG频道:@kxswa|新加坡08|高速|流媒体解锁
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇨🇳 CN 20 → openitsub.com
-      - 🇯🇵 日本专线 A
+      - 🇲🇾 马来西亚02|优选原生IP|1x
+      - 🇮🇩 印尼JAK02 1.3x
+      - 🇸🇬 中转 🇸🇬 SG 9 Linode  LLC TG:@nodpai
+      - 🇺🇸 TG频道:@kxswa|Level1 United States 06 2
+      - 🇸🇬 V139-1.5x-Singapore
+      - 🇸🇬 中转 🇸🇬 SG 6 Linode  LLC TG:@airproxies
       - 🇨🇳 中国(TG频道:@kxswa)
-      - 🇨🇳 中转 🇹🇼 TW 1 Zenlayer Inc TG:@nodpai
-      - 🇸🇬 新加坡+02
-      - 🇭🇰 JCBB_香港04【vip1】
-      - 🇺🇸 TG频道:@kxswa|美国|AWS|2x
-      - 🇨🇳 中国(TG频道:@kxswa) 2
-      - V141-1.2x-Sanjose
-      - 🇨🇳 中转 🇹🇼 TW 7 Scloud Pte Ltd TG:@airproxies
-      - 🇺🇸 US 86 Sharktech TG:@nodpai
-      - 🇭🇰 TG频道:@kxswa|香港21
-      - 🇸🇬 新加坡+03
-      - 🇳🇱 TG频道:@kxswa|荷兰 | NLD x1.0{艾可云1}
-      - 🇨🇴 哥伦比亚BOG02 0.6x
-      - 🇸🇬 中转 🇸🇬 SG 83 Linode  LLC TG:@airproxies
-      - 🇨🇳 CN 2 → openitsub.com
-      - 🇭🇰 香港+04
-      - 🇯🇵 JP 51 Amazon Technologies Inc. TG:@airproxies
-      - 🇯🇵 TG频道:@kxswa|日本01|流媒体解锁|高速
-      - 🇭🇰 TG频道:@kxswa|香港06
-      - 前南斯拉夫SKP01 0.6x
-      - 🇨🇳 中国(TG频道:@kxswa) 3
-      - 🇨🇳 中国(TG频道:@kxswa) 4
-      - 🇸🇬 SG 13 Hurricane Electric LLC TG:@nodpai
-      - 🇨🇳 中国(TG频道:@kxswa) 5
-      - 🇸🇬 新加坡_tg+univstar_32
-      - 🇲🇾 中转 🇲🇾 MY 10 Evoxt Enterprise TG:@airproxies
-      - 🇸🇬 TG频道:@kxswa|新加坡11
-      - 🇭🇰 中转 🇭🇰 HK 69 Nexet Limited TG:@airproxies
-      - 🇯🇵 日本_tg+univstar_22
-      - 🇭🇰 香港|tg频道:@ripaojiedian
-      - 🇨🇳 CN 3 → openitsub.com
-      - 🇮🇳 TG频道:@kxswa|印度
-      - 🇩🇪 TG频道:@kxswa|德国
-      - 🇺🇸 美国SJC02 0.6x
-      - 🇭🇰 TG频道:@kxswa|香港07
-      - 🇨🇳 CN 28 → openitsub.com
-      - 🇨🇦 CA01|加拿大|SS|x1.0
-      - 🇨🇳 TG频道:@kxswa|台湾05
-      - 🇺🇸 美国+03
-      - 🇭🇰 香港+05
-      - 🇨🇳 CN 8 → openitsub.com
-      - 🇫🇷 法国+02
-      - 🇲🇳 蒙古ULN02 0.6x
-      - 🇯🇵 日本中继 C
-      - 🇨🇳 中国(TG频道:@kxswa) 6
-      - 🇩🇪 德国BER01 0.6x
-      - 🇸🇬 TG频道:@kxswa|新加坡22
-      - 🇲🇾 中转 🇲🇾 MY 1 Tmnet  Telekom Malaysia Bhd. TG:@nodpai
-      - 🇯🇵 日本1
-      - 🇸🇬 27 新加坡
-      - 🇨🇳 台湾+04
-      - 🇯🇵 TG频道:@kxswa|日本 07
-      - 🇵🇭 菲律宾MNL01 0.6x
-      - 🇭🇰 香港+01
-      - 🇰🇷 中转 🇰🇷 KR 1 Microsoft Corporation TG:@nodpai
-      - V141-1.2x-Sanjose 2
-      - 🇨🇳 台湾中继 A
-      - 🇹🇭 泰国BKK01 0.6x
-      - 🇦🇪 阿联酋+01
-      - 🇮🇳 印度01{移动|V2ray}
-      - 🇨🇳 中转 🇹🇼 TW 17 Chunghwa Telecom Co.  Ltd. TG:@airproxies
-      - V122-1.2x-Sanjose
-      - 🇸🇬 新加坡(TG频道:@kxswa)
-      - V134-1.2x-Seoul
-      - 🇭🇰 香港 02 | IPV6解锁
-      - 🇸🇬 TG频道:@kxswa|新加坡02
+      - 🇮🇳 20 印度
+      - 🇻🇳 越南HCM02 1.3x
       - 🇭🇰 香港(TG频道:@kxswa)
-      - 🇭🇰 香港(TG频道:@kxswa) 2
-      - 🇭🇰 中转 🇭🇰 HK 33 HGC Global Communications Limited TG:@airproxies
-      - 🇺🇸 美国02{优化2|V2ray}
-      - 🇯🇵 V135-1.2x-Tokyo
-      - 🇩🇪 JCBB_德国01【vip1】
-      - 🇫🇷 08 法国
-      - 🇳🇱 荷兰(TG频道:@kxswa)
-      - 🇺🇸 JCBB_美国04【vip1】
-      - 🇸🇬 中转 🇸🇬 SG 76 Linode  LLC TG:@nodpai
-      - 🇨🇦 V103-0.4x-Canada-付费推荐:dlj.tf/ssrsub
-      - 🇸🇬 新加坡07{优化2|V2ray}
-      - 🇸🇬 亚洲 | 新加坡C
-      - 🇬🇧 中转 🇬🇧 GB 4 DigitalOcean  LLC TG:@airproxies
-      - 🇭🇰 中转 🇭🇰 HK 31 HGC Global Communications Limited TG:@airproxies
-      - 🇨🇳 TG频道:@kxswa|台湾09
-      - 🇺🇸 TG频道:@kxswa|Level1 United States 01
-      - 🇨🇳 CN 14 → openitsub.com
-      - 🇨🇳 TW 29 Chunghwa Telecom Co.  Ltd. TG:@airproxies
-      - 🇭🇰 TG频道:@kxswa|香港 01
-      - 🇯🇵 18 日本
-      - 🇯🇵 中转 🇯🇵 JP 113 M247 Ltd TG:@nodpai
-      - V142-1.2x-Sanjose
-      - 🇨🇳 TW02|台湾|x1.0
-      - 🇭🇰 香港HKG02 0.6x
-      - CH 1 Green Floid LLC TG:@nodpai
-      - 🇳🇱 NL 2 LeaseWeb Netherlands B.V. TG:@airproxies
-      - 🇭🇰 TG频道:@kxswa|香港24
-      - 🇸🇬 新加坡_tg+univstar_11
-      - 🇭🇰 香港HGC
-      - 🇬🇧 英国01
-      - 🇺🇸 美国西雅图
-      - 🇭🇷 克罗地亚ZAG01 0.6x
-      - 🇯🇵 日本TOK01 0.6x
-      - 🇨🇳 中国(TG频道:@kxswa) 7
-      - 🇨🇳 中国(TG频道:@kxswa) 8
-      - 🇸🇬 中转 🇸🇬 SG 109 Linode  LLC TG:@nodpai
-      - 🇨🇦 加拿大+01
-      - 缅甸NYT02 0.6x
-      - 🇳🇱 TG频道:@kxswa|荷兰01
-      - 🇨🇳 中转 🇹🇼 TW 25 Chunghwa Telecom Co.  Ltd. TG:@nodpai
-      - 🇨🇳 TG频道:@kxswa|台湾 02 | 1x
-      - 🇭🇰 中转 🇭🇰 HK 42 PCCW IMS Limited TG:@airproxies
-      - 老挝VTE01 0.6x
-      - 🇩🇰 丹麦流媒体 x1
-      - 🇰🇷 亚洲 | 韩国B
-      - 🇨🇦 TG频道:@kxswa|加拿大
-      - 🇨🇳 中国(TG频道:@kxswa) 9
-      - 🇯🇵 TG频道:@kxswa|日本07
-      - 🇯🇵 JP02|日本|x1.0
-      - 🇨🇳 中国_tg+univstar_10
-      - 🇸🇬 TG频道:@kxswa|新加坡12
-      - 🇨🇳 中国(TG频道:@kxswa) 10
-      - 🇯🇵 日本06{优化2|V2ray}
+      - 🇸🇬 新加坡2
+      - 🇯🇵 V116-1.2x-Tokyo
+      - 🇭🇰 香港 08 | IPV6解锁
+      - 🇭🇰 HK04|香港|SS|x1.0
+      - 🇦🇷 阿根廷+01
+      - 🇨🇳 台湾 04 | 原生解锁
       - 🇭🇰 香港 09 | IPV6解锁
-      - 🇺🇸 TG频道:@kxswa|美国01
-      - 🇭🇰 TG频道:@kxswa|香港02
-      - 🇺🇸 美国(TG频道:@kxswa)
-      - 🇺🇸 US04|美国|SS|x1.0
-      - 🇯🇵 中转 🇯🇵 JP 12 Linode  LLC TG:@nodpai
-      - 乌兹别克斯坦TAS02 0.6x
-      - 🇻🇳 VN01|越南|SS|x1.0
-      - 🇸🇬 中转 🇸🇬 SG 85 Linode  LLC TG:@nodpai
-      - 🇨🇳 TG频道:@kxswa|台湾07
-      - 🇨🇳 中国(TG频道:@kxswa) 11
-      - 🇭🇰 香港专线 A
-      - 🇨🇳 CN 22 → openitsub.com
-      - 🇭🇺 HU01|匈牙利|x1.0
-      - 🇰🇷 韩国02{移动|V2ray}
-      - 🇯🇵 JP 36 Amazon Technologies Inc. TG:@nodpai
-      - 🇭🇰 香港快|tg频道:@ripaojiedian
-      - 🇵🇭 TG频道:@kxswa|菲律宾
-      - 🇭🇰 TG频道:@kxswa|香港04|高速|流媒体解锁
-      - 🇲🇳 蒙古ULN01 0.6x
-      - 🇯🇵 V117-1.2x-Osaka
-      - 🇭🇰 香港(TG频道:@kxswa) 3
-      - 🇬🇧 JCBB_英国02【vip1】
-      - 中转 🇮🇹 IT 2 Kamatera  Inc. TG:@nodpai
-      - 🇻🇳 越南HCM02 0.6x
+      - 🇲🇾 马来西亚01|优选原生IP|1x
+      - 🇨🇳 TG频道:@kxswa|台湾08
+      - 🇸🇬 新加坡04|三网优化|解锁流媒体|1x
+      - 🇭🇰 香港_tg+univstar_7
+      - 🇯🇵 中转 🇯🇵 JP 239 Linode  LLC TG:@nodpai
+      - 🇺🇸 TG频道:@kxswa|美国 09
+      - 🇬🇧 英国-Trojan
+      - 🇨🇳 台湾专线 B
+      - 🇰🇷 韩国专线 B
+      - 🇯🇵 V136-1.2x-Tokyo
+      - 🇨🇳 中国(TG频道:@kxswa) 2
+      - 🇺🇸 TG频道:@kxswa|美国 03 | 1x
+      - 🇫🇷 法国(TG频道:@kxswa)
+      - 🇸🇬 【共享奈飞】新加坡02 1.3x
+      - 🇫🇷 法国+02
+      - TG频道:@kxswa|arm3-80
+      - 🇦🇺 澳洲ADL01 1.3x
+      - 🇯🇵 日本 03 | IPV6解锁
+      - V114-1.2x-Seoul
+      - 🇯🇵 TG频道:@kxswa|日本 01
+      - 🇨🇦 TG频道:@kxswa|加拿大
+      - 🇭🇰 香港中继 A
+      - V141-1.2x-Sanjose
+      - 🇸🇬 中转 🇸🇬 SG 15 Linode  LLC TG:@nodpai
+      - 🇨🇳 中国(TG频道:@kxswa) 3
+      - 🇨🇳 中国_tg+univstar_47
+      - 🇲🇾 马来西亚KUL02 1.3x
+      - 🇬🇧 英国GLA01 1.3x
+      - 🇯🇵 TG频道:@kxswa|日本04
+      - 🇭🇰 HK 25 Microsoft Corporation TG:@nodpai
+      - 🇭🇰 TG频道:@kxswa|香港19
+      - 🇰🇷 韩国01{移动|V2ray}
+      - 🇸🇬 TG频道:@kxswa|新加坡3
       - 🇸🇬 TG频道:@kxswa|新加坡03
-      - 🇺🇸 美国 05 | IPV6解锁
-      - 🇭🇰 香港(TG频道:@kxswa) 4
-      - 🇭🇰 香港HKG05 0.6x
-      - 🇭🇰 香港-Trojan④
-      - 🇭🇰 TG频道:@kxswa|香港 10
-      - 🇭🇰 香港3|HE+HKIX Plus X2
-      - 🇸🇬 中转 🇸🇬 SG 88 Linode  LLC TG:@airproxies
-      - 尼泊尔KTM02 0.6x
-      - 🇳🇱 TG频道:@kxswa|荷兰
-      - 🇨🇳 TG频道:@kxswa|台湾|流媒体|中转|3x
+      - 🇸🇬 新加坡03{优化2|V2ray}
+      - 🇸🇬 TG频道:@kxswa|新加坡 | SGP x1.0{艾可云1}
+      - 🇨🇳 台湾TAI03 1.3x
+      - 🇯🇵 V118-1.2x-Osaka
+      - 🇯🇵 V136-1.2x-Tokyo 2
+      - 🇸🇬 TG频道:@kxswa|新加坡1
+      - 🇨🇳 CN 2 → openitsub.com
+      - 🇨🇳 中国_tg+univstar_10
+      - 🇨🇦 CA01|加拿大|x1.0
+      - 🇨🇳 TG频道:@kxswa|台湾06
+      - 🇯🇵 JP 3 Amazon Technologies Inc. TG:@nodpai
+      - 🇸🇬 V119-1.5x-Singapore
+      - 🇨🇳 中转 🇨🇳 CN 2 Shenzhen lesuyun Network Technology Co.  Ltd TG:@airproxies
+      - 🇸🇬 新加坡(TG频道:@kxswa)
+      - 🇯🇵 TG频道:@kxswa|日本01
+      - 🇺🇸 美国01{优化1|V2ray}
+      - 🇯🇵 github.com/freefq - 日本东京M247 23
+      - 🇺🇸 TG频道:@kxswa|美国01
+      - 🇺🇸 美国SEA01 1.3x
+      - 🇯🇵 日本JP|tg频道:@ripaojiedian
+      - 🇮🇷 github.com/freefq - 伊朗  24
+      - 🇺🇸 US03|美国|x1.0
+      - 🇯🇵 JCBB_日本04【vip1】
+      - 🇭🇰 TG频道:@kxswa|香港21
+      - 🇺🇸 US 13 ISPLEVEL TG:@nodpai
+      - 🇨🇳 台湾 08 | 原生解锁
+      - 🇺🇸 TG频道:@kxswa|美国 06
+      - 🇨🇳 TG频道:@kxswa|台湾01
+      - 🇳🇱 荷兰AMS02 1.3x
+      - 🇭🇰 香港HKG03 1.3x
+      - 🇰🇷 中转 🇰🇷 KR 2 Oracle Corporation TG:@airproxies
+      - 🇺🇸 TG频道:@kxswa|Level1 United States 05
+      - V113-1.2x-Seoul
+      - 🇸🇬 中转 🇸🇬 SG 8 Linode  LLC TG:@nodpai
+      - 🇭🇰 香港优选|tg频道:@ripaojiedian
+      - 🇬🇧 英国
+      - 中转 🇻🇳 VN 2 Thien Quang Digital technology joint stock company TG:@airproxies
       - V121-1.2x-Sanjose
-      - 🇬🇧 TG频道:@kxswa|英国 01 | 1x
-      - 🇰🇷 亚洲 | 韩国A
-      - 🇭🇰 香港(TG频道:@kxswa) 5
-      - 🇨🇳 中国_tg+univstar_39
+      - 🇦🇺 JCBB_ 悉尼 01【vip3】
+      - 🇦🇷 阿根廷+02
+      - 🇺🇸 TG频道:@kxswa|美国 05
+      - 距离下次重置剩余：15 天
+      - 🇺🇸 US02|美国|x1.0
+      - 🇦🇺 21 澳大利亚
+      - 尼泊尔KTM02 1.3x
+      - 🇦🇪 阿联酋+01
+      - 🇭🇰 TG频道:@kxswa|香港 | HKG [解锁] x1.2{艾可云1}
+      - 🇵🇱 波兰WAW01 1.3x
+      - 🇮🇩 印尼JAK01 1.3x
+      - 🇮🇩 ID01|印尼|SS|x1.0
+      - 🇯🇵 TG频道:@kxswa|日本 | JPN x1.0{艾可云1}
+      - 🇭🇰 亚洲 | 香港D
+      - 🇨🇳 中国_tg+univstar_13
+      - 🇨🇳 中国(TG频道:@kxswa) 4
+      - 🇸🇬 新加坡06{优化2|V2ray}
+      - 🇯🇵 日本_tg+univstar_22
+      - 🇸🇬 新加坡_tg+univstar_11
+      - 🇸🇬 新加坡专线 B
+      - 🇸🇬 TG频道:@kxswa|新加坡29
+      - 🇸🇬 新加坡1
+      - 🇨🇳 台湾 02 | 原生解锁
+      - 🇸🇬 V120-1.5x-Singapore
+      - 🇩🇪 中转 🇩🇪 DE 3 G-Core Labs S.A. TG:@nodpai
+      - 🇨🇳 中国(TG频道:@kxswa) 5
+      - 格陵兰GOH02 1.3x
+      - 🇫🇷 中转 🇫🇷 FR 1 Feelb Sarl TG:@airproxies
+      - 🇲🇽 JCBB_墨西哥01【vip3】
+      - 🇭🇰 香港专线 C
+      - 🇺🇸 JCBB_美国02【vip1】
+      - 🇯🇵 日本 04 | IPV6解锁
+      - 🇯🇵 V118-1.2x-Osaka 2
+      - 🇭🇰 香港HKG02 1.3x
+      - 🇺🇸 美国04{优化1|V2ray}
+      - 🇭🇰 香港HGC-高速中转|1x
+      - 🇯🇵 26 日本
+      - 🇭🇰 TG频道:@kxswa|香港08|高速
+      - 🇺🇸 TG频道:@kxswa|美国01 2
+      - 🇯🇵 日本_tg+univstar_28
+      - 🇵🇭 菲律宾MNL01 1.3x
+      - 🇰🇷 KR02|韩国|x1.0
+      - 🇭🇰 亚洲 | 香港B
+      - 🇭🇰 TG频道:@kxswa|香港10
+      - 🇩🇪 德国FRA01 1.3x
+      - 🇨🇳 中国_tg+univstar_9
+      - 🇨🇳 中国(TG频道:@kxswa) 6
+      - 🇬🇧 TG频道:@kxswa|英国01
+      - 🇯🇵 亚洲 | 日本C
+      - 🇫🇷 法国+01
+      - 🇯🇵 日本TOK02 1.3x
+      - 🇨🇳 台湾_tg+univstar_34
+      - 🇰🇷 韩国+02
+      - 🇨🇳 中国(TG频道:@kxswa) 7
+      - 🇸🇬 TG频道:@kxswa|新加坡19
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 19
+      - 🇰🇷 韩国快|tg频道:@ripaojiedian
+      - 🇭🇰 香港_tg+univstar_12
+      - 🇯🇵 V135-1.2x-Tokyo
+      - 🇭🇰 香港快|tg频道:@ripaojiedian
+      - 🇸🇬 TG频道:@kxswa|新加坡08|高速|流媒体解锁
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳 CN 20 → openitsub.com
-      - 🇯🇵 日本专线 A
+      - 🇲🇾 马来西亚02|优选原生IP|1x
+      - 🇮🇩 印尼JAK02 1.3x
+      - 🇸🇬 中转 🇸🇬 SG 9 Linode  LLC TG:@nodpai
+      - 🇺🇸 TG频道:@kxswa|Level1 United States 06 2
+      - 🇸🇬 V139-1.5x-Singapore
+      - 🇸🇬 中转 🇸🇬 SG 6 Linode  LLC TG:@airproxies
       - 🇨🇳 中国(TG频道:@kxswa)
-      - 🇨🇳 中转 🇹🇼 TW 1 Zenlayer Inc TG:@nodpai
-      - 🇸🇬 新加坡+02
-      - 🇭🇰 JCBB_香港04【vip1】
-      - 🇺🇸 TG频道:@kxswa|美国|AWS|2x
-      - 🇨🇳 中国(TG频道:@kxswa) 2
-      - V141-1.2x-Sanjose
-      - 🇨🇳 中转 🇹🇼 TW 7 Scloud Pte Ltd TG:@airproxies
-      - 🇺🇸 US 86 Sharktech TG:@nodpai
-      - 🇭🇰 TG频道:@kxswa|香港21
-      - 🇸🇬 新加坡+03
-      - 🇳🇱 TG频道:@kxswa|荷兰 | NLD x1.0{艾可云1}
-      - 🇨🇴 哥伦比亚BOG02 0.6x
-      - 🇸🇬 中转 🇸🇬 SG 83 Linode  LLC TG:@airproxies
-      - 🇨🇳 CN 2 → openitsub.com
-      - 🇭🇰 香港+04
-      - 🇯🇵 JP 51 Amazon Technologies Inc. TG:@airproxies
-      - 🇯🇵 TG频道:@kxswa|日本01|流媒体解锁|高速
-      - 🇭🇰 TG频道:@kxswa|香港06
-      - 前南斯拉夫SKP01 0.6x
-      - 🇨🇳 中国(TG频道:@kxswa) 3
-      - 🇨🇳 中国(TG频道:@kxswa) 4
-      - 🇸🇬 SG 13 Hurricane Electric LLC TG:@nodpai
-      - 🇨🇳 中国(TG频道:@kxswa) 5
-      - 🇸🇬 新加坡_tg+univstar_32
-      - 🇲🇾 中转 🇲🇾 MY 10 Evoxt Enterprise TG:@airproxies
-      - 🇸🇬 TG频道:@kxswa|新加坡11
-      - 🇭🇰 中转 🇭🇰 HK 69 Nexet Limited TG:@airproxies
-      - 🇯🇵 日本_tg+univstar_22
-      - 🇭🇰 香港|tg频道:@ripaojiedian
-      - 🇨🇳 CN 3 → openitsub.com
-      - 🇮🇳 TG频道:@kxswa|印度
-      - 🇩🇪 TG频道:@kxswa|德国
-      - 🇺🇸 美国SJC02 0.6x
-      - 🇭🇰 TG频道:@kxswa|香港07
-      - 🇨🇳 CN 28 → openitsub.com
-      - 🇨🇦 CA01|加拿大|SS|x1.0
-      - 🇨🇳 TG频道:@kxswa|台湾05
-      - 🇺🇸 美国+03
-      - 🇭🇰 香港+05
-      - 🇨🇳 CN 8 → openitsub.com
-      - 🇫🇷 法国+02
-      - 🇲🇳 蒙古ULN02 0.6x
-      - 🇯🇵 日本中继 C
-      - 🇨🇳 中国(TG频道:@kxswa) 6
-      - 🇩🇪 德国BER01 0.6x
-      - 🇸🇬 TG频道:@kxswa|新加坡22
-      - 🇲🇾 中转 🇲🇾 MY 1 Tmnet  Telekom Malaysia Bhd. TG:@nodpai
-      - 🇯🇵 日本1
-      - 🇸🇬 27 新加坡
-      - 🇨🇳 台湾+04
-      - 🇯🇵 TG频道:@kxswa|日本 07
-      - 🇵🇭 菲律宾MNL01 0.6x
-      - 🇭🇰 香港+01
-      - 🇰🇷 中转 🇰🇷 KR 1 Microsoft Corporation TG:@nodpai
-      - V141-1.2x-Sanjose 2
-      - 🇨🇳 台湾中继 A
-      - 🇹🇭 泰国BKK01 0.6x
-      - 🇦🇪 阿联酋+01
-      - 🇮🇳 印度01{移动|V2ray}
-      - 🇨🇳 中转 🇹🇼 TW 17 Chunghwa Telecom Co.  Ltd. TG:@airproxies
-      - V122-1.2x-Sanjose
-      - 🇸🇬 新加坡(TG频道:@kxswa)
-      - V134-1.2x-Seoul
-      - 🇭🇰 香港 02 | IPV6解锁
-      - 🇸🇬 TG频道:@kxswa|新加坡02
+      - 🇮🇳 20 印度
+      - 🇻🇳 越南HCM02 1.3x
       - 🇭🇰 香港(TG频道:@kxswa)
-      - 🇭🇰 香港(TG频道:@kxswa) 2
-      - 🇭🇰 中转 🇭🇰 HK 33 HGC Global Communications Limited TG:@airproxies
-      - 🇺🇸 美国02{优化2|V2ray}
-      - 🇯🇵 V135-1.2x-Tokyo
-      - 🇩🇪 JCBB_德国01【vip1】
-      - 🇫🇷 08 法国
-      - 🇳🇱 荷兰(TG频道:@kxswa)
-      - 🇺🇸 JCBB_美国04【vip1】
-      - 🇸🇬 中转 🇸🇬 SG 76 Linode  LLC TG:@nodpai
-      - 🇨🇦 V103-0.4x-Canada-付费推荐:dlj.tf/ssrsub
-      - 🇸🇬 新加坡07{优化2|V2ray}
-      - 🇸🇬 亚洲 | 新加坡C
-      - 🇬🇧 中转 🇬🇧 GB 4 DigitalOcean  LLC TG:@airproxies
-      - 🇭🇰 中转 🇭🇰 HK 31 HGC Global Communications Limited TG:@airproxies
-      - 🇨🇳 TG频道:@kxswa|台湾09
-      - 🇺🇸 TG频道:@kxswa|Level1 United States 01
-      - 🇨🇳 CN 14 → openitsub.com
-      - 🇨🇳 TW 29 Chunghwa Telecom Co.  Ltd. TG:@airproxies
-      - 🇭🇰 TG频道:@kxswa|香港 01
-      - 🇯🇵 18 日本
-      - 🇯🇵 中转 🇯🇵 JP 113 M247 Ltd TG:@nodpai
-      - V142-1.2x-Sanjose
-      - 🇨🇳 TW02|台湾|x1.0
-      - 🇭🇰 香港HKG02 0.6x
-      - CH 1 Green Floid LLC TG:@nodpai
-      - 🇳🇱 NL 2 LeaseWeb Netherlands B.V. TG:@airproxies
-      - 🇭🇰 TG频道:@kxswa|香港24
-      - 🇸🇬 新加坡_tg+univstar_11
-      - 🇭🇰 香港HGC
-      - 🇬🇧 英国01
-      - 🇺🇸 美国西雅图
-      - 🇭🇷 克罗地亚ZAG01 0.6x
-      - 🇯🇵 日本TOK01 0.6x
-      - 🇨🇳 中国(TG频道:@kxswa) 7
-      - 🇨🇳 中国(TG频道:@kxswa) 8
-      - 🇸🇬 中转 🇸🇬 SG 109 Linode  LLC TG:@nodpai
-      - 🇨🇦 加拿大+01
-      - 缅甸NYT02 0.6x
-      - 🇳🇱 TG频道:@kxswa|荷兰01
-      - 🇨🇳 中转 🇹🇼 TW 25 Chunghwa Telecom Co.  Ltd. TG:@nodpai
-      - 🇨🇳 TG频道:@kxswa|台湾 02 | 1x
-      - 🇭🇰 中转 🇭🇰 HK 42 PCCW IMS Limited TG:@airproxies
-      - 老挝VTE01 0.6x
-      - 🇩🇰 丹麦流媒体 x1
-      - 🇰🇷 亚洲 | 韩国B
-      - 🇨🇦 TG频道:@kxswa|加拿大
-      - 🇨🇳 中国(TG频道:@kxswa) 9
-      - 🇯🇵 TG频道:@kxswa|日本07
-      - 🇯🇵 JP02|日本|x1.0
-      - 🇨🇳 中国_tg+univstar_10
-      - 🇸🇬 TG频道:@kxswa|新加坡12
-      - 🇨🇳 中国(TG频道:@kxswa) 10
-      - 🇯🇵 日本06{优化2|V2ray}
+      - 🇸🇬 新加坡2
+      - 🇯🇵 V116-1.2x-Tokyo
+      - 🇭🇰 香港 08 | IPV6解锁
+      - 🇭🇰 HK04|香港|SS|x1.0
+      - 🇦🇷 阿根廷+01
+      - 🇨🇳 台湾 04 | 原生解锁
       - 🇭🇰 香港 09 | IPV6解锁
-      - 🇺🇸 TG频道:@kxswa|美国01
-      - 🇭🇰 TG频道:@kxswa|香港02
-      - 🇺🇸 美国(TG频道:@kxswa)
-      - 🇺🇸 US04|美国|SS|x1.0
-      - 🇯🇵 中转 🇯🇵 JP 12 Linode  LLC TG:@nodpai
-      - 乌兹别克斯坦TAS02 0.6x
-      - 🇻🇳 VN01|越南|SS|x1.0
-      - 🇸🇬 中转 🇸🇬 SG 85 Linode  LLC TG:@nodpai
-      - 🇨🇳 TG频道:@kxswa|台湾07
-      - 🇨🇳 中国(TG频道:@kxswa) 11
-      - 🇭🇰 香港专线 A
-      - 🇨🇳 CN 22 → openitsub.com
-      - 🇭🇺 HU01|匈牙利|x1.0
-      - 🇰🇷 韩国02{移动|V2ray}
-      - 🇯🇵 JP 36 Amazon Technologies Inc. TG:@nodpai
-      - 🇭🇰 香港快|tg频道:@ripaojiedian
-      - 🇵🇭 TG频道:@kxswa|菲律宾
-      - 🇭🇰 TG频道:@kxswa|香港04|高速|流媒体解锁
-      - 🇲🇳 蒙古ULN01 0.6x
-      - 🇯🇵 V117-1.2x-Osaka
-      - 🇭🇰 香港(TG频道:@kxswa) 3
-      - 🇬🇧 JCBB_英国02【vip1】
-      - 中转 🇮🇹 IT 2 Kamatera  Inc. TG:@nodpai
-      - 🇻🇳 越南HCM02 0.6x
+      - 🇲🇾 马来西亚01|优选原生IP|1x
+      - 🇨🇳 TG频道:@kxswa|台湾08
+      - 🇸🇬 新加坡04|三网优化|解锁流媒体|1x
+      - 🇭🇰 香港_tg+univstar_7
+      - 🇯🇵 中转 🇯🇵 JP 239 Linode  LLC TG:@nodpai
+      - 🇺🇸 TG频道:@kxswa|美国 09
+      - 🇬🇧 英国-Trojan
+      - 🇨🇳 台湾专线 B
+      - 🇰🇷 韩国专线 B
+      - 🇯🇵 V136-1.2x-Tokyo
+      - 🇨🇳 中国(TG频道:@kxswa) 2
+      - 🇺🇸 TG频道:@kxswa|美国 03 | 1x
+      - 🇫🇷 法国(TG频道:@kxswa)
+      - 🇸🇬 【共享奈飞】新加坡02 1.3x
+      - 🇫🇷 法国+02
+      - TG频道:@kxswa|arm3-80
+      - 🇦🇺 澳洲ADL01 1.3x
+      - 🇯🇵 日本 03 | IPV6解锁
+      - V114-1.2x-Seoul
+      - 🇯🇵 TG频道:@kxswa|日本 01
+      - 🇨🇦 TG频道:@kxswa|加拿大
+      - 🇭🇰 香港中继 A
+      - V141-1.2x-Sanjose
+      - 🇸🇬 中转 🇸🇬 SG 15 Linode  LLC TG:@nodpai
+      - 🇨🇳 中国(TG频道:@kxswa) 3
+      - 🇨🇳 中国_tg+univstar_47
+      - 🇲🇾 马来西亚KUL02 1.3x
+      - 🇬🇧 英国GLA01 1.3x
+      - 🇯🇵 TG频道:@kxswa|日本04
+      - 🇭🇰 HK 25 Microsoft Corporation TG:@nodpai
+      - 🇭🇰 TG频道:@kxswa|香港19
+      - 🇰🇷 韩国01{移动|V2ray}
+      - 🇸🇬 TG频道:@kxswa|新加坡3
       - 🇸🇬 TG频道:@kxswa|新加坡03
-      - 🇺🇸 美国 05 | IPV6解锁
-      - 🇭🇰 香港(TG频道:@kxswa) 4
-      - 🇭🇰 香港HKG05 0.6x
-      - 🇭🇰 香港-Trojan④
-      - 🇭🇰 TG频道:@kxswa|香港 10
-      - 🇭🇰 香港3|HE+HKIX Plus X2
-      - 🇸🇬 中转 🇸🇬 SG 88 Linode  LLC TG:@airproxies
-      - 尼泊尔KTM02 0.6x
-      - 🇳🇱 TG频道:@kxswa|荷兰
-      - 🇨🇳 TG频道:@kxswa|台湾|流媒体|中转|3x
+      - 🇸🇬 新加坡03{优化2|V2ray}
+      - 🇸🇬 TG频道:@kxswa|新加坡 | SGP x1.0{艾可云1}
+      - 🇨🇳 台湾TAI03 1.3x
+      - 🇯🇵 V118-1.2x-Osaka
+      - 🇯🇵 V136-1.2x-Tokyo 2
+      - 🇸🇬 TG频道:@kxswa|新加坡1
+      - 🇨🇳 CN 2 → openitsub.com
+      - 🇨🇳 中国_tg+univstar_10
+      - 🇨🇦 CA01|加拿大|x1.0
+      - 🇨🇳 TG频道:@kxswa|台湾06
+      - 🇯🇵 JP 3 Amazon Technologies Inc. TG:@nodpai
+      - 🇸🇬 V119-1.5x-Singapore
+      - 🇨🇳 中转 🇨🇳 CN 2 Shenzhen lesuyun Network Technology Co.  Ltd TG:@airproxies
+      - 🇸🇬 新加坡(TG频道:@kxswa)
+      - 🇯🇵 TG频道:@kxswa|日本01
+      - 🇺🇸 美国01{优化1|V2ray}
+      - 🇯🇵 github.com/freefq - 日本东京M247 23
+      - 🇺🇸 TG频道:@kxswa|美国01
+      - 🇺🇸 美国SEA01 1.3x
+      - 🇯🇵 日本JP|tg频道:@ripaojiedian
+      - 🇮🇷 github.com/freefq - 伊朗  24
+      - 🇺🇸 US03|美国|x1.0
+      - 🇯🇵 JCBB_日本04【vip1】
+      - 🇭🇰 TG频道:@kxswa|香港21
+      - 🇺🇸 US 13 ISPLEVEL TG:@nodpai
+      - 🇨🇳 台湾 08 | 原生解锁
+      - 🇺🇸 TG频道:@kxswa|美国 06
+      - 🇨🇳 TG频道:@kxswa|台湾01
+      - 🇳🇱 荷兰AMS02 1.3x
+      - 🇭🇰 香港HKG03 1.3x
+      - 🇰🇷 中转 🇰🇷 KR 2 Oracle Corporation TG:@airproxies
+      - 🇺🇸 TG频道:@kxswa|Level1 United States 05
+      - V113-1.2x-Seoul
+      - 🇸🇬 中转 🇸🇬 SG 8 Linode  LLC TG:@nodpai
+      - 🇭🇰 香港优选|tg频道:@ripaojiedian
+      - 🇬🇧 英国
+      - 中转 🇻🇳 VN 2 Thien Quang Digital technology joint stock company TG:@airproxies
       - V121-1.2x-Sanjose
-      - 🇬🇧 TG频道:@kxswa|英国 01 | 1x
-      - 🇰🇷 亚洲 | 韩国A
-      - 🇭🇰 香港(TG频道:@kxswa) 5
-      - 🇨🇳 中国_tg+univstar_39
+      - 🇦🇺 JCBB_ 悉尼 01【vip3】
+      - 🇦🇷 阿根廷+02
+      - 🇺🇸 TG频道:@kxswa|美国 05
+      - 距离下次重置剩余：15 天
+      - 🇺🇸 US02|美国|x1.0
+      - 🇦🇺 21 澳大利亚
+      - 尼泊尔KTM02 1.3x
+      - 🇦🇪 阿联酋+01
+      - 🇭🇰 TG频道:@kxswa|香港 | HKG [解锁] x1.2{艾可云1}
+      - 🇵🇱 波兰WAW01 1.3x
+      - 🇮🇩 印尼JAK01 1.3x
+      - 🇮🇩 ID01|印尼|SS|x1.0
+      - 🇯🇵 TG频道:@kxswa|日本 | JPN x1.0{艾可云1}
+      - 🇭🇰 亚洲 | 香港D
+      - 🇨🇳 中国_tg+univstar_13
+      - 🇨🇳 中国(TG频道:@kxswa) 4
+      - 🇸🇬 新加坡06{优化2|V2ray}
+      - 🇯🇵 日本_tg+univstar_22
+      - 🇸🇬 新加坡_tg+univstar_11
+      - 🇸🇬 新加坡专线 B
+      - 🇸🇬 TG频道:@kxswa|新加坡29
+      - 🇸🇬 新加坡1
+      - 🇨🇳 台湾 02 | 原生解锁
+      - 🇸🇬 V120-1.5x-Singapore
+      - 🇩🇪 中转 🇩🇪 DE 3 G-Core Labs S.A. TG:@nodpai
+      - 🇨🇳 中国(TG频道:@kxswa) 5
+      - 格陵兰GOH02 1.3x
+      - 🇫🇷 中转 🇫🇷 FR 1 Feelb Sarl TG:@airproxies
+      - 🇲🇽 JCBB_墨西哥01【vip3】
+      - 🇭🇰 香港专线 C
+      - 🇺🇸 JCBB_美国02【vip1】
+      - 🇯🇵 日本 04 | IPV6解锁
+      - 🇯🇵 V118-1.2x-Osaka 2
+      - 🇭🇰 香港HKG02 1.3x
+      - 🇺🇸 美国04{优化1|V2ray}
+      - 🇭🇰 香港HGC-高速中转|1x
+      - 🇯🇵 26 日本
+      - 🇭🇰 TG频道:@kxswa|香港08|高速
+      - 🇺🇸 TG频道:@kxswa|美国01 2
+      - 🇯🇵 日本_tg+univstar_28
+      - 🇵🇭 菲律宾MNL01 1.3x
+      - 🇰🇷 KR02|韩国|x1.0
+      - 🇭🇰 亚洲 | 香港B
+      - 🇭🇰 TG频道:@kxswa|香港10
+      - 🇩🇪 德国FRA01 1.3x
+      - 🇨🇳 中国_tg+univstar_9
+      - 🇨🇳 中国(TG频道:@kxswa) 6
+      - 🇬🇧 TG频道:@kxswa|英国01
+      - 🇯🇵 亚洲 | 日本C
+      - 🇫🇷 法国+01
+      - 🇯🇵 日本TOK02 1.3x
+      - 🇨🇳 台湾_tg+univstar_34
+      - 🇰🇷 韩国+02
+      - 🇨🇳 中国(TG频道:@kxswa) 7
+      - 🇸🇬 TG频道:@kxswa|新加坡19
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 19
+      - 🇰🇷 韩国快|tg频道:@ripaojiedian
+      - 🇭🇰 香港_tg+univstar_12
+      - 🇯🇵 V135-1.2x-Tokyo
+      - 🇭🇰 香港快|tg频道:@ripaojiedian
+      - 🇸🇬 TG频道:@kxswa|新加坡08|高速|流媒体解锁
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1374,169 +1267,156 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇨🇳 CN 20 → openitsub.com
-      - 🇯🇵 日本专线 A
+      - 🇲🇾 马来西亚02|优选原生IP|1x
+      - 🇮🇩 印尼JAK02 1.3x
+      - 🇸🇬 中转 🇸🇬 SG 9 Linode  LLC TG:@nodpai
+      - 🇺🇸 TG频道:@kxswa|Level1 United States 06 2
+      - 🇸🇬 V139-1.5x-Singapore
+      - 🇸🇬 中转 🇸🇬 SG 6 Linode  LLC TG:@airproxies
       - 🇨🇳 中国(TG频道:@kxswa)
-      - 🇨🇳 中转 🇹🇼 TW 1 Zenlayer Inc TG:@nodpai
-      - 🇸🇬 新加坡+02
-      - 🇭🇰 JCBB_香港04【vip1】
-      - 🇺🇸 TG频道:@kxswa|美国|AWS|2x
-      - 🇨🇳 中国(TG频道:@kxswa) 2
-      - V141-1.2x-Sanjose
-      - 🇨🇳 中转 🇹🇼 TW 7 Scloud Pte Ltd TG:@airproxies
-      - 🇺🇸 US 86 Sharktech TG:@nodpai
-      - 🇭🇰 TG频道:@kxswa|香港21
-      - 🇸🇬 新加坡+03
-      - 🇳🇱 TG频道:@kxswa|荷兰 | NLD x1.0{艾可云1}
-      - 🇨🇴 哥伦比亚BOG02 0.6x
-      - 🇸🇬 中转 🇸🇬 SG 83 Linode  LLC TG:@airproxies
-      - 🇨🇳 CN 2 → openitsub.com
-      - 🇭🇰 香港+04
-      - 🇯🇵 JP 51 Amazon Technologies Inc. TG:@airproxies
-      - 🇯🇵 TG频道:@kxswa|日本01|流媒体解锁|高速
-      - 🇭🇰 TG频道:@kxswa|香港06
-      - 前南斯拉夫SKP01 0.6x
-      - 🇨🇳 中国(TG频道:@kxswa) 3
-      - 🇨🇳 中国(TG频道:@kxswa) 4
-      - 🇸🇬 SG 13 Hurricane Electric LLC TG:@nodpai
-      - 🇨🇳 中国(TG频道:@kxswa) 5
-      - 🇸🇬 新加坡_tg+univstar_32
-      - 🇲🇾 中转 🇲🇾 MY 10 Evoxt Enterprise TG:@airproxies
-      - 🇸🇬 TG频道:@kxswa|新加坡11
-      - 🇭🇰 中转 🇭🇰 HK 69 Nexet Limited TG:@airproxies
-      - 🇯🇵 日本_tg+univstar_22
-      - 🇭🇰 香港|tg频道:@ripaojiedian
-      - 🇨🇳 CN 3 → openitsub.com
-      - 🇮🇳 TG频道:@kxswa|印度
-      - 🇩🇪 TG频道:@kxswa|德国
-      - 🇺🇸 美国SJC02 0.6x
-      - 🇭🇰 TG频道:@kxswa|香港07
-      - 🇨🇳 CN 28 → openitsub.com
-      - 🇨🇦 CA01|加拿大|SS|x1.0
-      - 🇨🇳 TG频道:@kxswa|台湾05
-      - 🇺🇸 美国+03
-      - 🇭🇰 香港+05
-      - 🇨🇳 CN 8 → openitsub.com
-      - 🇫🇷 法国+02
-      - 🇲🇳 蒙古ULN02 0.6x
-      - 🇯🇵 日本中继 C
-      - 🇨🇳 中国(TG频道:@kxswa) 6
-      - 🇩🇪 德国BER01 0.6x
-      - 🇸🇬 TG频道:@kxswa|新加坡22
-      - 🇲🇾 中转 🇲🇾 MY 1 Tmnet  Telekom Malaysia Bhd. TG:@nodpai
-      - 🇯🇵 日本1
-      - 🇸🇬 27 新加坡
-      - 🇨🇳 台湾+04
-      - 🇯🇵 TG频道:@kxswa|日本 07
-      - 🇵🇭 菲律宾MNL01 0.6x
-      - 🇭🇰 香港+01
-      - 🇰🇷 中转 🇰🇷 KR 1 Microsoft Corporation TG:@nodpai
-      - V141-1.2x-Sanjose 2
-      - 🇨🇳 台湾中继 A
-      - 🇹🇭 泰国BKK01 0.6x
-      - 🇦🇪 阿联酋+01
-      - 🇮🇳 印度01{移动|V2ray}
-      - 🇨🇳 中转 🇹🇼 TW 17 Chunghwa Telecom Co.  Ltd. TG:@airproxies
-      - V122-1.2x-Sanjose
-      - 🇸🇬 新加坡(TG频道:@kxswa)
-      - V134-1.2x-Seoul
-      - 🇭🇰 香港 02 | IPV6解锁
-      - 🇸🇬 TG频道:@kxswa|新加坡02
+      - 🇮🇳 20 印度
+      - 🇻🇳 越南HCM02 1.3x
       - 🇭🇰 香港(TG频道:@kxswa)
-      - 🇭🇰 香港(TG频道:@kxswa) 2
-      - 🇭🇰 中转 🇭🇰 HK 33 HGC Global Communications Limited TG:@airproxies
-      - 🇺🇸 美国02{优化2|V2ray}
-      - 🇯🇵 V135-1.2x-Tokyo
-      - 🇩🇪 JCBB_德国01【vip1】
-      - 🇫🇷 08 法国
-      - 🇳🇱 荷兰(TG频道:@kxswa)
-      - 🇺🇸 JCBB_美国04【vip1】
-      - 🇸🇬 中转 🇸🇬 SG 76 Linode  LLC TG:@nodpai
-      - 🇨🇦 V103-0.4x-Canada-付费推荐:dlj.tf/ssrsub
-      - 🇸🇬 新加坡07{优化2|V2ray}
-      - 🇸🇬 亚洲 | 新加坡C
-      - 🇬🇧 中转 🇬🇧 GB 4 DigitalOcean  LLC TG:@airproxies
-      - 🇭🇰 中转 🇭🇰 HK 31 HGC Global Communications Limited TG:@airproxies
-      - 🇨🇳 TG频道:@kxswa|台湾09
-      - 🇺🇸 TG频道:@kxswa|Level1 United States 01
-      - 🇨🇳 CN 14 → openitsub.com
-      - 🇨🇳 TW 29 Chunghwa Telecom Co.  Ltd. TG:@airproxies
-      - 🇭🇰 TG频道:@kxswa|香港 01
-      - 🇯🇵 18 日本
-      - 🇯🇵 中转 🇯🇵 JP 113 M247 Ltd TG:@nodpai
-      - V142-1.2x-Sanjose
-      - 🇨🇳 TW02|台湾|x1.0
-      - 🇭🇰 香港HKG02 0.6x
-      - CH 1 Green Floid LLC TG:@nodpai
-      - 🇳🇱 NL 2 LeaseWeb Netherlands B.V. TG:@airproxies
-      - 🇭🇰 TG频道:@kxswa|香港24
-      - 🇸🇬 新加坡_tg+univstar_11
-      - 🇭🇰 香港HGC
-      - 🇬🇧 英国01
-      - 🇺🇸 美国西雅图
-      - 🇭🇷 克罗地亚ZAG01 0.6x
-      - 🇯🇵 日本TOK01 0.6x
-      - 🇨🇳 中国(TG频道:@kxswa) 7
-      - 🇨🇳 中国(TG频道:@kxswa) 8
-      - 🇸🇬 中转 🇸🇬 SG 109 Linode  LLC TG:@nodpai
-      - 🇨🇦 加拿大+01
-      - 缅甸NYT02 0.6x
-      - 🇳🇱 TG频道:@kxswa|荷兰01
-      - 🇨🇳 中转 🇹🇼 TW 25 Chunghwa Telecom Co.  Ltd. TG:@nodpai
-      - 🇨🇳 TG频道:@kxswa|台湾 02 | 1x
-      - 🇭🇰 中转 🇭🇰 HK 42 PCCW IMS Limited TG:@airproxies
-      - 老挝VTE01 0.6x
-      - 🇩🇰 丹麦流媒体 x1
-      - 🇰🇷 亚洲 | 韩国B
-      - 🇨🇦 TG频道:@kxswa|加拿大
-      - 🇨🇳 中国(TG频道:@kxswa) 9
-      - 🇯🇵 TG频道:@kxswa|日本07
-      - 🇯🇵 JP02|日本|x1.0
-      - 🇨🇳 中国_tg+univstar_10
-      - 🇸🇬 TG频道:@kxswa|新加坡12
-      - 🇨🇳 中国(TG频道:@kxswa) 10
-      - 🇯🇵 日本06{优化2|V2ray}
+      - 🇸🇬 新加坡2
+      - 🇯🇵 V116-1.2x-Tokyo
+      - 🇭🇰 香港 08 | IPV6解锁
+      - 🇭🇰 HK04|香港|SS|x1.0
+      - 🇦🇷 阿根廷+01
+      - 🇨🇳 台湾 04 | 原生解锁
       - 🇭🇰 香港 09 | IPV6解锁
-      - 🇺🇸 TG频道:@kxswa|美国01
-      - 🇭🇰 TG频道:@kxswa|香港02
-      - 🇺🇸 美国(TG频道:@kxswa)
-      - 🇺🇸 US04|美国|SS|x1.0
-      - 🇯🇵 中转 🇯🇵 JP 12 Linode  LLC TG:@nodpai
-      - 乌兹别克斯坦TAS02 0.6x
-      - 🇻🇳 VN01|越南|SS|x1.0
-      - 🇸🇬 中转 🇸🇬 SG 85 Linode  LLC TG:@nodpai
-      - 🇨🇳 TG频道:@kxswa|台湾07
-      - 🇨🇳 中国(TG频道:@kxswa) 11
-      - 🇭🇰 香港专线 A
-      - 🇨🇳 CN 22 → openitsub.com
-      - 🇭🇺 HU01|匈牙利|x1.0
-      - 🇰🇷 韩国02{移动|V2ray}
-      - 🇯🇵 JP 36 Amazon Technologies Inc. TG:@nodpai
-      - 🇭🇰 香港快|tg频道:@ripaojiedian
-      - 🇵🇭 TG频道:@kxswa|菲律宾
-      - 🇭🇰 TG频道:@kxswa|香港04|高速|流媒体解锁
-      - 🇲🇳 蒙古ULN01 0.6x
-      - 🇯🇵 V117-1.2x-Osaka
-      - 🇭🇰 香港(TG频道:@kxswa) 3
-      - 🇬🇧 JCBB_英国02【vip1】
-      - 中转 🇮🇹 IT 2 Kamatera  Inc. TG:@nodpai
-      - 🇻🇳 越南HCM02 0.6x
+      - 🇲🇾 马来西亚01|优选原生IP|1x
+      - 🇨🇳 TG频道:@kxswa|台湾08
+      - 🇸🇬 新加坡04|三网优化|解锁流媒体|1x
+      - 🇭🇰 香港_tg+univstar_7
+      - 🇯🇵 中转 🇯🇵 JP 239 Linode  LLC TG:@nodpai
+      - 🇺🇸 TG频道:@kxswa|美国 09
+      - 🇬🇧 英国-Trojan
+      - 🇨🇳 台湾专线 B
+      - 🇰🇷 韩国专线 B
+      - 🇯🇵 V136-1.2x-Tokyo
+      - 🇨🇳 中国(TG频道:@kxswa) 2
+      - 🇺🇸 TG频道:@kxswa|美国 03 | 1x
+      - 🇫🇷 法国(TG频道:@kxswa)
+      - 🇸🇬 【共享奈飞】新加坡02 1.3x
+      - 🇫🇷 法国+02
+      - TG频道:@kxswa|arm3-80
+      - 🇦🇺 澳洲ADL01 1.3x
+      - 🇯🇵 日本 03 | IPV6解锁
+      - V114-1.2x-Seoul
+      - 🇯🇵 TG频道:@kxswa|日本 01
+      - 🇨🇦 TG频道:@kxswa|加拿大
+      - 🇭🇰 香港中继 A
+      - V141-1.2x-Sanjose
+      - 🇸🇬 中转 🇸🇬 SG 15 Linode  LLC TG:@nodpai
+      - 🇨🇳 中国(TG频道:@kxswa) 3
+      - 🇨🇳 中国_tg+univstar_47
+      - 🇲🇾 马来西亚KUL02 1.3x
+      - 🇬🇧 英国GLA01 1.3x
+      - 🇯🇵 TG频道:@kxswa|日本04
+      - 🇭🇰 HK 25 Microsoft Corporation TG:@nodpai
+      - 🇭🇰 TG频道:@kxswa|香港19
+      - 🇰🇷 韩国01{移动|V2ray}
+      - 🇸🇬 TG频道:@kxswa|新加坡3
       - 🇸🇬 TG频道:@kxswa|新加坡03
-      - 🇺🇸 美国 05 | IPV6解锁
-      - 🇭🇰 香港(TG频道:@kxswa) 4
-      - 🇭🇰 香港HKG05 0.6x
-      - 🇭🇰 香港-Trojan④
-      - 🇭🇰 TG频道:@kxswa|香港 10
-      - 🇭🇰 香港3|HE+HKIX Plus X2
-      - 🇸🇬 中转 🇸🇬 SG 88 Linode  LLC TG:@airproxies
-      - 尼泊尔KTM02 0.6x
-      - 🇳🇱 TG频道:@kxswa|荷兰
-      - 🇨🇳 TG频道:@kxswa|台湾|流媒体|中转|3x
+      - 🇸🇬 新加坡03{优化2|V2ray}
+      - 🇸🇬 TG频道:@kxswa|新加坡 | SGP x1.0{艾可云1}
+      - 🇨🇳 台湾TAI03 1.3x
+      - 🇯🇵 V118-1.2x-Osaka
+      - 🇯🇵 V136-1.2x-Tokyo 2
+      - 🇸🇬 TG频道:@kxswa|新加坡1
+      - 🇨🇳 CN 2 → openitsub.com
+      - 🇨🇳 中国_tg+univstar_10
+      - 🇨🇦 CA01|加拿大|x1.0
+      - 🇨🇳 TG频道:@kxswa|台湾06
+      - 🇯🇵 JP 3 Amazon Technologies Inc. TG:@nodpai
+      - 🇸🇬 V119-1.5x-Singapore
+      - 🇨🇳 中转 🇨🇳 CN 2 Shenzhen lesuyun Network Technology Co.  Ltd TG:@airproxies
+      - 🇸🇬 新加坡(TG频道:@kxswa)
+      - 🇯🇵 TG频道:@kxswa|日本01
+      - 🇺🇸 美国01{优化1|V2ray}
+      - 🇯🇵 github.com/freefq - 日本东京M247 23
+      - 🇺🇸 TG频道:@kxswa|美国01
+      - 🇺🇸 美国SEA01 1.3x
+      - 🇯🇵 日本JP|tg频道:@ripaojiedian
+      - 🇮🇷 github.com/freefq - 伊朗  24
+      - 🇺🇸 US03|美国|x1.0
+      - 🇯🇵 JCBB_日本04【vip1】
+      - 🇭🇰 TG频道:@kxswa|香港21
+      - 🇺🇸 US 13 ISPLEVEL TG:@nodpai
+      - 🇨🇳 台湾 08 | 原生解锁
+      - 🇺🇸 TG频道:@kxswa|美国 06
+      - 🇨🇳 TG频道:@kxswa|台湾01
+      - 🇳🇱 荷兰AMS02 1.3x
+      - 🇭🇰 香港HKG03 1.3x
+      - 🇰🇷 中转 🇰🇷 KR 2 Oracle Corporation TG:@airproxies
+      - 🇺🇸 TG频道:@kxswa|Level1 United States 05
+      - V113-1.2x-Seoul
+      - 🇸🇬 中转 🇸🇬 SG 8 Linode  LLC TG:@nodpai
+      - 🇭🇰 香港优选|tg频道:@ripaojiedian
+      - 🇬🇧 英国
+      - 中转 🇻🇳 VN 2 Thien Quang Digital technology joint stock company TG:@airproxies
       - V121-1.2x-Sanjose
-      - 🇬🇧 TG频道:@kxswa|英国 01 | 1x
-      - 🇰🇷 亚洲 | 韩国A
-      - 🇭🇰 香港(TG频道:@kxswa) 5
-      - 🇨🇳 中国_tg+univstar_39
+      - 🇦🇺 JCBB_ 悉尼 01【vip3】
+      - 🇦🇷 阿根廷+02
+      - 🇺🇸 TG频道:@kxswa|美国 05
+      - 距离下次重置剩余：15 天
+      - 🇺🇸 US02|美国|x1.0
+      - 🇦🇺 21 澳大利亚
+      - 尼泊尔KTM02 1.3x
+      - 🇦🇪 阿联酋+01
+      - 🇭🇰 TG频道:@kxswa|香港 | HKG [解锁] x1.2{艾可云1}
+      - 🇵🇱 波兰WAW01 1.3x
+      - 🇮🇩 印尼JAK01 1.3x
+      - 🇮🇩 ID01|印尼|SS|x1.0
+      - 🇯🇵 TG频道:@kxswa|日本 | JPN x1.0{艾可云1}
+      - 🇭🇰 亚洲 | 香港D
+      - 🇨🇳 中国_tg+univstar_13
+      - 🇨🇳 中国(TG频道:@kxswa) 4
+      - 🇸🇬 新加坡06{优化2|V2ray}
+      - 🇯🇵 日本_tg+univstar_22
+      - 🇸🇬 新加坡_tg+univstar_11
+      - 🇸🇬 新加坡专线 B
+      - 🇸🇬 TG频道:@kxswa|新加坡29
+      - 🇸🇬 新加坡1
+      - 🇨🇳 台湾 02 | 原生解锁
+      - 🇸🇬 V120-1.5x-Singapore
+      - 🇩🇪 中转 🇩🇪 DE 3 G-Core Labs S.A. TG:@nodpai
+      - 🇨🇳 中国(TG频道:@kxswa) 5
+      - 格陵兰GOH02 1.3x
+      - 🇫🇷 中转 🇫🇷 FR 1 Feelb Sarl TG:@airproxies
+      - 🇲🇽 JCBB_墨西哥01【vip3】
+      - 🇭🇰 香港专线 C
+      - 🇺🇸 JCBB_美国02【vip1】
+      - 🇯🇵 日本 04 | IPV6解锁
+      - 🇯🇵 V118-1.2x-Osaka 2
+      - 🇭🇰 香港HKG02 1.3x
+      - 🇺🇸 美国04{优化1|V2ray}
+      - 🇭🇰 香港HGC-高速中转|1x
+      - 🇯🇵 26 日本
+      - 🇭🇰 TG频道:@kxswa|香港08|高速
+      - 🇺🇸 TG频道:@kxswa|美国01 2
+      - 🇯🇵 日本_tg+univstar_28
+      - 🇵🇭 菲律宾MNL01 1.3x
+      - 🇰🇷 KR02|韩国|x1.0
+      - 🇭🇰 亚洲 | 香港B
+      - 🇭🇰 TG频道:@kxswa|香港10
+      - 🇩🇪 德国FRA01 1.3x
+      - 🇨🇳 中国_tg+univstar_9
+      - 🇨🇳 中国(TG频道:@kxswa) 6
+      - 🇬🇧 TG频道:@kxswa|英国01
+      - 🇯🇵 亚洲 | 日本C
+      - 🇫🇷 法国+01
+      - 🇯🇵 日本TOK02 1.3x
+      - 🇨🇳 台湾_tg+univstar_34
+      - 🇰🇷 韩国+02
+      - 🇨🇳 中国(TG频道:@kxswa) 7
+      - 🇸🇬 TG频道:@kxswa|新加坡19
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 19
+      - 🇰🇷 韩国快|tg频道:@ripaojiedian
+      - 🇭🇰 香港_tg+univstar_12
+      - 🇯🇵 V135-1.2x-Tokyo
+      - 🇭🇰 香港快|tg频道:@ripaojiedian
+      - 🇸🇬 TG频道:@kxswa|新加坡08|高速|流媒体解锁
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
