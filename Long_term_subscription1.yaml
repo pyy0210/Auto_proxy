@@ -5,549 +5,565 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇯🇵 日本21, server: jp21.czs1000.com, port: 443, type: trojan, password: 3e7ad1c7-c9cf-414f-8318-d7d8dd8d9798, sni: 13-251-128-188.nhost.00cdn.com, skip-cert-verify: false, udp: true}
-  - {name: 🇮🇳 V5-印度01, server: in01-vm5.entry.hsrtd.club, port: 17556, type: vmess, uuid: 98a03ddc-80d5-3179-af9d-97a64dcd8835, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /tutorial/iphone13.m3u8, headers: {Host: bgp-01-12.entry-0.chinasnow.net}}, udp: true}
-  - {name: 🇺🇸 TG频道@kxswa|美国 | 倍率 x1, server: dnslinehz.agentlink.cc, port: 21015, type: trojan, password: d5bf689d-d1de-4f9b-a524-6925c3ed4c71, sni: link.koiuqmdc.com, skip-cert-verify: false, udp: true}
-  - {name: 凌云网络 www.ly520.me, server: 11.4.5.14, port: 19266, type: vmess, uuid: 9f591d6a-62cd-4d68-a207-0ba1a2eb7190, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇮🇸 TG频道@kxswa|冰岛RKV01 1.3x, server: cc-iepl.244312.xyz, port: 54150, type: ss, cipher: chacha20-ietf-poly1305, password: 17a3ea1d-f40d-4315-9996-b0597d7744ce, udp: true}
-  - {name: TG频道@kxswa|乌克兰IEV01 1.3x, server: cc-iepl.244312.xyz, port: 54139, type: ss, cipher: aes-128-gcm, password: 17a3ea1d-f40d-4315-9996-b0597d7744ce, udp: true}
-  - {name: 🇸🇬 【V3】新加坡·1Gbps | 6, server: sg6.hgwc.xyz, port: 101, type: trojan, password: 4753033a-3779-4459-adf7-88970190c90a, skip-cert-verify: false, udp: true}
-  - {name: TG频道@kxswa|格陵兰GOH02 1.3x, server: ll-iepl.244312.xyz, port: 54154, type: ss, cipher: chacha20-ietf-poly1305, password: 17a3ea1d-f40d-4315-9996-b0597d7744ce, udp: true}
-  - {name: 🇺🇸 TG频道@kxswa|美国LA-优化, server: yes.iamagoodman.net, port: 16648, type: vmess, uuid: 5a035db3-34ea-48ca-9aa2-72c8229e1532, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: yes.iamagoodman.net}}, udp: true}
-  - {name: 🇯🇵 V5-日本6-下载专用, server: jp06-vm5.entry.rtysjur.quest, port: 668, type: vmess, uuid: 98a03ddc-80d5-3179-af9d-97a64dcd8835, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: assets.xboxlive.com}}, udp: true}
-  - {name: 【提示】以下为流媒体解锁线路, server: v2.lu, port: 443, type: vmess, uuid: 4753033a-3779-4459-adf7-88970190c90a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: v2.lu}}, udp: true}
-  - {name: 🇦🇺 TG频道@kxswa|澳洲ADL02 1.3x, server: ll-iepl.244312.xyz, port: 54118, type: ss, cipher: aes-128-gcm, password: 17a3ea1d-f40d-4315-9996-b0597d7744ce, udp: true}
-  - {name: 🇭🇰 V5-香港9, server: hk09-vm5.entry.hsrtd.club, port: 457, type: vmess, uuid: 98a03ddc-80d5-3179-af9d-97a64dcd8835, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: bgp-01-09.entry-0.chinasnow.net}}, udp: true}
-  - {name: 🇦🇺 TG频道@kxswa|澳大利亚-优化2, server: m.lwvzmdu.cn, port: 16638, type: vmess, uuid: 5a035db3-34ea-48ca-9aa2-72c8229e1532, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /mjp, headers: {Host: pull.free.video.10010.com}}, udp: true}
-  - {name: 🇯🇵 TG频道@kxswa|日本TOK01 1.3x, server: cc-iepl.244312.xyz, port: 54104, type: ss, cipher: aes-128-gcm, password: 17a3ea1d-f40d-4315-9996-b0597d7744ce, udp: true}
-  - {name: 🇭🇰 加拿大02|海港, server: 110.80.3.34, port: 42137, type: vmess, uuid: ce171a2f-ad35-43b1-8262-e2d02291db9b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇷🇺 V5-俄罗斯, server: ru01-vm5.entry.hsrtd.club, port: 455, type: vmess, uuid: 98a03ddc-80d5-3179-af9d-97a64dcd8835, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: bgp-05-01.entry-0.chinasnow.net}}, udp: true}
-  - {name: 🇨🇭 TG频道@kxswa|瑞士-优化2, server: m.lwvzmdu.cn, port: 16633, type: vmess, uuid: 5a035db3-34ea-48ca-9aa2-72c8229e1532, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: m.lwvzmdu.cn}}, udp: true}
-  - {name: 🇲🇾 TG频道@kxswa|马来西亚KUL02 1.3x, server: ll-iepl.244312.xyz, port: 54112, type: ss, cipher: aes-128-gcm, password: 17a3ea1d-f40d-4315-9996-b0597d7744ce, udp: true}
-  - {name: 🇯🇵 日本04|高速, server: jp4.czs1000.com, port: 4104, type: vmess, uuid: 2b4d9c9f-f0f7-4e94-bade-befb800a9cfd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: jp4.czs1000.com, udp: true}
-  - {name: 🇭🇰 香港02|高速|流媒体解锁, server: hk2.czs1000.com, port: 3885, type: vmess, uuid: 2b4d9c9f-f0f7-4e94-bade-befb800a9cfd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: hk2.czs1000.com, udp: true}
-  - {name: 🇳🇱 TG频道@kxswa|荷兰-优化3, server: t.cccao.cyou, port: 16642, type: vmess, uuid: 5a035db3-34ea-48ca-9aa2-72c8229e1532, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: t.cccao.cyou}}, udp: true}
-  - {name: 🇦🇺 TG频道@kxswa|澳洲BNE02 1.3x, server: ll-iepl.244312.xyz, port: 54802, type: ss, cipher: chacha20-ietf-poly1305, password: 17a3ea1d-f40d-4315-9996-b0597d7744ce, udp: true}
-  - {name: 🇺🇸 TG频道@kxswa|美国 | 倍率 x1 2, server: dnslinehz.agentlink.cc, port: 21017, type: trojan, password: d5bf689d-d1de-4f9b-a524-6925c3ed4c71, sni: link.koiuqmdc.com, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港高速专线v2, server: 20.189.76.88, port: 10021, type: vmess, uuid: 3574b424-e1cf-4e22-a346-d798b18fb6db, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: cctv13/hdd.m3u8, headers: {Host: 20.189.76.88:49}}, udp: true}
-  - {name: 🇮🇳 IN-01 | 1.5x, server: in-01.lynet.works, port: 8080, type: vmess, uuid: 9f591d6a-62cd-4d68-a207-0ba1a2eb7190, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: in-01.lynet.works}}, udp: true}
-  - {name: 🇸🇬 【V3】新加坡·1Gbps | 3, server: sg3.hgwc.xyz, port: 101, type: vmess, uuid: 4753033a-3779-4459-adf7-88970190c90a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sg3.hgwc.xyz}}, udp: true}
-  - {name: 🇰🇷 V5-韩国 无可用性保障, server: kr01-vm5.entry.hsrtd.club, port: 454, type: vmess, uuid: 98a03ddc-80d5-3179-af9d-97a64dcd8835, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: bgp-04-01.entry-0.chinasnow.net}}, udp: true}
-  - {name: 🇨🇳 【V3】台湾·350Mbps | 解锁SG, server: zf.622888.xyz, port: 203, type: vmess, uuid: 4753033a-3779-4459-adf7-88970190c90a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: zf.622888.xyz}}, udp: true}
-  - {name: TG频道@kxswa|斯里兰卡CMB02 1.3x, server: ll-iepl.244312.xyz, port: 54115, type: ss, cipher: chacha20-ietf-poly1305, password: 17a3ea1d-f40d-4315-9996-b0597d7744ce, udp: true}
-  - {name: 🇯🇵 日本23, server: jp23.czs1000.com, port: 443, type: trojan, password: 3e7ad1c7-c9cf-414f-8318-d7d8dd8d9798, sni: 13-251-128-188.nhost.00cdn.com, skip-cert-verify: false, udp: true}
-  - {name: 🇬🇧 TG频道@kxswa|UK英国001, server: uk.stablize.top, port: 443, type: trojan, password: 8e3fdb7d-401d-42a4-92f2-b12fb805cd0f, skip-cert-verify: false, udp: true}
+  - {name: 🇰🇷 韩国04, server: kr4.czs1000.com, port: 6687, type: vmess, uuid: ff4c12a3-5f7a-4d25-99a3-b76bcc0bd4f4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: kr4.czs1000.com, udp: true}
+  - {name: 🇰🇷 韩国 01 | 1x | tr, server: kr-01-tr.yhyun.top, port: 29579, type: trojan, password: 0c470c94-a8e6-4b11-9fb7-0455179d7746, sni: kr-01-tr.yhyun.top, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 新加坡10|高速, server: sg10.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.czs1000.com, port: 4104, type: vmess, uuid: ff4c12a3-5f7a-4d25-99a3-b76bcc0bd4f4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: tls.czs1000.com, udp: true}
+  - {name: 🇸🇬 【V3】新加坡·1Gbps | 4, server: sg4.hgwc.xyz, port: 101, type: vmess, uuid: 4753033a-3779-4459-adf7-88970190c90a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sg4.hgwc.xyz}}, udp: true}
+  - {name: 🇯🇵 TG频道@kxswa|尼日利亚-优化, server: yes.iamagoodman.net, port: 16639, type: vmess, uuid: 5a035db3-34ea-48ca-9aa2-72c8229e1532, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: yes.iamagoodman.net}}, udp: true}
+  - {name: 🇺🇸 美国公益节点|限速, server: usgy1.czs1000.com, port: 4108, type: vmess, uuid: ff4c12a3-5f7a-4d25-99a3-b76bcc0bd4f4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: usgy1.czs1000.com, udp: true}
   - {name: 🇸🇬 TG频道@kxswa|TLS - VIP Singapore 01 🇸🇬 - Nền Liên Quân, server: sg1.safepn.net, port: 443, type: vmess, uuid: ee76cecf-1219-42be-ae3f-6b8077e4cacc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sg1.safepn.net}}, udp: true}
-  - {name: 🇮🇩 TG频道@kxswa|印尼JAK01 1.3x, server: cc-iepl.244312.xyz, port: 54117, type: ss, cipher: aes-128-gcm, password: 17a3ea1d-f40d-4315-9996-b0597d7744ce, udp: true}
-  - {name: 🇲🇾 TG频道@kxswa|马来西亚-优化2, server: m.lwvzmdu.cn, port: 26623, type: vmess, uuid: 5a035db3-34ea-48ca-9aa2-72c8229e1532, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: m.lwvzmdu.cn}}, udp: true}
-  - {name: 🇺🇸 V5-美国1, server: us01-vm5.entry.hsrtd.club, port: 469, type: vmess, uuid: 98a03ddc-80d5-3179-af9d-97a64dcd8835, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: bgp-09-01.entry-0.chinasnow.net}}, udp: true}
-  - {name: 🇬🇧 V5-英国, server: uk01-vm5.entry.hsrtd.club, port: 467, type: vmess, uuid: 98a03ddc-80d5-3179-af9d-97a64dcd8835, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: bgp-07-01.entry-0.chinasnow.net}}, udp: true}
-  - {name: TG频道@kxswa|VIP Ho Chi Minh 03 🇻🇳 - Nền Liên Quân, server: hcm3.safepn.net, port: 80, type: vmess, uuid: ee76cecf-1219-42be-ae3f-6b8077e4cacc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: dl.ops.kgvn.garenanow.com}}, udp: true}
-  - {name: 🇭🇰 【V3】香港·1Gbps | HKT, server: hkt.hgwc.xyz, port: 101, type: vmess, uuid: 4753033a-3779-4459-adf7-88970190c90a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hkt.hgwc.xyz}}, udp: true}
-  - {name: 🇭🇰 TG频道@kxswa|香港HKT-优化, server: yes.iamagoodman.net, port: 16620, type: vmess, uuid: 5a035db3-34ea-48ca-9aa2-72c8229e1532, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: yes.iamagoodman.net}}, udp: true}
-  - {name: 🇵🇱 TG频道@kxswa|波兰WAW02 1.3x, server: ll-iepl.244312.xyz, port: 54124, type: ss, cipher: aes-128-gcm, password: 17a3ea1d-f40d-4315-9996-b0597d7744ce, udp: true}
-  - {name: TG频道@kxswa|前南斯拉夫SKP02 1.3x, server: ll-iepl.244312.xyz, port: 54143, type: ss, cipher: chacha20-ietf-poly1305, password: 17a3ea1d-f40d-4315-9996-b0597d7744ce, udp: true}
-  - {name: 🇭🇰 TG频道@kxswa|HongKong 01 🇭🇰 - Nền Liên Quân, server: hk1.safepn.net, port: 80, type: vmess, uuid: ee76cecf-1219-42be-ae3f-6b8077e4cacc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: dl.ops.kgvn.garenanow.com}}, udp: true}
-  - {name: 🇸🇬 TG频道@kxswa|VIP SGP 01 🇸🇬 - Nền Liên Quân, server: 146.190.82.241, port: 80, type: vmess, uuid: ee76cecf-1219-42be-ae3f-6b8077e4cacc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: dl.ops.kgvn.garenanow.com}}, udp: true}
-  - {name: 🇨🇦 TG频道@kxswa|CA加拿大001, server: ca.stablize.top, port: 443, type: trojan, password: 8e3fdb7d-401d-42a4-92f2-b12fb805cd0f, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 V5-香港3, server: hk03-vm5.entry.hsrtd.club, port: 452, type: vmess, uuid: 98a03ddc-80d5-3179-af9d-97a64dcd8835, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: bgp-01-03.entry-0.chinasnow.net}}, udp: true}
-  - {name: 🇭🇰 TG频道@kxswa|香港Az-优化3, server: t.cccao.cyou, port: 16627, type: vmess, uuid: 5a035db3-34ea-48ca-9aa2-72c8229e1532, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: t.cccao.cyou}}, udp: true}
-  - {name: 🇫🇮 TG频道@kxswa|芬兰, server: 37.143.129.238, port: 6616, type: vmess, uuid: 5a035db3-34ea-48ca-9aa2-72c8229e1532, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 37.143.129.238}}, udp: true}
-  - {name: 🇬🇧 英国v6服务器 移动优化, server: 104.17.191.85, port: 8080, type: vmess, uuid: e3dba91f-b31c-473a-8f17-92e1dedda38f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: uk.jiedian01.cf}}, udp: true}
-  - {name: 🇲🇽 TG频道@kxswa|墨西哥-优化3, server: t.cccao.cyou, port: 16636, type: vmess, uuid: 5a035db3-34ea-48ca-9aa2-72c8229e1532, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: t.cccao.cyou}}, udp: true}
+  - {name: 🇭🇰 免费|香港|解锁|x1.0x速, server: free-hk.clientsconnect.live, port: 10086, type: vmess, uuid: 975dbe64-524e-455f-af56-531356b8fc8b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /yuefei, headers: {Host: free-hk.clientsconnect.live}}, udp: true}
+  - {name: 🇩🇪 TG频道@kxswa|DE德国003, server: de.stablize.top, port: 443, type: trojan, password: 8e3fdb7d-401d-42a4-92f2-b12fb805cd0f, skip-cert-verify: false, udp: true}
+  - {name: TG频道@kxswa|Ha Noi 02 🇻🇳 - Nền TikTok, server: hn2.safepn.net, port: 80, type: vmess, uuid: ee76cecf-1219-42be-ae3f-6b8077e4cacc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: m.tiktok.com}}, udp: true}
+  - {name: 🇯🇵 日本 01 | 1x | tr, server: jp-01-tr.yhyun.top, port: 37014, type: trojan, password: 7890f38f-5ec3-49ac-8509-611a70673b48, sni: jp-01-tr.yhyun.top, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 ④香港|优选|1x, server: ka.funkyun.tk, port: 443, type: vmess, uuid: dd3a867d-b0d8-493d-98f1-55778e5e84da, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: ka.funkyun.tk, network: grpc, grpc-opts: {grpc-service-name: funkyun}, udp: true}
+  - {name: 🇵🇱 TG频道@kxswa|波兰, server: 77.91.102.79, port: 6616, type: vmess, uuid: 5a035db3-34ea-48ca-9aa2-72c8229e1532, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 77.91.102.79}}, udp: true}
+  - {name: 🇭🇰 香港高速专线v2, server: 20.189.76.88, port: 10021, type: vmess, uuid: eff51229-6034-42f3-8d0d-22504a1fea08, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: cctv13/hdd.m3u8, headers: {Host: 20.189.76.88:49}}, udp: true}
+  - {name: 🇭🇰 TG频道:@kxswa|香港01, server: in.hk.xfltd.top, port: 17101, type: ss, cipher: chacha20-ietf-poly1305, password: 1a7cf33f-87e5-46c6-95b0-12372644cf90, udp: true}
+  - {name: 🇨🇳 台湾 01 | 流媒体 | 1.5x | ss, server: nodes-tw.yhyun.top, port: 30673, type: ss, cipher: chacha20-ietf-poly1305, password: 7890f38f-5ec3-49ac-8509-611a70673b48, udp: true}
+  - {name: 🇭🇰 香港 01 | 1x | tr, server: hk-01-tr.yhyun.top, port: 59746, type: trojan, password: 0c470c94-a8e6-4b11-9fb7-0455179d7746, sni: hk-01-tr.yhyun.top, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 日本 03 | 1x | tr, server: jp-03-tr.yhyun.top, port: 37062, type: trojan, password: 0c470c94-a8e6-4b11-9fb7-0455179d7746, sni: jp-03-tr.yhyun.top, skip-cert-verify: false, udp: true}
+  - {name: 🇮🇳 IN-01 | 1.5x, server: in-01.lynet.works, port: 8080, type: vmess, uuid: 23949017-ba01-44a8-8ae3-3e8b3480429b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: in-01.lynet.works}}, udp: true}
+  - {name: 🇬🇧 TG频道@kxswa|UK英国001, server: uk.stablize.top, port: 443, type: trojan, password: 8e3fdb7d-401d-42a4-92f2-b12fb805cd0f, skip-cert-verify: false, udp: true}
+  - {name: 🇦🇺 V5-澳大利亚1, server: au01-vm5.entry.hsrtd.club, port: 16458, type: vmess, uuid: 98a03ddc-80d5-3179-af9d-97a64dcd8835, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /tutorial/iphone13.m3u8, headers: {Host: bgp-01-12.entry-0.chinasnow.net}}, udp: true}
+  - {name: TG频道@kxswa|VIP HCM 03 🇻🇳 - Nền Liên Quân, server: 42.96.3.193, port: 80, type: vmess, uuid: ee76cecf-1219-42be-ae3f-6b8077e4cacc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: dl.ops.kgvn.garenanow.com}}, udp: true}
+  - {name: 🇸🇬 TG频道@kxswa|新加坡SG-T, server: sg.mjt001.com, port: 443, type: trojan, password: 5a035db3-34ea-48ca-9aa2-72c8229e1532, sni: sg.mjt001.com, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 ①新加坡|优选|1x|奈飞, server: cf.funkyun.ml, port: 443, type: vmess, uuid: dd3a867d-b0d8-493d-98f1-55778e5e84da, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: cf.funkyun.ml, network: grpc, grpc-opts: {grpc-service-name: funkyun}, udp: true}
+  - {name: 🇭🇰 香港 01 | 流媒体 | 1.5x | ss, server: nodes-hk.yhyun.top, port: 42565, type: ss, cipher: chacha20-ietf-poly1305, password: 7890f38f-5ec3-49ac-8509-611a70673b48, udp: true}
+  - {name: 🇰🇭 TG频道@kxswa|柬埔寨KH-T, server: kh.mjt001.com, port: 443, type: trojan, password: 5a035db3-34ea-48ca-9aa2-72c8229e1532, sni: kh.mjt001.com, skip-cert-verify: false, udp: true}
+  - {name: 🇵🇹 TG频道@kxswa|葡萄牙-优化2, server: m.lwvzmdu.cn, port: 16624, type: vmess, uuid: 5a035db3-34ea-48ca-9aa2-72c8229e1532, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: m.lwvzmdu.cn}}, udp: true}
+  - {name: 🇵🇹 TG频道@kxswa|葡萄牙-优化3, server: t.cccao.cyou, port: 16624, type: vmess, uuid: 5a035db3-34ea-48ca-9aa2-72c8229e1532, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: t.cccao.cyou}}, udp: true}
+  - {name: 🇨🇭 TG频道@kxswa|瑞士-优化2, server: m.lwvzmdu.cn, port: 16633, type: vmess, uuid: 5a035db3-34ea-48ca-9aa2-72c8229e1532, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: m.lwvzmdu.cn}}, udp: true}
+  - {name: 🇭🇰 TG频道@kxswa|TLS - HongKong 01 🇭🇰 - Nền Liên Quân, server: hk1.safepn.net, port: 443, type: vmess, uuid: ee76cecf-1219-42be-ae3f-6b8077e4cacc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hk1.safepn.net}}, udp: true}
+  - {name: 🇨🇳 台湾07, server: tw7.czs1000.com, port: 1001, type: vmess, uuid: 31a67010-9b90-4207-8bd2-5eaa6dcefab3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: tw7.czs1000.com, udp: true}
+  - {name: 🇯🇵 TG频道@kxswa|JP日本002, server: jp.stablize.top, port: 443, type: trojan, password: 8e3fdb7d-401d-42a4-92f2-b12fb805cd0f, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港 02 | 流媒体 | 1.5x | ss, server: nodes-hk.yhyun.top, port: 21317, type: ss, cipher: chacha20-ietf-poly1305, password: 7890f38f-5ec3-49ac-8509-611a70673b48, udp: true}
+  - {name: 🇯🇵 【V3】东京·1Gbps | 2, server: jp2.hgwc.xyz, port: 101, type: vmess, uuid: 4753033a-3779-4459-adf7-88970190c90a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jp2.hgwc.xyz}}, udp: true}
+  - {name: 🇸🇬 TG频道:@kxswa|新加坡07, server: in.sg.xfltd.top, port: 38407, type: ss, cipher: chacha20-ietf-poly1305, password: 1a7cf33f-87e5-46c6-95b0-12372644cf90, udp: true}
+  - {name: 🇸🇬 TG频道@kxswa|VIP SGP 02 🇸🇬 - Nền Liên Quân, server: 128.199.86.221, port: 80, type: vmess, uuid: ee76cecf-1219-42be-ae3f-6b8077e4cacc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: dl.ops.kgvn.garenanow.com}}, udp: true}
+  - {name: 🇹🇷 TG频道@kxswa|土耳其TR-T, server: tr.mjt001.com, port: 443, type: trojan, password: 5a035db3-34ea-48ca-9aa2-72c8229e1532, sni: tr.mjt001.com, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港03|流媒体|新加坡, server: hk3.czs1000.com, port: 3885, type: vmess, uuid: 31a67010-9b90-4207-8bd2-5eaa6dcefab3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: hk3.czs1000.com, udp: true}
+  - {name: 🇯🇵 日本22, server: jp22.czs1000.com, port: 443, type: trojan, password: 31a67010-9b90-4207-8bd2-5eaa6dcefab3, sni: 13-251-128-188.nhost.00cdn.com, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 美国 02 | 流媒体 | 1.2x | ss, server: nodes-us.yhyun.top, port: 24575, type: ss, cipher: chacha20-ietf-poly1305, password: 0c470c94-a8e6-4b11-9fb7-0455179d7746, udp: true}
+  - {name: 🇭🇰 TG频道:@kxswa|香港07, server: in.hk.xfltd.top, port: 17107, type: ss, cipher: chacha20-ietf-poly1305, password: 1a7cf33f-87e5-46c6-95b0-12372644cf90, udp: true}
+  - {name: 🇰🇷 韩国05|高速, server: kr5.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.czs1000.com, port: 4101, type: vmess, uuid: ff4c12a3-5f7a-4d25-99a3-b76bcc0bd4f4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: kr5.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.czs1000.com, udp: true}
+  - {name: TG频道@kxswa|VIP Ha Noi 04 🇻🇳 - Nền Liên Quân, server: hn4.safepn.net, port: 80, type: vmess, uuid: ee76cecf-1219-42be-ae3f-6b8077e4cacc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: dl.ops.kgvn.garenanow.com}}, udp: true}
+  - {name: 距离下次重置剩余：1 天, server: 1.0.0.0, port: 443, type: vmess, uuid: dd3a867d-b0d8-493d-98f1-55778e5e84da, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 距离下次重置剩余：1 天 2, server: nodes-hk.yhyun.top, port: 42565, type: ss, cipher: chacha20-ietf-poly1305, password: 7890f38f-5ec3-49ac-8509-611a70673b48, udp: true}
+  - {name: 🇨🇳 台湾02, server: tw2.czs1000.com, port: 1001, type: vmess, uuid: 31a67010-9b90-4207-8bd2-5eaa6dcefab3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: tw2.czs1000.com, udp: true}
+  - {name: 🇰🇷 韩国 03 | 1x | tr, server: kr-03-tr.yhyun.top, port: 21683, type: trojan, password: 7890f38f-5ec3-49ac-8509-611a70673b48, sni: kr-03-tr.656686.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 英国02|北港, server: ahyd.pangupy.com, port: 39393, type: vmess, uuid: ce171a2f-ad35-43b1-8262-e2d02291db9b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 TG频道@kxswa|台湾-优化2, server: m.lwvzmdu.cn, port: 16616, type: vmess, uuid: 5a035db3-34ea-48ca-9aa2-72c8229e1532, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: m.lwvzmdu.cn}}, udp: true}
+  - {name: 🇨🇦 TG频道:@kxswa|加拿大多伦多, server: in.us.xfltd.top, port: 37001, type: ss, cipher: chacha20-ietf-poly1305, password: 1a7cf33f-87e5-46c6-95b0-12372644cf90, udp: true}
+  - {name: 🇨🇦 V5-加拿大1, server: ca01-vm5.entry.hsrtd.club, port: 12113, type: vmess, uuid: 98a03ddc-80d5-3179-af9d-97a64dcd8835, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /tutorial/iphone13.m3u8, headers: {Host: bgp-01-12.entry-0.chinasnow.net}}, udp: true}
+  - {name: 🇸🇬 【V3】新加坡·1Gbps | 9, server: sg9.hgwc.xyz, port: 101, type: vmess, uuid: 4753033a-3779-4459-adf7-88970190c90a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sg9.hgwc.xyz}}, udp: true}
+  - {name: TG频道@kxswa|Ho Chi Minh 02 🇻🇳 - Nền TikTok, server: hcm2.safepn.net, port: 80, type: vmess, uuid: ee76cecf-1219-42be-ae3f-6b8077e4cacc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: m.tiktok.com}}, udp: true}
+  - {name: TG频道@kxswa|VIP VINAPHONE 0đ, server: 123.30.157.12, port: 2003, type: vmess, uuid: ee76cecf-1219-42be-ae3f-6b8077e4cacc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /safepn.com, headers: {Host: 123.30.157.12}}, udp: true}
+  - {name: 🇯🇵 【V3】东京·1Gbps | 3, server: jp3.hgwc.xyz, port: 101, type: vmess, uuid: 4753033a-3779-4459-adf7-88970190c90a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jp3.hgwc.xyz}}, udp: true}
+  - {name: 🇯🇵 V5-日本10, server: jp10-vm5.entry.hsrtd.club, port: 463, type: vmess, uuid: 98a03ddc-80d5-3179-af9d-97a64dcd8835, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: bgp-02-10.entry-0.chinasnow.net}}, udp: true}
+  - {name: 🇭🇰 V5-香港9, server: hk09-vm5.entry.hsrtd.club, port: 457, type: vmess, uuid: 98a03ddc-80d5-3179-af9d-97a64dcd8835, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: bgp-01-09.entry-0.chinasnow.net}}, udp: true}
+  - {name: 🇯🇵 免费-日本3, server: jp03-vm0.entry.srthdw.art, port: 449, type: vmess, uuid: 98a03ddc-80d5-3179-af9d-97a64dcd8835, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: jp03-vm0.entry.srthdw.art}}, udp: true}
+  - {name: 🇸🇬 新加坡专线v2, server: 139.162.121.56, port: 10020, type: vmess, uuid: eff51229-6034-42f3-8d0d-22504a1fea08, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: cctv13/hdd.m3u8, headers: {Host: 54.179.97.191:49}}, udp: true}
+  - {name: 🇭🇰 TG频道@kxswa|香港HKT-优化3, server: t.cccao.cyou, port: 16620, type: vmess, uuid: 5a035db3-34ea-48ca-9aa2-72c8229e1532, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: t.cccao.cyou}}, udp: true}
+  - {name: 距离下次重置剩余：24 天, server: jp-orcle.clientsconnect.live, port: 10086, type: vmess, uuid: 693e1b1a-0314-4356-9587-400118e74f2a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /yuefei, headers: {Host: jp-orcle.clientsconnect.live}}, udp: true}
+  - {name: 🇨🇳 台湾06, server: tw6.czs1000.com, port: 1001, type: vmess, uuid: 31a67010-9b90-4207-8bd2-5eaa6dcefab3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: tw6.czs1000.com, udp: true}
+  - {name: 🇭🇰 香港09, server: hk9.czs1000.com, port: 8011, type: vmess, uuid: 31a67010-9b90-4207-8bd2-5eaa6dcefab3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: hk9.czs1000.com, udp: true}
+  - {name: 🇮🇳 【V3】印度·1Gbps | 2, server: in2.622888.xyz, port: 101, type: vmess, uuid: 4753033a-3779-4459-adf7-88970190c90a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: in2.622888.xyz}}, udp: true}
   - {name: 🇬🇧 英国v6服务器 250MBPS, server: 162.159.160.148, port: 8080, type: vmess, uuid: e3dba91f-b31c-473a-8f17-92e1dedda38f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: uk.jiedian01.cf}}, udp: true}
-  - {name: 🇯🇵 漂亮国01|沪日, server: 110.80.3.34, port: 43158, type: vmess, uuid: ce171a2f-ad35-43b1-8262-e2d02291db9b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港04|高速, server: hk4.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.czs1000.com, port: 20890, type: vmess, uuid: 2b4d9c9f-f0f7-4e94-bade-befb800a9cfd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: tls.czs1000.com, udp: true}
-  - {name: 🇨🇳 台湾07, server: tw7.czs1000.com, port: 1001, type: vmess, uuid: 2b4d9c9f-f0f7-4e94-bade-befb800a9cfd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: tw7.czs1000.com, udp: true}
-  - {name: 🇨🇴 TG频道@kxswa|哥伦比亚BOG01 1.3x, server: cc-iepl.244312.xyz, port: 54809, type: ss, cipher: chacha20-ietf-poly1305, password: 17a3ea1d-f40d-4315-9996-b0597d7744ce, udp: true}
-  - {name: 🇨🇳 台湾04, server: tw4.czs1000.com, port: 1001, type: vmess, uuid: 2b4d9c9f-f0f7-4e94-bade-befb800a9cfd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: tw4.czs1000.com, udp: true}
-  - {name: 🇯🇵 JP-02 | 1x, server: jp-02.lynet.works, port: 45679, type: vmess, uuid: 9f591d6a-62cd-4d68-a207-0ba1a2eb7190, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jp-02.lynet.works}}, udp: true}
-  - {name: 🇬🇧 TG频道@kxswa|英国GLA01 1.3x, server: cc-iepl.244312.xyz, port: 54121, type: ss, cipher: aes-128-gcm, password: 17a3ea1d-f40d-4315-9996-b0597d7744ce, udp: true}
-  - {name: 🇳🇱 TG频道@kxswa|荷兰-优化, server: yes.iamagoodman.net, port: 16642, type: vmess, uuid: 5a035db3-34ea-48ca-9aa2-72c8229e1532, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: yes.iamagoodman.net}}, udp: true}
-  - {name: 🇳🇱 TG频道@kxswa|荷兰AMS01 1.3x, server: cc-iepl.244312.xyz, port: 54123, type: ss, cipher: aes-128-gcm, password: 17a3ea1d-f40d-4315-9996-b0597d7744ce, udp: true}
-  - {name: 🇯🇵 日本09, server: jp9.tejiewm.com, port: 4104, type: vmess, uuid: 3e7ad1c7-c9cf-414f-8318-d7d8dd8d9798, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: jp9.tejiewm.com, udp: true}
-  - {name: 🇻🇳 TG频道@kxswa|越南VN-T, server: vn.mjt001.com, port: 443, type: trojan, password: 5a035db3-34ea-48ca-9aa2-72c8229e1532, sni: vn.mjt001.com, skip-cert-verify: false, udp: true}
-  - {name: 🇰🇷 韩国02|高速, server: kr2.czs1000.com, port: 4466, type: vmess, uuid: 2b4d9c9f-f0f7-4e94-bade-befb800a9cfd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: kr2.czs1000.com, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇯🇵 日本21
-      - 🇮🇳 V5-印度01
-      - 🇺🇸 TG频道@kxswa|美国 | 倍率 x1
-      - 凌云网络 www.ly520.me
-      - 🇮🇸 TG频道@kxswa|冰岛RKV01 1.3x
-      - TG频道@kxswa|乌克兰IEV01 1.3x
-      - 🇸🇬 【V3】新加坡·1Gbps | 6
-      - TG频道@kxswa|格陵兰GOH02 1.3x
-      - 🇺🇸 TG频道@kxswa|美国LA-优化
-      - 🇯🇵 V5-日本6-下载专用
-      - 【提示】以下为流媒体解锁线路
-      - 🇦🇺 TG频道@kxswa|澳洲ADL02 1.3x
-      - 🇭🇰 V5-香港9
-      - 🇦🇺 TG频道@kxswa|澳大利亚-优化2
-      - 🇯🇵 TG频道@kxswa|日本TOK01 1.3x
-      - 🇭🇰 加拿大02|海港
-      - 🇷🇺 V5-俄罗斯
-      - 🇨🇭 TG频道@kxswa|瑞士-优化2
-      - 🇲🇾 TG频道@kxswa|马来西亚KUL02 1.3x
-      - 🇯🇵 日本04|高速
-      - 🇭🇰 香港02|高速|流媒体解锁
-      - 🇳🇱 TG频道@kxswa|荷兰-优化3
-      - 🇦🇺 TG频道@kxswa|澳洲BNE02 1.3x
-      - 🇺🇸 TG频道@kxswa|美国 | 倍率 x1 2
-      - 🇭🇰 香港高速专线v2
-      - 🇮🇳 IN-01 | 1.5x
-      - 🇸🇬 【V3】新加坡·1Gbps | 3
-      - 🇰🇷 V5-韩国 无可用性保障
-      - 🇨🇳 【V3】台湾·350Mbps | 解锁SG
-      - TG频道@kxswa|斯里兰卡CMB02 1.3x
-      - 🇯🇵 日本23
-      - 🇬🇧 TG频道@kxswa|UK英国001
+      - 🇰🇷 韩国04
+      - 🇰🇷 韩国 01 | 1x | tr
+      - 🇸🇬 新加坡10|高速
+      - 🇸🇬 【V3】新加坡·1Gbps | 4
+      - 🇯🇵 TG频道@kxswa|尼日利亚-优化
+      - 🇺🇸 美国公益节点|限速
       - 🇸🇬 TG频道@kxswa|TLS - VIP Singapore 01 🇸🇬 - Nền Liên Quân
-      - 🇮🇩 TG频道@kxswa|印尼JAK01 1.3x
-      - 🇲🇾 TG频道@kxswa|马来西亚-优化2
-      - 🇺🇸 V5-美国1
-      - 🇬🇧 V5-英国
-      - TG频道@kxswa|VIP Ho Chi Minh 03 🇻🇳 - Nền Liên Quân
-      - 🇭🇰 【V3】香港·1Gbps | HKT
-      - 🇭🇰 TG频道@kxswa|香港HKT-优化
-      - 🇵🇱 TG频道@kxswa|波兰WAW02 1.3x
-      - TG频道@kxswa|前南斯拉夫SKP02 1.3x
-      - 🇭🇰 TG频道@kxswa|HongKong 01 🇭🇰 - Nền Liên Quân
-      - 🇸🇬 TG频道@kxswa|VIP SGP 01 🇸🇬 - Nền Liên Quân
-      - 🇨🇦 TG频道@kxswa|CA加拿大001
-      - 🇭🇰 V5-香港3
-      - 🇭🇰 TG频道@kxswa|香港Az-优化3
-      - 🇫🇮 TG频道@kxswa|芬兰
-      - 🇬🇧 英国v6服务器 移动优化
-      - 🇲🇽 TG频道@kxswa|墨西哥-优化3
-      - 🇬🇧 英国v6服务器 250MBPS
-      - 🇯🇵 漂亮国01|沪日
-      - 🇭🇰 香港04|高速
+      - 🇭🇰 免费|香港|解锁|x1.0x速
+      - 🇩🇪 TG频道@kxswa|DE德国003
+      - TG频道@kxswa|Ha Noi 02 🇻🇳 - Nền TikTok
+      - 🇯🇵 日本 01 | 1x | tr
+      - 🇭🇰 ④香港|优选|1x
+      - 🇵🇱 TG频道@kxswa|波兰
+      - 🇭🇰 香港高速专线v2
+      - 🇭🇰 TG频道:@kxswa|香港01
+      - 🇨🇳 台湾 01 | 流媒体 | 1.5x | ss
+      - 🇭🇰 香港 01 | 1x | tr
+      - 🇯🇵 日本 03 | 1x | tr
+      - 🇮🇳 IN-01 | 1.5x
+      - 🇬🇧 TG频道@kxswa|UK英国001
+      - 🇦🇺 V5-澳大利亚1
+      - TG频道@kxswa|VIP HCM 03 🇻🇳 - Nền Liên Quân
+      - 🇸🇬 TG频道@kxswa|新加坡SG-T
+      - 🇸🇬 ①新加坡|优选|1x|奈飞
+      - 🇭🇰 香港 01 | 流媒体 | 1.5x | ss
+      - 🇰🇭 TG频道@kxswa|柬埔寨KH-T
+      - 🇵🇹 TG频道@kxswa|葡萄牙-优化2
+      - 🇵🇹 TG频道@kxswa|葡萄牙-优化3
+      - 🇨🇭 TG频道@kxswa|瑞士-优化2
+      - 🇭🇰 TG频道@kxswa|TLS - HongKong 01 🇭🇰 - Nền Liên Quân
       - 🇨🇳 台湾07
-      - 🇨🇴 TG频道@kxswa|哥伦比亚BOG01 1.3x
-      - 🇨🇳 台湾04
-      - 🇯🇵 JP-02 | 1x
-      - 🇬🇧 TG频道@kxswa|英国GLA01 1.3x
-      - 🇳🇱 TG频道@kxswa|荷兰-优化
-      - 🇳🇱 TG频道@kxswa|荷兰AMS01 1.3x
-      - 🇯🇵 日本09
-      - 🇻🇳 TG频道@kxswa|越南VN-T
-      - 🇰🇷 韩国02|高速
+      - 🇯🇵 TG频道@kxswa|JP日本002
+      - 🇭🇰 香港 02 | 流媒体 | 1.5x | ss
+      - 🇯🇵 【V3】东京·1Gbps | 2
+      - 🇸🇬 TG频道:@kxswa|新加坡07
+      - 🇸🇬 TG频道@kxswa|VIP SGP 02 🇸🇬 - Nền Liên Quân
+      - 🇹🇷 TG频道@kxswa|土耳其TR-T
+      - 🇭🇰 香港03|流媒体|新加坡
+      - 🇯🇵 日本22
+      - 🇺🇸 美国 02 | 流媒体 | 1.2x | ss
+      - 🇭🇰 TG频道:@kxswa|香港07
+      - 🇰🇷 韩国05|高速
+      - TG频道@kxswa|VIP Ha Noi 04 🇻🇳 - Nền Liên Quân
+      - 距离下次重置剩余：1 天
+      - 距离下次重置剩余：1 天 2
+      - 🇨🇳 台湾02
+      - 🇰🇷 韩国 03 | 1x | tr
+      - 🇭🇰 英国02|北港
+      - 🇨🇳 TG频道@kxswa|台湾-优化2
+      - 🇨🇦 TG频道:@kxswa|加拿大多伦多
+      - 🇨🇦 V5-加拿大1
+      - 🇸🇬 【V3】新加坡·1Gbps | 9
+      - TG频道@kxswa|Ho Chi Minh 02 🇻🇳 - Nền TikTok
+      - TG频道@kxswa|VIP VINAPHONE 0đ
+      - 🇯🇵 【V3】东京·1Gbps | 3
+      - 🇯🇵 V5-日本10
+      - 🇭🇰 V5-香港9
+      - 🇯🇵 免费-日本3
+      - 🇸🇬 新加坡专线v2
+      - 🇭🇰 TG频道@kxswa|香港HKT-优化3
+      - 距离下次重置剩余：24 天
+      - 🇨🇳 台湾06
+      - 🇭🇰 香港09
+      - 🇮🇳 【V3】印度·1Gbps | 2
+      - 🇬🇧 英国v6服务器 250MBPS
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇯🇵 日本21
-      - 🇮🇳 V5-印度01
-      - 🇺🇸 TG频道@kxswa|美国 | 倍率 x1
-      - 凌云网络 www.ly520.me
-      - 🇮🇸 TG频道@kxswa|冰岛RKV01 1.3x
-      - TG频道@kxswa|乌克兰IEV01 1.3x
-      - 🇸🇬 【V3】新加坡·1Gbps | 6
-      - TG频道@kxswa|格陵兰GOH02 1.3x
-      - 🇺🇸 TG频道@kxswa|美国LA-优化
-      - 🇯🇵 V5-日本6-下载专用
-      - 【提示】以下为流媒体解锁线路
-      - 🇦🇺 TG频道@kxswa|澳洲ADL02 1.3x
-      - 🇭🇰 V5-香港9
-      - 🇦🇺 TG频道@kxswa|澳大利亚-优化2
-      - 🇯🇵 TG频道@kxswa|日本TOK01 1.3x
-      - 🇭🇰 加拿大02|海港
-      - 🇷🇺 V5-俄罗斯
-      - 🇨🇭 TG频道@kxswa|瑞士-优化2
-      - 🇲🇾 TG频道@kxswa|马来西亚KUL02 1.3x
-      - 🇯🇵 日本04|高速
-      - 🇭🇰 香港02|高速|流媒体解锁
-      - 🇳🇱 TG频道@kxswa|荷兰-优化3
-      - 🇦🇺 TG频道@kxswa|澳洲BNE02 1.3x
-      - 🇺🇸 TG频道@kxswa|美国 | 倍率 x1 2
-      - 🇭🇰 香港高速专线v2
-      - 🇮🇳 IN-01 | 1.5x
-      - 🇸🇬 【V3】新加坡·1Gbps | 3
-      - 🇰🇷 V5-韩国 无可用性保障
-      - 🇨🇳 【V3】台湾·350Mbps | 解锁SG
-      - TG频道@kxswa|斯里兰卡CMB02 1.3x
-      - 🇯🇵 日本23
-      - 🇬🇧 TG频道@kxswa|UK英国001
+      - 🇰🇷 韩国04
+      - 🇰🇷 韩国 01 | 1x | tr
+      - 🇸🇬 新加坡10|高速
+      - 🇸🇬 【V3】新加坡·1Gbps | 4
+      - 🇯🇵 TG频道@kxswa|尼日利亚-优化
+      - 🇺🇸 美国公益节点|限速
       - 🇸🇬 TG频道@kxswa|TLS - VIP Singapore 01 🇸🇬 - Nền Liên Quân
-      - 🇮🇩 TG频道@kxswa|印尼JAK01 1.3x
-      - 🇲🇾 TG频道@kxswa|马来西亚-优化2
-      - 🇺🇸 V5-美国1
-      - 🇬🇧 V5-英国
-      - TG频道@kxswa|VIP Ho Chi Minh 03 🇻🇳 - Nền Liên Quân
-      - 🇭🇰 【V3】香港·1Gbps | HKT
-      - 🇭🇰 TG频道@kxswa|香港HKT-优化
-      - 🇵🇱 TG频道@kxswa|波兰WAW02 1.3x
-      - TG频道@kxswa|前南斯拉夫SKP02 1.3x
-      - 🇭🇰 TG频道@kxswa|HongKong 01 🇭🇰 - Nền Liên Quân
-      - 🇸🇬 TG频道@kxswa|VIP SGP 01 🇸🇬 - Nền Liên Quân
-      - 🇨🇦 TG频道@kxswa|CA加拿大001
-      - 🇭🇰 V5-香港3
-      - 🇭🇰 TG频道@kxswa|香港Az-优化3
-      - 🇫🇮 TG频道@kxswa|芬兰
-      - 🇬🇧 英国v6服务器 移动优化
-      - 🇲🇽 TG频道@kxswa|墨西哥-优化3
-      - 🇬🇧 英国v6服务器 250MBPS
-      - 🇯🇵 漂亮国01|沪日
-      - 🇭🇰 香港04|高速
+      - 🇭🇰 免费|香港|解锁|x1.0x速
+      - 🇩🇪 TG频道@kxswa|DE德国003
+      - TG频道@kxswa|Ha Noi 02 🇻🇳 - Nền TikTok
+      - 🇯🇵 日本 01 | 1x | tr
+      - 🇭🇰 ④香港|优选|1x
+      - 🇵🇱 TG频道@kxswa|波兰
+      - 🇭🇰 香港高速专线v2
+      - 🇭🇰 TG频道:@kxswa|香港01
+      - 🇨🇳 台湾 01 | 流媒体 | 1.5x | ss
+      - 🇭🇰 香港 01 | 1x | tr
+      - 🇯🇵 日本 03 | 1x | tr
+      - 🇮🇳 IN-01 | 1.5x
+      - 🇬🇧 TG频道@kxswa|UK英国001
+      - 🇦🇺 V5-澳大利亚1
+      - TG频道@kxswa|VIP HCM 03 🇻🇳 - Nền Liên Quân
+      - 🇸🇬 TG频道@kxswa|新加坡SG-T
+      - 🇸🇬 ①新加坡|优选|1x|奈飞
+      - 🇭🇰 香港 01 | 流媒体 | 1.5x | ss
+      - 🇰🇭 TG频道@kxswa|柬埔寨KH-T
+      - 🇵🇹 TG频道@kxswa|葡萄牙-优化2
+      - 🇵🇹 TG频道@kxswa|葡萄牙-优化3
+      - 🇨🇭 TG频道@kxswa|瑞士-优化2
+      - 🇭🇰 TG频道@kxswa|TLS - HongKong 01 🇭🇰 - Nền Liên Quân
       - 🇨🇳 台湾07
-      - 🇨🇴 TG频道@kxswa|哥伦比亚BOG01 1.3x
-      - 🇨🇳 台湾04
-      - 🇯🇵 JP-02 | 1x
-      - 🇬🇧 TG频道@kxswa|英国GLA01 1.3x
-      - 🇳🇱 TG频道@kxswa|荷兰-优化
-      - 🇳🇱 TG频道@kxswa|荷兰AMS01 1.3x
-      - 🇯🇵 日本09
-      - 🇻🇳 TG频道@kxswa|越南VN-T
-      - 🇰🇷 韩国02|高速
+      - 🇯🇵 TG频道@kxswa|JP日本002
+      - 🇭🇰 香港 02 | 流媒体 | 1.5x | ss
+      - 🇯🇵 【V3】东京·1Gbps | 2
+      - 🇸🇬 TG频道:@kxswa|新加坡07
+      - 🇸🇬 TG频道@kxswa|VIP SGP 02 🇸🇬 - Nền Liên Quân
+      - 🇹🇷 TG频道@kxswa|土耳其TR-T
+      - 🇭🇰 香港03|流媒体|新加坡
+      - 🇯🇵 日本22
+      - 🇺🇸 美国 02 | 流媒体 | 1.2x | ss
+      - 🇭🇰 TG频道:@kxswa|香港07
+      - 🇰🇷 韩国05|高速
+      - TG频道@kxswa|VIP Ha Noi 04 🇻🇳 - Nền Liên Quân
+      - 距离下次重置剩余：1 天
+      - 距离下次重置剩余：1 天 2
+      - 🇨🇳 台湾02
+      - 🇰🇷 韩国 03 | 1x | tr
+      - 🇭🇰 英国02|北港
+      - 🇨🇳 TG频道@kxswa|台湾-优化2
+      - 🇨🇦 TG频道:@kxswa|加拿大多伦多
+      - 🇨🇦 V5-加拿大1
+      - 🇸🇬 【V3】新加坡·1Gbps | 9
+      - TG频道@kxswa|Ho Chi Minh 02 🇻🇳 - Nền TikTok
+      - TG频道@kxswa|VIP VINAPHONE 0đ
+      - 🇯🇵 【V3】东京·1Gbps | 3
+      - 🇯🇵 V5-日本10
+      - 🇭🇰 V5-香港9
+      - 🇯🇵 免费-日本3
+      - 🇸🇬 新加坡专线v2
+      - 🇭🇰 TG频道@kxswa|香港HKT-优化3
+      - 距离下次重置剩余：24 天
+      - 🇨🇳 台湾06
+      - 🇭🇰 香港09
+      - 🇮🇳 【V3】印度·1Gbps | 2
+      - 🇬🇧 英国v6服务器 250MBPS
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇯🇵 日本21
-      - 🇮🇳 V5-印度01
-      - 🇺🇸 TG频道@kxswa|美国 | 倍率 x1
-      - 凌云网络 www.ly520.me
-      - 🇮🇸 TG频道@kxswa|冰岛RKV01 1.3x
-      - TG频道@kxswa|乌克兰IEV01 1.3x
-      - 🇸🇬 【V3】新加坡·1Gbps | 6
-      - TG频道@kxswa|格陵兰GOH02 1.3x
-      - 🇺🇸 TG频道@kxswa|美国LA-优化
-      - 🇯🇵 V5-日本6-下载专用
-      - 【提示】以下为流媒体解锁线路
-      - 🇦🇺 TG频道@kxswa|澳洲ADL02 1.3x
-      - 🇭🇰 V5-香港9
-      - 🇦🇺 TG频道@kxswa|澳大利亚-优化2
-      - 🇯🇵 TG频道@kxswa|日本TOK01 1.3x
-      - 🇭🇰 加拿大02|海港
-      - 🇷🇺 V5-俄罗斯
-      - 🇨🇭 TG频道@kxswa|瑞士-优化2
-      - 🇲🇾 TG频道@kxswa|马来西亚KUL02 1.3x
-      - 🇯🇵 日本04|高速
-      - 🇭🇰 香港02|高速|流媒体解锁
-      - 🇳🇱 TG频道@kxswa|荷兰-优化3
-      - 🇦🇺 TG频道@kxswa|澳洲BNE02 1.3x
-      - 🇺🇸 TG频道@kxswa|美国 | 倍率 x1 2
-      - 🇭🇰 香港高速专线v2
-      - 🇮🇳 IN-01 | 1.5x
-      - 🇸🇬 【V3】新加坡·1Gbps | 3
-      - 🇰🇷 V5-韩国 无可用性保障
-      - 🇨🇳 【V3】台湾·350Mbps | 解锁SG
-      - TG频道@kxswa|斯里兰卡CMB02 1.3x
-      - 🇯🇵 日本23
-      - 🇬🇧 TG频道@kxswa|UK英国001
+      - 🇰🇷 韩国04
+      - 🇰🇷 韩国 01 | 1x | tr
+      - 🇸🇬 新加坡10|高速
+      - 🇸🇬 【V3】新加坡·1Gbps | 4
+      - 🇯🇵 TG频道@kxswa|尼日利亚-优化
+      - 🇺🇸 美国公益节点|限速
       - 🇸🇬 TG频道@kxswa|TLS - VIP Singapore 01 🇸🇬 - Nền Liên Quân
-      - 🇮🇩 TG频道@kxswa|印尼JAK01 1.3x
-      - 🇲🇾 TG频道@kxswa|马来西亚-优化2
-      - 🇺🇸 V5-美国1
-      - 🇬🇧 V5-英国
-      - TG频道@kxswa|VIP Ho Chi Minh 03 🇻🇳 - Nền Liên Quân
-      - 🇭🇰 【V3】香港·1Gbps | HKT
-      - 🇭🇰 TG频道@kxswa|香港HKT-优化
-      - 🇵🇱 TG频道@kxswa|波兰WAW02 1.3x
-      - TG频道@kxswa|前南斯拉夫SKP02 1.3x
-      - 🇭🇰 TG频道@kxswa|HongKong 01 🇭🇰 - Nền Liên Quân
-      - 🇸🇬 TG频道@kxswa|VIP SGP 01 🇸🇬 - Nền Liên Quân
-      - 🇨🇦 TG频道@kxswa|CA加拿大001
-      - 🇭🇰 V5-香港3
-      - 🇭🇰 TG频道@kxswa|香港Az-优化3
-      - 🇫🇮 TG频道@kxswa|芬兰
-      - 🇬🇧 英国v6服务器 移动优化
-      - 🇲🇽 TG频道@kxswa|墨西哥-优化3
-      - 🇬🇧 英国v6服务器 250MBPS
-      - 🇯🇵 漂亮国01|沪日
-      - 🇭🇰 香港04|高速
+      - 🇭🇰 免费|香港|解锁|x1.0x速
+      - 🇩🇪 TG频道@kxswa|DE德国003
+      - TG频道@kxswa|Ha Noi 02 🇻🇳 - Nền TikTok
+      - 🇯🇵 日本 01 | 1x | tr
+      - 🇭🇰 ④香港|优选|1x
+      - 🇵🇱 TG频道@kxswa|波兰
+      - 🇭🇰 香港高速专线v2
+      - 🇭🇰 TG频道:@kxswa|香港01
+      - 🇨🇳 台湾 01 | 流媒体 | 1.5x | ss
+      - 🇭🇰 香港 01 | 1x | tr
+      - 🇯🇵 日本 03 | 1x | tr
+      - 🇮🇳 IN-01 | 1.5x
+      - 🇬🇧 TG频道@kxswa|UK英国001
+      - 🇦🇺 V5-澳大利亚1
+      - TG频道@kxswa|VIP HCM 03 🇻🇳 - Nền Liên Quân
+      - 🇸🇬 TG频道@kxswa|新加坡SG-T
+      - 🇸🇬 ①新加坡|优选|1x|奈飞
+      - 🇭🇰 香港 01 | 流媒体 | 1.5x | ss
+      - 🇰🇭 TG频道@kxswa|柬埔寨KH-T
+      - 🇵🇹 TG频道@kxswa|葡萄牙-优化2
+      - 🇵🇹 TG频道@kxswa|葡萄牙-优化3
+      - 🇨🇭 TG频道@kxswa|瑞士-优化2
+      - 🇭🇰 TG频道@kxswa|TLS - HongKong 01 🇭🇰 - Nền Liên Quân
       - 🇨🇳 台湾07
-      - 🇨🇴 TG频道@kxswa|哥伦比亚BOG01 1.3x
-      - 🇨🇳 台湾04
-      - 🇯🇵 JP-02 | 1x
-      - 🇬🇧 TG频道@kxswa|英国GLA01 1.3x
-      - 🇳🇱 TG频道@kxswa|荷兰-优化
-      - 🇳🇱 TG频道@kxswa|荷兰AMS01 1.3x
-      - 🇯🇵 日本09
-      - 🇻🇳 TG频道@kxswa|越南VN-T
-      - 🇰🇷 韩国02|高速
+      - 🇯🇵 TG频道@kxswa|JP日本002
+      - 🇭🇰 香港 02 | 流媒体 | 1.5x | ss
+      - 🇯🇵 【V3】东京·1Gbps | 2
+      - 🇸🇬 TG频道:@kxswa|新加坡07
+      - 🇸🇬 TG频道@kxswa|VIP SGP 02 🇸🇬 - Nền Liên Quân
+      - 🇹🇷 TG频道@kxswa|土耳其TR-T
+      - 🇭🇰 香港03|流媒体|新加坡
+      - 🇯🇵 日本22
+      - 🇺🇸 美国 02 | 流媒体 | 1.2x | ss
+      - 🇭🇰 TG频道:@kxswa|香港07
+      - 🇰🇷 韩国05|高速
+      - TG频道@kxswa|VIP Ha Noi 04 🇻🇳 - Nền Liên Quân
+      - 距离下次重置剩余：1 天
+      - 距离下次重置剩余：1 天 2
+      - 🇨🇳 台湾02
+      - 🇰🇷 韩国 03 | 1x | tr
+      - 🇭🇰 英国02|北港
+      - 🇨🇳 TG频道@kxswa|台湾-优化2
+      - 🇨🇦 TG频道:@kxswa|加拿大多伦多
+      - 🇨🇦 V5-加拿大1
+      - 🇸🇬 【V3】新加坡·1Gbps | 9
+      - TG频道@kxswa|Ho Chi Minh 02 🇻🇳 - Nền TikTok
+      - TG频道@kxswa|VIP VINAPHONE 0đ
+      - 🇯🇵 【V3】东京·1Gbps | 3
+      - 🇯🇵 V5-日本10
+      - 🇭🇰 V5-香港9
+      - 🇯🇵 免费-日本3
+      - 🇸🇬 新加坡专线v2
+      - 🇭🇰 TG频道@kxswa|香港HKT-优化3
+      - 距离下次重置剩余：24 天
+      - 🇨🇳 台湾06
+      - 🇭🇰 香港09
+      - 🇮🇳 【V3】印度·1Gbps | 2
+      - 🇬🇧 英国v6服务器 250MBPS
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇯🇵 日本21
-      - 🇮🇳 V5-印度01
-      - 🇺🇸 TG频道@kxswa|美国 | 倍率 x1
-      - 凌云网络 www.ly520.me
-      - 🇮🇸 TG频道@kxswa|冰岛RKV01 1.3x
-      - TG频道@kxswa|乌克兰IEV01 1.3x
-      - 🇸🇬 【V3】新加坡·1Gbps | 6
-      - TG频道@kxswa|格陵兰GOH02 1.3x
-      - 🇺🇸 TG频道@kxswa|美国LA-优化
-      - 🇯🇵 V5-日本6-下载专用
-      - 【提示】以下为流媒体解锁线路
-      - 🇦🇺 TG频道@kxswa|澳洲ADL02 1.3x
-      - 🇭🇰 V5-香港9
-      - 🇦🇺 TG频道@kxswa|澳大利亚-优化2
-      - 🇯🇵 TG频道@kxswa|日本TOK01 1.3x
-      - 🇭🇰 加拿大02|海港
-      - 🇷🇺 V5-俄罗斯
-      - 🇨🇭 TG频道@kxswa|瑞士-优化2
-      - 🇲🇾 TG频道@kxswa|马来西亚KUL02 1.3x
-      - 🇯🇵 日本04|高速
-      - 🇭🇰 香港02|高速|流媒体解锁
-      - 🇳🇱 TG频道@kxswa|荷兰-优化3
-      - 🇦🇺 TG频道@kxswa|澳洲BNE02 1.3x
-      - 🇺🇸 TG频道@kxswa|美国 | 倍率 x1 2
-      - 🇭🇰 香港高速专线v2
-      - 🇮🇳 IN-01 | 1.5x
-      - 🇸🇬 【V3】新加坡·1Gbps | 3
-      - 🇰🇷 V5-韩国 无可用性保障
-      - 🇨🇳 【V3】台湾·350Mbps | 解锁SG
-      - TG频道@kxswa|斯里兰卡CMB02 1.3x
-      - 🇯🇵 日本23
-      - 🇬🇧 TG频道@kxswa|UK英国001
+      - 🇰🇷 韩国04
+      - 🇰🇷 韩国 01 | 1x | tr
+      - 🇸🇬 新加坡10|高速
+      - 🇸🇬 【V3】新加坡·1Gbps | 4
+      - 🇯🇵 TG频道@kxswa|尼日利亚-优化
+      - 🇺🇸 美国公益节点|限速
       - 🇸🇬 TG频道@kxswa|TLS - VIP Singapore 01 🇸🇬 - Nền Liên Quân
-      - 🇮🇩 TG频道@kxswa|印尼JAK01 1.3x
-      - 🇲🇾 TG频道@kxswa|马来西亚-优化2
-      - 🇺🇸 V5-美国1
-      - 🇬🇧 V5-英国
-      - TG频道@kxswa|VIP Ho Chi Minh 03 🇻🇳 - Nền Liên Quân
-      - 🇭🇰 【V3】香港·1Gbps | HKT
-      - 🇭🇰 TG频道@kxswa|香港HKT-优化
-      - 🇵🇱 TG频道@kxswa|波兰WAW02 1.3x
-      - TG频道@kxswa|前南斯拉夫SKP02 1.3x
-      - 🇭🇰 TG频道@kxswa|HongKong 01 🇭🇰 - Nền Liên Quân
-      - 🇸🇬 TG频道@kxswa|VIP SGP 01 🇸🇬 - Nền Liên Quân
-      - 🇨🇦 TG频道@kxswa|CA加拿大001
-      - 🇭🇰 V5-香港3
-      - 🇭🇰 TG频道@kxswa|香港Az-优化3
-      - 🇫🇮 TG频道@kxswa|芬兰
-      - 🇬🇧 英国v6服务器 移动优化
-      - 🇲🇽 TG频道@kxswa|墨西哥-优化3
-      - 🇬🇧 英国v6服务器 250MBPS
-      - 🇯🇵 漂亮国01|沪日
-      - 🇭🇰 香港04|高速
+      - 🇭🇰 免费|香港|解锁|x1.0x速
+      - 🇩🇪 TG频道@kxswa|DE德国003
+      - TG频道@kxswa|Ha Noi 02 🇻🇳 - Nền TikTok
+      - 🇯🇵 日本 01 | 1x | tr
+      - 🇭🇰 ④香港|优选|1x
+      - 🇵🇱 TG频道@kxswa|波兰
+      - 🇭🇰 香港高速专线v2
+      - 🇭🇰 TG频道:@kxswa|香港01
+      - 🇨🇳 台湾 01 | 流媒体 | 1.5x | ss
+      - 🇭🇰 香港 01 | 1x | tr
+      - 🇯🇵 日本 03 | 1x | tr
+      - 🇮🇳 IN-01 | 1.5x
+      - 🇬🇧 TG频道@kxswa|UK英国001
+      - 🇦🇺 V5-澳大利亚1
+      - TG频道@kxswa|VIP HCM 03 🇻🇳 - Nền Liên Quân
+      - 🇸🇬 TG频道@kxswa|新加坡SG-T
+      - 🇸🇬 ①新加坡|优选|1x|奈飞
+      - 🇭🇰 香港 01 | 流媒体 | 1.5x | ss
+      - 🇰🇭 TG频道@kxswa|柬埔寨KH-T
+      - 🇵🇹 TG频道@kxswa|葡萄牙-优化2
+      - 🇵🇹 TG频道@kxswa|葡萄牙-优化3
+      - 🇨🇭 TG频道@kxswa|瑞士-优化2
+      - 🇭🇰 TG频道@kxswa|TLS - HongKong 01 🇭🇰 - Nền Liên Quân
       - 🇨🇳 台湾07
-      - 🇨🇴 TG频道@kxswa|哥伦比亚BOG01 1.3x
-      - 🇨🇳 台湾04
-      - 🇯🇵 JP-02 | 1x
-      - 🇬🇧 TG频道@kxswa|英国GLA01 1.3x
-      - 🇳🇱 TG频道@kxswa|荷兰-优化
-      - 🇳🇱 TG频道@kxswa|荷兰AMS01 1.3x
-      - 🇯🇵 日本09
-      - 🇻🇳 TG频道@kxswa|越南VN-T
-      - 🇰🇷 韩国02|高速
+      - 🇯🇵 TG频道@kxswa|JP日本002
+      - 🇭🇰 香港 02 | 流媒体 | 1.5x | ss
+      - 🇯🇵 【V3】东京·1Gbps | 2
+      - 🇸🇬 TG频道:@kxswa|新加坡07
+      - 🇸🇬 TG频道@kxswa|VIP SGP 02 🇸🇬 - Nền Liên Quân
+      - 🇹🇷 TG频道@kxswa|土耳其TR-T
+      - 🇭🇰 香港03|流媒体|新加坡
+      - 🇯🇵 日本22
+      - 🇺🇸 美国 02 | 流媒体 | 1.2x | ss
+      - 🇭🇰 TG频道:@kxswa|香港07
+      - 🇰🇷 韩国05|高速
+      - TG频道@kxswa|VIP Ha Noi 04 🇻🇳 - Nền Liên Quân
+      - 距离下次重置剩余：1 天
+      - 距离下次重置剩余：1 天 2
+      - 🇨🇳 台湾02
+      - 🇰🇷 韩国 03 | 1x | tr
+      - 🇭🇰 英国02|北港
+      - 🇨🇳 TG频道@kxswa|台湾-优化2
+      - 🇨🇦 TG频道:@kxswa|加拿大多伦多
+      - 🇨🇦 V5-加拿大1
+      - 🇸🇬 【V3】新加坡·1Gbps | 9
+      - TG频道@kxswa|Ho Chi Minh 02 🇻🇳 - Nền TikTok
+      - TG频道@kxswa|VIP VINAPHONE 0đ
+      - 🇯🇵 【V3】东京·1Gbps | 3
+      - 🇯🇵 V5-日本10
+      - 🇭🇰 V5-香港9
+      - 🇯🇵 免费-日本3
+      - 🇸🇬 新加坡专线v2
+      - 🇭🇰 TG频道@kxswa|香港HKT-优化3
+      - 距离下次重置剩余：24 天
+      - 🇨🇳 台湾06
+      - 🇭🇰 香港09
+      - 🇮🇳 【V3】印度·1Gbps | 2
+      - 🇬🇧 英国v6服务器 250MBPS
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇯🇵 日本21
-      - 🇮🇳 V5-印度01
-      - 🇺🇸 TG频道@kxswa|美国 | 倍率 x1
-      - 凌云网络 www.ly520.me
-      - 🇮🇸 TG频道@kxswa|冰岛RKV01 1.3x
-      - TG频道@kxswa|乌克兰IEV01 1.3x
-      - 🇸🇬 【V3】新加坡·1Gbps | 6
-      - TG频道@kxswa|格陵兰GOH02 1.3x
-      - 🇺🇸 TG频道@kxswa|美国LA-优化
-      - 🇯🇵 V5-日本6-下载专用
-      - 【提示】以下为流媒体解锁线路
-      - 🇦🇺 TG频道@kxswa|澳洲ADL02 1.3x
-      - 🇭🇰 V5-香港9
-      - 🇦🇺 TG频道@kxswa|澳大利亚-优化2
-      - 🇯🇵 TG频道@kxswa|日本TOK01 1.3x
-      - 🇭🇰 加拿大02|海港
-      - 🇷🇺 V5-俄罗斯
-      - 🇨🇭 TG频道@kxswa|瑞士-优化2
-      - 🇲🇾 TG频道@kxswa|马来西亚KUL02 1.3x
-      - 🇯🇵 日本04|高速
-      - 🇭🇰 香港02|高速|流媒体解锁
-      - 🇳🇱 TG频道@kxswa|荷兰-优化3
-      - 🇦🇺 TG频道@kxswa|澳洲BNE02 1.3x
-      - 🇺🇸 TG频道@kxswa|美国 | 倍率 x1 2
-      - 🇭🇰 香港高速专线v2
-      - 🇮🇳 IN-01 | 1.5x
-      - 🇸🇬 【V3】新加坡·1Gbps | 3
-      - 🇰🇷 V5-韩国 无可用性保障
-      - 🇨🇳 【V3】台湾·350Mbps | 解锁SG
-      - TG频道@kxswa|斯里兰卡CMB02 1.3x
-      - 🇯🇵 日本23
-      - 🇬🇧 TG频道@kxswa|UK英国001
+      - 🇰🇷 韩国04
+      - 🇰🇷 韩国 01 | 1x | tr
+      - 🇸🇬 新加坡10|高速
+      - 🇸🇬 【V3】新加坡·1Gbps | 4
+      - 🇯🇵 TG频道@kxswa|尼日利亚-优化
+      - 🇺🇸 美国公益节点|限速
       - 🇸🇬 TG频道@kxswa|TLS - VIP Singapore 01 🇸🇬 - Nền Liên Quân
-      - 🇮🇩 TG频道@kxswa|印尼JAK01 1.3x
-      - 🇲🇾 TG频道@kxswa|马来西亚-优化2
-      - 🇺🇸 V5-美国1
-      - 🇬🇧 V5-英国
-      - TG频道@kxswa|VIP Ho Chi Minh 03 🇻🇳 - Nền Liên Quân
-      - 🇭🇰 【V3】香港·1Gbps | HKT
-      - 🇭🇰 TG频道@kxswa|香港HKT-优化
-      - 🇵🇱 TG频道@kxswa|波兰WAW02 1.3x
-      - TG频道@kxswa|前南斯拉夫SKP02 1.3x
-      - 🇭🇰 TG频道@kxswa|HongKong 01 🇭🇰 - Nền Liên Quân
-      - 🇸🇬 TG频道@kxswa|VIP SGP 01 🇸🇬 - Nền Liên Quân
-      - 🇨🇦 TG频道@kxswa|CA加拿大001
-      - 🇭🇰 V5-香港3
-      - 🇭🇰 TG频道@kxswa|香港Az-优化3
-      - 🇫🇮 TG频道@kxswa|芬兰
-      - 🇬🇧 英国v6服务器 移动优化
-      - 🇲🇽 TG频道@kxswa|墨西哥-优化3
-      - 🇬🇧 英国v6服务器 250MBPS
-      - 🇯🇵 漂亮国01|沪日
-      - 🇭🇰 香港04|高速
+      - 🇭🇰 免费|香港|解锁|x1.0x速
+      - 🇩🇪 TG频道@kxswa|DE德国003
+      - TG频道@kxswa|Ha Noi 02 🇻🇳 - Nền TikTok
+      - 🇯🇵 日本 01 | 1x | tr
+      - 🇭🇰 ④香港|优选|1x
+      - 🇵🇱 TG频道@kxswa|波兰
+      - 🇭🇰 香港高速专线v2
+      - 🇭🇰 TG频道:@kxswa|香港01
+      - 🇨🇳 台湾 01 | 流媒体 | 1.5x | ss
+      - 🇭🇰 香港 01 | 1x | tr
+      - 🇯🇵 日本 03 | 1x | tr
+      - 🇮🇳 IN-01 | 1.5x
+      - 🇬🇧 TG频道@kxswa|UK英国001
+      - 🇦🇺 V5-澳大利亚1
+      - TG频道@kxswa|VIP HCM 03 🇻🇳 - Nền Liên Quân
+      - 🇸🇬 TG频道@kxswa|新加坡SG-T
+      - 🇸🇬 ①新加坡|优选|1x|奈飞
+      - 🇭🇰 香港 01 | 流媒体 | 1.5x | ss
+      - 🇰🇭 TG频道@kxswa|柬埔寨KH-T
+      - 🇵🇹 TG频道@kxswa|葡萄牙-优化2
+      - 🇵🇹 TG频道@kxswa|葡萄牙-优化3
+      - 🇨🇭 TG频道@kxswa|瑞士-优化2
+      - 🇭🇰 TG频道@kxswa|TLS - HongKong 01 🇭🇰 - Nền Liên Quân
       - 🇨🇳 台湾07
-      - 🇨🇴 TG频道@kxswa|哥伦比亚BOG01 1.3x
-      - 🇨🇳 台湾04
-      - 🇯🇵 JP-02 | 1x
-      - 🇬🇧 TG频道@kxswa|英国GLA01 1.3x
-      - 🇳🇱 TG频道@kxswa|荷兰-优化
-      - 🇳🇱 TG频道@kxswa|荷兰AMS01 1.3x
-      - 🇯🇵 日本09
-      - 🇻🇳 TG频道@kxswa|越南VN-T
-      - 🇰🇷 韩国02|高速
+      - 🇯🇵 TG频道@kxswa|JP日本002
+      - 🇭🇰 香港 02 | 流媒体 | 1.5x | ss
+      - 🇯🇵 【V3】东京·1Gbps | 2
+      - 🇸🇬 TG频道:@kxswa|新加坡07
+      - 🇸🇬 TG频道@kxswa|VIP SGP 02 🇸🇬 - Nền Liên Quân
+      - 🇹🇷 TG频道@kxswa|土耳其TR-T
+      - 🇭🇰 香港03|流媒体|新加坡
+      - 🇯🇵 日本22
+      - 🇺🇸 美国 02 | 流媒体 | 1.2x | ss
+      - 🇭🇰 TG频道:@kxswa|香港07
+      - 🇰🇷 韩国05|高速
+      - TG频道@kxswa|VIP Ha Noi 04 🇻🇳 - Nền Liên Quân
+      - 距离下次重置剩余：1 天
+      - 距离下次重置剩余：1 天 2
+      - 🇨🇳 台湾02
+      - 🇰🇷 韩国 03 | 1x | tr
+      - 🇭🇰 英国02|北港
+      - 🇨🇳 TG频道@kxswa|台湾-优化2
+      - 🇨🇦 TG频道:@kxswa|加拿大多伦多
+      - 🇨🇦 V5-加拿大1
+      - 🇸🇬 【V3】新加坡·1Gbps | 9
+      - TG频道@kxswa|Ho Chi Minh 02 🇻🇳 - Nền TikTok
+      - TG频道@kxswa|VIP VINAPHONE 0đ
+      - 🇯🇵 【V3】东京·1Gbps | 3
+      - 🇯🇵 V5-日本10
+      - 🇭🇰 V5-香港9
+      - 🇯🇵 免费-日本3
+      - 🇸🇬 新加坡专线v2
+      - 🇭🇰 TG频道@kxswa|香港HKT-优化3
+      - 距离下次重置剩余：24 天
+      - 🇨🇳 台湾06
+      - 🇭🇰 香港09
+      - 🇮🇳 【V3】印度·1Gbps | 2
+      - 🇬🇧 英国v6服务器 250MBPS
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇯🇵 日本21
-      - 🇮🇳 V5-印度01
-      - 🇺🇸 TG频道@kxswa|美国 | 倍率 x1
-      - 凌云网络 www.ly520.me
-      - 🇮🇸 TG频道@kxswa|冰岛RKV01 1.3x
-      - TG频道@kxswa|乌克兰IEV01 1.3x
-      - 🇸🇬 【V3】新加坡·1Gbps | 6
-      - TG频道@kxswa|格陵兰GOH02 1.3x
-      - 🇺🇸 TG频道@kxswa|美国LA-优化
-      - 🇯🇵 V5-日本6-下载专用
-      - 【提示】以下为流媒体解锁线路
-      - 🇦🇺 TG频道@kxswa|澳洲ADL02 1.3x
-      - 🇭🇰 V5-香港9
-      - 🇦🇺 TG频道@kxswa|澳大利亚-优化2
-      - 🇯🇵 TG频道@kxswa|日本TOK01 1.3x
-      - 🇭🇰 加拿大02|海港
-      - 🇷🇺 V5-俄罗斯
-      - 🇨🇭 TG频道@kxswa|瑞士-优化2
-      - 🇲🇾 TG频道@kxswa|马来西亚KUL02 1.3x
-      - 🇯🇵 日本04|高速
-      - 🇭🇰 香港02|高速|流媒体解锁
-      - 🇳🇱 TG频道@kxswa|荷兰-优化3
-      - 🇦🇺 TG频道@kxswa|澳洲BNE02 1.3x
-      - 🇺🇸 TG频道@kxswa|美国 | 倍率 x1 2
-      - 🇭🇰 香港高速专线v2
-      - 🇮🇳 IN-01 | 1.5x
-      - 🇸🇬 【V3】新加坡·1Gbps | 3
-      - 🇰🇷 V5-韩国 无可用性保障
-      - 🇨🇳 【V3】台湾·350Mbps | 解锁SG
-      - TG频道@kxswa|斯里兰卡CMB02 1.3x
-      - 🇯🇵 日本23
-      - 🇬🇧 TG频道@kxswa|UK英国001
+      - 🇰🇷 韩国04
+      - 🇰🇷 韩国 01 | 1x | tr
+      - 🇸🇬 新加坡10|高速
+      - 🇸🇬 【V3】新加坡·1Gbps | 4
+      - 🇯🇵 TG频道@kxswa|尼日利亚-优化
+      - 🇺🇸 美国公益节点|限速
       - 🇸🇬 TG频道@kxswa|TLS - VIP Singapore 01 🇸🇬 - Nền Liên Quân
-      - 🇮🇩 TG频道@kxswa|印尼JAK01 1.3x
-      - 🇲🇾 TG频道@kxswa|马来西亚-优化2
-      - 🇺🇸 V5-美国1
-      - 🇬🇧 V5-英国
-      - TG频道@kxswa|VIP Ho Chi Minh 03 🇻🇳 - Nền Liên Quân
-      - 🇭🇰 【V3】香港·1Gbps | HKT
-      - 🇭🇰 TG频道@kxswa|香港HKT-优化
-      - 🇵🇱 TG频道@kxswa|波兰WAW02 1.3x
-      - TG频道@kxswa|前南斯拉夫SKP02 1.3x
-      - 🇭🇰 TG频道@kxswa|HongKong 01 🇭🇰 - Nền Liên Quân
-      - 🇸🇬 TG频道@kxswa|VIP SGP 01 🇸🇬 - Nền Liên Quân
-      - 🇨🇦 TG频道@kxswa|CA加拿大001
-      - 🇭🇰 V5-香港3
-      - 🇭🇰 TG频道@kxswa|香港Az-优化3
-      - 🇫🇮 TG频道@kxswa|芬兰
-      - 🇬🇧 英国v6服务器 移动优化
-      - 🇲🇽 TG频道@kxswa|墨西哥-优化3
-      - 🇬🇧 英国v6服务器 250MBPS
-      - 🇯🇵 漂亮国01|沪日
-      - 🇭🇰 香港04|高速
+      - 🇭🇰 免费|香港|解锁|x1.0x速
+      - 🇩🇪 TG频道@kxswa|DE德国003
+      - TG频道@kxswa|Ha Noi 02 🇻🇳 - Nền TikTok
+      - 🇯🇵 日本 01 | 1x | tr
+      - 🇭🇰 ④香港|优选|1x
+      - 🇵🇱 TG频道@kxswa|波兰
+      - 🇭🇰 香港高速专线v2
+      - 🇭🇰 TG频道:@kxswa|香港01
+      - 🇨🇳 台湾 01 | 流媒体 | 1.5x | ss
+      - 🇭🇰 香港 01 | 1x | tr
+      - 🇯🇵 日本 03 | 1x | tr
+      - 🇮🇳 IN-01 | 1.5x
+      - 🇬🇧 TG频道@kxswa|UK英国001
+      - 🇦🇺 V5-澳大利亚1
+      - TG频道@kxswa|VIP HCM 03 🇻🇳 - Nền Liên Quân
+      - 🇸🇬 TG频道@kxswa|新加坡SG-T
+      - 🇸🇬 ①新加坡|优选|1x|奈飞
+      - 🇭🇰 香港 01 | 流媒体 | 1.5x | ss
+      - 🇰🇭 TG频道@kxswa|柬埔寨KH-T
+      - 🇵🇹 TG频道@kxswa|葡萄牙-优化2
+      - 🇵🇹 TG频道@kxswa|葡萄牙-优化3
+      - 🇨🇭 TG频道@kxswa|瑞士-优化2
+      - 🇭🇰 TG频道@kxswa|TLS - HongKong 01 🇭🇰 - Nền Liên Quân
       - 🇨🇳 台湾07
-      - 🇨🇴 TG频道@kxswa|哥伦比亚BOG01 1.3x
-      - 🇨🇳 台湾04
-      - 🇯🇵 JP-02 | 1x
-      - 🇬🇧 TG频道@kxswa|英国GLA01 1.3x
-      - 🇳🇱 TG频道@kxswa|荷兰-优化
-      - 🇳🇱 TG频道@kxswa|荷兰AMS01 1.3x
-      - 🇯🇵 日本09
-      - 🇻🇳 TG频道@kxswa|越南VN-T
-      - 🇰🇷 韩国02|高速
+      - 🇯🇵 TG频道@kxswa|JP日本002
+      - 🇭🇰 香港 02 | 流媒体 | 1.5x | ss
+      - 🇯🇵 【V3】东京·1Gbps | 2
+      - 🇸🇬 TG频道:@kxswa|新加坡07
+      - 🇸🇬 TG频道@kxswa|VIP SGP 02 🇸🇬 - Nền Liên Quân
+      - 🇹🇷 TG频道@kxswa|土耳其TR-T
+      - 🇭🇰 香港03|流媒体|新加坡
+      - 🇯🇵 日本22
+      - 🇺🇸 美国 02 | 流媒体 | 1.2x | ss
+      - 🇭🇰 TG频道:@kxswa|香港07
+      - 🇰🇷 韩国05|高速
+      - TG频道@kxswa|VIP Ha Noi 04 🇻🇳 - Nền Liên Quân
+      - 距离下次重置剩余：1 天
+      - 距离下次重置剩余：1 天 2
+      - 🇨🇳 台湾02
+      - 🇰🇷 韩国 03 | 1x | tr
+      - 🇭🇰 英国02|北港
+      - 🇨🇳 TG频道@kxswa|台湾-优化2
+      - 🇨🇦 TG频道:@kxswa|加拿大多伦多
+      - 🇨🇦 V5-加拿大1
+      - 🇸🇬 【V3】新加坡·1Gbps | 9
+      - TG频道@kxswa|Ho Chi Minh 02 🇻🇳 - Nền TikTok
+      - TG频道@kxswa|VIP VINAPHONE 0đ
+      - 🇯🇵 【V3】东京·1Gbps | 3
+      - 🇯🇵 V5-日本10
+      - 🇭🇰 V5-香港9
+      - 🇯🇵 免费-日本3
+      - 🇸🇬 新加坡专线v2
+      - 🇭🇰 TG频道@kxswa|香港HKT-优化3
+      - 距离下次重置剩余：24 天
+      - 🇨🇳 台湾06
+      - 🇭🇰 香港09
+      - 🇮🇳 【V3】印度·1Gbps | 2
+      - 🇬🇧 英国v6服务器 250MBPS
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇯🇵 日本21
-      - 🇮🇳 V5-印度01
-      - 🇺🇸 TG频道@kxswa|美国 | 倍率 x1
-      - 凌云网络 www.ly520.me
-      - 🇮🇸 TG频道@kxswa|冰岛RKV01 1.3x
-      - TG频道@kxswa|乌克兰IEV01 1.3x
-      - 🇸🇬 【V3】新加坡·1Gbps | 6
-      - TG频道@kxswa|格陵兰GOH02 1.3x
-      - 🇺🇸 TG频道@kxswa|美国LA-优化
-      - 🇯🇵 V5-日本6-下载专用
-      - 【提示】以下为流媒体解锁线路
-      - 🇦🇺 TG频道@kxswa|澳洲ADL02 1.3x
-      - 🇭🇰 V5-香港9
-      - 🇦🇺 TG频道@kxswa|澳大利亚-优化2
-      - 🇯🇵 TG频道@kxswa|日本TOK01 1.3x
-      - 🇭🇰 加拿大02|海港
-      - 🇷🇺 V5-俄罗斯
-      - 🇨🇭 TG频道@kxswa|瑞士-优化2
-      - 🇲🇾 TG频道@kxswa|马来西亚KUL02 1.3x
-      - 🇯🇵 日本04|高速
-      - 🇭🇰 香港02|高速|流媒体解锁
-      - 🇳🇱 TG频道@kxswa|荷兰-优化3
-      - 🇦🇺 TG频道@kxswa|澳洲BNE02 1.3x
-      - 🇺🇸 TG频道@kxswa|美国 | 倍率 x1 2
-      - 🇭🇰 香港高速专线v2
-      - 🇮🇳 IN-01 | 1.5x
-      - 🇸🇬 【V3】新加坡·1Gbps | 3
-      - 🇰🇷 V5-韩国 无可用性保障
-      - 🇨🇳 【V3】台湾·350Mbps | 解锁SG
-      - TG频道@kxswa|斯里兰卡CMB02 1.3x
-      - 🇯🇵 日本23
-      - 🇬🇧 TG频道@kxswa|UK英国001
+      - 🇰🇷 韩国04
+      - 🇰🇷 韩国 01 | 1x | tr
+      - 🇸🇬 新加坡10|高速
+      - 🇸🇬 【V3】新加坡·1Gbps | 4
+      - 🇯🇵 TG频道@kxswa|尼日利亚-优化
+      - 🇺🇸 美国公益节点|限速
       - 🇸🇬 TG频道@kxswa|TLS - VIP Singapore 01 🇸🇬 - Nền Liên Quân
-      - 🇮🇩 TG频道@kxswa|印尼JAK01 1.3x
-      - 🇲🇾 TG频道@kxswa|马来西亚-优化2
-      - 🇺🇸 V5-美国1
-      - 🇬🇧 V5-英国
-      - TG频道@kxswa|VIP Ho Chi Minh 03 🇻🇳 - Nền Liên Quân
-      - 🇭🇰 【V3】香港·1Gbps | HKT
-      - 🇭🇰 TG频道@kxswa|香港HKT-优化
-      - 🇵🇱 TG频道@kxswa|波兰WAW02 1.3x
-      - TG频道@kxswa|前南斯拉夫SKP02 1.3x
-      - 🇭🇰 TG频道@kxswa|HongKong 01 🇭🇰 - Nền Liên Quân
-      - 🇸🇬 TG频道@kxswa|VIP SGP 01 🇸🇬 - Nền Liên Quân
-      - 🇨🇦 TG频道@kxswa|CA加拿大001
-      - 🇭🇰 V5-香港3
-      - 🇭🇰 TG频道@kxswa|香港Az-优化3
-      - 🇫🇮 TG频道@kxswa|芬兰
-      - 🇬🇧 英国v6服务器 移动优化
-      - 🇲🇽 TG频道@kxswa|墨西哥-优化3
-      - 🇬🇧 英国v6服务器 250MBPS
-      - 🇯🇵 漂亮国01|沪日
-      - 🇭🇰 香港04|高速
+      - 🇭🇰 免费|香港|解锁|x1.0x速
+      - 🇩🇪 TG频道@kxswa|DE德国003
+      - TG频道@kxswa|Ha Noi 02 🇻🇳 - Nền TikTok
+      - 🇯🇵 日本 01 | 1x | tr
+      - 🇭🇰 ④香港|优选|1x
+      - 🇵🇱 TG频道@kxswa|波兰
+      - 🇭🇰 香港高速专线v2
+      - 🇭🇰 TG频道:@kxswa|香港01
+      - 🇨🇳 台湾 01 | 流媒体 | 1.5x | ss
+      - 🇭🇰 香港 01 | 1x | tr
+      - 🇯🇵 日本 03 | 1x | tr
+      - 🇮🇳 IN-01 | 1.5x
+      - 🇬🇧 TG频道@kxswa|UK英国001
+      - 🇦🇺 V5-澳大利亚1
+      - TG频道@kxswa|VIP HCM 03 🇻🇳 - Nền Liên Quân
+      - 🇸🇬 TG频道@kxswa|新加坡SG-T
+      - 🇸🇬 ①新加坡|优选|1x|奈飞
+      - 🇭🇰 香港 01 | 流媒体 | 1.5x | ss
+      - 🇰🇭 TG频道@kxswa|柬埔寨KH-T
+      - 🇵🇹 TG频道@kxswa|葡萄牙-优化2
+      - 🇵🇹 TG频道@kxswa|葡萄牙-优化3
+      - 🇨🇭 TG频道@kxswa|瑞士-优化2
+      - 🇭🇰 TG频道@kxswa|TLS - HongKong 01 🇭🇰 - Nền Liên Quân
       - 🇨🇳 台湾07
-      - 🇨🇴 TG频道@kxswa|哥伦比亚BOG01 1.3x
-      - 🇨🇳 台湾04
-      - 🇯🇵 JP-02 | 1x
-      - 🇬🇧 TG频道@kxswa|英国GLA01 1.3x
-      - 🇳🇱 TG频道@kxswa|荷兰-优化
-      - 🇳🇱 TG频道@kxswa|荷兰AMS01 1.3x
-      - 🇯🇵 日本09
-      - 🇻🇳 TG频道@kxswa|越南VN-T
-      - 🇰🇷 韩国02|高速
+      - 🇯🇵 TG频道@kxswa|JP日本002
+      - 🇭🇰 香港 02 | 流媒体 | 1.5x | ss
+      - 🇯🇵 【V3】东京·1Gbps | 2
+      - 🇸🇬 TG频道:@kxswa|新加坡07
+      - 🇸🇬 TG频道@kxswa|VIP SGP 02 🇸🇬 - Nền Liên Quân
+      - 🇹🇷 TG频道@kxswa|土耳其TR-T
+      - 🇭🇰 香港03|流媒体|新加坡
+      - 🇯🇵 日本22
+      - 🇺🇸 美国 02 | 流媒体 | 1.2x | ss
+      - 🇭🇰 TG频道:@kxswa|香港07
+      - 🇰🇷 韩国05|高速
+      - TG频道@kxswa|VIP Ha Noi 04 🇻🇳 - Nền Liên Quân
+      - 距离下次重置剩余：1 天
+      - 距离下次重置剩余：1 天 2
+      - 🇨🇳 台湾02
+      - 🇰🇷 韩国 03 | 1x | tr
+      - 🇭🇰 英国02|北港
+      - 🇨🇳 TG频道@kxswa|台湾-优化2
+      - 🇨🇦 TG频道:@kxswa|加拿大多伦多
+      - 🇨🇦 V5-加拿大1
+      - 🇸🇬 【V3】新加坡·1Gbps | 9
+      - TG频道@kxswa|Ho Chi Minh 02 🇻🇳 - Nền TikTok
+      - TG频道@kxswa|VIP VINAPHONE 0đ
+      - 🇯🇵 【V3】东京·1Gbps | 3
+      - 🇯🇵 V5-日本10
+      - 🇭🇰 V5-香港9
+      - 🇯🇵 免费-日本3
+      - 🇸🇬 新加坡专线v2
+      - 🇭🇰 TG频道@kxswa|香港HKT-优化3
+      - 距离下次重置剩余：24 天
+      - 🇨🇳 台湾06
+      - 🇭🇰 香港09
+      - 🇮🇳 【V3】印度·1Gbps | 2
+      - 🇬🇧 英国v6服务器 250MBPS
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -570,69 +586,71 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇯🇵 日本21
-      - 🇮🇳 V5-印度01
-      - 🇺🇸 TG频道@kxswa|美国 | 倍率 x1
-      - 凌云网络 www.ly520.me
-      - 🇮🇸 TG频道@kxswa|冰岛RKV01 1.3x
-      - TG频道@kxswa|乌克兰IEV01 1.3x
-      - 🇸🇬 【V3】新加坡·1Gbps | 6
-      - TG频道@kxswa|格陵兰GOH02 1.3x
-      - 🇺🇸 TG频道@kxswa|美国LA-优化
-      - 🇯🇵 V5-日本6-下载专用
-      - 【提示】以下为流媒体解锁线路
-      - 🇦🇺 TG频道@kxswa|澳洲ADL02 1.3x
-      - 🇭🇰 V5-香港9
-      - 🇦🇺 TG频道@kxswa|澳大利亚-优化2
-      - 🇯🇵 TG频道@kxswa|日本TOK01 1.3x
-      - 🇭🇰 加拿大02|海港
-      - 🇷🇺 V5-俄罗斯
-      - 🇨🇭 TG频道@kxswa|瑞士-优化2
-      - 🇲🇾 TG频道@kxswa|马来西亚KUL02 1.3x
-      - 🇯🇵 日本04|高速
-      - 🇭🇰 香港02|高速|流媒体解锁
-      - 🇳🇱 TG频道@kxswa|荷兰-优化3
-      - 🇦🇺 TG频道@kxswa|澳洲BNE02 1.3x
-      - 🇺🇸 TG频道@kxswa|美国 | 倍率 x1 2
-      - 🇭🇰 香港高速专线v2
-      - 🇮🇳 IN-01 | 1.5x
-      - 🇸🇬 【V3】新加坡·1Gbps | 3
-      - 🇰🇷 V5-韩国 无可用性保障
-      - 🇨🇳 【V3】台湾·350Mbps | 解锁SG
-      - TG频道@kxswa|斯里兰卡CMB02 1.3x
-      - 🇯🇵 日本23
-      - 🇬🇧 TG频道@kxswa|UK英国001
+      - 🇰🇷 韩国04
+      - 🇰🇷 韩国 01 | 1x | tr
+      - 🇸🇬 新加坡10|高速
+      - 🇸🇬 【V3】新加坡·1Gbps | 4
+      - 🇯🇵 TG频道@kxswa|尼日利亚-优化
+      - 🇺🇸 美国公益节点|限速
       - 🇸🇬 TG频道@kxswa|TLS - VIP Singapore 01 🇸🇬 - Nền Liên Quân
-      - 🇮🇩 TG频道@kxswa|印尼JAK01 1.3x
-      - 🇲🇾 TG频道@kxswa|马来西亚-优化2
-      - 🇺🇸 V5-美国1
-      - 🇬🇧 V5-英国
-      - TG频道@kxswa|VIP Ho Chi Minh 03 🇻🇳 - Nền Liên Quân
-      - 🇭🇰 【V3】香港·1Gbps | HKT
-      - 🇭🇰 TG频道@kxswa|香港HKT-优化
-      - 🇵🇱 TG频道@kxswa|波兰WAW02 1.3x
-      - TG频道@kxswa|前南斯拉夫SKP02 1.3x
-      - 🇭🇰 TG频道@kxswa|HongKong 01 🇭🇰 - Nền Liên Quân
-      - 🇸🇬 TG频道@kxswa|VIP SGP 01 🇸🇬 - Nền Liên Quân
-      - 🇨🇦 TG频道@kxswa|CA加拿大001
-      - 🇭🇰 V5-香港3
-      - 🇭🇰 TG频道@kxswa|香港Az-优化3
-      - 🇫🇮 TG频道@kxswa|芬兰
-      - 🇬🇧 英国v6服务器 移动优化
-      - 🇲🇽 TG频道@kxswa|墨西哥-优化3
-      - 🇬🇧 英国v6服务器 250MBPS
-      - 🇯🇵 漂亮国01|沪日
-      - 🇭🇰 香港04|高速
+      - 🇭🇰 免费|香港|解锁|x1.0x速
+      - 🇩🇪 TG频道@kxswa|DE德国003
+      - TG频道@kxswa|Ha Noi 02 🇻🇳 - Nền TikTok
+      - 🇯🇵 日本 01 | 1x | tr
+      - 🇭🇰 ④香港|优选|1x
+      - 🇵🇱 TG频道@kxswa|波兰
+      - 🇭🇰 香港高速专线v2
+      - 🇭🇰 TG频道:@kxswa|香港01
+      - 🇨🇳 台湾 01 | 流媒体 | 1.5x | ss
+      - 🇭🇰 香港 01 | 1x | tr
+      - 🇯🇵 日本 03 | 1x | tr
+      - 🇮🇳 IN-01 | 1.5x
+      - 🇬🇧 TG频道@kxswa|UK英国001
+      - 🇦🇺 V5-澳大利亚1
+      - TG频道@kxswa|VIP HCM 03 🇻🇳 - Nền Liên Quân
+      - 🇸🇬 TG频道@kxswa|新加坡SG-T
+      - 🇸🇬 ①新加坡|优选|1x|奈飞
+      - 🇭🇰 香港 01 | 流媒体 | 1.5x | ss
+      - 🇰🇭 TG频道@kxswa|柬埔寨KH-T
+      - 🇵🇹 TG频道@kxswa|葡萄牙-优化2
+      - 🇵🇹 TG频道@kxswa|葡萄牙-优化3
+      - 🇨🇭 TG频道@kxswa|瑞士-优化2
+      - 🇭🇰 TG频道@kxswa|TLS - HongKong 01 🇭🇰 - Nền Liên Quân
       - 🇨🇳 台湾07
-      - 🇨🇴 TG频道@kxswa|哥伦比亚BOG01 1.3x
-      - 🇨🇳 台湾04
-      - 🇯🇵 JP-02 | 1x
-      - 🇬🇧 TG频道@kxswa|英国GLA01 1.3x
-      - 🇳🇱 TG频道@kxswa|荷兰-优化
-      - 🇳🇱 TG频道@kxswa|荷兰AMS01 1.3x
-      - 🇯🇵 日本09
-      - 🇻🇳 TG频道@kxswa|越南VN-T
-      - 🇰🇷 韩国02|高速
+      - 🇯🇵 TG频道@kxswa|JP日本002
+      - 🇭🇰 香港 02 | 流媒体 | 1.5x | ss
+      - 🇯🇵 【V3】东京·1Gbps | 2
+      - 🇸🇬 TG频道:@kxswa|新加坡07
+      - 🇸🇬 TG频道@kxswa|VIP SGP 02 🇸🇬 - Nền Liên Quân
+      - 🇹🇷 TG频道@kxswa|土耳其TR-T
+      - 🇭🇰 香港03|流媒体|新加坡
+      - 🇯🇵 日本22
+      - 🇺🇸 美国 02 | 流媒体 | 1.2x | ss
+      - 🇭🇰 TG频道:@kxswa|香港07
+      - 🇰🇷 韩国05|高速
+      - TG频道@kxswa|VIP Ha Noi 04 🇻🇳 - Nền Liên Quân
+      - 距离下次重置剩余：1 天
+      - 距离下次重置剩余：1 天 2
+      - 🇨🇳 台湾02
+      - 🇰🇷 韩国 03 | 1x | tr
+      - 🇭🇰 英国02|北港
+      - 🇨🇳 TG频道@kxswa|台湾-优化2
+      - 🇨🇦 TG频道:@kxswa|加拿大多伦多
+      - 🇨🇦 V5-加拿大1
+      - 🇸🇬 【V3】新加坡·1Gbps | 9
+      - TG频道@kxswa|Ho Chi Minh 02 🇻🇳 - Nền TikTok
+      - TG频道@kxswa|VIP VINAPHONE 0đ
+      - 🇯🇵 【V3】东京·1Gbps | 3
+      - 🇯🇵 V5-日本10
+      - 🇭🇰 V5-香港9
+      - 🇯🇵 免费-日本3
+      - 🇸🇬 新加坡专线v2
+      - 🇭🇰 TG频道@kxswa|香港HKT-优化3
+      - 距离下次重置剩余：24 天
+      - 🇨🇳 台湾06
+      - 🇭🇰 香港09
+      - 🇮🇳 【V3】印度·1Gbps | 2
+      - 🇬🇧 英国v6服务器 250MBPS
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
