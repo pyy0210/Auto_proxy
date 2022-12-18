@@ -5,84 +5,130 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇸🇬 隧道|NF|新加坡03, server: yzdx.relay01.fast001.buzz, port: 19231, type: vmess, uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 印度02|深港专线, server: catnet-moble.gatknqh.cn, port: 11042, type: ss, cipher: aes-128-gcm, password: f3f23113-6bfe-4474-96c7-fe16d26dab6b}
-  - {name: "🇬🇧 [Vip1]英国01[1.0]", server: gddx.fastestcloud.xyz, port: 49000, type: vmess, uuid: 839a5eaa-5913-4c62-8a87-5393e743bea6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: gddx.fastestcloud.xyz}}}
-  - {name: 🇯🇵 日本13|专线|流媒体解锁, server: jp14.czs1000.com, port: 4100, type: vmess, uuid: 5e2c083f-231f-4eda-9df6-b3d5eb98b142, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: jp14.czs1000.com}
-  - {name: 🇭🇰 HK|02|长沙|隧道|倍率x1.5, server: cs-cm.cmcclives.top, port: 37595, type: vmess, uuid: 899d22f0-c64d-11ea-9ea2-0188c5b584d8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 香港09|深港专线, server: catnet-moble.gatknqh.cn, port: 11009, type: ss, cipher: aes-128-gcm, password: a4431055-05ff-493c-9eeb-1885124a7da2}
-  - {name: 🇭🇰 日本06|深港专线, server: catnet-unicom.gatknqh.cn, port: 11016, type: ss, cipher: aes-128-gcm, password: a4431055-05ff-493c-9eeb-1885124a7da2}
-  - {name: 🇭🇰 美国01|深港专线, server: catnet-unicom.gatknqh.cn, port: 11023, type: ss, cipher: aes-128-gcm, password: f3f23113-6bfe-4474-96c7-fe16d26dab6b}
-  - {name: 🇰🇷 隧道|NF|韩国01, server: yzdx.relay01.fast001.buzz, port: 19242, type: vmess, uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇯🇵 日本03, server: jp3.feiyun.club, port: 1000, type: vmess, uuid: 980fbec9-423f-483b-8a27-6a233c27206a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: jp3.feiyun.club}
-  - {name: "🇸🇬 [Vip1]新加坡06[1.0|流媒体解锁]", server: gddx.fastestcloud.xyz, port: 43002, type: vmess, uuid: 922c71a1-05d0-474f-93a5-285996fa1ee8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: gddx.fastestcloud.xyz}}}
-  - {name: 🇰🇷 韩国05|高速, server: kr1.czs1000.com, port: 21217, type: vmess, uuid: 5e2c083f-231f-4eda-9df6-b3d5eb98b142, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, headers: {Host: tlu.dl.delivery.mp.microsoft.com}}}
-  - {name: 🇯🇵 日本12, server: jp12.tejiewm.com, port: 4443, type: vmess, uuid: 5e2c083f-231f-4eda-9df6-b3d5eb98b142, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: jp12.tejiewm.com}
-  - {name: "🇸🇬 [Vip1]新加坡04[1.0|移动|流媒体解锁]", server: gddx.fosi.hk, port: 43592, type: vmess, uuid: 839a5eaa-5913-4c62-8a87-5393e743bea6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: gddx.fosi.hk}}}
-  - {name: 🇭🇰 香港07|深港专线, server: catnet-moble.gatknqh.cn, port: 11007, type: ss, cipher: aes-128-gcm, password: f3f23113-6bfe-4474-96c7-fe16d26dab6b}
-  - {name: 🇭🇰 香港|03, server: hkc-zf.clm10086.xyz, port: 18883, type: ss, cipher: chacha20-ietf-poly1305, password: 68b5fd7e-b8d5-439e-b72b-cba22c3f349c}
-  - {name: 🇨🇦 _CA_加拿大->🇺🇸_US_美国, server: 23.227.38.39, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: oplg1.zhujicn2.com}}}
-  - {name: 🇸🇬 新加坡02|移动优化, server: sg2.feiyun.club, port: 39283, type: vmess, uuid: 980fbec9-423f-483b-8a27-6a233c27206a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: sg2.feiyun.club}
-  - {name: 🇸🇬 137|新加坡|yd线路|x2.5, server: 223.111.132.10, port: 36363, type: vmess, uuid: 0a6c9b63-3a98-4a80-b956-db4a227910d4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: sg1.bwh088.xyz, network: ws, ws-opts: {path: /fg45, headers: {Host: sg1.bwh088.xyz}}}
-  - {name: "🇸🇬 [Vip1]新加坡06[1.0|流媒体解锁] 2", server: gddx.fastestcloud.xyz, port: 43002, type: vmess, uuid: 839a5eaa-5913-4c62-8a87-5393e743bea6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: gddx.fastestcloud.xyz}}}
-  - {name: 🇩🇪 德国02|深港专线, server: catnet-moble.gatknqh.cn, port: 11038, type: ss, cipher: aes-128-gcm, password: f3f23113-6bfe-4474-96c7-fe16d26dab6b}
-  - {name: 🇷🇴 罗马尼亚, server: lmny-zf.clm10086.xyz, port: 17882, type: ss, cipher: chacha20-ietf-poly1305, password: 68b5fd7e-b8d5-439e-b72b-cba22c3f349c}
+  - {name: "🇺🇲 [v1]美国|02", server: sinash02.dghjkjhertyuihgfddfghjasdertyuudfghjaxcvbj.com, port: 30048, type: vmess, uuid: 3ee78889-183c-4acf-97e3-071fe2592110, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aceamedv, headers: {Host: sh02.fastcloud.club}}}
+  - {name: "🇬🇧 [v1]英国|01", server: sinash01.dghjkjhertyuihgfddfghjasdertyuudfghjaxcvbj.com, port: 30016, type: vmess, uuid: 3ee78889-183c-4acf-97e3-071fe2592110, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aceamedv, headers: {Host: sh01.fastcloud.club}}}
+  - {name: 🇹🇷 【F】土耳其VIP1-Steam, server: s01.boom.skin, port: 37000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 220626:KmNEvn, obfs-param: download.windowsupdate.com}
+  - {name: 🇸🇬 【K】新加坡普通1-DO, server: nk8.boom.skin, port: 18000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 220626:KmNEvn, obfs-param: download.windowsupdate.com}
+  - {name: 🇸🇬 【L】新加坡VIP2-Netflix, server: nl2.boom.skin, port: 23000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 220626:KmNEvn, obfs-param: download.windowsupdate.com}
+  - {name: 🇭🇰 日本04|深港专线, server: catnet-unicom.gatknqh.cn, port: 11014, type: ss, cipher: aes-128-gcm, password: a4431055-05ff-493c-9eeb-1885124a7da2}
+  - {name: 🇭🇰 【IEPL】香港普通4-Nearoute, server: nk4.boom.skin, port: 14000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 220626:KmNEvn, obfs-param: download.windowsupdate.com}
+  - {name: "🇭🇰 [联通]香港·F1|02", server: sinagz.dghjkjhertyuihgfddfghjasdertyuudfghjaxcvbj.com, port: 30023, type: vmess, uuid: 3ee78889-183c-4acf-97e3-071fe2592110, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aceamedv, headers: {Host: gz.fastcloud.club}}}
+  - {name: 🇬🇧 JCBB_英国02【vip1】, server: cu.kapoknode.com, port: 25884, type: vmess, uuid: fb0919d7-719d-4036-9035-2bc5498eedcd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}}
+  - {name: 🇯🇵 IEPL|日本, server: asia.miaocn.cyou, port: 10922, type: ss, cipher: aes-128-gcm, password: 395a3528-54a8-41a7-959d-84945e0cd1a3}
+  - {name: 🇭🇰 高级丨HongKong, server: hn.dx.interface.buzz, port: 25202, type: ss, cipher: aes-256-gcm, password: 853227b6-f1ea-4674-9d5d-9089d45b3338}
+  - {name: "🇨🇳 [Vip1]台湾02[1.0|联通|流媒体解锁]", server: azsh01.1aba.cn, port: 27806, type: vmess, uuid: 02084907-775b-4308-8bd9-4d2fed89da36, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}}
+  - {name: 🇭🇰 【O】香港VIP5-Leaseweb, server: opt10.boom.skin, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 220626:KmNEvn, obfs-param: download.windowsupdate.com}
+  - {name: 🇰🇷 韩国05|高速, server: kr1.czs1000.com, port: 21217, type: vmess, uuid: c8b7c170-1883-4807-844f-82a90c64af01, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, headers: {Host: tlu.dl.delivery.mp.microsoft.com}}}
+  - {name: 🇦🇺 Lv4澳大利亚悉尼, server: sh.cm.izhimajiasu.com, port: 45313, type: ss, cipher: chacha20-ietf-poly1305, password: 84b5bf4a-ef02-497d-830f-8d96d64cd759}
+  - {name: "🇺🇲 [Lv3·1.0x]美国卢森堡04|IP均衡优化|混合负载|500Mbps共享", server: lv3oiwdaxsaowhdnjkzxw.hjspyto.cn, port: 33336, type: vmess, uuid: 76149cc1-6ec3-3610-ad44-bca126fbdba4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-us4, headers: {Host: ushksw888x.vzwzasc.cn}}}
+  - {name: 🇸🇬 如果线路故障请更新订阅, server: 1, port: 1, type: ss, cipher: chacha20-ietf-poly1305, password: 61605c66-6d41-4b9d-a496-b9898f3f95d0}
+  - {name: "🇯🇵 [Lv2·1.0x]日本03|IP均衡优化|混合负载|600Mbps共享", server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33335, type: vmess, uuid: 76149cc1-6ec3-3610-ad44-bca126fbdba4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-awsrb1, headers: {Host: jpshdwanlx.vzwzasc.cn}}}
+  - {name: 🇸🇬 高级丨Singapore, server: hn.lt.interface.buzz, port: 65102, type: ss, cipher: aes-256-gcm, password: 853227b6-f1ea-4674-9d5d-9089d45b3338}
+  - {name: 阿拉伯联合酋长国, server: alianq-zf.clm10086.xyz, port: 57501, type: ss, cipher: chacha20-ietf-poly1305, password: 68b5fd7e-b8d5-439e-b72b-cba22c3f349c}
+  - {name: 🇺🇲 Lv4洛杉矶vir3倍率, server: virla.88000022.xyz, port: 443, type: vmess, uuid: 84b5bf4a-ef02-497d-830f-8d96d64cd759, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: virla.88000022.xyz, network: ws, ws-opts: {path: /, headers: {Host: virla.88000022.xyz}}}
+  - {name: 🇲🇴 _MO_澳门, server: 45.64.22.55, port: 443, type: trojan, password: KLF0qOU0ZZGw5Tnu, sni: swift.protocolbuffer.com, skip-cert-verify: false}
+  - {name: 🇭🇰 【O】香港VIP4-Leaseweb, server: opt9.boom.skin, port: 19000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 220626:KmNEvn, obfs-param: download.windowsupdate.com}
+  - {name: "🇭🇰 [vip1]香港02[1.0|移动|流媒体解锁]", server: gddx.fosi.hk, port: 35499, type: vmess, uuid: 847f10c8-4076-44b4-ac1f-2bdf5e91f8d0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: gddx.fosi.hk}}}
+  - {name: "🇯🇵 [Lv3·1.0x]日本002|混合负载|1000Mbps共享", server: lv3oiwdaxsaowhdnjkzxw.hjspyto.cn, port: 12346, type: trojan, password: 76149cc1-6ec3-3610-ad44-bca126fbdba4, sni: oiugbalxawdfas.vzwzasc.cn, skip-cert-verify: false}
+  - {name: 🇸🇬 Lv4新加坡, server: sh.cm.izhimajiasu.com, port: 45003, type: ss, cipher: chacha20-ietf-poly1305, password: 84b5bf4a-ef02-497d-830f-8d96d64cd759}
+  - {name: 🇭🇰 【A】香港VIP5-Leaseweb, server: n24.boom.skin, port: 12000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 220626:KmNEvn, obfs-param: download.windowsupdate.com}
+  - {name: 🇺🇲 _US_美国, server: 162.251.61.47, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇯🇵 【N】日本VIPB-Leaseweb, server: nn2.boom.skin, port: 41000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 220626:KmNEvn, obfs-param: download.windowsupdate.com}
+  - {name: 🇭🇰 【B】香港VIPC-Nearoute, server: n43.boom.skin, port: 24000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 220626:KmNEvn, obfs-param: download.windowsupdate.com}
+  - {name: 🇭🇰 【M】香港VIP2-Netflix, server: nm2.boom.skin, port: 12000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 220626:KmNEvn, obfs-param: download.windowsupdate.com}
+  - {name: 🇲🇾 【L】马来西亚VIP1-TMNet, server: s101.boom.skin, port: 32000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 220626:KmNEvn, obfs-param: download.windowsupdate.com}
+  - {name: 🇭🇰 Lv4香港HE-sg-sh解锁, server: sh.cm.izhimajiasu.com, port: 45772, type: ss, cipher: chacha20-ietf-poly1305, password: 84b5bf4a-ef02-497d-830f-8d96d64cd759}
+  - {name: 🇭🇰 美国04|深港专线, server: catnet-unicom.gatknqh.cn, port: 11026, type: ss, cipher: aes-128-gcm, password: f3f23113-6bfe-4474-96c7-fe16d26dab6b}
+  - {name: 🇭🇰 台湾08|深港专线, server: catnet-tw.gatknqh.cn, port: 11036, type: ss, cipher: aes-128-gcm, password: a4431055-05ff-493c-9eeb-1885124a7da2}
+  - {name: 🇭🇰 日本02|深港专线, server: catnet-unicom.gatknqh.cn, port: 11012, type: ss, cipher: aes-128-gcm, password: f3f23113-6bfe-4474-96c7-fe16d26dab6b}
+  - {name: 🇯🇵 日本22, server: jp22.czs1000.com, port: 443, type: trojan, password: c8b7c170-1883-4807-844f-82a90c64af01, sni: 13-251-128-188.nhost.00cdn.com, skip-cert-verify: false}
+  - {name: "🇺🇲 [Lv2·1.0x]美国拉斯维加斯01|IP均衡优化|混合负载|500Mbps共享", server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33335, type: vmess, uuid: 76149cc1-6ec3-3610-ad44-bca126fbdba4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-us1, headers: {Host: ushksw888x.vzwzasc.cn}}}
+  - {name: IEPL|柬埔寨, server: asia.miaocn.cyou, port: 36503, type: ss, cipher: aes-128-gcm, password: 395a3528-54a8-41a7-959d-84945e0cd1a3}
+  - {name: 🇹🇷 土耳其|02, server: trqb-zf.clm10086.xyz, port: 20883, type: ss, cipher: chacha20-ietf-poly1305, password: 68b5fd7e-b8d5-439e-b72b-cba22c3f349c}
+  - {name: 🇯🇵 日本06|高速, server: jp6.czs1000.com, port: 25040, type: trojan, password: c8b7c170-1883-4807-844f-82a90c64af01, skip-cert-verify: false}
+  - {name: 孟加拉国, server: mljg-zf.clm10086.xyz, port: 57101, type: ss, cipher: chacha20-ietf-poly1305, password: 68b5fd7e-b8d5-439e-b72b-cba22c3f349c}
+  - {name: 🇸🇬 【L】新加坡VIP6-Netflix, server: nl6.boom.skin, port: 27000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 220626:KmNEvn, obfs-param: download.windowsupdate.com}
+  - {name: "🇯🇵 [Lv2·1.0x]日本001|混合负载|1000Mbps共享", server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 12341, type: trojan, password: 76149cc1-6ec3-3610-ad44-bca126fbdba4, sni: wdaiuxxawdiuaxjp.vzwzasc.cn, skip-cert-verify: false}
+  - {name: 🇺🇲 _CY_塞浦路斯->🇺🇸_US_美国, server: 203.24.108.9, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: oplg1.zhujicn2.com}}}
+  - {name: 🇯🇵 _JP_日本, server: 85.208.108.60, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: 🇭🇰 香港|07, server: hkg-zf.clm10086.xyz, port: 45890, type: ss, cipher: chacha20-ietf-poly1305, password: 68b5fd7e-b8d5-439e-b72b-cba22c3f349c}
+  - {name: 🇨🇳 165|台湾Hinet|x3.5, server: ctcs.hffb.xyz, port: 44155, type: trojan, password: 0a6c9b63-3a98-4a80-b956-db4a227910d4, sni: tw02.lgm88.top, skip-cert-verify: false}
+  - {name: 🇯🇵 【N】日本VIP6-Nerocloud, server: jp11.boom.skin, port: 39100, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 220626:KmNEvn, obfs-param: download.windowsupdate.com}
+  - {name: 🇯🇵 日本直连02, server: s2-api.zlhost.xyz, port: 17003, type: trojan, password: e198c059-18e0-4c5e-8358-b4b7850d4d86, sni: lop1waeq.v1d.szbdyd.com, skip-cert-verify: false}
+  - {name: 🇭🇰 台湾02|深港专线, server: catnet-tw.gatknqh.cn, port: 11030, type: ss, cipher: aes-128-gcm, password: a4431055-05ff-493c-9eeb-1885124a7da2}
+  - {name: "🇯🇵 [Lv3·1.0x]日本09|大阪|混合负载|800Mbps共享", server: lv3oiwdaxsaowhdnjkzxw.hjspyto.cn, port: 43382, type: vmess, uuid: 76149cc1-6ec3-3610-ad44-bca126fbdba4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-dbfw, headers: {Host: jpwbasdw.vzwzasc.cn}}}
+  - {name: 🇹🇷 Lv3土耳其, server: sh.cm.izhimajiasu.com, port: 45030, type: ss, cipher: chacha20-ietf-poly1305, password: 84b5bf4a-ef02-497d-830f-8d96d64cd759}
+  - {name: 🇯🇵 日本20|高速|80端口, server: jp20.czs1000.com, port: 80, type: vmess, uuid: c8b7c170-1883-4807-844f-82a90c64af01, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, headers: {Host: tlu.dl.delivery.mp.microsoft.com}}}
+  - {name: 🇭🇰 【B】香港普通3-Nearoute, server: n62.boom.skin, port: 20000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 220626:KmNEvn, obfs-param: download.windowsupdate.com}
+  - {name: 🇯🇵 新加坡|02|奈飞广日电信隧道2, server: gzdx1.170203.xyz, port: 14733, type: trojan, password: 69c90ff3-d734-45ff-8ea2-bda7bf3ea267, sni: sgmax02.170203.xyz, skip-cert-verify: false}
+  - {name: 🇭🇰 【J】香港VIP1-Netflix, server: nj1.boom.skin, port: 11000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 220626:KmNEvn, obfs-param: download.windowsupdate.com}
+  - {name: "🇭🇰 [vip1]香港01[1.0|移动|流媒体解锁]", server: azsh01.1aba.cn, port: 18254, type: vmess, uuid: c1ced88a-4c26-45bb-b959-89375892cc04, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}}
+  - {name: 🇺🇲 JCBB_美国03【vip1】, server: cu.kapoknode.com, port: 25885, type: vmess, uuid: 17cf57cc-4b08-4a93-85bf-72b812f45305, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}}
+  - {name: 🇭🇰 日本04|深港专线 2, server: catnet-unicom.gatknqh.cn, port: 11014, type: ss, cipher: aes-128-gcm, password: f3f23113-6bfe-4474-96c7-fe16d26dab6b}
+  - {name: 🇨🇳 Lv4台湾2Xsg-sh, server: sh.cm.izhimajiasu.com, port: 45002, type: ss, cipher: chacha20-ietf-poly1305, password: 84b5bf4a-ef02-497d-830f-8d96d64cd759}
+  - {name: 🇯🇵 【I】日本VIP5-Azure, server: nf5.boom.skin, port: 15000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 220626:KmNEvn, obfs-param: download.windowsupdate.com}
+  - {name: 🇯🇵 日本|03|直连2, server: jp03.170203.xyz, port: 23245, type: vmess, uuid: 69c90ff3-d734-45ff-8ea2-bda7bf3ea267, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jp03.170203.xyz}}}
+  - {name: 🇹🇷 土耳其01, server: tr.tejiewm.com, port: 4122, type: vmess, uuid: c8b7c170-1883-4807-844f-82a90c64af01, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: tr.tejiewm.com}
+  - {name: 🇬🇧 Lv3英国4广, server: gz.cm.izhimajiasu.com, port: 57002, type: ss, cipher: chacha20-ietf-poly1305, password: 84b5bf4a-ef02-497d-830f-8d96d64cd759}
+  - {name: 🇯🇵 日本19, server: jp19.czs1000.com, port: 6633, type: vmess, uuid: c8b7c170-1883-4807-844f-82a90c64af01, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: jp19.czs1000.com}
+  - {name: 🇷🇺 Lv3俄罗斯, server: gz.cm.izhimajiasu.com, port: 47785, type: ss, cipher: chacha20-ietf-poly1305, password: 84b5bf4a-ef02-497d-830f-8d96d64cd759}
+  - {name: 🇺🇲 Lv3美国洛杉矶inp3, server: sh.cm.izhimajiasu.com, port: 45787, type: ss, cipher: chacha20-ietf-poly1305, password: 84b5bf4a-ef02-497d-830f-8d96d64cd759}
+  - {name: 🇭🇰 中国香港-B-5X, server: gy.alhttdw.cn, port: 55003, type: vmess, uuid: 00ac9d14-343f-4131-ac09-39384b4f421a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 【M】香港VIP4-Netflix, server: nm4.boom.skin, port: 14000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 220626:KmNEvn, obfs-param: download.windowsupdate.com}
+  - {name: 🇭🇰 【IEPL】香港普通3-Nearoute, server: nk3.boom.skin, port: 13000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 220626:KmNEvn, obfs-param: download.windowsupdate.com}
+  - {name: 🇭🇰 167|香港|x2.0, server: A008.baipiaoxd.com, port: 15429, type: vmess, uuid: 0a6c9b63-3a98-4a80-b956-db4a227910d4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: ahk.bwh088.xyz, network: ws, ws-opts: {path: /wuo2331, headers: {Host: ahk.bwh088.xyz}}}
+  - {name: "🇸🇬 [Lv3·1.0x]新加坡03|IP均衡优化|CTN加速|500Mbps共享", server: lv3oiwdaxsaowhdnjkzxw.hjspyto.cn, port: 33336, type: vmess, uuid: 76149cc1-6ec3-3610-ad44-bca126fbdba4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-awsxjp3, headers: {Host: sgkhowaxawdx.vzwzasc.cn}}}
+  - {name: 🇯🇵 日本软银-gRPC-3, server: sb.sshub.xyz, port: 10033, type: vmess, uuid: 61605c66-6d41-4b9d-a496-b9898f3f95d0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: sb.sshub.xyz, network: grpc, grpc-opts: {grpc-service-name: sb3.sshub.xyz}}
+  - {name: 🇹🇷 土耳其02, server: tr2.czs1000.com, port: 11217, type: vmess, uuid: c8b7c170-1883-4807-844f-82a90c64af01, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, headers: {Host: tlu.dl.delivery.mp.microsoft.com}}}
+  - {name: 🇯🇵 JCBB_日本04【vip1】, server: cu.kapoknode.com, port: 25931, type: vmess, uuid: fb0919d7-719d-4036-9035-2bc5498eedcd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cu.kapoknode.com}}}
+  - {name: 🇯🇵 新加坡|03|广日电信隧道2, server: jp.gilsfe.cn, port: 26957, type: trojan, password: 69c90ff3-d734-45ff-8ea2-bda7bf3ea267, sni: sgmax03.170203.xyz, skip-cert-verify: false}
+  - {name: "🇸🇬 [Lv2·1.0x]新加坡02|IP均衡优化|CTN加速|500Mbps共享", server: lv2iwahxwawhooiixzawxc.hjspyto.cn, port: 33335, type: vmess, uuid: 76149cc1-6ec3-3610-ad44-bca126fbdba4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /tnt-awsxjp2, headers: {Host: sgkhowaxawdx.vzwzasc.cn}}}
+  - {name: 🇬🇧 英国01|深港专线, server: catnet-moble.gatknqh.cn, port: 11039, type: ss, cipher: aes-128-gcm, password: f3f23113-6bfe-4474-96c7-fe16d26dab6b}
   - {name: 🇺🇲 US01-SS-隧道传输, server: gz-tun.cmcclive.top, port: 42006, type: ss, cipher: chacha20-ietf-poly1305, password: 899d22f0-c64d-11ea-9ea2-0188c5b584d8}
-  - {name: 🇭🇰 香港|02奈飞AZ广港电信隧道, server: gzdx1.170203.xyz, port: 15612, type: trojan, password: a257a83f-d6d4-4bc0-9cc9-10484348ee8f, sni: hkmax02.170203.xyz, skip-cert-verify: false}
-  - {name: 「🇻🇳」兵之神「免流」★★, server: 172.104.68.36, port: 443, type: vmess, uuid: 72da2287-c0ef-4663-aa22-4c8f44056ad3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: shoutingtoutiao3.10010.com}}}
-  - {name: 🇭🇰 新加坡|01|广港电信隧道4, server: gzdx1.170203.xyz, port: 21595, type: trojan, password: a257a83f-d6d4-4bc0-9cc9-10484348ee8f, sni: sg01.170203.xyz, skip-cert-verify: false}
-  - {name: 🇰🇷 韩国01|高速, server: kr1.czs1000.com, port: 11217, type: vmess, uuid: 5e2c083f-231f-4eda-9df6-b3d5eb98b142, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, headers: {Host: tlu.dl.delivery.mp.microsoft.com}}}
-  - {name: 🇸🇬 新加坡体验, server: 04.123445566.xyz, port: 42716, type: ss, cipher: chacha20-ietf-poly1305, password: 5b8c41b6-aa85-4085-a64e-d766a6feaa5d}
-  - {name: 「🇯🇵」免流牌「免流」✰, server: 150.230.199.99, port: 8080, type: vmess, uuid: 72da2287-c0ef-4663-aa22-4c8f44056ad3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: shoutingtoutiao1.10010.com}}}
-  - {name: 🇯🇵 日本10, server: jp10.tejiewm.com, port: 1000, type: vmess, uuid: 980fbec9-423f-483b-8a27-6a233c27206a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: jp10.tejiewm.com}
-  - {name: 🇯🇵 日本|03|广日电信隧道2, server: gzdx0.170203.xyz, port: 18289, type: trojan, password: a257a83f-d6d4-4bc0-9cc9-10484348ee8f, sni: jpmax03.170203.xyz, skip-cert-verify: false}
-  - {name: "🇭🇰 [Vip1]香港07[1.0|移动|流媒体解锁]", server: azsh01.1aba.cn, port: 37663, type: vmess, uuid: a3203e10-dab1-4615-a7c1-a7ec514447c5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: azsh01.1aba.cn}}}
-  - {name: ⚠️续费请前往【闪电猫.com】, server: 127.0.0.1, port: 10086, type: ss, cipher: chacha20-ietf-poly1305, password: b1047ad0-d94f-4645-80ec-437fa7e4ef08}
-  - {name: 🇭🇰 香港13|原生|x5, server: hk13.czs1000.com, port: 11218, type: vmess, uuid: 5e2c083f-231f-4eda-9df6-b3d5eb98b142, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: hk13.czs1000.com}
-  - {name: 🇯🇵 JP|02|上海|隧道|倍率x2, server: sh.cmcclive.top, port: 28317, type: vmess, uuid: 899d22f0-c64d-11ea-9ea2-0188c5b584d8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sh.cmcclive.top}}}
-  - {name: "California,SS-BGroup", server: bgroup.node5.s.nodelist-gfwairport1.download, port: 50001, type: ss, cipher: chacha20-ietf-poly1305, password: 501e4691-3868-483c-a379-c2e2c8e85741}
-  - {name: 🇭🇰 美国|01|广港电信隧道0, server: gzdx1.170203.xyz, port: 42007, type: trojan, password: a257a83f-d6d4-4bc0-9cc9-10484348ee8f, sni: usmax01.170203.xyz, skip-cert-verify: false}
-  - {name: 🇬🇧 英国02|深港专线, server: catnet-moble.gatknqh.cn, port: 11040, type: ss, cipher: aes-128-gcm, password: f3f23113-6bfe-4474-96c7-fe16d26dab6b}
-  - {name: 🇨🇳 隧道|NF|台湾01, server: hndx.relay01.fast001.buzz, port: 19221, type: vmess, uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇨🇦 加拿大|CALite-广港, server: ssgz.sdm.lol, port: 33358, type: ss, cipher: chacha20-ietf-poly1305, password: b1047ad0-d94f-4645-80ec-437fa7e4ef08}
-  - {name: 🇯🇵 日本|高速|01|湘日联通隧道2, server: jp.gilsfe.cn, port: 29378, type: trojan, password: a257a83f-d6d4-4bc0-9cc9-10484348ee8f, sni: jpmax01.170203.xyz, skip-cert-verify: false}
-  - {name: 🇺🇲 隧道|NF|美国01, server: yzdx.relay01.fast001.buzz, port: 19244, type: vmess, uuid: d5a44e19-2248-3df8-bfac-7bfbe292d74a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: "🇯🇵 [联通]日本·F1|03", server: sinash01.dghjkjhertyuihgfddfghjasdertyuudfghjaxcvbj.com, port: 30021, type: vmess, uuid: 8617637a-c668-4e45-8d2a-62b920ced073, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aceamedv, headers: {Host: sh01.fastcloud.club}}}
-  - {name: "🇺🇲 [v1]美国|02", server: sinash02.dghjkjhertyuihgfddfghjasdertyuudfghjaxcvbj.com, port: 30048, type: vmess, uuid: 8617637a-c668-4e45-8d2a-62b920ced073, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aceamedv, headers: {Host: sh02.fastcloud.club}}}
-  - {name: 🇭🇰 台湾06|深港专线, server: catnet-tw.gatknqh.cn, port: 11034, type: ss, cipher: aes-128-gcm, password: f3f23113-6bfe-4474-96c7-fe16d26dab6b}
-  - {name: 🇲🇾 马来西亚, server: mlxy-zf.clm10086.xyz, port: 14881, type: ss, cipher: chacha20-ietf-poly1305, password: 68b5fd7e-b8d5-439e-b72b-cba22c3f349c}
-  - {name: 「🇰🇷」昆仑镜「免流」✰, server: qv6.godseven.xyz, port: 8080, type: vmess, uuid: 72da2287-c0ef-4663-aa22-4c8f44056ad3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: pull-hls.free.video.10010.com}}}
-  - {name: 🇬🇧 英国01|深港专线, server: catnet-moble.gatknqh.cn, port: 11039, type: ss, cipher: aes-128-gcm, password: a4431055-05ff-493c-9eeb-1885124a7da2}
-  - {name: 🇭🇰 香港|04, server: hkd-zf.clm10086.xyz, port: 18884, type: ss, cipher: chacha20-ietf-poly1305, password: 68b5fd7e-b8d5-439e-b72b-cba22c3f349c}
-  - {name: 🇭🇰 美国03|深港专线, server: catnet-unicom.gatknqh.cn, port: 11025, type: ss, cipher: aes-128-gcm, password: a4431055-05ff-493c-9eeb-1885124a7da2}
-  - {name: 🇨🇳 「🇭🇰」伏羲琴「解锁」★, server: hk.cfzf.xyz, port: 443, type: vmess, uuid: 72da2287-c0ef-4663-aa22-4c8f44056ad3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: hk.cfzf.xyz, network: grpc, grpc-opts: {grpc-service-name: shensevenyyds}}
-  - {name: 「🇺🇸」帝之炎「RPC」★, server: cdn.s7.gay, port: 443, type: vmess, uuid: 72da2287-c0ef-4663-aa22-4c8f44056ad3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: cdn.s7.gay, network: grpc, grpc-opts: {grpc-service-name: yydsgod}}
-  - {name: 🇯🇵 JP|03|江苏|隧道|倍率x1.5, server: js-cm.cmcclives.top, port: 44557, type: vmess, uuid: 899d22f0-c64d-11ea-9ea2-0188c5b584d8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 「🇭🇰」神之刃「CFT」★★, server: hk.cfzf.xyz, port: 443, type: vmess, uuid: 72da2287-c0ef-4663-aa22-4c8f44056ad3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: hk.cfzf.xyz, network: grpc, grpc-opts: {grpc-service-name: cfyydsv21}}
-  - {name: 🇺🇲 美国|USBGP-IEPL, server: iepl.sdm.lol, port: 26394, type: ss, cipher: chacha20-ietf-poly1305, password: b1047ad0-d94f-4645-80ec-437fa7e4ef08}
-  - {name: 🇸🇬 新加坡03, server: web-sg-cm1.fhost222.xyz, port: 17002, type: trojan, password: e198c059-18e0-4c5e-8358-b4b7850d4d86, sni: lop1waeq.v1d.szbdyd.com, skip-cert-verify: false}
-  - {name: 🇺🇲 美国04, server: us4.czs1000.com, port: 4122, type: vmess, uuid: 5e2c083f-231f-4eda-9df6-b3d5eb98b142, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: us4.czs1000.com}
-  - {name: 🇯🇵 日本|01|湘日联通隧道, server: jp.gilsfe.cn, port: 26923, type: trojan, password: a257a83f-d6d4-4bc0-9cc9-10484348ee8f, sni: jp01.170203.xyz, skip-cert-verify: false}
-  - {name: 🇯🇵 日本16|高速, server: jp8.czs1000.com, port: 4101, type: vmess, uuid: 5e2c083f-231f-4eda-9df6-b3d5eb98b142, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: jp8.czs1000.com}
-  - {name: 🇯🇵 新加坡|02|奈飞广日电信隧道2, server: gzdx1.170203.xyz, port: 14733, type: trojan, password: a257a83f-d6d4-4bc0-9cc9-10484348ee8f, sni: sgmax02.170203.xyz, skip-cert-verify: false}
-  - {name: 🇭🇰 香港|04奈飞HKT广港电信隧道1(大带宽), server: gzdx1.170203.xyz, port: 17180, type: trojan, password: a257a83f-d6d4-4bc0-9cc9-10484348ee8f, sni: hkmax04.170203.xyz, skip-cert-verify: false}
-  - {name: 🇨🇳 台湾07, server: tw7.czs1000.com, port: 1001, type: vmess, uuid: 5e2c083f-231f-4eda-9df6-b3d5eb98b142, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: tw7.czs1000.com}
-  - {name: "🇰🇷 [联通]韩国·E1|01", server: sinash01.dghjkjhertyuihgfddfghjasdertyuudfghjaxcvbj.com, port: 30056, type: trojan, password: 8617637a-c668-4e45-8d2a-62b920ced073, sni: v1kr01.fuqiangren.com, skip-cert-verify: false}
-  - {name: 🇨🇳 「🇩🇪」恒古尺「解锁」✡, server: cdn.s7.gay, port: 443, type: vmess, uuid: 72da2287-c0ef-4663-aa22-4c8f44056ad3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: cdn.s7.gay, network: grpc, grpc-opts: {grpc-service-name: grpcyydss}}
-  - {name: 🇭🇰 美国06|深港专线, server: catnet-unicom.gatknqh.cn, port: 11028, type: ss, cipher: aes-128-gcm, password: f3f23113-6bfe-4474-96c7-fe16d26dab6b}
+  - {name: 🇯🇵 日本03电信联通优化, server: s3-api.zlhost.xyz, port: 17003, type: trojan, password: e198c059-18e0-4c5e-8358-b4b7850d4d86, sni: lop1waeq.v1d.szbdyd.com, skip-cert-verify: false}
+  - {name: 🇯🇵 【I】日本VIP6-Azure, server: nf6.boom.skin, port: 16000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 220626:KmNEvn, obfs-param: download.windowsupdate.com}
+  - {name: "🇭🇰 [Lv3·1.0x]香港04|IP均衡优化混合负载|1000Mbps共享", server: lv3oiwdaxsaowhdnjkzxw.hjspyto.cn, port: 12324, type: trojan, password: 76149cc1-6ec3-3610-ad44-bca126fbdba4, sni: huwkaihsdwal.vzwzasc.cn, skip-cert-verify: false}
+  - {name: 🇸🇬 【L】新加坡VIP7-Netflix, server: nl7.boom.skin, port: 28000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 220626:KmNEvn, obfs-param: download.windowsupdate.com}
+  - {name: 🇭🇰 日本02|深港专线 2, server: catnet-unicom.gatknqh.cn, port: 11012, type: ss, cipher: aes-128-gcm, password: a4431055-05ff-493c-9eeb-1885124a7da2}
+  - {name: 🇸🇬 【L】新加坡VIP5-Netflix, server: nl5.boom.skin, port: 26000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 220626:KmNEvn, obfs-param: download.windowsupdate.com}
+  - {name: 🇧🇷 IEPL|巴西, server: na.miaocn.cyou, port: 10926, type: ss, cipher: aes-128-gcm, password: 395a3528-54a8-41a7-959d-84945e0cd1a3}
+  - {name: 🇨🇳 150|台湾|x3.0, server: ctcs.hffb.xyz, port: 36460, type: vmess, uuid: 0a6c9b63-3a98-4a80-b956-db4a227910d4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: stw.bwh088.xyz, network: ws, ws-opts: {path: /kmf733, headers: {Host: stw.beh088.xyz}}}
+  - {name: "California,Tj-BGroup", server: bgroup.node5.t.nodelist-gfwairport1.download, port: 50001, type: trojan, password: 501e4691-3868-483c-a379-c2e2c8e85741, skip-cert-verify: false}
+  - {name: 群组：https://t.me/vip88ml, server: 127.0.0.1, port: 80, type: vmess, uuid: e09b1189-cee2-4380-a43e-f838dbd4609c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇨🇦 _CA_加拿大, server: 23.227.38.38, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: lg1.trump2023.us}}}
+  - {name: "🇯🇵 [联通]日本·F1|03", server: sinash01.dghjkjhertyuihgfddfghjasdertyuudfghjaxcvbj.com, port: 30021, type: vmess, uuid: 3ee78889-183c-4acf-97e3-071fe2592110, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aceamedv, headers: {Host: sh01.fastcloud.club}}}
+  - {name: 🇭🇰 台湾03|深港专线, server: catnet-tw.gatknqh.cn, port: 11031, type: ss, cipher: aes-128-gcm, password: f3f23113-6bfe-4474-96c7-fe16d26dab6b}
+  - {name: 🇭🇰 香港|03|广日电信隧道1, server: gzdx0.170203.xyz, port: 39702, type: trojan, password: 69c90ff3-d734-45ff-8ea2-bda7bf3ea267, sni: hkmax03.170203.xyz, skip-cert-verify: false}
+  - {name: 🇯🇵 日本直连01, server: s1-api.zlhost.xyz, port: 17003, type: trojan, password: e198c059-18e0-4c5e-8358-b4b7850d4d86, sni: lop1waeq.v1d.szbdyd.com, skip-cert-verify: false}
+  - {name: 🇭🇰 香港|02奈飞AZ广港电信隧道2, server: gzdx1.170203.xyz, port: 14624, type: trojan, password: 69c90ff3-d734-45ff-8ea2-bda7bf3ea267, sni: hkmax02.170203.xyz, skip-cert-verify: false}
+  - {name: 🇯🇵 日本09, server: jp9.tejiewm.com, port: 4104, type: vmess, uuid: c8b7c170-1883-4807-844f-82a90c64af01, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: jp9.tejiewm.com}
+  - {name: 🇭🇰 【J】香港VIPD-Netflix, server: njd.boom.skin, port: 23000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 220626:KmNEvn, obfs-param: download.windowsupdate.com}
+  - {name: _BZ_伯利兹, server: 203.30.189.189, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: lg1.trump2023.us}}}
+  - {name: 🇯🇵 新加坡|01|广日电信隧道, server: gzdx1.170203.xyz, port: 10593, type: trojan, password: 69c90ff3-d734-45ff-8ea2-bda7bf3ea267, sni: sgmax01.170203.xyz, skip-cert-verify: false}
+  - {name: "🇭🇰 [移动]香港·E1|04", server: sinagz01.dghjkjhertyuihgfddfghjasdertyuudfghjaxcvbj.com, port: 30038, type: trojan, password: 3ee78889-183c-4acf-97e3-071fe2592110, sni: v2hgc02.fuqiangren.com, skip-cert-verify: false}
+  - {name: 🇯🇵 IEPL|尼日利亚, server: eu.miaocn.cyou, port: 10919, type: ss, cipher: aes-128-gcm, password: 395a3528-54a8-41a7-959d-84945e0cd1a3}
+  - {name: 🇭🇰 【N】香港VIP10-Leaseweb, server: nn14.boom.skin, port: 53000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 220626:KmNEvn, obfs-param: download.windowsupdate.com}
+  - {name: 🇭🇰 台湾04|深港专线, server: catnet-tw.gatknqh.cn, port: 11032, type: ss, cipher: aes-128-gcm, password: a4431055-05ff-493c-9eeb-1885124a7da2}
   - {name: 🇭🇰 香港05|深港专线, server: catnet-moble.gatknqh.cn, port: 11005, type: ss, cipher: aes-128-gcm, password: f3f23113-6bfe-4474-96c7-fe16d26dab6b}
-  - {name: 🇭🇰 新加坡|06|奈飞广港电信隧道, server: gzdx1.170203.xyz, port: 14303, type: trojan, password: a257a83f-d6d4-4bc0-9cc9-10484348ee8f, sni: sgmax06.170203.xyz, skip-cert-verify: false}
-  - {name: 🇭🇰 香港|03|广日电信隧道1, server: gzdx0.170203.xyz, port: 39702, type: trojan, password: a257a83f-d6d4-4bc0-9cc9-10484348ee8f, sni: hkmax03.170203.xyz, skip-cert-verify: false}
-  - {name: 🇯🇵 日本05, server: jp5.feiyun.club, port: 1000, type: vmess, uuid: 980fbec9-423f-483b-8a27-6a233c27206a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: jp5.feiyun.club}
-  - {name: 🇫🇷 _BZ_伯利兹->🇫🇷_FR_法国, server: 203.30.191.193, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}}
-  - {name: 🇰🇷 韩国04, server: kr4.czs1000.com, port: 1000, type: vmess, uuid: 980fbec9-423f-483b-8a27-6a233c27206a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: kr4.czs1000.com}
-  - {name: 🇸🇬 新加坡12|高速|流媒体解锁, server: sg12.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.czs1000.com, port: 4122, type: vmess, uuid: 5e2c083f-231f-4eda-9df6-b3d5eb98b142, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: sg12.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.czs1000.com}
-  - {name: 🇭🇰 土耳其02|深港专线, server: catnet-moble.gatknqh.cn, port: 11048, type: ss, cipher: aes-128-gcm, password: a4431055-05ff-493c-9eeb-1885124a7da2}
-  - {name: 🇨🇳 「🇦🇪」专属二「解锁」✡, server: 193.123.86.191, port: 443, type: trojan, password: 72da2287-c0ef-4663-aa22-4c8f44056ad3, sni: qt47.shenseven.xyz, skip-cert-verify: false}
-  - {name: 🇯🇵 日本22, server: jp22.czs1000.com, port: 443, type: trojan, password: 5e2c083f-231f-4eda-9df6-b3d5eb98b142, sni: 13-251-128-188.nhost.00cdn.com, skip-cert-verify: false}
-  - {name: 🇭🇰 香港08|深港专线, server: catnet-moble.gatknqh.cn, port: 11008, type: ss, cipher: aes-128-gcm, password: a4431055-05ff-493c-9eeb-1885124a7da2}
-  - {name: 🇺🇲 美国02, server: us2.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.czs1000.com, port: 11218, type: vmess, uuid: 5e2c083f-231f-4eda-9df6-b3d5eb98b142, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, headers: {Host: tlu.dl.delivery.mp.microsoft.com}}}
-  - {name: 🇬🇧 _GB_英国, server: vuk2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: vuk2.0bad.com, network: ws, ws-opts: {path: /chat, headers: {Host: vuk2.0bad.com}}}
+  - {name: 🇹🇷 IEPL|土耳其, server: eu.miaocn.cyou, port: 10912, type: ss, cipher: aes-128-gcm, password: 395a3528-54a8-41a7-959d-84945e0cd1a3}
+  - {name: 🇨🇳 台湾06, server: tw6.czs1000.com, port: 1001, type: vmess, uuid: c8b7c170-1883-4807-844f-82a90c64af01, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: tw6.czs1000.com}
+  - {name: 🇭🇰 新加坡05|深港专线, server: catnet-sg.gatknqh.cn, port: 11021, type: ss, cipher: aes-128-gcm, password: a4431055-05ff-493c-9eeb-1885124a7da2}
+  - {name: 🇯🇵 为保证您的使用质量，请保持日更订阅, server: tntv2.cyou, port: 10086, type: trojan, password: BzCXJjfGo2, skip-cert-verify: false}
+  - {name: 🇭🇰 台湾05|深港专线, server: catnet-tw.gatknqh.cn, port: 11033, type: ss, cipher: aes-128-gcm, password: f3f23113-6bfe-4474-96c7-fe16d26dab6b}
+  - {name: 🇺🇲 【C】美国VIP4-CC, server: us8.edge.boom.skin, port: 47000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 220626:KmNEvn, obfs-param: download.windowsupdate.com}
+  - {name: 乌克兰, server: wkl-zf.clm10086.xyz, port: 21881, type: ss, cipher: chacha20-ietf-poly1305, password: 68b5fd7e-b8d5-439e-b72b-cba22c3f349c}
+  - {name: 🇯🇵 【N】日本VIP12-Nerocloud, server: jp17.boom.skin, port: 39700, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 220626:KmNEvn, obfs-param: download.windowsupdate.com}
+  - {name: 🇨🇳 中国台湾-03, server: tw-yt04.dudunai.com, port: 23212, type: vmess, uuid: 00ac9d14-343f-4131-ac09-39384b4f421a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇷🇺 【E】俄罗斯VIP2-RT, server: s103.boom.skin, port: 21000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 220626:KmNEvn, obfs-param: download.windowsupdate.com}
+  - {name: 🇭🇰 【O】香港普通8-Leaseweb, server: opt18.boom.skin, port: 28000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 220626:KmNEvn, obfs-param: download.windowsupdate.com}
+  - {name: 🇷🇴 罗马尼亚, server: lmny-zf.clm10086.xyz, port: 17882, type: ss, cipher: chacha20-ietf-poly1305, password: 68b5fd7e-b8d5-439e-b72b-cba22c3f349c}
+  - {name: 🇰🇷 IEPL|韩国, server: asia.miaocn.cyou, port: 10915, type: ss, cipher: aes-128-gcm, password: 395a3528-54a8-41a7-959d-84945e0cd1a3}
+  - {name: 🇭🇰 _HK_香港, server: 194.99.79.238, port: 11222, type: vmess, uuid: 59aef69b-a291-467e-f9d9-754cc7526469, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇺🇲 JCBB_美国02【vip1】, server: cm.kapoknode.com, port: 25886, type: vmess, uuid: fb0919d7-719d-4036-9035-2bc5498eedcd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cm.kapoknode.com}}}
+  - {name: 🇭🇰 中国香港-A-02, server: yt.hk.02.cxmetas.com, port: 12880, type: vmess, uuid: 00ac9d14-343f-4131-ac09-39384b4f421a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 中国香港-A-03, server: yt.hk.03.cxmetas.com, port: 45712, type: vmess, uuid: 00ac9d14-343f-4131-ac09-39384b4f421a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇰🇷 韩国-B-5X, server: js-cm.alhttdw.cn, port: 55005, type: vmess, uuid: 00ac9d14-343f-4131-ac09-39384b4f421a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
+  - {name: 🇭🇰 【A】香港VIP6-Leaseweb, server: n28.boom.skin, port: 13000, type: ssr, cipher: aes-256-cfb, password: Uk92CS, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 220626:KmNEvn, obfs-param: download.windowsupdate.com}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -101,252 +147,390 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 🇸🇬 隧道|NF|新加坡03
-      - 🇭🇰 印度02|深港专线
-      - 🇬🇧 [Vip1]英国01[1.0]
-      - 🇯🇵 日本13|专线|流媒体解锁
-      - 🇭🇰 HK|02|长沙|隧道|倍率x1.5
-      - 🇭🇰 香港09|深港专线
-      - 🇭🇰 日本06|深港专线
-      - 🇭🇰 美国01|深港专线
-      - 🇰🇷 隧道|NF|韩国01
-      - 🇯🇵 日本03
-      - 🇸🇬 [Vip1]新加坡06[1.0|流媒体解锁]
-      - 🇰🇷 韩国05|高速
-      - 🇯🇵 日本12
-      - 🇸🇬 [Vip1]新加坡04[1.0|移动|流媒体解锁]
-      - 🇭🇰 香港07|深港专线
-      - 🇭🇰 香港|03
-      - 🇨🇦 _CA_加拿大->🇺🇸_US_美国
-      - 🇸🇬 新加坡02|移动优化
-      - 🇸🇬 137|新加坡|yd线路|x2.5
-      - 🇸🇬 [Vip1]新加坡06[1.0|流媒体解锁] 2
-      - 🇩🇪 德国02|深港专线
-      - 🇷🇴 罗马尼亚
-      - 🇺🇲 US01-SS-隧道传输
-      - 🇭🇰 香港|02奈飞AZ广港电信隧道
-      - 「🇻🇳」兵之神「免流」★★
-      - 🇭🇰 新加坡|01|广港电信隧道4
-      - 🇰🇷 韩国01|高速
-      - 🇸🇬 新加坡体验
-      - 「🇯🇵」免流牌「免流」✰
-      - 🇯🇵 日本10
-      - 🇯🇵 日本|03|广日电信隧道2
-      - 🇭🇰 [Vip1]香港07[1.0|移动|流媒体解锁]
-      - ⚠️续费请前往【闪电猫.com】
-      - 🇭🇰 香港13|原生|x5
-      - 🇯🇵 JP|02|上海|隧道|倍率x2
-      - California,SS-BGroup
-      - 🇭🇰 美国|01|广港电信隧道0
-      - 🇬🇧 英国02|深港专线
-      - 🇨🇳 隧道|NF|台湾01
-      - 🇨🇦 加拿大|CALite-广港
-      - 🇯🇵 日本|高速|01|湘日联通隧道2
-      - 🇺🇲 隧道|NF|美国01
-      - 🇯🇵 [联通]日本·F1|03
       - 🇺🇲 [v1]美国|02
-      - 🇭🇰 台湾06|深港专线
-      - 🇲🇾 马来西亚
-      - 「🇰🇷」昆仑镜「免流」✰
-      - 🇬🇧 英国01|深港专线
-      - 🇭🇰 香港|04
-      - 🇭🇰 美国03|深港专线
-      - 🇨🇳 「🇭🇰」伏羲琴「解锁」★
-      - 「🇺🇸」帝之炎「RPC」★
-      - 🇯🇵 JP|03|江苏|隧道|倍率x1.5
-      - 「🇭🇰」神之刃「CFT」★★
-      - 🇺🇲 美国|USBGP-IEPL
-      - 🇸🇬 新加坡03
-      - 🇺🇲 美国04
-      - 🇯🇵 日本|01|湘日联通隧道
-      - 🇯🇵 日本16|高速
-      - 🇯🇵 新加坡|02|奈飞广日电信隧道2
-      - 🇭🇰 香港|04奈飞HKT广港电信隧道1(大带宽)
-      - 🇨🇳 台湾07
-      - 🇰🇷 [联通]韩国·E1|01
-      - 🇨🇳 「🇩🇪」恒古尺「解锁」✡
-      - 🇭🇰 美国06|深港专线
-      - 🇭🇰 香港05|深港专线
-      - 🇭🇰 新加坡|06|奈飞广港电信隧道
-      - 🇭🇰 香港|03|广日电信隧道1
-      - 🇯🇵 日本05
-      - 🇫🇷 _BZ_伯利兹->🇫🇷_FR_法国
-      - 🇰🇷 韩国04
-      - 🇸🇬 新加坡12|高速|流媒体解锁
-      - 🇭🇰 土耳其02|深港专线
-      - 🇨🇳 「🇦🇪」专属二「解锁」✡
+      - 🇬🇧 [v1]英国|01
+      - 🇹🇷 【F】土耳其VIP1-Steam
+      - 🇸🇬 【K】新加坡普通1-DO
+      - 🇸🇬 【L】新加坡VIP2-Netflix
+      - 🇭🇰 日本04|深港专线
+      - 🇭🇰 【IEPL】香港普通4-Nearoute
+      - 🇭🇰 [联通]香港·F1|02
+      - 🇬🇧 JCBB_英国02【vip1】
+      - 🇯🇵 IEPL|日本
+      - 🇭🇰 高级丨HongKong
+      - 🇨🇳 [Vip1]台湾02[1.0|联通|流媒体解锁]
+      - 🇭🇰 【O】香港VIP5-Leaseweb
+      - 🇰🇷 韩国05|高速
+      - 🇦🇺 Lv4澳大利亚悉尼
+      - 🇺🇲 [Lv3·1.0x]美国卢森堡04|IP均衡优化|混合负载|500Mbps共享
+      - 🇸🇬 如果线路故障请更新订阅
+      - 🇯🇵 [Lv2·1.0x]日本03|IP均衡优化|混合负载|600Mbps共享
+      - 🇸🇬 高级丨Singapore
+      - 阿拉伯联合酋长国
+      - 🇺🇲 Lv4洛杉矶vir3倍率
+      - 🇲🇴 _MO_澳门
+      - 🇭🇰 【O】香港VIP4-Leaseweb
+      - 🇭🇰 [vip1]香港02[1.0|移动|流媒体解锁]
+      - 🇯🇵 [Lv3·1.0x]日本002|混合负载|1000Mbps共享
+      - 🇸🇬 Lv4新加坡
+      - 🇭🇰 【A】香港VIP5-Leaseweb
+      - 🇺🇲 _US_美国
+      - 🇯🇵 【N】日本VIPB-Leaseweb
+      - 🇭🇰 【B】香港VIPC-Nearoute
+      - 🇭🇰 【M】香港VIP2-Netflix
+      - 🇲🇾 【L】马来西亚VIP1-TMNet
+      - 🇭🇰 Lv4香港HE-sg-sh解锁
+      - 🇭🇰 美国04|深港专线
+      - 🇭🇰 台湾08|深港专线
+      - 🇭🇰 日本02|深港专线
       - 🇯🇵 日本22
-      - 🇭🇰 香港08|深港专线
-      - 🇺🇲 美国02
-      - 🇬🇧 _GB_英国
+      - 🇺🇲 [Lv2·1.0x]美国拉斯维加斯01|IP均衡优化|混合负载|500Mbps共享
+      - IEPL|柬埔寨
+      - 🇹🇷 土耳其|02
+      - 🇯🇵 日本06|高速
+      - 孟加拉国
+      - 🇸🇬 【L】新加坡VIP6-Netflix
+      - 🇯🇵 [Lv2·1.0x]日本001|混合负载|1000Mbps共享
+      - 🇺🇲 _CY_塞浦路斯->🇺🇸_US_美国
+      - 🇯🇵 _JP_日本
+      - 🇭🇰 香港|07
+      - 🇨🇳 165|台湾Hinet|x3.5
+      - 🇯🇵 【N】日本VIP6-Nerocloud
+      - 🇯🇵 日本直连02
+      - 🇭🇰 台湾02|深港专线
+      - 🇯🇵 [Lv3·1.0x]日本09|大阪|混合负载|800Mbps共享
+      - 🇹🇷 Lv3土耳其
+      - 🇯🇵 日本20|高速|80端口
+      - 🇭🇰 【B】香港普通3-Nearoute
+      - 🇯🇵 新加坡|02|奈飞广日电信隧道2
+      - 🇭🇰 【J】香港VIP1-Netflix
+      - 🇭🇰 [vip1]香港01[1.0|移动|流媒体解锁]
+      - 🇺🇲 JCBB_美国03【vip1】
+      - 🇭🇰 日本04|深港专线 2
+      - 🇨🇳 Lv4台湾2Xsg-sh
+      - 🇯🇵 【I】日本VIP5-Azure
+      - 🇯🇵 日本|03|直连2
+      - 🇹🇷 土耳其01
+      - 🇬🇧 Lv3英国4广
+      - 🇯🇵 日本19
+      - 🇷🇺 Lv3俄罗斯
+      - 🇺🇲 Lv3美国洛杉矶inp3
+      - 🇭🇰 中国香港-B-5X
+      - 🇭🇰 【M】香港VIP4-Netflix
+      - 🇭🇰 【IEPL】香港普通3-Nearoute
+      - 🇭🇰 167|香港|x2.0
+      - 🇸🇬 [Lv3·1.0x]新加坡03|IP均衡优化|CTN加速|500Mbps共享
+      - 🇯🇵 日本软银-gRPC-3
+      - 🇹🇷 土耳其02
+      - 🇯🇵 JCBB_日本04【vip1】
+      - 🇯🇵 新加坡|03|广日电信隧道2
+      - 🇸🇬 [Lv2·1.0x]新加坡02|IP均衡优化|CTN加速|500Mbps共享
+      - 🇬🇧 英国01|深港专线
+      - 🇺🇲 US01-SS-隧道传输
+      - 🇯🇵 日本03电信联通优化
+      - 🇯🇵 【I】日本VIP6-Azure
+      - 🇭🇰 [Lv3·1.0x]香港04|IP均衡优化混合负载|1000Mbps共享
+      - 🇸🇬 【L】新加坡VIP7-Netflix
+      - 🇭🇰 日本02|深港专线 2
+      - 🇸🇬 【L】新加坡VIP5-Netflix
+      - 🇧🇷 IEPL|巴西
+      - 🇨🇳 150|台湾|x3.0
+      - California,Tj-BGroup
+      - 群组：https://t.me/vip88ml
+      - 🇨🇦 _CA_加拿大
+      - 🇯🇵 [联通]日本·F1|03
+      - 🇭🇰 台湾03|深港专线
+      - 🇭🇰 香港|03|广日电信隧道1
+      - 🇯🇵 日本直连01
+      - 🇭🇰 香港|02奈飞AZ广港电信隧道2
+      - 🇯🇵 日本09
+      - 🇭🇰 【J】香港VIPD-Netflix
+      - _BZ_伯利兹
+      - 🇯🇵 新加坡|01|广日电信隧道
+      - 🇭🇰 [移动]香港·E1|04
+      - 🇯🇵 IEPL|尼日利亚
+      - 🇭🇰 【N】香港VIP10-Leaseweb
+      - 🇭🇰 台湾04|深港专线
+      - 🇭🇰 香港05|深港专线
+      - 🇹🇷 IEPL|土耳其
+      - 🇨🇳 台湾06
+      - 🇭🇰 新加坡05|深港专线
+      - 🇯🇵 为保证您的使用质量，请保持日更订阅
+      - 🇭🇰 台湾05|深港专线
+      - 🇺🇲 【C】美国VIP4-CC
+      - 乌克兰
+      - 🇯🇵 【N】日本VIP12-Nerocloud
+      - 🇨🇳 中国台湾-03
+      - 🇷🇺 【E】俄罗斯VIP2-RT
+      - 🇭🇰 【O】香港普通8-Leaseweb
+      - 🇷🇴 罗马尼亚
+      - 🇰🇷 IEPL|韩国
+      - 🇭🇰 _HK_香港
+      - 🇺🇲 JCBB_美国02【vip1】
+      - 🇭🇰 中国香港-A-02
+      - 🇭🇰 中国香港-A-03
+      - 🇰🇷 韩国-B-5X
+      - 🇭🇰 【A】香港VIP6-Leaseweb
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇸🇬 隧道|NF|新加坡03
-      - 🇭🇰 印度02|深港专线
-      - 🇬🇧 [Vip1]英国01[1.0]
-      - 🇯🇵 日本13|专线|流媒体解锁
-      - 🇭🇰 HK|02|长沙|隧道|倍率x1.5
-      - 🇭🇰 香港09|深港专线
-      - 🇭🇰 日本06|深港专线
-      - 🇭🇰 美国01|深港专线
-      - 🇰🇷 隧道|NF|韩国01
-      - 🇯🇵 日本03
-      - 🇸🇬 [Vip1]新加坡06[1.0|流媒体解锁]
-      - 🇰🇷 韩国05|高速
-      - 🇯🇵 日本12
-      - 🇸🇬 [Vip1]新加坡04[1.0|移动|流媒体解锁]
-      - 🇭🇰 香港07|深港专线
-      - 🇭🇰 香港|03
-      - 🇨🇦 _CA_加拿大->🇺🇸_US_美国
-      - 🇸🇬 新加坡02|移动优化
-      - 🇸🇬 137|新加坡|yd线路|x2.5
-      - 🇸🇬 [Vip1]新加坡06[1.0|流媒体解锁] 2
-      - 🇩🇪 德国02|深港专线
-      - 🇷🇴 罗马尼亚
-      - 🇺🇲 US01-SS-隧道传输
-      - 🇭🇰 香港|02奈飞AZ广港电信隧道
-      - 「🇻🇳」兵之神「免流」★★
-      - 🇭🇰 新加坡|01|广港电信隧道4
-      - 🇰🇷 韩国01|高速
-      - 🇸🇬 新加坡体验
-      - 「🇯🇵」免流牌「免流」✰
-      - 🇯🇵 日本10
-      - 🇯🇵 日本|03|广日电信隧道2
-      - 🇭🇰 [Vip1]香港07[1.0|移动|流媒体解锁]
-      - ⚠️续费请前往【闪电猫.com】
-      - 🇭🇰 香港13|原生|x5
-      - 🇯🇵 JP|02|上海|隧道|倍率x2
-      - California,SS-BGroup
-      - 🇭🇰 美国|01|广港电信隧道0
-      - 🇬🇧 英国02|深港专线
-      - 🇨🇳 隧道|NF|台湾01
-      - 🇨🇦 加拿大|CALite-广港
-      - 🇯🇵 日本|高速|01|湘日联通隧道2
-      - 🇺🇲 隧道|NF|美国01
-      - 🇯🇵 [联通]日本·F1|03
       - 🇺🇲 [v1]美国|02
-      - 🇭🇰 台湾06|深港专线
-      - 🇲🇾 马来西亚
-      - 「🇰🇷」昆仑镜「免流」✰
-      - 🇬🇧 英国01|深港专线
-      - 🇭🇰 香港|04
-      - 🇭🇰 美国03|深港专线
-      - 🇨🇳 「🇭🇰」伏羲琴「解锁」★
-      - 「🇺🇸」帝之炎「RPC」★
-      - 🇯🇵 JP|03|江苏|隧道|倍率x1.5
-      - 「🇭🇰」神之刃「CFT」★★
-      - 🇺🇲 美国|USBGP-IEPL
-      - 🇸🇬 新加坡03
-      - 🇺🇲 美国04
-      - 🇯🇵 日本|01|湘日联通隧道
-      - 🇯🇵 日本16|高速
-      - 🇯🇵 新加坡|02|奈飞广日电信隧道2
-      - 🇭🇰 香港|04奈飞HKT广港电信隧道1(大带宽)
-      - 🇨🇳 台湾07
-      - 🇰🇷 [联通]韩国·E1|01
-      - 🇨🇳 「🇩🇪」恒古尺「解锁」✡
-      - 🇭🇰 美国06|深港专线
-      - 🇭🇰 香港05|深港专线
-      - 🇭🇰 新加坡|06|奈飞广港电信隧道
-      - 🇭🇰 香港|03|广日电信隧道1
-      - 🇯🇵 日本05
-      - 🇫🇷 _BZ_伯利兹->🇫🇷_FR_法国
-      - 🇰🇷 韩国04
-      - 🇸🇬 新加坡12|高速|流媒体解锁
-      - 🇭🇰 土耳其02|深港专线
-      - 🇨🇳 「🇦🇪」专属二「解锁」✡
+      - 🇬🇧 [v1]英国|01
+      - 🇹🇷 【F】土耳其VIP1-Steam
+      - 🇸🇬 【K】新加坡普通1-DO
+      - 🇸🇬 【L】新加坡VIP2-Netflix
+      - 🇭🇰 日本04|深港专线
+      - 🇭🇰 【IEPL】香港普通4-Nearoute
+      - 🇭🇰 [联通]香港·F1|02
+      - 🇬🇧 JCBB_英国02【vip1】
+      - 🇯🇵 IEPL|日本
+      - 🇭🇰 高级丨HongKong
+      - 🇨🇳 [Vip1]台湾02[1.0|联通|流媒体解锁]
+      - 🇭🇰 【O】香港VIP5-Leaseweb
+      - 🇰🇷 韩国05|高速
+      - 🇦🇺 Lv4澳大利亚悉尼
+      - 🇺🇲 [Lv3·1.0x]美国卢森堡04|IP均衡优化|混合负载|500Mbps共享
+      - 🇸🇬 如果线路故障请更新订阅
+      - 🇯🇵 [Lv2·1.0x]日本03|IP均衡优化|混合负载|600Mbps共享
+      - 🇸🇬 高级丨Singapore
+      - 阿拉伯联合酋长国
+      - 🇺🇲 Lv4洛杉矶vir3倍率
+      - 🇲🇴 _MO_澳门
+      - 🇭🇰 【O】香港VIP4-Leaseweb
+      - 🇭🇰 [vip1]香港02[1.0|移动|流媒体解锁]
+      - 🇯🇵 [Lv3·1.0x]日本002|混合负载|1000Mbps共享
+      - 🇸🇬 Lv4新加坡
+      - 🇭🇰 【A】香港VIP5-Leaseweb
+      - 🇺🇲 _US_美国
+      - 🇯🇵 【N】日本VIPB-Leaseweb
+      - 🇭🇰 【B】香港VIPC-Nearoute
+      - 🇭🇰 【M】香港VIP2-Netflix
+      - 🇲🇾 【L】马来西亚VIP1-TMNet
+      - 🇭🇰 Lv4香港HE-sg-sh解锁
+      - 🇭🇰 美国04|深港专线
+      - 🇭🇰 台湾08|深港专线
+      - 🇭🇰 日本02|深港专线
       - 🇯🇵 日本22
-      - 🇭🇰 香港08|深港专线
-      - 🇺🇲 美国02
-      - 🇬🇧 _GB_英国
+      - 🇺🇲 [Lv2·1.0x]美国拉斯维加斯01|IP均衡优化|混合负载|500Mbps共享
+      - IEPL|柬埔寨
+      - 🇹🇷 土耳其|02
+      - 🇯🇵 日本06|高速
+      - 孟加拉国
+      - 🇸🇬 【L】新加坡VIP6-Netflix
+      - 🇯🇵 [Lv2·1.0x]日本001|混合负载|1000Mbps共享
+      - 🇺🇲 _CY_塞浦路斯->🇺🇸_US_美国
+      - 🇯🇵 _JP_日本
+      - 🇭🇰 香港|07
+      - 🇨🇳 165|台湾Hinet|x3.5
+      - 🇯🇵 【N】日本VIP6-Nerocloud
+      - 🇯🇵 日本直连02
+      - 🇭🇰 台湾02|深港专线
+      - 🇯🇵 [Lv3·1.0x]日本09|大阪|混合负载|800Mbps共享
+      - 🇹🇷 Lv3土耳其
+      - 🇯🇵 日本20|高速|80端口
+      - 🇭🇰 【B】香港普通3-Nearoute
+      - 🇯🇵 新加坡|02|奈飞广日电信隧道2
+      - 🇭🇰 【J】香港VIP1-Netflix
+      - 🇭🇰 [vip1]香港01[1.0|移动|流媒体解锁]
+      - 🇺🇲 JCBB_美国03【vip1】
+      - 🇭🇰 日本04|深港专线 2
+      - 🇨🇳 Lv4台湾2Xsg-sh
+      - 🇯🇵 【I】日本VIP5-Azure
+      - 🇯🇵 日本|03|直连2
+      - 🇹🇷 土耳其01
+      - 🇬🇧 Lv3英国4广
+      - 🇯🇵 日本19
+      - 🇷🇺 Lv3俄罗斯
+      - 🇺🇲 Lv3美国洛杉矶inp3
+      - 🇭🇰 中国香港-B-5X
+      - 🇭🇰 【M】香港VIP4-Netflix
+      - 🇭🇰 【IEPL】香港普通3-Nearoute
+      - 🇭🇰 167|香港|x2.0
+      - 🇸🇬 [Lv3·1.0x]新加坡03|IP均衡优化|CTN加速|500Mbps共享
+      - 🇯🇵 日本软银-gRPC-3
+      - 🇹🇷 土耳其02
+      - 🇯🇵 JCBB_日本04【vip1】
+      - 🇯🇵 新加坡|03|广日电信隧道2
+      - 🇸🇬 [Lv2·1.0x]新加坡02|IP均衡优化|CTN加速|500Mbps共享
+      - 🇬🇧 英国01|深港专线
+      - 🇺🇲 US01-SS-隧道传输
+      - 🇯🇵 日本03电信联通优化
+      - 🇯🇵 【I】日本VIP6-Azure
+      - 🇭🇰 [Lv3·1.0x]香港04|IP均衡优化混合负载|1000Mbps共享
+      - 🇸🇬 【L】新加坡VIP7-Netflix
+      - 🇭🇰 日本02|深港专线 2
+      - 🇸🇬 【L】新加坡VIP5-Netflix
+      - 🇧🇷 IEPL|巴西
+      - 🇨🇳 150|台湾|x3.0
+      - California,Tj-BGroup
+      - 群组：https://t.me/vip88ml
+      - 🇨🇦 _CA_加拿大
+      - 🇯🇵 [联通]日本·F1|03
+      - 🇭🇰 台湾03|深港专线
+      - 🇭🇰 香港|03|广日电信隧道1
+      - 🇯🇵 日本直连01
+      - 🇭🇰 香港|02奈飞AZ广港电信隧道2
+      - 🇯🇵 日本09
+      - 🇭🇰 【J】香港VIPD-Netflix
+      - _BZ_伯利兹
+      - 🇯🇵 新加坡|01|广日电信隧道
+      - 🇭🇰 [移动]香港·E1|04
+      - 🇯🇵 IEPL|尼日利亚
+      - 🇭🇰 【N】香港VIP10-Leaseweb
+      - 🇭🇰 台湾04|深港专线
+      - 🇭🇰 香港05|深港专线
+      - 🇹🇷 IEPL|土耳其
+      - 🇨🇳 台湾06
+      - 🇭🇰 新加坡05|深港专线
+      - 🇯🇵 为保证您的使用质量，请保持日更订阅
+      - 🇭🇰 台湾05|深港专线
+      - 🇺🇲 【C】美国VIP4-CC
+      - 乌克兰
+      - 🇯🇵 【N】日本VIP12-Nerocloud
+      - 🇨🇳 中国台湾-03
+      - 🇷🇺 【E】俄罗斯VIP2-RT
+      - 🇭🇰 【O】香港普通8-Leaseweb
+      - 🇷🇴 罗马尼亚
+      - 🇰🇷 IEPL|韩国
+      - 🇭🇰 _HK_香港
+      - 🇺🇲 JCBB_美国02【vip1】
+      - 🇭🇰 中国香港-A-02
+      - 🇭🇰 中国香港-A-03
+      - 🇰🇷 韩国-B-5X
+      - 🇭🇰 【A】香港VIP6-Leaseweb
   - name: 🔯 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇸🇬 隧道|NF|新加坡03
-      - 🇭🇰 印度02|深港专线
-      - 🇬🇧 [Vip1]英国01[1.0]
-      - 🇯🇵 日本13|专线|流媒体解锁
-      - 🇭🇰 HK|02|长沙|隧道|倍率x1.5
-      - 🇭🇰 香港09|深港专线
-      - 🇭🇰 日本06|深港专线
-      - 🇭🇰 美国01|深港专线
-      - 🇰🇷 隧道|NF|韩国01
-      - 🇯🇵 日本03
-      - 🇸🇬 [Vip1]新加坡06[1.0|流媒体解锁]
-      - 🇰🇷 韩国05|高速
-      - 🇯🇵 日本12
-      - 🇸🇬 [Vip1]新加坡04[1.0|移动|流媒体解锁]
-      - 🇭🇰 香港07|深港专线
-      - 🇭🇰 香港|03
-      - 🇨🇦 _CA_加拿大->🇺🇸_US_美国
-      - 🇸🇬 新加坡02|移动优化
-      - 🇸🇬 137|新加坡|yd线路|x2.5
-      - 🇸🇬 [Vip1]新加坡06[1.0|流媒体解锁] 2
-      - 🇩🇪 德国02|深港专线
-      - 🇷🇴 罗马尼亚
-      - 🇺🇲 US01-SS-隧道传输
-      - 🇭🇰 香港|02奈飞AZ广港电信隧道
-      - 「🇻🇳」兵之神「免流」★★
-      - 🇭🇰 新加坡|01|广港电信隧道4
-      - 🇰🇷 韩国01|高速
-      - 🇸🇬 新加坡体验
-      - 「🇯🇵」免流牌「免流」✰
-      - 🇯🇵 日本10
-      - 🇯🇵 日本|03|广日电信隧道2
-      - 🇭🇰 [Vip1]香港07[1.0|移动|流媒体解锁]
-      - ⚠️续费请前往【闪电猫.com】
-      - 🇭🇰 香港13|原生|x5
-      - 🇯🇵 JP|02|上海|隧道|倍率x2
-      - California,SS-BGroup
-      - 🇭🇰 美国|01|广港电信隧道0
-      - 🇬🇧 英国02|深港专线
-      - 🇨🇳 隧道|NF|台湾01
-      - 🇨🇦 加拿大|CALite-广港
-      - 🇯🇵 日本|高速|01|湘日联通隧道2
-      - 🇺🇲 隧道|NF|美国01
-      - 🇯🇵 [联通]日本·F1|03
       - 🇺🇲 [v1]美国|02
-      - 🇭🇰 台湾06|深港专线
-      - 🇲🇾 马来西亚
-      - 「🇰🇷」昆仑镜「免流」✰
-      - 🇬🇧 英国01|深港专线
-      - 🇭🇰 香港|04
-      - 🇭🇰 美国03|深港专线
-      - 🇨🇳 「🇭🇰」伏羲琴「解锁」★
-      - 「🇺🇸」帝之炎「RPC」★
-      - 🇯🇵 JP|03|江苏|隧道|倍率x1.5
-      - 「🇭🇰」神之刃「CFT」★★
-      - 🇺🇲 美国|USBGP-IEPL
-      - 🇸🇬 新加坡03
-      - 🇺🇲 美国04
-      - 🇯🇵 日本|01|湘日联通隧道
-      - 🇯🇵 日本16|高速
-      - 🇯🇵 新加坡|02|奈飞广日电信隧道2
-      - 🇭🇰 香港|04奈飞HKT广港电信隧道1(大带宽)
-      - 🇨🇳 台湾07
-      - 🇰🇷 [联通]韩国·E1|01
-      - 🇨🇳 「🇩🇪」恒古尺「解锁」✡
-      - 🇭🇰 美国06|深港专线
-      - 🇭🇰 香港05|深港专线
-      - 🇭🇰 新加坡|06|奈飞广港电信隧道
-      - 🇭🇰 香港|03|广日电信隧道1
-      - 🇯🇵 日本05
-      - 🇫🇷 _BZ_伯利兹->🇫🇷_FR_法国
-      - 🇰🇷 韩国04
-      - 🇸🇬 新加坡12|高速|流媒体解锁
-      - 🇭🇰 土耳其02|深港专线
-      - 🇨🇳 「🇦🇪」专属二「解锁」✡
+      - 🇬🇧 [v1]英国|01
+      - 🇹🇷 【F】土耳其VIP1-Steam
+      - 🇸🇬 【K】新加坡普通1-DO
+      - 🇸🇬 【L】新加坡VIP2-Netflix
+      - 🇭🇰 日本04|深港专线
+      - 🇭🇰 【IEPL】香港普通4-Nearoute
+      - 🇭🇰 [联通]香港·F1|02
+      - 🇬🇧 JCBB_英国02【vip1】
+      - 🇯🇵 IEPL|日本
+      - 🇭🇰 高级丨HongKong
+      - 🇨🇳 [Vip1]台湾02[1.0|联通|流媒体解锁]
+      - 🇭🇰 【O】香港VIP5-Leaseweb
+      - 🇰🇷 韩国05|高速
+      - 🇦🇺 Lv4澳大利亚悉尼
+      - 🇺🇲 [Lv3·1.0x]美国卢森堡04|IP均衡优化|混合负载|500Mbps共享
+      - 🇸🇬 如果线路故障请更新订阅
+      - 🇯🇵 [Lv2·1.0x]日本03|IP均衡优化|混合负载|600Mbps共享
+      - 🇸🇬 高级丨Singapore
+      - 阿拉伯联合酋长国
+      - 🇺🇲 Lv4洛杉矶vir3倍率
+      - 🇲🇴 _MO_澳门
+      - 🇭🇰 【O】香港VIP4-Leaseweb
+      - 🇭🇰 [vip1]香港02[1.0|移动|流媒体解锁]
+      - 🇯🇵 [Lv3·1.0x]日本002|混合负载|1000Mbps共享
+      - 🇸🇬 Lv4新加坡
+      - 🇭🇰 【A】香港VIP5-Leaseweb
+      - 🇺🇲 _US_美国
+      - 🇯🇵 【N】日本VIPB-Leaseweb
+      - 🇭🇰 【B】香港VIPC-Nearoute
+      - 🇭🇰 【M】香港VIP2-Netflix
+      - 🇲🇾 【L】马来西亚VIP1-TMNet
+      - 🇭🇰 Lv4香港HE-sg-sh解锁
+      - 🇭🇰 美国04|深港专线
+      - 🇭🇰 台湾08|深港专线
+      - 🇭🇰 日本02|深港专线
       - 🇯🇵 日本22
-      - 🇭🇰 香港08|深港专线
-      - 🇺🇲 美国02
-      - 🇬🇧 _GB_英国
+      - 🇺🇲 [Lv2·1.0x]美国拉斯维加斯01|IP均衡优化|混合负载|500Mbps共享
+      - IEPL|柬埔寨
+      - 🇹🇷 土耳其|02
+      - 🇯🇵 日本06|高速
+      - 孟加拉国
+      - 🇸🇬 【L】新加坡VIP6-Netflix
+      - 🇯🇵 [Lv2·1.0x]日本001|混合负载|1000Mbps共享
+      - 🇺🇲 _CY_塞浦路斯->🇺🇸_US_美国
+      - 🇯🇵 _JP_日本
+      - 🇭🇰 香港|07
+      - 🇨🇳 165|台湾Hinet|x3.5
+      - 🇯🇵 【N】日本VIP6-Nerocloud
+      - 🇯🇵 日本直连02
+      - 🇭🇰 台湾02|深港专线
+      - 🇯🇵 [Lv3·1.0x]日本09|大阪|混合负载|800Mbps共享
+      - 🇹🇷 Lv3土耳其
+      - 🇯🇵 日本20|高速|80端口
+      - 🇭🇰 【B】香港普通3-Nearoute
+      - 🇯🇵 新加坡|02|奈飞广日电信隧道2
+      - 🇭🇰 【J】香港VIP1-Netflix
+      - 🇭🇰 [vip1]香港01[1.0|移动|流媒体解锁]
+      - 🇺🇲 JCBB_美国03【vip1】
+      - 🇭🇰 日本04|深港专线 2
+      - 🇨🇳 Lv4台湾2Xsg-sh
+      - 🇯🇵 【I】日本VIP5-Azure
+      - 🇯🇵 日本|03|直连2
+      - 🇹🇷 土耳其01
+      - 🇬🇧 Lv3英国4广
+      - 🇯🇵 日本19
+      - 🇷🇺 Lv3俄罗斯
+      - 🇺🇲 Lv3美国洛杉矶inp3
+      - 🇭🇰 中国香港-B-5X
+      - 🇭🇰 【M】香港VIP4-Netflix
+      - 🇭🇰 【IEPL】香港普通3-Nearoute
+      - 🇭🇰 167|香港|x2.0
+      - 🇸🇬 [Lv3·1.0x]新加坡03|IP均衡优化|CTN加速|500Mbps共享
+      - 🇯🇵 日本软银-gRPC-3
+      - 🇹🇷 土耳其02
+      - 🇯🇵 JCBB_日本04【vip1】
+      - 🇯🇵 新加坡|03|广日电信隧道2
+      - 🇸🇬 [Lv2·1.0x]新加坡02|IP均衡优化|CTN加速|500Mbps共享
+      - 🇬🇧 英国01|深港专线
+      - 🇺🇲 US01-SS-隧道传输
+      - 🇯🇵 日本03电信联通优化
+      - 🇯🇵 【I】日本VIP6-Azure
+      - 🇭🇰 [Lv3·1.0x]香港04|IP均衡优化混合负载|1000Mbps共享
+      - 🇸🇬 【L】新加坡VIP7-Netflix
+      - 🇭🇰 日本02|深港专线 2
+      - 🇸🇬 【L】新加坡VIP5-Netflix
+      - 🇧🇷 IEPL|巴西
+      - 🇨🇳 150|台湾|x3.0
+      - California,Tj-BGroup
+      - 群组：https://t.me/vip88ml
+      - 🇨🇦 _CA_加拿大
+      - 🇯🇵 [联通]日本·F1|03
+      - 🇭🇰 台湾03|深港专线
+      - 🇭🇰 香港|03|广日电信隧道1
+      - 🇯🇵 日本直连01
+      - 🇭🇰 香港|02奈飞AZ广港电信隧道2
+      - 🇯🇵 日本09
+      - 🇭🇰 【J】香港VIPD-Netflix
+      - _BZ_伯利兹
+      - 🇯🇵 新加坡|01|广日电信隧道
+      - 🇭🇰 [移动]香港·E1|04
+      - 🇯🇵 IEPL|尼日利亚
+      - 🇭🇰 【N】香港VIP10-Leaseweb
+      - 🇭🇰 台湾04|深港专线
+      - 🇭🇰 香港05|深港专线
+      - 🇹🇷 IEPL|土耳其
+      - 🇨🇳 台湾06
+      - 🇭🇰 新加坡05|深港专线
+      - 🇯🇵 为保证您的使用质量，请保持日更订阅
+      - 🇭🇰 台湾05|深港专线
+      - 🇺🇲 【C】美国VIP4-CC
+      - 乌克兰
+      - 🇯🇵 【N】日本VIP12-Nerocloud
+      - 🇨🇳 中国台湾-03
+      - 🇷🇺 【E】俄罗斯VIP2-RT
+      - 🇭🇰 【O】香港普通8-Leaseweb
+      - 🇷🇴 罗马尼亚
+      - 🇰🇷 IEPL|韩国
+      - 🇭🇰 _HK_香港
+      - 🇺🇲 JCBB_美国02【vip1】
+      - 🇭🇰 中国香港-A-02
+      - 🇭🇰 中国香港-A-03
+      - 🇰🇷 韩国-B-5X
+      - 🇭🇰 【A】香港VIP6-Leaseweb
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -354,84 +538,130 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇸🇬 隧道|NF|新加坡03
-      - 🇭🇰 印度02|深港专线
-      - 🇬🇧 [Vip1]英国01[1.0]
-      - 🇯🇵 日本13|专线|流媒体解锁
-      - 🇭🇰 HK|02|长沙|隧道|倍率x1.5
-      - 🇭🇰 香港09|深港专线
-      - 🇭🇰 日本06|深港专线
-      - 🇭🇰 美国01|深港专线
-      - 🇰🇷 隧道|NF|韩国01
-      - 🇯🇵 日本03
-      - 🇸🇬 [Vip1]新加坡06[1.0|流媒体解锁]
-      - 🇰🇷 韩国05|高速
-      - 🇯🇵 日本12
-      - 🇸🇬 [Vip1]新加坡04[1.0|移动|流媒体解锁]
-      - 🇭🇰 香港07|深港专线
-      - 🇭🇰 香港|03
-      - 🇨🇦 _CA_加拿大->🇺🇸_US_美国
-      - 🇸🇬 新加坡02|移动优化
-      - 🇸🇬 137|新加坡|yd线路|x2.5
-      - 🇸🇬 [Vip1]新加坡06[1.0|流媒体解锁] 2
-      - 🇩🇪 德国02|深港专线
-      - 🇷🇴 罗马尼亚
-      - 🇺🇲 US01-SS-隧道传输
-      - 🇭🇰 香港|02奈飞AZ广港电信隧道
-      - 「🇻🇳」兵之神「免流」★★
-      - 🇭🇰 新加坡|01|广港电信隧道4
-      - 🇰🇷 韩国01|高速
-      - 🇸🇬 新加坡体验
-      - 「🇯🇵」免流牌「免流」✰
-      - 🇯🇵 日本10
-      - 🇯🇵 日本|03|广日电信隧道2
-      - 🇭🇰 [Vip1]香港07[1.0|移动|流媒体解锁]
-      - ⚠️续费请前往【闪电猫.com】
-      - 🇭🇰 香港13|原生|x5
-      - 🇯🇵 JP|02|上海|隧道|倍率x2
-      - California,SS-BGroup
-      - 🇭🇰 美国|01|广港电信隧道0
-      - 🇬🇧 英国02|深港专线
-      - 🇨🇳 隧道|NF|台湾01
-      - 🇨🇦 加拿大|CALite-广港
-      - 🇯🇵 日本|高速|01|湘日联通隧道2
-      - 🇺🇲 隧道|NF|美国01
-      - 🇯🇵 [联通]日本·F1|03
       - 🇺🇲 [v1]美国|02
-      - 🇭🇰 台湾06|深港专线
-      - 🇲🇾 马来西亚
-      - 「🇰🇷」昆仑镜「免流」✰
-      - 🇬🇧 英国01|深港专线
-      - 🇭🇰 香港|04
-      - 🇭🇰 美国03|深港专线
-      - 🇨🇳 「🇭🇰」伏羲琴「解锁」★
-      - 「🇺🇸」帝之炎「RPC」★
-      - 🇯🇵 JP|03|江苏|隧道|倍率x1.5
-      - 「🇭🇰」神之刃「CFT」★★
-      - 🇺🇲 美国|USBGP-IEPL
-      - 🇸🇬 新加坡03
-      - 🇺🇲 美国04
-      - 🇯🇵 日本|01|湘日联通隧道
-      - 🇯🇵 日本16|高速
-      - 🇯🇵 新加坡|02|奈飞广日电信隧道2
-      - 🇭🇰 香港|04奈飞HKT广港电信隧道1(大带宽)
-      - 🇨🇳 台湾07
-      - 🇰🇷 [联通]韩国·E1|01
-      - 🇨🇳 「🇩🇪」恒古尺「解锁」✡
-      - 🇭🇰 美国06|深港专线
-      - 🇭🇰 香港05|深港专线
-      - 🇭🇰 新加坡|06|奈飞广港电信隧道
-      - 🇭🇰 香港|03|广日电信隧道1
-      - 🇯🇵 日本05
-      - 🇫🇷 _BZ_伯利兹->🇫🇷_FR_法国
-      - 🇰🇷 韩国04
-      - 🇸🇬 新加坡12|高速|流媒体解锁
-      - 🇭🇰 土耳其02|深港专线
-      - 🇨🇳 「🇦🇪」专属二「解锁」✡
+      - 🇬🇧 [v1]英国|01
+      - 🇹🇷 【F】土耳其VIP1-Steam
+      - 🇸🇬 【K】新加坡普通1-DO
+      - 🇸🇬 【L】新加坡VIP2-Netflix
+      - 🇭🇰 日本04|深港专线
+      - 🇭🇰 【IEPL】香港普通4-Nearoute
+      - 🇭🇰 [联通]香港·F1|02
+      - 🇬🇧 JCBB_英国02【vip1】
+      - 🇯🇵 IEPL|日本
+      - 🇭🇰 高级丨HongKong
+      - 🇨🇳 [Vip1]台湾02[1.0|联通|流媒体解锁]
+      - 🇭🇰 【O】香港VIP5-Leaseweb
+      - 🇰🇷 韩国05|高速
+      - 🇦🇺 Lv4澳大利亚悉尼
+      - 🇺🇲 [Lv3·1.0x]美国卢森堡04|IP均衡优化|混合负载|500Mbps共享
+      - 🇸🇬 如果线路故障请更新订阅
+      - 🇯🇵 [Lv2·1.0x]日本03|IP均衡优化|混合负载|600Mbps共享
+      - 🇸🇬 高级丨Singapore
+      - 阿拉伯联合酋长国
+      - 🇺🇲 Lv4洛杉矶vir3倍率
+      - 🇲🇴 _MO_澳门
+      - 🇭🇰 【O】香港VIP4-Leaseweb
+      - 🇭🇰 [vip1]香港02[1.0|移动|流媒体解锁]
+      - 🇯🇵 [Lv3·1.0x]日本002|混合负载|1000Mbps共享
+      - 🇸🇬 Lv4新加坡
+      - 🇭🇰 【A】香港VIP5-Leaseweb
+      - 🇺🇲 _US_美国
+      - 🇯🇵 【N】日本VIPB-Leaseweb
+      - 🇭🇰 【B】香港VIPC-Nearoute
+      - 🇭🇰 【M】香港VIP2-Netflix
+      - 🇲🇾 【L】马来西亚VIP1-TMNet
+      - 🇭🇰 Lv4香港HE-sg-sh解锁
+      - 🇭🇰 美国04|深港专线
+      - 🇭🇰 台湾08|深港专线
+      - 🇭🇰 日本02|深港专线
       - 🇯🇵 日本22
-      - 🇭🇰 香港08|深港专线
-      - 🇺🇲 美国02
-      - 🇬🇧 _GB_英国
+      - 🇺🇲 [Lv2·1.0x]美国拉斯维加斯01|IP均衡优化|混合负载|500Mbps共享
+      - IEPL|柬埔寨
+      - 🇹🇷 土耳其|02
+      - 🇯🇵 日本06|高速
+      - 孟加拉国
+      - 🇸🇬 【L】新加坡VIP6-Netflix
+      - 🇯🇵 [Lv2·1.0x]日本001|混合负载|1000Mbps共享
+      - 🇺🇲 _CY_塞浦路斯->🇺🇸_US_美国
+      - 🇯🇵 _JP_日本
+      - 🇭🇰 香港|07
+      - 🇨🇳 165|台湾Hinet|x3.5
+      - 🇯🇵 【N】日本VIP6-Nerocloud
+      - 🇯🇵 日本直连02
+      - 🇭🇰 台湾02|深港专线
+      - 🇯🇵 [Lv3·1.0x]日本09|大阪|混合负载|800Mbps共享
+      - 🇹🇷 Lv3土耳其
+      - 🇯🇵 日本20|高速|80端口
+      - 🇭🇰 【B】香港普通3-Nearoute
+      - 🇯🇵 新加坡|02|奈飞广日电信隧道2
+      - 🇭🇰 【J】香港VIP1-Netflix
+      - 🇭🇰 [vip1]香港01[1.0|移动|流媒体解锁]
+      - 🇺🇲 JCBB_美国03【vip1】
+      - 🇭🇰 日本04|深港专线 2
+      - 🇨🇳 Lv4台湾2Xsg-sh
+      - 🇯🇵 【I】日本VIP5-Azure
+      - 🇯🇵 日本|03|直连2
+      - 🇹🇷 土耳其01
+      - 🇬🇧 Lv3英国4广
+      - 🇯🇵 日本19
+      - 🇷🇺 Lv3俄罗斯
+      - 🇺🇲 Lv3美国洛杉矶inp3
+      - 🇭🇰 中国香港-B-5X
+      - 🇭🇰 【M】香港VIP4-Netflix
+      - 🇭🇰 【IEPL】香港普通3-Nearoute
+      - 🇭🇰 167|香港|x2.0
+      - 🇸🇬 [Lv3·1.0x]新加坡03|IP均衡优化|CTN加速|500Mbps共享
+      - 🇯🇵 日本软银-gRPC-3
+      - 🇹🇷 土耳其02
+      - 🇯🇵 JCBB_日本04【vip1】
+      - 🇯🇵 新加坡|03|广日电信隧道2
+      - 🇸🇬 [Lv2·1.0x]新加坡02|IP均衡优化|CTN加速|500Mbps共享
+      - 🇬🇧 英国01|深港专线
+      - 🇺🇲 US01-SS-隧道传输
+      - 🇯🇵 日本03电信联通优化
+      - 🇯🇵 【I】日本VIP6-Azure
+      - 🇭🇰 [Lv3·1.0x]香港04|IP均衡优化混合负载|1000Mbps共享
+      - 🇸🇬 【L】新加坡VIP7-Netflix
+      - 🇭🇰 日本02|深港专线 2
+      - 🇸🇬 【L】新加坡VIP5-Netflix
+      - 🇧🇷 IEPL|巴西
+      - 🇨🇳 150|台湾|x3.0
+      - California,Tj-BGroup
+      - 群组：https://t.me/vip88ml
+      - 🇨🇦 _CA_加拿大
+      - 🇯🇵 [联通]日本·F1|03
+      - 🇭🇰 台湾03|深港专线
+      - 🇭🇰 香港|03|广日电信隧道1
+      - 🇯🇵 日本直连01
+      - 🇭🇰 香港|02奈飞AZ广港电信隧道2
+      - 🇯🇵 日本09
+      - 🇭🇰 【J】香港VIPD-Netflix
+      - _BZ_伯利兹
+      - 🇯🇵 新加坡|01|广日电信隧道
+      - 🇭🇰 [移动]香港·E1|04
+      - 🇯🇵 IEPL|尼日利亚
+      - 🇭🇰 【N】香港VIP10-Leaseweb
+      - 🇭🇰 台湾04|深港专线
+      - 🇭🇰 香港05|深港专线
+      - 🇹🇷 IEPL|土耳其
+      - 🇨🇳 台湾06
+      - 🇭🇰 新加坡05|深港专线
+      - 🇯🇵 为保证您的使用质量，请保持日更订阅
+      - 🇭🇰 台湾05|深港专线
+      - 🇺🇲 【C】美国VIP4-CC
+      - 乌克兰
+      - 🇯🇵 【N】日本VIP12-Nerocloud
+      - 🇨🇳 中国台湾-03
+      - 🇷🇺 【E】俄罗斯VIP2-RT
+      - 🇭🇰 【O】香港普通8-Leaseweb
+      - 🇷🇴 罗马尼亚
+      - 🇰🇷 IEPL|韩国
+      - 🇭🇰 _HK_香港
+      - 🇺🇲 JCBB_美国02【vip1】
+      - 🇭🇰 中国香港-A-02
+      - 🇭🇰 中国香港-A-03
+      - 🇰🇷 韩国-B-5X
+      - 🇭🇰 【A】香港VIP6-Leaseweb
   - name: 📲 电报消息
     type: select
     proxies:
@@ -573,15 +803,10 @@ proxy-groups:
       - DIRECT
       - 🚀 节点选择
       - ♻️ 自动选择
-      - 🇯🇵 日本13|专线|流媒体解锁
-      - 🇸🇬 [Vip1]新加坡06[1.0|流媒体解锁]
-      - 🇸🇬 [Vip1]新加坡04[1.0|移动|流媒体解锁]
-      - 🇸🇬 [Vip1]新加坡06[1.0|流媒体解锁] 2
-      - 🇭🇰 [Vip1]香港07[1.0|移动|流媒体解锁]
-      - 🇨🇳 「🇭🇰」伏羲琴「解锁」★
-      - 🇨🇳 「🇩🇪」恒古尺「解锁」✡
-      - 🇸🇬 新加坡12|高速|流媒体解锁
-      - 🇨🇳 「🇦🇪」专属二「解锁」✡
+      - 🇨🇳 [Vip1]台湾02[1.0|联通|流媒体解锁]
+      - 🇭🇰 [vip1]香港02[1.0|移动|流媒体解锁]
+      - 🇭🇰 Lv4香港HE-sg-sh解锁
+      - 🇭🇰 [vip1]香港01[1.0|移动|流媒体解锁]
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -627,129 +852,166 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇭🇰 印度02|深港专线
-      - 🇭🇰 HK|02|长沙|隧道|倍率x1.5
-      - 🇭🇰 香港09|深港专线
-      - 🇭🇰 日本06|深港专线
-      - 🇭🇰 美国01|深港专线
-      - 🇭🇰 香港07|深港专线
-      - 🇭🇰 香港|03
-      - 🇩🇪 德国02|深港专线
-      - 🇭🇰 香港|02奈飞AZ广港电信隧道
-      - 🇭🇰 新加坡|01|广港电信隧道4
-      - 🇭🇰 [Vip1]香港07[1.0|移动|流媒体解锁]
-      - 🇭🇰 香港13|原生|x5
-      - 🇭🇰 美国|01|广港电信隧道0
-      - 🇬🇧 英国02|深港专线
-      - 🇨🇦 加拿大|CALite-广港
-      - 🇭🇰 台湾06|深港专线
+      - 🇭🇰 日本04|深港专线
+      - 🇭🇰 【IEPL】香港普通4-Nearoute
+      - 🇭🇰 [联通]香港·F1|02
+      - 🇭🇰 【O】香港VIP5-Leaseweb
+      - 🇭🇰 【O】香港VIP4-Leaseweb
+      - 🇭🇰 [vip1]香港02[1.0|移动|流媒体解锁]
+      - 🇭🇰 【A】香港VIP5-Leaseweb
+      - 🇭🇰 【B】香港VIPC-Nearoute
+      - 🇭🇰 【M】香港VIP2-Netflix
+      - 🇭🇰 Lv4香港HE-sg-sh解锁
+      - 🇭🇰 美国04|深港专线
+      - 🇭🇰 台湾08|深港专线
+      - 🇭🇰 日本02|深港专线
+      - 🇭🇰 香港|07
+      - 🇭🇰 台湾02|深港专线
+      - 🇭🇰 【B】香港普通3-Nearoute
+      - 🇭🇰 【J】香港VIP1-Netflix
+      - 🇭🇰 [vip1]香港01[1.0|移动|流媒体解锁]
+      - 🇭🇰 日本04|深港专线 2
+      - 🇭🇰 中国香港-B-5X
+      - 🇭🇰 【M】香港VIP4-Netflix
+      - 🇭🇰 【IEPL】香港普通3-Nearoute
+      - 🇭🇰 167|香港|x2.0
       - 🇬🇧 英国01|深港专线
-      - 🇭🇰 香港|04
-      - 🇭🇰 美国03|深港专线
-      - 🇭🇰 香港|04奈飞HKT广港电信隧道1(大带宽)
-      - 🇭🇰 美国06|深港专线
-      - 🇭🇰 香港05|深港专线
-      - 🇭🇰 新加坡|06|奈飞广港电信隧道
+      - 🇭🇰 [Lv3·1.0x]香港04|IP均衡优化混合负载|1000Mbps共享
+      - 🇭🇰 日本02|深港专线 2
+      - 🇭🇰 台湾03|深港专线
       - 🇭🇰 香港|03|广日电信隧道1
-      - 🇭🇰 土耳其02|深港专线
-      - 🇭🇰 香港08|深港专线
+      - 🇭🇰 香港|02奈飞AZ广港电信隧道2
+      - 🇭🇰 【J】香港VIPD-Netflix
+      - 🇭🇰 [移动]香港·E1|04
+      - 🇭🇰 【N】香港VIP10-Leaseweb
+      - 🇭🇰 台湾04|深港专线
+      - 🇭🇰 香港05|深港专线
+      - 🇭🇰 新加坡05|深港专线
+      - 🇭🇰 台湾05|深港专线
+      - 🇭🇰 【O】香港普通8-Leaseweb
+      - 🇭🇰 _HK_香港
+      - 🇭🇰 中国香港-A-02
+      - 🇭🇰 中国香港-A-03
+      - 🇭🇰 【A】香港VIP6-Leaseweb
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇯🇵 日本13|专线|流媒体解锁
-      - 🇭🇰 日本06|深港专线
-      - 🇯🇵 日本03
-      - 🇯🇵 日本12
-      - 🇯🇵 日本10
-      - 🇯🇵 日本|03|广日电信隧道2
-      - 🇯🇵 JP|02|上海|隧道|倍率x2
-      - 🇯🇵 日本|高速|01|湘日联通隧道2
-      - 🇯🇵 [联通]日本·F1|03
-      - 🇯🇵 JP|03|江苏|隧道|倍率x1.5
-      - 🇯🇵 日本|01|湘日联通隧道
-      - 🇯🇵 日本16|高速
-      - 🇯🇵 新加坡|02|奈飞广日电信隧道2
-      - 🇭🇰 香港|03|广日电信隧道1
-      - 🇯🇵 日本05
+      - 🇭🇰 日本04|深港专线
+      - 🇯🇵 IEPL|日本
+      - 🇯🇵 [Lv2·1.0x]日本03|IP均衡优化|混合负载|600Mbps共享
+      - 🇯🇵 [Lv3·1.0x]日本002|混合负载|1000Mbps共享
+      - 🇯🇵 【N】日本VIPB-Leaseweb
+      - 🇭🇰 日本02|深港专线
       - 🇯🇵 日本22
+      - 🇯🇵 日本06|高速
+      - 🇯🇵 [Lv2·1.0x]日本001|混合负载|1000Mbps共享
+      - 🇯🇵 _JP_日本
+      - 🇯🇵 【N】日本VIP6-Nerocloud
+      - 🇯🇵 日本直连02
+      - 🇯🇵 [Lv3·1.0x]日本09|大阪|混合负载|800Mbps共享
+      - 🇯🇵 日本20|高速|80端口
+      - 🇯🇵 新加坡|02|奈飞广日电信隧道2
+      - 🇭🇰 日本04|深港专线 2
+      - 🇯🇵 【I】日本VIP5-Azure
+      - 🇯🇵 日本|03|直连2
+      - 🇯🇵 日本19
+      - 🇯🇵 日本软银-gRPC-3
+      - 🇯🇵 JCBB_日本04【vip1】
+      - 🇯🇵 新加坡|03|广日电信隧道2
+      - 🇯🇵 日本03电信联通优化
+      - 🇯🇵 【I】日本VIP6-Azure
+      - 🇭🇰 日本02|深港专线 2
+      - 🇯🇵 [联通]日本·F1|03
+      - 🇭🇰 香港|03|广日电信隧道1
+      - 🇯🇵 日本直连01
+      - 🇯🇵 日本09
+      - 🇯🇵 新加坡|01|广日电信隧道
+      - 🇯🇵 IEPL|尼日利亚
+      - 🇯🇵 为保证您的使用质量，请保持日更订阅
+      - 🇯🇵 【N】日本VIP12-Nerocloud
   - name: 🇺🇲 美国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 150
     proxies:
-      - 🇭🇰 美国01|深港专线
-      - 🇨🇦 _CA_加拿大->🇺🇸_US_美国
-      - 🇺🇲 US01-SS-隧道传输
-      - 🇭🇰 美国|01|广港电信隧道0
-      - 🇺🇲 隧道|NF|美国01
       - 🇺🇲 [v1]美国|02
-      - 🇭🇰 美国03|深港专线
-      - 🇺🇲 美国|USBGP-IEPL
-      - 🇺🇲 美国04
-      - 🇭🇰 美国06|深港专线
-      - 🇺🇲 美国02
+      - 🇺🇲 [Lv3·1.0x]美国卢森堡04|IP均衡优化|混合负载|500Mbps共享
+      - 🇺🇲 Lv4洛杉矶vir3倍率
+      - 🇺🇲 _US_美国
+      - 🇭🇰 美国04|深港专线
+      - 🇺🇲 [Lv2·1.0x]美国拉斯维加斯01|IP均衡优化|混合负载|500Mbps共享
+      - 🇺🇲 _CY_塞浦路斯->🇺🇸_US_美国
+      - 🇺🇲 JCBB_美国03【vip1】
+      - 🇺🇲 Lv3美国洛杉矶inp3
+      - 🇺🇲 US01-SS-隧道传输
+      - 🇺🇲 【C】美国VIP4-CC
+      - 🇺🇲 JCBB_美国02【vip1】
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇨🇳 隧道|NF|台湾01
-      - 🇭🇰 台湾06|深港专线
-      - 🇨🇳 台湾07
+      - 🇨🇳 [Vip1]台湾02[1.0|联通|流媒体解锁]
+      - 🇭🇰 台湾08|深港专线
+      - 🇨🇳 165|台湾Hinet|x3.5
+      - 🇭🇰 台湾02|深港专线
+      - 🇨🇳 Lv4台湾2Xsg-sh
+      - 🇨🇳 150|台湾|x3.0
+      - 🇭🇰 台湾03|深港专线
+      - 🇭🇰 台湾04|深港专线
+      - 🇨🇳 台湾06
+      - 🇭🇰 台湾05|深港专线
+      - 🇨🇳 中国台湾-03
   - name: 🇸🇬 狮城节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇸🇬 隧道|NF|新加坡03
-      - 🇸🇬 [Vip1]新加坡06[1.0|流媒体解锁]
-      - 🇸🇬 [Vip1]新加坡04[1.0|移动|流媒体解锁]
-      - 🇸🇬 新加坡02|移动优化
-      - 🇸🇬 137|新加坡|yd线路|x2.5
-      - 🇸🇬 [Vip1]新加坡06[1.0|流媒体解锁] 2
-      - 🇭🇰 新加坡|01|广港电信隧道4
-      - 🇸🇬 新加坡体验
-      - 🇸🇬 新加坡03
+      - 🇸🇬 【K】新加坡普通1-DO
+      - 🇸🇬 【L】新加坡VIP2-Netflix
+      - 🇸🇬 高级丨Singapore
+      - 🇸🇬 Lv4新加坡
+      - 🇸🇬 【L】新加坡VIP6-Netflix
       - 🇯🇵 新加坡|02|奈飞广日电信隧道2
-      - 🇭🇰 新加坡|06|奈飞广港电信隧道
-      - 🇸🇬 新加坡12|高速|流媒体解锁
+      - 🇸🇬 [Lv3·1.0x]新加坡03|IP均衡优化|CTN加速|500Mbps共享
+      - 🇯🇵 新加坡|03|广日电信隧道2
+      - 🇸🇬 [Lv2·1.0x]新加坡02|IP均衡优化|CTN加速|500Mbps共享
+      - 🇸🇬 【L】新加坡VIP7-Netflix
+      - 🇸🇬 【L】新加坡VIP5-Netflix
+      - 🇯🇵 新加坡|01|广日电信隧道
+      - 🇭🇰 新加坡05|深港专线
   - name: 🇰🇷 韩国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇰🇷 隧道|NF|韩国01
       - 🇰🇷 韩国05|高速
-      - 🇰🇷 韩国01|高速
-      - 🇰🇷 [联通]韩国·E1|01
-      - 🇰🇷 韩国04
+      - 🇰🇷 IEPL|韩国
+      - 🇰🇷 韩国-B-5X
   - name: 🎥 奈飞节点
     type: select
     proxies:
-      - 🇸🇬 隧道|NF|新加坡03
-      - 🇯🇵 日本13|专线|流媒体解锁
-      - 🇰🇷 隧道|NF|韩国01
-      - 🇸🇬 [Vip1]新加坡06[1.0|流媒体解锁]
-      - 🇸🇬 [Vip1]新加坡04[1.0|移动|流媒体解锁]
-      - 🇸🇬 [Vip1]新加坡06[1.0|流媒体解锁] 2
-      - 🇭🇰 香港|02奈飞AZ广港电信隧道
-      - 🇭🇰 [Vip1]香港07[1.0|移动|流媒体解锁]
-      - 🇨🇳 隧道|NF|台湾01
-      - 🇺🇲 隧道|NF|美国01
-      - 🇨🇳 「🇭🇰」伏羲琴「解锁」★
+      - 🇸🇬 【L】新加坡VIP2-Netflix
+      - 🇨🇳 [Vip1]台湾02[1.0|联通|流媒体解锁]
+      - 🇭🇰 [vip1]香港02[1.0|移动|流媒体解锁]
+      - 🇭🇰 【M】香港VIP2-Netflix
+      - 🇭🇰 Lv4香港HE-sg-sh解锁
+      - 🇸🇬 【L】新加坡VIP6-Netflix
       - 🇯🇵 新加坡|02|奈飞广日电信隧道2
-      - 🇭🇰 香港|04奈飞HKT广港电信隧道1(大带宽)
-      - 🇨🇳 「🇩🇪」恒古尺「解锁」✡
-      - 🇭🇰 新加坡|06|奈飞广港电信隧道
-      - 🇸🇬 新加坡12|高速|流媒体解锁
-      - 🇨🇳 「🇦🇪」专属二「解锁」✡
+      - 🇭🇰 【J】香港VIP1-Netflix
+      - 🇭🇰 [vip1]香港01[1.0|移动|流媒体解锁]
+      - 🇭🇰 【M】香港VIP4-Netflix
+      - 🇸🇬 【L】新加坡VIP7-Netflix
+      - 🇸🇬 【L】新加坡VIP5-Netflix
+      - 🇭🇰 香港|02奈飞AZ广港电信隧道2
+      - 🇭🇰 【J】香港VIPD-Netflix
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
