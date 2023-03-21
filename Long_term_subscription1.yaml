@@ -5,797 +5,837 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇭🇰 D02 香港*, server: 3bc8b278.ksyungslb.com.ksyungslb.xyz, port: 39344, type: ssr, cipher: chacha20-ietf, password: GhQrDS, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 176543:RNlUEI, obfs-param: bilivideo.com, udp: true}
-  - {name: 🇭🇰 TG:@hkaa0|香港, server: b1.ss1011.top, port: 1506, type: vmess, uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 vip1 台湾-03, server: gzyd02.jcnode.top, port: 42000, type: vmess, uuid: 90694169-b23c-46ba-8ad8-bd8a3d27c381, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: gzyd02.jcnode.top}}, udp: true}
-  - {name: 🇺🇸 Stand - 美国 GPT放行 低速 隧道备线, server: v7_3.liulisusunode.online, port: 51009, type: vmess, uuid: 9e49071c-2117-4144-9aa6-af47c2bb4a12, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: 107.trojannode.top, network: ws, ws-opts: {path: /liulisuansuan, headers: {Host: v7_3.liulisusunode.online}}, udp: true}
-  - {name: "🇨🇳 [ v1 ] 台湾原生 · 02 · 线路2", server: v02.gutingting.com, port: 30003, type: trojan, password: 7f75707b-72ba-4b56-9558-f8542c5cbb9c, sni: v2tw01.fuqiangren.com, skip-cert-verify: false, udp: true}
-  - {name: "🇵🇭 [ v1 ] 菲律宾 · 01 · 线路2", server: v02.gutingting.com, port: 30053, type: trojan, password: b375825d-f8b1-48e4-9c59-c94c80558d2f, sni: v2phl01.fuqiangren.com, skip-cert-verify: false, udp: true}
-  - {name: "🇺🇸 [ v1 ] 美国 · 02 · 线路1", server: v01.gutingting.com, port: 30048, type: vmess, uuid: 7f75707b-72ba-4b56-9558-f8542c5cbb9c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aceamedv, headers: {Host: sh02.fastcloud.club}}, udp: true}
-  - {name: "🇮🇳 [ v1 ] 印度 · 01 · 线路1", server: v01.gutingting.com, port: 30027, type: vmess, uuid: 7f75707b-72ba-4b56-9558-f8542c5cbb9c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aceamedv, headers: {Host: sh01.fastcloud.club}}, udp: true}
-  - {name: "🇭🇰 [ v1 ] 香港原生 · 02 · 线路2", server: v02.gutingting.com, port: 30008, type: vmess, uuid: 4544a0d6-cca4-459c-82df-132364de7d22, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aceamedv, headers: {Host: sh02.fastcloud.club}}, udp: true}
-  - {name: -----以下为国内区-----, server: 127.0.0.1, port: 53, type: vmess, uuid: 2d221593-9af0-4391-ba40-9c88b501aa36, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 🇸🇬 TG:@hkaa0|新加坡, server: 13.212.244.29, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: github.com/freefq - 欧盟  7, server: mtn.ircf.space, port: 443, type: vmess, uuid: 06160bab-c401-4460-b987-ae38520eca69, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: naaser.nanoravro.ml}}, udp: true}
-  - {name: 🇭🇰 香港-中国｜中转｜NHK-F XV, server: proxy.01.onenovnode.org, port: 26631, type: vmess, uuid: 2df6cbad-2fc2-4ab4-b56a-ef3b4e4e6e1f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: proxy.01.onenovnode.org, network: grpc, grpc-opts: {grpc-service-name: nodeb.hkfv.onenovnode.org}, udp: true}
-  - {name: 🇸🇬 狮城01|tg频道:@ripaojiedian, server: sgp-3.fuckjdieng.uk, port: 50316, type: trojan, password: 8f7a43a4-dcdb-4fa0-8496-32db0386e0bb, sni: sgp-3.fuckjdieng.uk, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国2|tg频道:@ripaojiedian, server: t.cccao.cyou, port: 16648, type: vmess, uuid: b42ec19f-42b9-4390-b730-5b0665e079fb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: t.cccao.cyou}}, udp: true}
-  - {name: "🇯🇵 [ T1 ] 日本 · 02 · 线路1", server: v01.gutingting.com, port: 20221, type: trojan, password: b375825d-f8b1-48e4-9c59-c94c80558d2f, sni: v2jp01.fuqiangren.com, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港 腾讯云, server: 43.154.148.54, port: 51790, type: vmess, uuid: b74f0019-b839-421f-add8-ffaf94fc3139, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /hk7/getData, headers: {Host: hk7.verichains.co}}, udp: true}
-  - {name: 🇯🇵 日本-东京｜中转｜NJP-A XT, server: proxy.01.onenovnode.org, port: 17112, type: trojan, password: 2df6cbad-2fc2-4ab4-b56a-ef3b4e4e6e1f, sni: nodea.jpat.onenovnode.org, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 日本-东京｜中转｜NJP-D XS, server: proxy.05.onenovnode.org, port: 17120, type: ss, cipher: chacha20-ietf-poly1305, password: 2df6cbad-2fc2-4ab4-b56a-ef3b4e4e6e1f, udp: true}
-  - {name: 🇭🇰 Stand - 香港 HK 隧道备线, server: v7_3.liulisusunode.online, port: 51003, type: vmess, uuid: 9e49071c-2117-4144-9aa6-af47c2bb4a12, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /liulisuansuan, headers: {Host: v7_3.liulisusunode.online}}, udp: true}
-  - {name: 🇭🇰 TG:@hkaa0|香港 2, server: hk80-2.af49c4e4c2ef.sanfen001.pics, port: 80, type: vmess, uuid: 8216e1fd-7f67-440d-9a63-51d0f6c38b10, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /zh-cn/, headers: {Host: www.baidu.com}}, udp: true}
-  - {name: 🇨🇳 台湾 流媒体解锁_2, server: szct.xn--dlq110j6ul.cc, port: 17557, type: vmess, uuid: 82c912e7-f61f-4f8f-874b-25b9f64102f9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 vip1 香港-01, server: gzdx.jcnode.top, port: 40002, type: ss, cipher: aes-256-gcm, password: 90694169-b23c-46ba-8ad8-bd8a3d27c381, udp: true}
-  - {name: 🇸🇬 新加坡 01 | ws, server: 24a51f02-f25c-87fa-7acf-eea632e63c7c.cnnic.rip, port: 80, type: vmess, uuid: 2d221593-9af0-4391-ba40-9c88b501aa36, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: "🇬🇧 [ v1 ] 英国原生 · 02 · 线路2", server: v02.gutingting.com, port: 30041, type: vmess, uuid: b375825d-f8b1-48e4-9c59-c94c80558d2f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aceamedv, headers: {Host: sh01.fastcloud.club}}, udp: true}
-  - {name: "🇨🇳 [ v1 ] 台湾原生 · 01 · 线路1", server: v01.gutingting.com, port: 30002, type: trojan, password: 4544a0d6-cca4-459c-82df-132364de7d22, sni: v2tw01.fuqiangren.com, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 台湾-中国｜中转｜NTW-B XS, server: proxy.01.onenovnode.org, port: 18432, type: ss, cipher: chacha20-ietf-poly1305, password: 2df6cbad-2fc2-4ab4-b56a-ef3b4e4e6e1f, udp: true}
-  - {name: 🇳🇴 H60 挪威, server: sp.bilibilis0.one, port: 39800, type: ssr, cipher: chacha20-ietf, password: GhQrDS, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 176543:RNlUEI, obfs-param: bilivideo.com, udp: true}
-  - {name: 🇭🇰 JCBB_香港 05【vip1】, server: gzdx.jcnode.top, port: 20003, type: trojan, password: d4bdb3e2-de6e-47f0-9052-e077a5b16c75, sni: hk02.ckcloud.info, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 JCBB_日本04【vip1】, server: gzyd.jcnode.top, port: 21002, type: trojan, password: d4bdb3e2-de6e-47f0-9052-e077a5b16c75, sni: jp02.ckcloud.info, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 vip1 日本-01, server: gzdx.jcnode.top, port: 41002, type: ss, cipher: aes-256-gcm, password: 90694169-b23c-46ba-8ad8-bd8a3d27c381, udp: true}
-  - {name: "🇮🇸 H60 冰岛 [2]", server: sp.bilibilis0.one, port: 39820, type: ssr, cipher: chacha20-ietf, password: GhQrDS, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 176543:RNlUEI, obfs-param: bilivideo.com, udp: true}
-  - {name: 🇳🇱 Stand - 荷兰 隧道二线, server: v7_2.liulisusunode.online, port: 51022, type: vmess, uuid: 9e49071c-2117-4144-9aa6-af47c2bb4a12, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /liulisuansuan, headers: {Host: v7_2.liulisusunode.online}}, udp: true}
-  - {name: 🇺🇸 _US_美国, server: 38.114.114.19, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: 🇹🇭 H60 泰国, server: sp.bilibilis0.one, port: 39803, type: ssr, cipher: chacha20-ietf, password: GhQrDS, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 176543:RNlUEI, obfs-param: bilivideo.com, udp: true}
-  - {name: 🇺🇸 D42 美国*, server: 3bc8b278.ksyungslb.com.ksyungslb.xyz, port: 39325, type: ssr, cipher: chacha20-ietf, password: GhQrDS, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 176543:RNlUEI, obfs-param: bilivideo.com, udp: true}
-  - {name: 🇳🇱 Stand - 荷兰 隧道主线, server: v7_1.liulisusunode.online, port: 51021, type: vmess, uuid: 9e49071c-2117-4144-9aa6-af47c2bb4a12, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /liulisuansuan, headers: {Host: v7_1.liulisusunode.online}}, udp: true}
-  - {name: "🇨🇳 [ v1 ] 台湾原生 · 02 · 线路2 2", server: v02.gutingting.com, port: 30003, type: trojan, password: d79b95be-abf6-4006-b649-37bce5429c00, sni: v2tw01.fuqiangren.com, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港 2, server: as.steamdownload.top, port: 36612, type: vmess, uuid: d97a516f-716c-493d-ae31-366096cd7738, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇦🇷 阿根廷 01 | ws, server: 2162e620-3315-61b3-d55d-9bf95b93ae40.cnnic.rip, port: 20004, type: vmess, uuid: 2d221593-9af0-4391-ba40-9c88b501aa36, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 36.138.140.208:11023, server: 36.138.140.208, port: 11023, type: ss, cipher: aes-256-gcm, password: ll668668@, udp: true}
-  - {name: 🇭🇰 香港火箭|tg频道:@ripaojiedian, server: fn600mlines021.svcline.com, port: 995, type: ss, cipher: aes-256-gcm, password: 507364fb791e, plugin: v2ray-plugin, plugin-opts: {mode: "", host: fn600mlines021.svcline.com, path: /kpnzyxsj, tls: true, mux: false, skip-cert-verify: false}, udp: true}
-  - {name: "🇯🇵 [ 直连不保证国内 ] 日本 · U1 | 01", server: zzjp01.gutingting.com, port: 20220, type: trojan, password: b375825d-f8b1-48e4-9c59-c94c80558d2f, sni: zzjp01.gutingting.com, skip-cert-verify: false, udp: true}
-  - {name: "🇯🇵 [ v1 ] 日本 · 05 · 线路2", server: v02.gutingting.com, port: 30054, type: trojan, password: b375825d-f8b1-48e4-9c59-c94c80558d2f, sni: v1jp01.fuqiangren.com, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港-中国｜中转｜NHK-G XV, server: proxy.01.onenovnode.org, port: 26634, type: vmess, uuid: 2df6cbad-2fc2-4ab4-b56a-ef3b4e4e6e1f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: proxy.01.onenovnode.org, network: grpc, grpc-opts: {grpc-service-name: nodeb.hkgv.onenovnode.org}, udp: true}
-  - {name: "🇭🇰 [ 移动 ] 香港 · E1 · 03 · 线路2", server: v02.gutingting.com, port: 30006, type: trojan, password: b375825d-f8b1-48e4-9c59-c94c80558d2f, sni: v2hgc02.fuqiangren.com, skip-cert-verify: false, udp: true}
-  - {name: "🇯🇵 [ 联通 ] 日本 · F1 · 03 · 线路2", server: ns02.gutingting.com, port: 30021, type: vmess, uuid: d79b95be-abf6-4006-b649-37bce5429c00, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aceamedv, headers: {Host: sh01.fastcloud.club}}, udp: true}
-  - {name: "🇰🇷 [ 联通 ] 韩国 · E1 · 01 · 线路1", server: v01.gutingting.com, port: 30056, type: trojan, password: d79b95be-abf6-4006-b649-37bce5429c00, sni: v1kr01.fuqiangren.com, skip-cert-verify: false, udp: true}
-  - {name: "🇸🇬 [ v1 ] 新加坡 · 03 · 线路2", server: v02.gutingting.com, port: 30049, type: trojan, password: b375825d-f8b1-48e4-9c59-c94c80558d2f, sni: v2sg02.fuqiangren.com, skip-cert-verify: false, udp: true}
-  - {name: "🇸🇬 _SG_新加坡\r_3_44\r", server: 54.151.148.141, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare节点 22, server: hax.smely.eu.org, port: 80, type: vmess, uuid: 58340bf3-d51d-45e2-87a8-effa78e4bca6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hax.smely.eu.org}}, udp: true}
-  - {name: 🇰🇷 TG:@hkaa0|韩国, server: 43.201.57.87, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: "🇺🇸 [ 直连不保证国内 ] 美国 · U1 | 01", server: zzus01.gutingting.com, port: 20220, type: trojan, password: 4544a0d6-cca4-459c-82df-132364de7d22, sni: zzus01.gutingting.com, skip-cert-verify: false, udp: true}
+  - {name: "🇬🇧 [ v1 ] 英国原生 · 02 · 线路2", server: v02.gutingting.com, port: 30041, type: vmess, uuid: b47beaf7-80e2-4b35-aff7-7551fda42884, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aceamedv, headers: {Host: sh01.fastcloud.club}}, udp: true}
   - {name: "🇯🇵 _JP_日本\r_2_37\r", server: 54.238.83.65, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇨🇦 _CA_加拿大, server: 134.195.196.230, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: ChatGPT解锁 · 01 · 线路1, server: v02.gutingting.com, port: 30059, type: trojan, password: 7f75707b-72ba-4b56-9558-f8542c5cbb9c, sni: v2sggpt01.fuqiangren.com, skip-cert-verify: false, udp: true}
-  - {name: "🇮🇳 [ v1 ] 印度 · 01 · 线路1 2", server: v01.gutingting.com, port: 30027, type: vmess, uuid: d79b95be-abf6-4006-b649-37bce5429c00, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aceamedv, headers: {Host: sh01.fastcloud.club}}, udp: true}
-  - {name: 🇭🇰 _HK_香港_2_来源：快嘴科技-kkzui.com3, server: 198.252.107.240, port: 80, type: vmess, uuid: ee76cecf-1219-42be-ae3f-6b8077e4cacc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: "🇺🇸 _US_美国\r_3_25\r", server: phxv002.jd0001.top, port: 44303, type: trojan, password: 6bb546f2-5528-31b2-8d8e-cf1eed4076a0, skip-cert-verify: false, udp: true}
-  - {name: "🇺🇸 [ T1 ] 美国 · 01 · 线路1", server: v01.gutingting.com, port: 20224, type: trojan, password: 7f75707b-72ba-4b56-9558-f8542c5cbb9c, sni: v2usa01.fuqiangren.com, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 日本-东京｜中转｜NJP-C XV, server: proxy.05.onenovnode.org, port: 17119, type: vmess, uuid: 2df6cbad-2fc2-4ab4-b56a-ef3b4e4e6e1f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: proxy.05.onenovnode.org, network: grpc, grpc-opts: {grpc-service-name: nodea.jpcv.onenovnode.org}, udp: true}
-  - {name: github.com/freefq - 欧盟  14, server: 45.95.241.29, port: 443, type: vmess, uuid: 0aef9d98-669d-4112-b594-6ebee554d6fe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: walter.nanoravro.ml, network: ws, ws-opts: {path: /speedtest, headers: {Host: walter.nanoravro.ml}}, udp: true}
-  - {name: 武汉电信 | ws | 非80, server: 119.96.44.171, port: 46794, type: vmess, uuid: 2d221593-9af0-4391-ba40-9c88b501aa36, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 🇭🇰 vip1 香港-09, server: gzdx.jcnode.top, port: 40001, type: trojan, password: 90694169-b23c-46ba-8ad8-bd8a3d27c381, sni: hk02.ckcloud.info, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 海港隧道 | ws | 1.5x, server: 9a5ccc45-215e-3472-502c-1b1a055a609c.cnnic.rip, port: 80, type: vmess, uuid: 2d221593-9af0-4391-ba40-9c88b501aa36, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: "🇸🇬 [ v1 ] 新加坡 · 01 · 线路1", server: v01.gutingting.com, port: 30035, type: vmess, uuid: 7f75707b-72ba-4b56-9558-f8542c5cbb9c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aceamedv, headers: {Host: v01.gutingting.com}}, udp: true}
-  - {name: 🇯🇵 vip2 日本-02, server: gzyd.jcnode.top, port: 41002, type: ss, cipher: aes-256-gcm, password: 90694169-b23c-46ba-8ad8-bd8a3d27c381, udp: true}
-  - {name: "🇺🇸 [ T1 ] 美国 · 01 · 线路1 2", server: v01.gutingting.com, port: 20224, type: trojan, password: b375825d-f8b1-48e4-9c59-c94c80558d2f, sni: v2usa01.fuqiangren.com, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点(shopify) 26, server: 23.227.38.11, port: 443, type: vmess, uuid: 9379fea0-006d-4fd3-8e35-d45a5af72aa2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: frgt1.ssr-free2.xyz}}, udp: true}
-  - {name: "🇭🇰 [ v1 ] 香港原生 · 01 · 线路2", server: v02.gutingting.com, port: 30007, type: vmess, uuid: 4544a0d6-cca4-459c-82df-132364de7d22, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aceamedv, headers: {Host: sh02.fastcloud.club}}, udp: true}
-  - {name: 🇮🇹 H60 意大利, server: sp.bilibilis0.one, port: 39819, type: ssr, cipher: chacha20-ietf, password: GhQrDS, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 176543:RNlUEI, obfs-param: bilivideo.com, udp: true}
-  - {name: 更多节点关注@ShareCentrePro, server: 127.0.0.1, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇩🇪 JCBB_德国02【vip1】, server: nmcm.lele233.top, port: 31295, type: ss, cipher: aes-256-gcm, password: d4bdb3e2-de6e-47f0-9052-e077a5b16c75, udp: true}
-  - {name: 🇮🇱 H60 以色列, server: sp.bilibilis0.one, port: 39810, type: ssr, cipher: chacha20-ietf, password: GhQrDS, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 176543:RNlUEI, obfs-param: bilivideo.com, udp: true}
-  - {name: 🇯🇵 日本 流媒体解锁_2, server: jscm.xn--dlq110j6ul.cc, port: 16730, type: ss, cipher: chacha20-ietf-poly1305, password: 82c912e7-f61f-4f8f-874b-25b9f64102f9, udp: true}
-  - {name: 🇨🇳 JCBB_ 台湾 02【vip1】, server: gzyd.jcnode.top, port: 24001, type: vmess, uuid: d4bdb3e2-de6e-47f0-9052-e077a5b16c75, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzyd.jcnode.top}}, udp: true}
-  - {name: "🇯🇵 [ 联通 ] 日本 · F1 · 02 · 线路1", server: ns01.gutingting.com, port: 30044, type: vmess, uuid: d79b95be-abf6-4006-b649-37bce5429c00, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aceamedv, headers: {Host: sh01.fastcloud.club}}, udp: true}
-  - {name: "🇮🇳 [ v1 ] 印度 · 02 · 线路2", server: v02.gutingting.com, port: 30028, type: vmess, uuid: b375825d-f8b1-48e4-9c59-c94c80558d2f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aceamedv, headers: {Host: sh01.fastcloud.club}}, udp: true}
-  - {name: 🇯🇵 Stand - 日本 JP 隧道备线, server: v7_3.liulisusunode.online, port: 51006, type: vmess, uuid: 9e49071c-2117-4144-9aa6-af47c2bb4a12, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: 104.trojannode.top, network: ws, ws-opts: {path: /liulisuansuan, headers: {Host: v7_3.liulisusunode.online}}, udp: true}
-  - {name: "", server: ftp.lizi.buzz, port: 443, type: vmess, uuid: ef59760b-92d8-4d77-8e19-08e36bd31ca4, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /Vmx4tBCK/, headers: {Host: ftp.lizi.buzz}}, udp: true}
-  - {name: 🇺🇸 (免费)美国 02 电报群t.me/piaoya, server: usa01.aws.cdn.xn--57q977p.com, port: 12002, type: vmess, uuid: 29f7a70b-721e-49e5-9391-d90385cb3343, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /images, headers: {Host: shoutingtoutiao3.10010.com}}, udp: true}
-  - {name: 🇨🇳 台湾 02 | tcp, server: 18c035a5-cfa0-6e07-6906-834de3b3eb73.cnnic.rip, port: 80, type: vmess, uuid: 2d221593-9af0-4391-ba40-9c88b501aa36, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇨🇳 D11 台湾*, server: 3bc8b278.ksyungslb.com.ksyungslb.xyz, port: 39401, type: ssr, cipher: chacha20-ietf, password: GhQrDS, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 176543:RNlUEI, obfs-param: bilivideo.com, udp: true}
-  - {name: "🇹🇷 H60 土耳其 [3]", server: sp.bilibilis0.one, port: 39814, type: ssr, cipher: chacha20-ietf, password: GhQrDS, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 176543:RNlUEI, obfs-param: bilivideo.com, udp: true}
-  - {name: 🇸🇬 vip1 新加坡-05, server: gzdx.jcnode.top, port: 43002, type: trojan, password: 90694169-b23c-46ba-8ad8-bd8a3d27c381, sni: sg01.ckcloud.info, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港 01 | ws, server: 236ba16f-7989-71de-e510-1cad33923355.cnnic.rip, port: 80, type: vmess, uuid: 2d221593-9af0-4391-ba40-9c88b501aa36, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 🇯🇵 Lite3 - 中日隧道 3 普速 稳定, server: foreverb.liuliyum.com, port: 55213, type: vmess, uuid: 9e49071c-2117-4144-9aa6-af47c2bb4a12, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /liulisuansuan, headers: {Host: foreverb.liuliyum.com}}, udp: true}
-  - {name: 🇷🇺 github.com/freefq - 俄罗斯  21, server: 91.107.191.61, port: 80, type: vmess, uuid: c98da152-f3b1-4b65-a3f0-6633a731642e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇯🇵 日本 02 | tcp, server: be6b3392-ef31-a71d-c15a-0f6be789595d.cnnic.rip, port: 80, type: vmess, uuid: 2d221593-9af0-4391-ba40-9c88b501aa36, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇮🇳 JCBB_印度01【vip1】, server: cscu.xn--dlq110j6ul.cc, port: 18526, type: vmess, uuid: d4bdb3e2-de6e-47f0-9052-e077a5b16c75, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cscu.xn--dlq110j6ul.cc}}, udp: true}
-  - {name: 🇯🇵 Lite12 - 中日隧道 高速 不稳定, server: fastspeed-b.liuliyum.com, port: 55212, type: vmess, uuid: 9e49071c-2117-4144-9aa6-af47c2bb4a12, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /liulisuansuan, headers: {Host: fastspeed-b.liuliyum.com}}, udp: true}
+  - {name: TG:@hkaa0|中国, server: 36.137.106.45, port: 11023, type: ss, cipher: aes-256-gcm, password: ll668668@, udp: true}
+  - {name: "", server: france1.yj2022.ga, port: 443, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /E86414F638E11, headers: {Host: france1.yj2022.ga}}, udp: true}
+  - {name: "🇭🇰 [ 联通 ] 香港 · F1 · 03 · 线路2", server: v02.gutingting.com, port: 30024, type: vmess, uuid: e67005c4-e52b-4e9a-ac8e-1e75b0ed5cbf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aceamedv, headers: {Host: gz.fastcloud.club}}, udp: true}
+  - {name: "🇮🇳 [ v1 ] 印度 · 01 · 线路1", server: v01.gutingting.com, port: 30027, type: vmess, uuid: e67005c4-e52b-4e9a-ac8e-1e75b0ed5cbf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aceamedv, headers: {Host: sh01.fastcloud.club}}, udp: true}
+  - {name: "🇭🇰 [ v1 ] 香港原生 · 01 · 线路2", server: v02.gutingting.com, port: 30007, type: vmess, uuid: e67005c4-e52b-4e9a-ac8e-1e75b0ed5cbf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aceamedv, headers: {Host: sh02.fastcloud.club}}, udp: true}
+  - {name: "🇷🇺 H60 俄罗斯 [0.8]", server: cn-hz-bilicdn.cyberfunn.xyz, port: 39149, type: ssr, cipher: chacha20-ietf, password: GhQrDS, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 176543:RNlUEI, obfs-param: bilivideo.com, udp: true}
+  - {name: 🇭🇰 vip1 香港-05, server: gzdx.jcnode.top, port: 40003, type: ss, cipher: aes-256-gcm, password: 2df68d2b-099a-4392-a726-964406cd3bcd, udp: true}
+  - {name: 🇲🇾 D50 马来西亚, server: 3bc8b278.ksyungslb.com.ksyungslb.xyz, port: 39378, type: ssr, cipher: chacha20-ietf, password: GhQrDS, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 176543:RNlUEI, obfs-param: bilivideo.com, udp: true}
   - {name: 🇦🇪 阿联酋 流媒体解锁_l, server: nmcm.lele233.top, port: 38270, type: ss, cipher: chacha20-ietf-poly1305, password: 82c912e7-f61f-4f8f-874b-25b9f64102f9, udp: true}
-  - {name: "🇭🇰 [ 移动 ] 香港 · E1 · 03 · 线路2 2", server: v02.gutingting.com, port: 30006, type: trojan, password: 7f75707b-72ba-4b56-9558-f8542c5cbb9c, sni: v2hgc02.fuqiangren.com, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国 流媒体解锁_2, server: hzct.lele233.top, port: 56300, type: ss, cipher: chacha20-ietf-poly1305, password: 82c912e7-f61f-4f8f-874b-25b9f64102f9, udp: true}
+  - {name: 🇲🇩 H60 摩尔多瓦, server: sp.bilibilis0.one, port: 39817, type: ssr, cipher: chacha20-ietf, password: GhQrDS, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 176543:RNlUEI, obfs-param: bilivideo.com, udp: true}
+  - {name: "🇬🇧 [ v1 ] 英国原生 · 02 · 线路2 2", server: v02.gutingting.com, port: 30041, type: vmess, uuid: 27db5819-54b1-4df5-8d01-f82194e845ef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aceamedv, headers: {Host: sh01.fastcloud.club}}, udp: true}
+  - {name: 🇨🇳 台湾|tg频道:@ripaojiedian, server: as.unlimitedtraffic.top, port: 25821, type: ss, cipher: chacha20-ietf-poly1305, password: 61bddce9-3faa-4351-9006-15a01ee23aeb, udp: true}
+  - {name: 🇨🇦 _CA_加拿大->🇫🇷_FR_法国_4来源：快嘴科技-kkzui.com, server: 23.227.38.11, port: 443, type: vmess, uuid: 9379fea0-006d-4fd3-8e35-d45a5af72aa2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /UMW36262, headers: {Host: frgt1.ssr-free2.xyz}}, udp: true}
+  - {name: 🇨🇳 台湾-中国｜中转｜NTW-B XV, server: proxy.01.onenovnode.org, port: 18418, type: vmess, uuid: 2df6cbad-2fc2-4ab4-b56a-ef3b4e4e6e1f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: proxy.01.onenovnode.org, network: grpc, grpc-opts: {grpc-service-name: nodea.twbv.onenovnode.org}, udp: true}
+  - {name: 🇯🇵 JP|tg频道:@ripaojiedian, server: ns01.gutingting.com, port: 30044, type: vmess, uuid: b1a55fda-5782-4615-9b65-19209efac0af, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aceamedv, headers: {Host: ns01.gutingting.com}}, udp: true}
+  - {name: 🇬🇧 JCBB_ 英国01【vip1】, server: szct.xn--dlq110j6ul.cc, port: 50193, type: trojan, password: 71c0faef-add7-45a8-8617-60a6ef1187a6, sni: uk01.ckcloud.info, skip-cert-verify: false, udp: true}
+  - {name: TG:@hkaa0|中国 2, server: oss-cn-shanghai.westdatacloud.top, port: 20048, type: trojan, password: 626351FA-3CA6-8118-FADF-CCDBCD620871, sni: oss-cn-shanghai.westdatacloud.top, skip-cert-verify: false, udp: true}
+  - {name: "🇭🇰 [ 移动 ] 香港 · E1 · 04 · 线路2", server: v02.gutingting.com, port: 30038, type: trojan, password: b47beaf7-80e2-4b35-aff7-7551fda42884, sni: v2hgc02.fuqiangren.com, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港 流媒体解锁_2, server: nmcm.lele233.top, port: 32308, type: vmess, uuid: 82c912e7-f61f-4f8f-874b-25b9f64102f9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "🇰🇷 [ 联通 ] 韩国 · E1 · 01 · 线路1", server: v01.gutingting.com, port: 30056, type: trojan, password: e67005c4-e52b-4e9a-ac8e-1e75b0ed5cbf, sni: v1kr01.fuqiangren.com, skip-cert-verify: false, udp: true}
+  - {name: "🇰🇷 [ 联通 ] 韩国 · E1 · 02 · 线路2", server: v02.gutingting.com, port: 30057, type: trojan, password: e67005c4-e52b-4e9a-ac8e-1e75b0ed5cbf, sni: v1kr02.fuqiangren.com, skip-cert-verify: false, udp: true}
+  - {name: "🇺🇸 [ T1 ] 美国 · 01 · 线路1", server: v01.gutingting.com, port: 20224, type: trojan, password: 27db5819-54b1-4df5-8d01-f82194e845ef, sni: v2usa01.fuqiangren.com, skip-cert-verify: false, udp: true}
+  - {name: 🇰🇷 _KR_韩国, server: 43.201.146.250, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇮🇹 H60 意大利, server: sp.bilibilis0.one, port: 39819, type: ssr, cipher: chacha20-ietf, password: GhQrDS, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 176543:RNlUEI, obfs-param: bilivideo.com, udp: true}
+  - {name: 🇨🇳 vip1 台湾-01, server: gzdx.jcnode.top, port: 42000, type: vmess, uuid: 2df68d2b-099a-4392-a726-964406cd3bcd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: gzdx.jcnode.top}}, udp: true}
+  - {name: 🇭🇰 TG:@hkaa0|香港, server: b1.ss1011.top, port: 1507, type: vmess, uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 vip1 美国-05, server: gzdx.jcnode.top, port: 48002, type: vmess, uuid: 2df68d2b-099a-4392-a726-964406cd3bcd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: gzdx.jcnode.top}}, udp: true}
+  - {name: "🇯🇵 [ T1 ] 日本 · 01 · 线路1", server: v01.gutingting.com, port: 20220, type: trojan, password: e67005c4-e52b-4e9a-ac8e-1e75b0ed5cbf, sni: v2jp01.fuqiangren.com, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 严禁回国, server: 127.0.0.1, port: 53, type: vmess, uuid: 2d221593-9af0-4391-ba40-9c88b501aa36, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 🇩🇰 github.com/freefq - 丹麦  11, server: 185.162.228.1, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: 154.v2ray3.xyz}}, udp: true}
+  - {name: "🇯🇵 [ v1 ] 日本 · 05 · 线路2", server: v02.gutingting.com, port: 30054, type: trojan, password: e67005c4-e52b-4e9a-ac8e-1e75b0ed5cbf, sni: v1jp01.fuqiangren.com, skip-cert-verify: false, udp: true}
+  - {name: "🇭🇰 [ 移动 ] 香港 · E1 · 03 · 线路2", server: v02.gutingting.com, port: 30006, type: trojan, password: b47beaf7-80e2-4b35-aff7-7551fda42884, sni: v2hgc02.fuqiangren.com, skip-cert-verify: false, udp: true}
+  - {name: "🇪🇸 H60 西班牙 [3]", server: sp.bilibilis0.one, port: 39821, type: ssr, cipher: chacha20-ietf, password: GhQrDS, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 176543:RNlUEI, obfs-param: bilivideo.com, udp: true}
+  - {name: "🇸🇬 [ T1 ] 新加坡 · 01 · 线路1", server: v01.gutingting.com, port: 20222, type: trojan, password: f26f37bb-08be-4579-ae6d-d756bacedeff, sni: v2sg01.fuqiangren.com, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 D24 日本*, server: 576d37c2.ksyungslb.com.ksyungslb.xyz, port: 39439, type: ssr, cipher: chacha20-ietf, password: GhQrDS, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 176543:RNlUEI, obfs-param: bilivideo.com, udp: true}
+  - {name: 🇭🇰 香港1|tg频道:@ripaojiedian, server: dl-hk5.steamdownload.top, port: 443, type: trojan, password: 80fe65a7-8dac-4f4a-9252-e8fae7f84397, sni: data-hk.steamdownload.top, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 D53 新加坡*, server: 3bc8b278.ksyungslb.com.ksyungslb.xyz, port: 39413, type: ssr, cipher: chacha20-ietf, password: GhQrDS, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 176543:RNlUEI, obfs-param: bilivideo.com, udp: true}
+  - {name: "🇺🇸 [ T1 ] 美国 · 02 · 线路2", server: v02.gutingting.com, port: 20225, type: trojan, password: 27db5819-54b1-4df5-8d01-f82194e845ef, sni: v2usa01.fuqiangren.com, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 香港小火箭-tg频道:@ripaojiedian, server: ieplszhk-sz.cctelescope.xyz, port: 50804, type: ssr, cipher: aes-256-cfb, password: hGkQ6915tD, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 215041:1KzDU2E8d9, obfs-param: ajax.microsoft.com, udp: true}
+  - {name: "🇨🇳 [ v1 ] 台湾原生 · 01 · 线路1", server: v01.gutingting.com, port: 30002, type: trojan, password: b47beaf7-80e2-4b35-aff7-7551fda42884, sni: v2tw01.fuqiangren.com, skip-cert-verify: false, udp: true}
+  - {name: "🇰🇷 [ 联通 ] 韩国 · E1 · 01 · 线路1 2", server: v01.gutingting.com, port: 30056, type: trojan, password: b47beaf7-80e2-4b35-aff7-7551fda42884, sni: v1kr01.fuqiangren.com, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 日本 01, server: sa.steamdownload.top, port: 36631, type: trojan, password: d97a516f-716c-493d-ae31-366096cd7738, sni: data-jp.steamdownload.top, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 _US_美国, server: 167.88.63.79, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 🇸🇬 Singapore 01 (GARENA), server: premium1.htpn.me, port: 80, type: vmess, uuid: 91bae295-c167-4df8-9b98-217afab79717, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hahuutung, headers: {Host: dl.kgvn.garenanow.com}}, udp: true}
+  - {name: 🇩🇪 TG:@hkaa0|德国, server: 3.121.99.101, port: 8080, type: vmess, uuid: 99336e49-5f1c-4dfe-88fa-5b332b55552b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sptest.hostiran.net.prod.hosts.ooklaserver.net}}, udp: true}
+  - {name: 🇬🇧 H60 英国2, server: cn-hz-bilicdn.cyberfunn.xyz, port: 39322, type: ssr, cipher: chacha20-ietf, password: GhQrDS, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 176543:RNlUEI, obfs-param: bilivideo.com, udp: true}
+  - {name: 🇯🇵 日本JP|@ripaojiedian, server: free.314156.xyz, port: 44458, type: ss, cipher: aes-128-gcm, password: 0b70c119-d2b9-450b-a3ca-89275937a656, udp: true}
+  - {name: 🇭🇰 香港 移动2, server: dl-hk6.steamdownload.top, port: 443, type: trojan, password: d97a516f-716c-493d-ae31-366096cd7738, sni: data-hk.steamdownload.top, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 新加坡｜中转｜NSG-B XS, server: proxy.01.onenovnode.org, port: 19604, type: ss, cipher: chacha20-ietf-poly1305, password: 2df6cbad-2fc2-4ab4-b56a-ef3b4e4e6e1f, udp: true}
+  - {name: 🇭🇰 香港2|tg频道:@ripaojiedian, server: hk2.af49c4e4c2ef.sanfen001.pics, port: 443, type: vmess, uuid: da9d5c74-a572-4cf4-a375-19b886f5ffc4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: hk1.sanfen001.pics, udp: true}
+  - {name: 🇮🇳 Stand - 印度 IN 隧道备线, server: v7_3.liulisusunode.online, port: 51016, type: vmess, uuid: 9e49071c-2117-4144-9aa6-af47c2bb4a12, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: 114.trojannode.top, network: ws, ws-opts: {path: /liulisuansuan, headers: {Host: v7_3.liulisusunode.online}}, udp: true}
+  - {name: "🇯🇵 [ 联通 ] 日本 · F1 · 01 · 线路1", server: ns01.gutingting.com, port: 30009, type: vmess, uuid: f26f37bb-08be-4579-ae6d-d756bacedeff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aceamedv, headers: {Host: sh01.fastcloud.club}}, udp: true}
+  - {name: 🇳🇱 荷兰 01 | ws, server: 2162e620-3315-61b3-d55d-9bf95b93ae40.cnnic.rip, port: 20005, type: vmess, uuid: 2d221593-9af0-4391-ba40-9c88b501aa36, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 🇩🇪 Pro - 德国 DE 隧道二线, server: v7_2.liulisusunode.online, port: 52008, type: vmess, uuid: 9e49071c-2117-4144-9aa6-af47c2bb4a12, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: 207.trojannode.top, network: ws, ws-opts: {path: /liulisuansuan, headers: {Host: v7_2.liulisusunode.online}}, udp: true}
+  - {name: 🇭🇰 D05 香港*, server: 3bc8b278.ksyungslb.com.ksyungslb.xyz, port: 39318, type: ssr, cipher: chacha20-ietf, password: GhQrDS, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 176543:RNlUEI, obfs-param: bilivideo.com, udp: true}
+  - {name: 🇺🇸 美国 03, server: sa.steamdownload.top, port: 36653, type: trojan, password: d97a516f-716c-493d-ae31-366096cd7738, sni: data.steamdownload.top, skip-cert-verify: false, udp: true}
+  - {name: "🇯🇵 [ v1 ] 日本 · 06 · 线路2", server: v02.gutingting.com, port: 30055, type: trojan, password: b47beaf7-80e2-4b35-aff7-7551fda42884, sni: v1jp02.fuqiangren.com, skip-cert-verify: false, udp: true}
+  - {name: 太原电信 | ws | 非80, server: 113.24.60.48, port: 46794, type: vmess, uuid: 2d221593-9af0-4391-ba40-9c88b501aa36, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 🇭🇰 _HK_香港, server: 43.154.233.89, port: 53038, type: vmess, uuid: 2264f24e-d814-4aa6-98c0-ed5a8322a0eb, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /hk12/getData}, udp: true}
+  - {name: 🇺🇸 美国 04, server: sa.steamdownload.top, port: 36654, type: trojan, password: d97a516f-716c-493d-ae31-366096cd7738, sni: data.steamdownload.top, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 github.com/freefq - 美国  17, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 27509613-bbd5-403a-868c-8022d36aa565, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/pq/nl1?ed=2048", headers: {Host: nl1.pqjc.buzz}}, udp: true}
+  - {name: "🇵🇭 [ v1 ] 菲律宾 · 01 · 线路2", server: v02.gutingting.com, port: 30053, type: trojan, password: e67005c4-e52b-4e9a-ac8e-1e75b0ed5cbf, sni: v2phl01.fuqiangren.com, skip-cert-verify: false, udp: true}
+  - {name: TG:@hkaa0|中国 3, server: 36.138.140.208, port: 11023, type: ss, cipher: aes-256-gcm, password: ll668668@, udp: true}
+  - {name: 🇭🇰 JCBB_香港 06【vip1】, server: gzyd.jcnode.top, port: 20003, type: trojan, password: 71c0faef-add7-45a8-8617-60a6ef1187a6, sni: hk02.ckcloud.info, skip-cert-verify: false, udp: true}
+  - {name: 🇯🇵 vip1 日本-10, server: gzdx.jcnode.top, port: 41003, type: trojan, password: 2df68d2b-099a-4392-a726-964406cd3bcd, sni: jp01.ckcloud.info, skip-cert-verify: false, udp: true}
+  - {name: "🇭🇰 [ 移动 ] 香港 · E1 · 03 · 线路2 2", server: v02.gutingting.com, port: 30006, type: trojan, password: f26f37bb-08be-4579-ae6d-d756bacedeff, sni: v2hgc02.fuqiangren.com, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 vip1 新加坡-05, server: gzdx.jcnode.top, port: 43002, type: trojan, password: 2df68d2b-099a-4392-a726-964406cd3bcd, sni: sg01.ckcloud.info, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 (免费)美国 04 电报群t.me/piaoya, server: usa01.aws.cdn.xn--57q977p.com, port: 12002, type: vmess, uuid: 29f7a70b-721e-49e5-9391-d90385cb3343, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /images, headers: {Host: shoutingtoutiao3.10010.com}}, udp: true}
+  - {name: 🇬🇧 英国 流媒体解锁_l, server: hzct.lele233.top, port: 48926, type: ss, cipher: aes-128-gcm, password: 82c912e7-f61f-4f8f-874b-25b9f64102f9, udp: true}
+  - {name: _CN_中国, server: 47.104.237.32, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "🇸🇬 [ v1 ] 新加坡 · 03 · 线路2", server: v02.gutingting.com, port: 30049, type: trojan, password: f26f37bb-08be-4579-ae6d-d756bacedeff, sni: v2sg02.fuqiangren.com, skip-cert-verify: false, udp: true}
+  - {name: 🇮🇳 Stand - 印度 IN 隧道二线, server: v7_2.liulisusunode.online, port: 51015, type: vmess, uuid: 9e49071c-2117-4144-9aa6-af47c2bb4a12, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: 114.trojannode.top, network: ws, ws-opts: {path: /liulisuansuan, headers: {Host: v7_2.liulisusunode.online}}, udp: true}
+  - {name: 🇰🇷 Relay 🇰🇷 South Korea(ChatGPT) 02 TG:@nodpai, server: kr.iggfastweb.com, port: 24100, type: vmess, uuid: 2fb128b9-f06f-431e-a69b-5aeab2fc0756, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: console.huaweicloud.com}}, udp: true}
+  - {name: "🇺🇸 [ v1 ] 美国 · 02 · 线路1", server: v01.gutingting.com, port: 30048, type: vmess, uuid: 27db5819-54b1-4df5-8d01-f82194e845ef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aceamedv, headers: {Host: sh02.fastcloud.club}}, udp: true}
+  - {name: 🇯🇵 日本-东京｜中转｜NJP-A XV, server: proxy.01.onenovnode.org, port: 17113, type: vmess, uuid: 2df6cbad-2fc2-4ab4-b56a-ef3b4e4e6e1f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: proxy.01.onenovnode.org, network: grpc, grpc-opts: {grpc-service-name: nodea.jpav.onenovnode.org}, udp: true}
+  - {name: VNPT CLOUD SERVER FREE(LQ), server: vietnam14.azzphuc.pro, port: 80, type: vmess, uuid: 91bae295-c167-4df8-9b98-217afab79717, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /hahuutung, headers: {Host: dl.kgvn.garenanow.com}}, udp: true}
+  - {name: 🇬🇧 United Kingdom(ChatGPT) 02 TG:@nodpai, server: 212.102.53.196, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: 🇺🇸 _US_美国->🇫🇷_FR_法国_45, server: fr1.pqjc.buzz, port: 443, type: vmess, uuid: 27509613-bbd5-403a-868c-8022d36aa565, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/pq/fr1?ed=2048", headers: {Host: fr1.pqjc.buzz}}, udp: true}
+  - {name: 伊拉克 01  | ws, server: 2162e620-3315-61b3-d55d-9bf95b93ae40.cnnic.rip, port: 10099, type: vmess, uuid: 2d221593-9af0-4391-ba40-9c88b501aa36, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 🇺🇸 _US_美国 2, server: 167.88.63.79, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 🇷🇴 _RO_罗马尼亚_5, server: 45.12.30.192, port: 443, type: vmess, uuid: EB176736-29D0-484E-8464-28547013A162, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /speedtest, headers: {Host: Dusseldorf.kotick.site}}, udp: true}
+  - {name: 🇸🇬 Singapore 01 (TLS)🔐, server: premium1.htpn.me, port: 443, type: vmess, uuid: 91bae295-c167-4df8-9b98-217afab79717, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: premium1.htpn.me, network: grpc, grpc-opts: {grpc-service-name: htpn.site}, udp: true}
+  - {name: 🇰🇷 TG:@hkaa0|韩国, server: 43.200.244.234, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇨🇳 台湾 01 | ws, server: d041a585-0c1e-e928-dfbb-c5c4bb7f9685.cnnic.rip, port: 80, type: vmess, uuid: 2d221593-9af0-4391-ba40-9c88b501aa36, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
+  - {name: 🇸🇬 Pro - 新加坡 原生 Netflix 隧道备线, server: v7_3.liulisusunode.online, port: 52013, type: vmess, uuid: 9e49071c-2117-4144-9aa6-af47c2bb4a12, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: 211.trojannode.top, network: ws, ws-opts: {path: /liulisuansuan, headers: {Host: v7_3.liulisusunode.online}}, udp: true}
+  - {name: 🇺🇸 United States(ChatGPT) 01 TG:@nodpai, server: lv3.sharecentrepro.org, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: lv3.sharecentrepro.org}}, udp: true}
+  - {name: "🇬🇧 [ v1 ] 英国原生 · 01 · 线路1", server: v01.gutingting.com, port: 30040, type: vmess, uuid: 27db5819-54b1-4df5-8d01-f82194e845ef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aceamedv, headers: {Host: sh01.fastcloud.club}}, udp: true}
+  - {name: "🇭🇰 [ 联通 ] 香港 · F1 · 03 · 线路2 2", server: v02.gutingting.com, port: 30024, type: vmess, uuid: 27db5819-54b1-4df5-8d01-f82194e845ef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aceamedv, headers: {Host: gz.fastcloud.club}}, udp: true}
+  - {name: 🇨🇳 vip1 台湾-03, server: gzyd02.jcnode.top, port: 42000, type: vmess, uuid: 2df68d2b-099a-4392-a726-964406cd3bcd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: gzyd02.jcnode.top}}, udp: true}
+  - {name: TG:@hkaa0|中国 4, server: 112.132.215.189, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇭🇰 _HK_香港_6_27, server: 8.218.226.112, port: 20329, type: vmess, uuid: 2f999df9-07d0-42a5-8423-2b0b69b9fa0a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: 🇯🇵 日本特殊|tg:@ripaojiedian, server: 54.64.68.162, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇯🇵 JCBB_日本03【vip1】, server: szct.xn--dlq110j6ul.cc, port: 53078, type: ss, cipher: aes-256-gcm, password: 71c0faef-add7-45a8-8617-60a6ef1187a6, udp: true}
+  - {name: "🇮🇳 [ v1 ] 印度 · 01 · 线路1 2", server: v01.gutingting.com, port: 30027, type: vmess, uuid: 27db5819-54b1-4df5-8d01-f82194e845ef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aceamedv, headers: {Host: sh01.fastcloud.club}}, udp: true}
+  - {name: 🇯🇵 日本-东京｜中转｜NJP-B XT, server: proxy.01.onenovnode.org, port: 17115, type: trojan, password: 2df6cbad-2fc2-4ab4-b56a-ef3b4e4e6e1f, sni: nodeb.jpbt.onenovnode.org, skip-cert-verify: false, udp: true}
+  - {name: TG:@hkaa0|中国 5, server: 14.29.124.168, port: 24006, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
+  - {name: 🇯🇵 D23 日本*, server: 576d37c2.ksyungslb.com.ksyungslb.xyz, port: 39114, type: ssr, cipher: chacha20-ietf, password: GhQrDS, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 176543:RNlUEI, obfs-param: bilivideo.com, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇭🇰 D02 香港*
-      - 🇭🇰 TG:@hkaa0|香港
-      - 🇨🇳 vip1 台湾-03
-      - 🇺🇸 Stand - 美国 GPT放行 低速 隧道备线
-      - 🇨🇳 [ v1 ] 台湾原生 · 02 · 线路2
-      - 🇵🇭 [ v1 ] 菲律宾 · 01 · 线路2
-      - 🇺🇸 [ v1 ] 美国 · 02 · 线路1
-      - 🇮🇳 [ v1 ] 印度 · 01 · 线路1
-      - 🇭🇰 [ v1 ] 香港原生 · 02 · 线路2
-      - -----以下为国内区-----
-      - 🇸🇬 TG:@hkaa0|新加坡
-      - github.com/freefq - 欧盟  7
-      - 🇭🇰 香港-中国｜中转｜NHK-F XV
-      - 🇸🇬 狮城01|tg频道:@ripaojiedian
-      - 🇺🇸 美国2|tg频道:@ripaojiedian
-      - 🇯🇵 [ T1 ] 日本 · 02 · 线路1
-      - 🇭🇰 香港 腾讯云
-      - 🇯🇵 日本-东京｜中转｜NJP-A XT
-      - 🇯🇵 日本-东京｜中转｜NJP-D XS
-      - 🇭🇰 Stand - 香港 HK 隧道备线
-      - 🇭🇰 TG:@hkaa0|香港 2
-      - 🇨🇳 台湾 流媒体解锁_2
-      - 🇭🇰 vip1 香港-01
-      - 🇸🇬 新加坡 01 | ws
       - 🇬🇧 [ v1 ] 英国原生 · 02 · 线路2
-      - 🇨🇳 [ v1 ] 台湾原生 · 01 · 线路1
-      - 🇨🇳 台湾-中国｜中转｜NTW-B XS
-      - 🇳🇴 H60 挪威
-      - 🇭🇰 JCBB_香港 05【vip1】
-      - 🇯🇵 JCBB_日本04【vip1】
-      - 🇯🇵 vip1 日本-01
-      - 🇮🇸 H60 冰岛 [2]
-      - 🇳🇱 Stand - 荷兰 隧道二线
-      - 🇺🇸 _US_美国
-      - 🇹🇭 H60 泰国
-      - 🇺🇸 D42 美国*
-      - 🇳🇱 Stand - 荷兰 隧道主线
-      - 🇨🇳 [ v1 ] 台湾原生 · 02 · 线路2 2
-      - 🇭🇰 香港 2
-      - 🇦🇷 阿根廷 01 | ws
-      - 36.138.140.208:11023
-      - 🇭🇰 香港火箭|tg频道:@ripaojiedian
-      - 🇯🇵 [ 直连不保证国内 ] 日本 · U1 | 01
-      - 🇯🇵 [ v1 ] 日本 · 05 · 线路2
-      - 🇭🇰 香港-中国｜中转｜NHK-G XV
-      - 🇭🇰 [ 移动 ] 香港 · E1 · 03 · 线路2
-      - 🇯🇵 [ 联通 ] 日本 · F1 · 03 · 线路2
-      - 🇰🇷 [ 联通 ] 韩国 · E1 · 01 · 线路1
-      - 🇸🇬 [ v1 ] 新加坡 · 03 · 线路2
-      - "🇸🇬 _SG_新加坡\r_3_44\r"
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 22
-      - 🇰🇷 TG:@hkaa0|韩国
-      - 🇺🇸 [ 直连不保证国内 ] 美国 · U1 | 01
       - "🇯🇵 _JP_日本\r_2_37\r"
-      - 🇨🇦 _CA_加拿大
-      - ChatGPT解锁 · 01 · 线路1
-      - 🇮🇳 [ v1 ] 印度 · 01 · 线路1 2
-      - 🇭🇰 _HK_香港_2_来源：快嘴科技-kkzui.com3
-      - "🇺🇸 _US_美国\r_3_25\r"
-      - 🇺🇸 [ T1 ] 美国 · 01 · 线路1
-      - 🇯🇵 日本-东京｜中转｜NJP-C XV
-      - github.com/freefq - 欧盟  14
-      - 武汉电信 | ws | 非80
-      - 🇭🇰 vip1 香港-09
-      - 🇭🇰 海港隧道 | ws | 1.5x
-      - 🇸🇬 [ v1 ] 新加坡 · 01 · 线路1
-      - 🇯🇵 vip2 日本-02
-      - 🇺🇸 [ T1 ] 美国 · 01 · 线路1 2
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点(shopify) 26
-      - 🇭🇰 [ v1 ] 香港原生 · 01 · 线路2
-      - 🇮🇹 H60 意大利
-      - 更多节点关注@ShareCentrePro
-      - 🇩🇪 JCBB_德国02【vip1】
-      - 🇮🇱 H60 以色列
-      - 🇯🇵 日本 流媒体解锁_2
-      - 🇨🇳 JCBB_ 台湾 02【vip1】
-      - 🇯🇵 [ 联通 ] 日本 · F1 · 02 · 线路1
-      - 🇮🇳 [ v1 ] 印度 · 02 · 线路2
-      - 🇯🇵 Stand - 日本 JP 隧道备线
+      - TG:@hkaa0|中国
       - ""
-      - 🇺🇸 (免费)美国 02 电报群t.me/piaoya
-      - 🇨🇳 台湾 02 | tcp
-      - 🇨🇳 D11 台湾*
-      - 🇹🇷 H60 土耳其 [3]
-      - 🇸🇬 vip1 新加坡-05
-      - 🇭🇰 香港 01 | ws
-      - 🇯🇵 Lite3 - 中日隧道 3 普速 稳定
-      - 🇷🇺 github.com/freefq - 俄罗斯  21
-      - 🇯🇵 日本 02 | tcp
-      - 🇮🇳 JCBB_印度01【vip1】
-      - 🇯🇵 Lite12 - 中日隧道 高速 不稳定
+      - 🇭🇰 [ 联通 ] 香港 · F1 · 03 · 线路2
+      - 🇮🇳 [ v1 ] 印度 · 01 · 线路1
+      - 🇭🇰 [ v1 ] 香港原生 · 01 · 线路2
+      - 🇷🇺 H60 俄罗斯 [0.8]
+      - 🇭🇰 vip1 香港-05
+      - 🇲🇾 D50 马来西亚
       - 🇦🇪 阿联酋 流媒体解锁_l
+      - 🇲🇩 H60 摩尔多瓦
+      - 🇬🇧 [ v1 ] 英国原生 · 02 · 线路2 2
+      - 🇨🇳 台湾|tg频道:@ripaojiedian
+      - 🇨🇦 _CA_加拿大->🇫🇷_FR_法国_4来源：快嘴科技-kkzui.com
+      - 🇨🇳 台湾-中国｜中转｜NTW-B XV
+      - 🇯🇵 JP|tg频道:@ripaojiedian
+      - 🇬🇧 JCBB_ 英国01【vip1】
+      - TG:@hkaa0|中国 2
+      - 🇭🇰 [ 移动 ] 香港 · E1 · 04 · 线路2
+      - 🇭🇰 香港 流媒体解锁_2
+      - 🇰🇷 [ 联通 ] 韩国 · E1 · 01 · 线路1
+      - 🇰🇷 [ 联通 ] 韩国 · E1 · 02 · 线路2
+      - 🇺🇸 [ T1 ] 美国 · 01 · 线路1
+      - 🇰🇷 _KR_韩国
+      - 🇮🇹 H60 意大利
+      - 🇨🇳 vip1 台湾-01
+      - 🇭🇰 TG:@hkaa0|香港
+      - 🇺🇸 vip1 美国-05
+      - 🇯🇵 [ T1 ] 日本 · 01 · 线路1
+      - 🇨🇳 严禁回国
+      - 🇩🇰 github.com/freefq - 丹麦  11
+      - 🇯🇵 [ v1 ] 日本 · 05 · 线路2
+      - 🇭🇰 [ 移动 ] 香港 · E1 · 03 · 线路2
+      - 🇪🇸 H60 西班牙 [3]
+      - 🇸🇬 [ T1 ] 新加坡 · 01 · 线路1
+      - 🇯🇵 D24 日本*
+      - 🇭🇰 香港1|tg频道:@ripaojiedian
+      - 🇸🇬 D53 新加坡*
+      - 🇺🇸 [ T1 ] 美国 · 02 · 线路2
+      - 🇭🇰 香港小火箭-tg频道:@ripaojiedian
+      - 🇨🇳 [ v1 ] 台湾原生 · 01 · 线路1
+      - 🇰🇷 [ 联通 ] 韩国 · E1 · 01 · 线路1 2
+      - 🇯🇵 日本 01
+      - 🇺🇸 _US_美国
+      - 🇸🇬 Singapore 01 (GARENA)
+      - 🇩🇪 TG:@hkaa0|德国
+      - 🇬🇧 H60 英国2
+      - 🇯🇵 日本JP|@ripaojiedian
+      - 🇭🇰 香港 移动2
+      - 🇸🇬 新加坡｜中转｜NSG-B XS
+      - 🇭🇰 香港2|tg频道:@ripaojiedian
+      - 🇮🇳 Stand - 印度 IN 隧道备线
+      - 🇯🇵 [ 联通 ] 日本 · F1 · 01 · 线路1
+      - 🇳🇱 荷兰 01 | ws
+      - 🇩🇪 Pro - 德国 DE 隧道二线
+      - 🇭🇰 D05 香港*
+      - 🇺🇸 美国 03
+      - 🇯🇵 [ v1 ] 日本 · 06 · 线路2
+      - 太原电信 | ws | 非80
+      - 🇭🇰 _HK_香港
+      - 🇺🇸 美国 04
+      - 🇺🇸 github.com/freefq - 美国  17
+      - 🇵🇭 [ v1 ] 菲律宾 · 01 · 线路2
+      - TG:@hkaa0|中国 3
+      - 🇭🇰 JCBB_香港 06【vip1】
+      - 🇯🇵 vip1 日本-10
       - 🇭🇰 [ 移动 ] 香港 · E1 · 03 · 线路2 2
-      - 🇺🇸 美国 流媒体解锁_2
+      - 🇸🇬 vip1 新加坡-05
+      - 🇺🇸 (免费)美国 04 电报群t.me/piaoya
+      - 🇬🇧 英国 流媒体解锁_l
+      - _CN_中国
+      - 🇸🇬 [ v1 ] 新加坡 · 03 · 线路2
+      - 🇮🇳 Stand - 印度 IN 隧道二线
+      - 🇰🇷 Relay 🇰🇷 South Korea(ChatGPT) 02 TG:@nodpai
+      - 🇺🇸 [ v1 ] 美国 · 02 · 线路1
+      - 🇯🇵 日本-东京｜中转｜NJP-A XV
+      - VNPT CLOUD SERVER FREE(LQ)
+      - 🇬🇧 United Kingdom(ChatGPT) 02 TG:@nodpai
+      - 🇺🇸 _US_美国->🇫🇷_FR_法国_45
+      - 伊拉克 01  | ws
+      - 🇺🇸 _US_美国 2
+      - 🇷🇴 _RO_罗马尼亚_5
+      - 🇸🇬 Singapore 01 (TLS)🔐
+      - 🇰🇷 TG:@hkaa0|韩国
+      - 🇨🇳 台湾 01 | ws
+      - 🇸🇬 Pro - 新加坡 原生 Netflix 隧道备线
+      - 🇺🇸 United States(ChatGPT) 01 TG:@nodpai
+      - 🇬🇧 [ v1 ] 英国原生 · 01 · 线路1
+      - 🇭🇰 [ 联通 ] 香港 · F1 · 03 · 线路2 2
+      - 🇨🇳 vip1 台湾-03
+      - TG:@hkaa0|中国 4
+      - 🇭🇰 _HK_香港_6_27
+      - 🇯🇵 日本特殊|tg:@ripaojiedian
+      - 🇯🇵 JCBB_日本03【vip1】
+      - 🇮🇳 [ v1 ] 印度 · 01 · 线路1 2
+      - 🇯🇵 日本-东京｜中转｜NJP-B XT
+      - TG:@hkaa0|中国 5
+      - 🇯🇵 D23 日本*
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇭🇰 D02 香港*
-      - 🇭🇰 TG:@hkaa0|香港
-      - 🇨🇳 vip1 台湾-03
-      - 🇺🇸 Stand - 美国 GPT放行 低速 隧道备线
-      - 🇨🇳 [ v1 ] 台湾原生 · 02 · 线路2
-      - 🇵🇭 [ v1 ] 菲律宾 · 01 · 线路2
-      - 🇺🇸 [ v1 ] 美国 · 02 · 线路1
-      - 🇮🇳 [ v1 ] 印度 · 01 · 线路1
-      - 🇭🇰 [ v1 ] 香港原生 · 02 · 线路2
-      - -----以下为国内区-----
-      - 🇸🇬 TG:@hkaa0|新加坡
-      - github.com/freefq - 欧盟  7
-      - 🇭🇰 香港-中国｜中转｜NHK-F XV
-      - 🇸🇬 狮城01|tg频道:@ripaojiedian
-      - 🇺🇸 美国2|tg频道:@ripaojiedian
-      - 🇯🇵 [ T1 ] 日本 · 02 · 线路1
-      - 🇭🇰 香港 腾讯云
-      - 🇯🇵 日本-东京｜中转｜NJP-A XT
-      - 🇯🇵 日本-东京｜中转｜NJP-D XS
-      - 🇭🇰 Stand - 香港 HK 隧道备线
-      - 🇭🇰 TG:@hkaa0|香港 2
-      - 🇨🇳 台湾 流媒体解锁_2
-      - 🇭🇰 vip1 香港-01
-      - 🇸🇬 新加坡 01 | ws
       - 🇬🇧 [ v1 ] 英国原生 · 02 · 线路2
-      - 🇨🇳 [ v1 ] 台湾原生 · 01 · 线路1
-      - 🇨🇳 台湾-中国｜中转｜NTW-B XS
-      - 🇳🇴 H60 挪威
-      - 🇭🇰 JCBB_香港 05【vip1】
-      - 🇯🇵 JCBB_日本04【vip1】
-      - 🇯🇵 vip1 日本-01
-      - 🇮🇸 H60 冰岛 [2]
-      - 🇳🇱 Stand - 荷兰 隧道二线
-      - 🇺🇸 _US_美国
-      - 🇹🇭 H60 泰国
-      - 🇺🇸 D42 美国*
-      - 🇳🇱 Stand - 荷兰 隧道主线
-      - 🇨🇳 [ v1 ] 台湾原生 · 02 · 线路2 2
-      - 🇭🇰 香港 2
-      - 🇦🇷 阿根廷 01 | ws
-      - 36.138.140.208:11023
-      - 🇭🇰 香港火箭|tg频道:@ripaojiedian
-      - 🇯🇵 [ 直连不保证国内 ] 日本 · U1 | 01
-      - 🇯🇵 [ v1 ] 日本 · 05 · 线路2
-      - 🇭🇰 香港-中国｜中转｜NHK-G XV
-      - 🇭🇰 [ 移动 ] 香港 · E1 · 03 · 线路2
-      - 🇯🇵 [ 联通 ] 日本 · F1 · 03 · 线路2
-      - 🇰🇷 [ 联通 ] 韩国 · E1 · 01 · 线路1
-      - 🇸🇬 [ v1 ] 新加坡 · 03 · 线路2
-      - "🇸🇬 _SG_新加坡\r_3_44\r"
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 22
-      - 🇰🇷 TG:@hkaa0|韩国
-      - 🇺🇸 [ 直连不保证国内 ] 美国 · U1 | 01
       - "🇯🇵 _JP_日本\r_2_37\r"
-      - 🇨🇦 _CA_加拿大
-      - ChatGPT解锁 · 01 · 线路1
-      - 🇮🇳 [ v1 ] 印度 · 01 · 线路1 2
-      - 🇭🇰 _HK_香港_2_来源：快嘴科技-kkzui.com3
-      - "🇺🇸 _US_美国\r_3_25\r"
-      - 🇺🇸 [ T1 ] 美国 · 01 · 线路1
-      - 🇯🇵 日本-东京｜中转｜NJP-C XV
-      - github.com/freefq - 欧盟  14
-      - 武汉电信 | ws | 非80
-      - 🇭🇰 vip1 香港-09
-      - 🇭🇰 海港隧道 | ws | 1.5x
-      - 🇸🇬 [ v1 ] 新加坡 · 01 · 线路1
-      - 🇯🇵 vip2 日本-02
-      - 🇺🇸 [ T1 ] 美国 · 01 · 线路1 2
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点(shopify) 26
-      - 🇭🇰 [ v1 ] 香港原生 · 01 · 线路2
-      - 🇮🇹 H60 意大利
-      - 更多节点关注@ShareCentrePro
-      - 🇩🇪 JCBB_德国02【vip1】
-      - 🇮🇱 H60 以色列
-      - 🇯🇵 日本 流媒体解锁_2
-      - 🇨🇳 JCBB_ 台湾 02【vip1】
-      - 🇯🇵 [ 联通 ] 日本 · F1 · 02 · 线路1
-      - 🇮🇳 [ v1 ] 印度 · 02 · 线路2
-      - 🇯🇵 Stand - 日本 JP 隧道备线
+      - TG:@hkaa0|中国
       - ""
-      - 🇺🇸 (免费)美国 02 电报群t.me/piaoya
-      - 🇨🇳 台湾 02 | tcp
-      - 🇨🇳 D11 台湾*
-      - 🇹🇷 H60 土耳其 [3]
-      - 🇸🇬 vip1 新加坡-05
-      - 🇭🇰 香港 01 | ws
-      - 🇯🇵 Lite3 - 中日隧道 3 普速 稳定
-      - 🇷🇺 github.com/freefq - 俄罗斯  21
-      - 🇯🇵 日本 02 | tcp
-      - 🇮🇳 JCBB_印度01【vip1】
-      - 🇯🇵 Lite12 - 中日隧道 高速 不稳定
+      - 🇭🇰 [ 联通 ] 香港 · F1 · 03 · 线路2
+      - 🇮🇳 [ v1 ] 印度 · 01 · 线路1
+      - 🇭🇰 [ v1 ] 香港原生 · 01 · 线路2
+      - 🇷🇺 H60 俄罗斯 [0.8]
+      - 🇭🇰 vip1 香港-05
+      - 🇲🇾 D50 马来西亚
       - 🇦🇪 阿联酋 流媒体解锁_l
+      - 🇲🇩 H60 摩尔多瓦
+      - 🇬🇧 [ v1 ] 英国原生 · 02 · 线路2 2
+      - 🇨🇳 台湾|tg频道:@ripaojiedian
+      - 🇨🇦 _CA_加拿大->🇫🇷_FR_法国_4来源：快嘴科技-kkzui.com
+      - 🇨🇳 台湾-中国｜中转｜NTW-B XV
+      - 🇯🇵 JP|tg频道:@ripaojiedian
+      - 🇬🇧 JCBB_ 英国01【vip1】
+      - TG:@hkaa0|中国 2
+      - 🇭🇰 [ 移动 ] 香港 · E1 · 04 · 线路2
+      - 🇭🇰 香港 流媒体解锁_2
+      - 🇰🇷 [ 联通 ] 韩国 · E1 · 01 · 线路1
+      - 🇰🇷 [ 联通 ] 韩国 · E1 · 02 · 线路2
+      - 🇺🇸 [ T1 ] 美国 · 01 · 线路1
+      - 🇰🇷 _KR_韩国
+      - 🇮🇹 H60 意大利
+      - 🇨🇳 vip1 台湾-01
+      - 🇭🇰 TG:@hkaa0|香港
+      - 🇺🇸 vip1 美国-05
+      - 🇯🇵 [ T1 ] 日本 · 01 · 线路1
+      - 🇨🇳 严禁回国
+      - 🇩🇰 github.com/freefq - 丹麦  11
+      - 🇯🇵 [ v1 ] 日本 · 05 · 线路2
+      - 🇭🇰 [ 移动 ] 香港 · E1 · 03 · 线路2
+      - 🇪🇸 H60 西班牙 [3]
+      - 🇸🇬 [ T1 ] 新加坡 · 01 · 线路1
+      - 🇯🇵 D24 日本*
+      - 🇭🇰 香港1|tg频道:@ripaojiedian
+      - 🇸🇬 D53 新加坡*
+      - 🇺🇸 [ T1 ] 美国 · 02 · 线路2
+      - 🇭🇰 香港小火箭-tg频道:@ripaojiedian
+      - 🇨🇳 [ v1 ] 台湾原生 · 01 · 线路1
+      - 🇰🇷 [ 联通 ] 韩国 · E1 · 01 · 线路1 2
+      - 🇯🇵 日本 01
+      - 🇺🇸 _US_美国
+      - 🇸🇬 Singapore 01 (GARENA)
+      - 🇩🇪 TG:@hkaa0|德国
+      - 🇬🇧 H60 英国2
+      - 🇯🇵 日本JP|@ripaojiedian
+      - 🇭🇰 香港 移动2
+      - 🇸🇬 新加坡｜中转｜NSG-B XS
+      - 🇭🇰 香港2|tg频道:@ripaojiedian
+      - 🇮🇳 Stand - 印度 IN 隧道备线
+      - 🇯🇵 [ 联通 ] 日本 · F1 · 01 · 线路1
+      - 🇳🇱 荷兰 01 | ws
+      - 🇩🇪 Pro - 德国 DE 隧道二线
+      - 🇭🇰 D05 香港*
+      - 🇺🇸 美国 03
+      - 🇯🇵 [ v1 ] 日本 · 06 · 线路2
+      - 太原电信 | ws | 非80
+      - 🇭🇰 _HK_香港
+      - 🇺🇸 美国 04
+      - 🇺🇸 github.com/freefq - 美国  17
+      - 🇵🇭 [ v1 ] 菲律宾 · 01 · 线路2
+      - TG:@hkaa0|中国 3
+      - 🇭🇰 JCBB_香港 06【vip1】
+      - 🇯🇵 vip1 日本-10
       - 🇭🇰 [ 移动 ] 香港 · E1 · 03 · 线路2 2
-      - 🇺🇸 美国 流媒体解锁_2
+      - 🇸🇬 vip1 新加坡-05
+      - 🇺🇸 (免费)美国 04 电报群t.me/piaoya
+      - 🇬🇧 英国 流媒体解锁_l
+      - _CN_中国
+      - 🇸🇬 [ v1 ] 新加坡 · 03 · 线路2
+      - 🇮🇳 Stand - 印度 IN 隧道二线
+      - 🇰🇷 Relay 🇰🇷 South Korea(ChatGPT) 02 TG:@nodpai
+      - 🇺🇸 [ v1 ] 美国 · 02 · 线路1
+      - 🇯🇵 日本-东京｜中转｜NJP-A XV
+      - VNPT CLOUD SERVER FREE(LQ)
+      - 🇬🇧 United Kingdom(ChatGPT) 02 TG:@nodpai
+      - 🇺🇸 _US_美国->🇫🇷_FR_法国_45
+      - 伊拉克 01  | ws
+      - 🇺🇸 _US_美国 2
+      - 🇷🇴 _RO_罗马尼亚_5
+      - 🇸🇬 Singapore 01 (TLS)🔐
+      - 🇰🇷 TG:@hkaa0|韩国
+      - 🇨🇳 台湾 01 | ws
+      - 🇸🇬 Pro - 新加坡 原生 Netflix 隧道备线
+      - 🇺🇸 United States(ChatGPT) 01 TG:@nodpai
+      - 🇬🇧 [ v1 ] 英国原生 · 01 · 线路1
+      - 🇭🇰 [ 联通 ] 香港 · F1 · 03 · 线路2 2
+      - 🇨🇳 vip1 台湾-03
+      - TG:@hkaa0|中国 4
+      - 🇭🇰 _HK_香港_6_27
+      - 🇯🇵 日本特殊|tg:@ripaojiedian
+      - 🇯🇵 JCBB_日本03【vip1】
+      - 🇮🇳 [ v1 ] 印度 · 01 · 线路1 2
+      - 🇯🇵 日本-东京｜中转｜NJP-B XT
+      - TG:@hkaa0|中国 5
+      - 🇯🇵 D23 日本*
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇭🇰 D02 香港*
-      - 🇭🇰 TG:@hkaa0|香港
-      - 🇨🇳 vip1 台湾-03
-      - 🇺🇸 Stand - 美国 GPT放行 低速 隧道备线
-      - 🇨🇳 [ v1 ] 台湾原生 · 02 · 线路2
-      - 🇵🇭 [ v1 ] 菲律宾 · 01 · 线路2
-      - 🇺🇸 [ v1 ] 美国 · 02 · 线路1
-      - 🇮🇳 [ v1 ] 印度 · 01 · 线路1
-      - 🇭🇰 [ v1 ] 香港原生 · 02 · 线路2
-      - -----以下为国内区-----
-      - 🇸🇬 TG:@hkaa0|新加坡
-      - github.com/freefq - 欧盟  7
-      - 🇭🇰 香港-中国｜中转｜NHK-F XV
-      - 🇸🇬 狮城01|tg频道:@ripaojiedian
-      - 🇺🇸 美国2|tg频道:@ripaojiedian
-      - 🇯🇵 [ T1 ] 日本 · 02 · 线路1
-      - 🇭🇰 香港 腾讯云
-      - 🇯🇵 日本-东京｜中转｜NJP-A XT
-      - 🇯🇵 日本-东京｜中转｜NJP-D XS
-      - 🇭🇰 Stand - 香港 HK 隧道备线
-      - 🇭🇰 TG:@hkaa0|香港 2
-      - 🇨🇳 台湾 流媒体解锁_2
-      - 🇭🇰 vip1 香港-01
-      - 🇸🇬 新加坡 01 | ws
       - 🇬🇧 [ v1 ] 英国原生 · 02 · 线路2
-      - 🇨🇳 [ v1 ] 台湾原生 · 01 · 线路1
-      - 🇨🇳 台湾-中国｜中转｜NTW-B XS
-      - 🇳🇴 H60 挪威
-      - 🇭🇰 JCBB_香港 05【vip1】
-      - 🇯🇵 JCBB_日本04【vip1】
-      - 🇯🇵 vip1 日本-01
-      - 🇮🇸 H60 冰岛 [2]
-      - 🇳🇱 Stand - 荷兰 隧道二线
-      - 🇺🇸 _US_美国
-      - 🇹🇭 H60 泰国
-      - 🇺🇸 D42 美国*
-      - 🇳🇱 Stand - 荷兰 隧道主线
-      - 🇨🇳 [ v1 ] 台湾原生 · 02 · 线路2 2
-      - 🇭🇰 香港 2
-      - 🇦🇷 阿根廷 01 | ws
-      - 36.138.140.208:11023
-      - 🇭🇰 香港火箭|tg频道:@ripaojiedian
-      - 🇯🇵 [ 直连不保证国内 ] 日本 · U1 | 01
-      - 🇯🇵 [ v1 ] 日本 · 05 · 线路2
-      - 🇭🇰 香港-中国｜中转｜NHK-G XV
-      - 🇭🇰 [ 移动 ] 香港 · E1 · 03 · 线路2
-      - 🇯🇵 [ 联通 ] 日本 · F1 · 03 · 线路2
-      - 🇰🇷 [ 联通 ] 韩国 · E1 · 01 · 线路1
-      - 🇸🇬 [ v1 ] 新加坡 · 03 · 线路2
-      - "🇸🇬 _SG_新加坡\r_3_44\r"
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 22
-      - 🇰🇷 TG:@hkaa0|韩国
-      - 🇺🇸 [ 直连不保证国内 ] 美国 · U1 | 01
       - "🇯🇵 _JP_日本\r_2_37\r"
-      - 🇨🇦 _CA_加拿大
-      - ChatGPT解锁 · 01 · 线路1
-      - 🇮🇳 [ v1 ] 印度 · 01 · 线路1 2
-      - 🇭🇰 _HK_香港_2_来源：快嘴科技-kkzui.com3
-      - "🇺🇸 _US_美国\r_3_25\r"
-      - 🇺🇸 [ T1 ] 美国 · 01 · 线路1
-      - 🇯🇵 日本-东京｜中转｜NJP-C XV
-      - github.com/freefq - 欧盟  14
-      - 武汉电信 | ws | 非80
-      - 🇭🇰 vip1 香港-09
-      - 🇭🇰 海港隧道 | ws | 1.5x
-      - 🇸🇬 [ v1 ] 新加坡 · 01 · 线路1
-      - 🇯🇵 vip2 日本-02
-      - 🇺🇸 [ T1 ] 美国 · 01 · 线路1 2
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点(shopify) 26
-      - 🇭🇰 [ v1 ] 香港原生 · 01 · 线路2
-      - 🇮🇹 H60 意大利
-      - 更多节点关注@ShareCentrePro
-      - 🇩🇪 JCBB_德国02【vip1】
-      - 🇮🇱 H60 以色列
-      - 🇯🇵 日本 流媒体解锁_2
-      - 🇨🇳 JCBB_ 台湾 02【vip1】
-      - 🇯🇵 [ 联通 ] 日本 · F1 · 02 · 线路1
-      - 🇮🇳 [ v1 ] 印度 · 02 · 线路2
-      - 🇯🇵 Stand - 日本 JP 隧道备线
+      - TG:@hkaa0|中国
       - ""
-      - 🇺🇸 (免费)美国 02 电报群t.me/piaoya
-      - 🇨🇳 台湾 02 | tcp
-      - 🇨🇳 D11 台湾*
-      - 🇹🇷 H60 土耳其 [3]
-      - 🇸🇬 vip1 新加坡-05
-      - 🇭🇰 香港 01 | ws
-      - 🇯🇵 Lite3 - 中日隧道 3 普速 稳定
-      - 🇷🇺 github.com/freefq - 俄罗斯  21
-      - 🇯🇵 日本 02 | tcp
-      - 🇮🇳 JCBB_印度01【vip1】
-      - 🇯🇵 Lite12 - 中日隧道 高速 不稳定
+      - 🇭🇰 [ 联通 ] 香港 · F1 · 03 · 线路2
+      - 🇮🇳 [ v1 ] 印度 · 01 · 线路1
+      - 🇭🇰 [ v1 ] 香港原生 · 01 · 线路2
+      - 🇷🇺 H60 俄罗斯 [0.8]
+      - 🇭🇰 vip1 香港-05
+      - 🇲🇾 D50 马来西亚
       - 🇦🇪 阿联酋 流媒体解锁_l
+      - 🇲🇩 H60 摩尔多瓦
+      - 🇬🇧 [ v1 ] 英国原生 · 02 · 线路2 2
+      - 🇨🇳 台湾|tg频道:@ripaojiedian
+      - 🇨🇦 _CA_加拿大->🇫🇷_FR_法国_4来源：快嘴科技-kkzui.com
+      - 🇨🇳 台湾-中国｜中转｜NTW-B XV
+      - 🇯🇵 JP|tg频道:@ripaojiedian
+      - 🇬🇧 JCBB_ 英国01【vip1】
+      - TG:@hkaa0|中国 2
+      - 🇭🇰 [ 移动 ] 香港 · E1 · 04 · 线路2
+      - 🇭🇰 香港 流媒体解锁_2
+      - 🇰🇷 [ 联通 ] 韩国 · E1 · 01 · 线路1
+      - 🇰🇷 [ 联通 ] 韩国 · E1 · 02 · 线路2
+      - 🇺🇸 [ T1 ] 美国 · 01 · 线路1
+      - 🇰🇷 _KR_韩国
+      - 🇮🇹 H60 意大利
+      - 🇨🇳 vip1 台湾-01
+      - 🇭🇰 TG:@hkaa0|香港
+      - 🇺🇸 vip1 美国-05
+      - 🇯🇵 [ T1 ] 日本 · 01 · 线路1
+      - 🇨🇳 严禁回国
+      - 🇩🇰 github.com/freefq - 丹麦  11
+      - 🇯🇵 [ v1 ] 日本 · 05 · 线路2
+      - 🇭🇰 [ 移动 ] 香港 · E1 · 03 · 线路2
+      - 🇪🇸 H60 西班牙 [3]
+      - 🇸🇬 [ T1 ] 新加坡 · 01 · 线路1
+      - 🇯🇵 D24 日本*
+      - 🇭🇰 香港1|tg频道:@ripaojiedian
+      - 🇸🇬 D53 新加坡*
+      - 🇺🇸 [ T1 ] 美国 · 02 · 线路2
+      - 🇭🇰 香港小火箭-tg频道:@ripaojiedian
+      - 🇨🇳 [ v1 ] 台湾原生 · 01 · 线路1
+      - 🇰🇷 [ 联通 ] 韩国 · E1 · 01 · 线路1 2
+      - 🇯🇵 日本 01
+      - 🇺🇸 _US_美国
+      - 🇸🇬 Singapore 01 (GARENA)
+      - 🇩🇪 TG:@hkaa0|德国
+      - 🇬🇧 H60 英国2
+      - 🇯🇵 日本JP|@ripaojiedian
+      - 🇭🇰 香港 移动2
+      - 🇸🇬 新加坡｜中转｜NSG-B XS
+      - 🇭🇰 香港2|tg频道:@ripaojiedian
+      - 🇮🇳 Stand - 印度 IN 隧道备线
+      - 🇯🇵 [ 联通 ] 日本 · F1 · 01 · 线路1
+      - 🇳🇱 荷兰 01 | ws
+      - 🇩🇪 Pro - 德国 DE 隧道二线
+      - 🇭🇰 D05 香港*
+      - 🇺🇸 美国 03
+      - 🇯🇵 [ v1 ] 日本 · 06 · 线路2
+      - 太原电信 | ws | 非80
+      - 🇭🇰 _HK_香港
+      - 🇺🇸 美国 04
+      - 🇺🇸 github.com/freefq - 美国  17
+      - 🇵🇭 [ v1 ] 菲律宾 · 01 · 线路2
+      - TG:@hkaa0|中国 3
+      - 🇭🇰 JCBB_香港 06【vip1】
+      - 🇯🇵 vip1 日本-10
       - 🇭🇰 [ 移动 ] 香港 · E1 · 03 · 线路2 2
-      - 🇺🇸 美国 流媒体解锁_2
+      - 🇸🇬 vip1 新加坡-05
+      - 🇺🇸 (免费)美国 04 电报群t.me/piaoya
+      - 🇬🇧 英国 流媒体解锁_l
+      - _CN_中国
+      - 🇸🇬 [ v1 ] 新加坡 · 03 · 线路2
+      - 🇮🇳 Stand - 印度 IN 隧道二线
+      - 🇰🇷 Relay 🇰🇷 South Korea(ChatGPT) 02 TG:@nodpai
+      - 🇺🇸 [ v1 ] 美国 · 02 · 线路1
+      - 🇯🇵 日本-东京｜中转｜NJP-A XV
+      - VNPT CLOUD SERVER FREE(LQ)
+      - 🇬🇧 United Kingdom(ChatGPT) 02 TG:@nodpai
+      - 🇺🇸 _US_美国->🇫🇷_FR_法国_45
+      - 伊拉克 01  | ws
+      - 🇺🇸 _US_美国 2
+      - 🇷🇴 _RO_罗马尼亚_5
+      - 🇸🇬 Singapore 01 (TLS)🔐
+      - 🇰🇷 TG:@hkaa0|韩国
+      - 🇨🇳 台湾 01 | ws
+      - 🇸🇬 Pro - 新加坡 原生 Netflix 隧道备线
+      - 🇺🇸 United States(ChatGPT) 01 TG:@nodpai
+      - 🇬🇧 [ v1 ] 英国原生 · 01 · 线路1
+      - 🇭🇰 [ 联通 ] 香港 · F1 · 03 · 线路2 2
+      - 🇨🇳 vip1 台湾-03
+      - TG:@hkaa0|中国 4
+      - 🇭🇰 _HK_香港_6_27
+      - 🇯🇵 日本特殊|tg:@ripaojiedian
+      - 🇯🇵 JCBB_日本03【vip1】
+      - 🇮🇳 [ v1 ] 印度 · 01 · 线路1 2
+      - 🇯🇵 日本-东京｜中转｜NJP-B XT
+      - TG:@hkaa0|中国 5
+      - 🇯🇵 D23 日本*
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇭🇰 D02 香港*
-      - 🇭🇰 TG:@hkaa0|香港
-      - 🇨🇳 vip1 台湾-03
-      - 🇺🇸 Stand - 美国 GPT放行 低速 隧道备线
-      - 🇨🇳 [ v1 ] 台湾原生 · 02 · 线路2
-      - 🇵🇭 [ v1 ] 菲律宾 · 01 · 线路2
-      - 🇺🇸 [ v1 ] 美国 · 02 · 线路1
-      - 🇮🇳 [ v1 ] 印度 · 01 · 线路1
-      - 🇭🇰 [ v1 ] 香港原生 · 02 · 线路2
-      - -----以下为国内区-----
-      - 🇸🇬 TG:@hkaa0|新加坡
-      - github.com/freefq - 欧盟  7
-      - 🇭🇰 香港-中国｜中转｜NHK-F XV
-      - 🇸🇬 狮城01|tg频道:@ripaojiedian
-      - 🇺🇸 美国2|tg频道:@ripaojiedian
-      - 🇯🇵 [ T1 ] 日本 · 02 · 线路1
-      - 🇭🇰 香港 腾讯云
-      - 🇯🇵 日本-东京｜中转｜NJP-A XT
-      - 🇯🇵 日本-东京｜中转｜NJP-D XS
-      - 🇭🇰 Stand - 香港 HK 隧道备线
-      - 🇭🇰 TG:@hkaa0|香港 2
-      - 🇨🇳 台湾 流媒体解锁_2
-      - 🇭🇰 vip1 香港-01
-      - 🇸🇬 新加坡 01 | ws
       - 🇬🇧 [ v1 ] 英国原生 · 02 · 线路2
-      - 🇨🇳 [ v1 ] 台湾原生 · 01 · 线路1
-      - 🇨🇳 台湾-中国｜中转｜NTW-B XS
-      - 🇳🇴 H60 挪威
-      - 🇭🇰 JCBB_香港 05【vip1】
-      - 🇯🇵 JCBB_日本04【vip1】
-      - 🇯🇵 vip1 日本-01
-      - 🇮🇸 H60 冰岛 [2]
-      - 🇳🇱 Stand - 荷兰 隧道二线
-      - 🇺🇸 _US_美国
-      - 🇹🇭 H60 泰国
-      - 🇺🇸 D42 美国*
-      - 🇳🇱 Stand - 荷兰 隧道主线
-      - 🇨🇳 [ v1 ] 台湾原生 · 02 · 线路2 2
-      - 🇭🇰 香港 2
-      - 🇦🇷 阿根廷 01 | ws
-      - 36.138.140.208:11023
-      - 🇭🇰 香港火箭|tg频道:@ripaojiedian
-      - 🇯🇵 [ 直连不保证国内 ] 日本 · U1 | 01
-      - 🇯🇵 [ v1 ] 日本 · 05 · 线路2
-      - 🇭🇰 香港-中国｜中转｜NHK-G XV
-      - 🇭🇰 [ 移动 ] 香港 · E1 · 03 · 线路2
-      - 🇯🇵 [ 联通 ] 日本 · F1 · 03 · 线路2
-      - 🇰🇷 [ 联通 ] 韩国 · E1 · 01 · 线路1
-      - 🇸🇬 [ v1 ] 新加坡 · 03 · 线路2
-      - "🇸🇬 _SG_新加坡\r_3_44\r"
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 22
-      - 🇰🇷 TG:@hkaa0|韩国
-      - 🇺🇸 [ 直连不保证国内 ] 美国 · U1 | 01
       - "🇯🇵 _JP_日本\r_2_37\r"
-      - 🇨🇦 _CA_加拿大
-      - ChatGPT解锁 · 01 · 线路1
-      - 🇮🇳 [ v1 ] 印度 · 01 · 线路1 2
-      - 🇭🇰 _HK_香港_2_来源：快嘴科技-kkzui.com3
-      - "🇺🇸 _US_美国\r_3_25\r"
-      - 🇺🇸 [ T1 ] 美国 · 01 · 线路1
-      - 🇯🇵 日本-东京｜中转｜NJP-C XV
-      - github.com/freefq - 欧盟  14
-      - 武汉电信 | ws | 非80
-      - 🇭🇰 vip1 香港-09
-      - 🇭🇰 海港隧道 | ws | 1.5x
-      - 🇸🇬 [ v1 ] 新加坡 · 01 · 线路1
-      - 🇯🇵 vip2 日本-02
-      - 🇺🇸 [ T1 ] 美国 · 01 · 线路1 2
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点(shopify) 26
-      - 🇭🇰 [ v1 ] 香港原生 · 01 · 线路2
-      - 🇮🇹 H60 意大利
-      - 更多节点关注@ShareCentrePro
-      - 🇩🇪 JCBB_德国02【vip1】
-      - 🇮🇱 H60 以色列
-      - 🇯🇵 日本 流媒体解锁_2
-      - 🇨🇳 JCBB_ 台湾 02【vip1】
-      - 🇯🇵 [ 联通 ] 日本 · F1 · 02 · 线路1
-      - 🇮🇳 [ v1 ] 印度 · 02 · 线路2
-      - 🇯🇵 Stand - 日本 JP 隧道备线
+      - TG:@hkaa0|中国
       - ""
-      - 🇺🇸 (免费)美国 02 电报群t.me/piaoya
-      - 🇨🇳 台湾 02 | tcp
-      - 🇨🇳 D11 台湾*
-      - 🇹🇷 H60 土耳其 [3]
-      - 🇸🇬 vip1 新加坡-05
-      - 🇭🇰 香港 01 | ws
-      - 🇯🇵 Lite3 - 中日隧道 3 普速 稳定
-      - 🇷🇺 github.com/freefq - 俄罗斯  21
-      - 🇯🇵 日本 02 | tcp
-      - 🇮🇳 JCBB_印度01【vip1】
-      - 🇯🇵 Lite12 - 中日隧道 高速 不稳定
+      - 🇭🇰 [ 联通 ] 香港 · F1 · 03 · 线路2
+      - 🇮🇳 [ v1 ] 印度 · 01 · 线路1
+      - 🇭🇰 [ v1 ] 香港原生 · 01 · 线路2
+      - 🇷🇺 H60 俄罗斯 [0.8]
+      - 🇭🇰 vip1 香港-05
+      - 🇲🇾 D50 马来西亚
       - 🇦🇪 阿联酋 流媒体解锁_l
+      - 🇲🇩 H60 摩尔多瓦
+      - 🇬🇧 [ v1 ] 英国原生 · 02 · 线路2 2
+      - 🇨🇳 台湾|tg频道:@ripaojiedian
+      - 🇨🇦 _CA_加拿大->🇫🇷_FR_法国_4来源：快嘴科技-kkzui.com
+      - 🇨🇳 台湾-中国｜中转｜NTW-B XV
+      - 🇯🇵 JP|tg频道:@ripaojiedian
+      - 🇬🇧 JCBB_ 英国01【vip1】
+      - TG:@hkaa0|中国 2
+      - 🇭🇰 [ 移动 ] 香港 · E1 · 04 · 线路2
+      - 🇭🇰 香港 流媒体解锁_2
+      - 🇰🇷 [ 联通 ] 韩国 · E1 · 01 · 线路1
+      - 🇰🇷 [ 联通 ] 韩国 · E1 · 02 · 线路2
+      - 🇺🇸 [ T1 ] 美国 · 01 · 线路1
+      - 🇰🇷 _KR_韩国
+      - 🇮🇹 H60 意大利
+      - 🇨🇳 vip1 台湾-01
+      - 🇭🇰 TG:@hkaa0|香港
+      - 🇺🇸 vip1 美国-05
+      - 🇯🇵 [ T1 ] 日本 · 01 · 线路1
+      - 🇨🇳 严禁回国
+      - 🇩🇰 github.com/freefq - 丹麦  11
+      - 🇯🇵 [ v1 ] 日本 · 05 · 线路2
+      - 🇭🇰 [ 移动 ] 香港 · E1 · 03 · 线路2
+      - 🇪🇸 H60 西班牙 [3]
+      - 🇸🇬 [ T1 ] 新加坡 · 01 · 线路1
+      - 🇯🇵 D24 日本*
+      - 🇭🇰 香港1|tg频道:@ripaojiedian
+      - 🇸🇬 D53 新加坡*
+      - 🇺🇸 [ T1 ] 美国 · 02 · 线路2
+      - 🇭🇰 香港小火箭-tg频道:@ripaojiedian
+      - 🇨🇳 [ v1 ] 台湾原生 · 01 · 线路1
+      - 🇰🇷 [ 联通 ] 韩国 · E1 · 01 · 线路1 2
+      - 🇯🇵 日本 01
+      - 🇺🇸 _US_美国
+      - 🇸🇬 Singapore 01 (GARENA)
+      - 🇩🇪 TG:@hkaa0|德国
+      - 🇬🇧 H60 英国2
+      - 🇯🇵 日本JP|@ripaojiedian
+      - 🇭🇰 香港 移动2
+      - 🇸🇬 新加坡｜中转｜NSG-B XS
+      - 🇭🇰 香港2|tg频道:@ripaojiedian
+      - 🇮🇳 Stand - 印度 IN 隧道备线
+      - 🇯🇵 [ 联通 ] 日本 · F1 · 01 · 线路1
+      - 🇳🇱 荷兰 01 | ws
+      - 🇩🇪 Pro - 德国 DE 隧道二线
+      - 🇭🇰 D05 香港*
+      - 🇺🇸 美国 03
+      - 🇯🇵 [ v1 ] 日本 · 06 · 线路2
+      - 太原电信 | ws | 非80
+      - 🇭🇰 _HK_香港
+      - 🇺🇸 美国 04
+      - 🇺🇸 github.com/freefq - 美国  17
+      - 🇵🇭 [ v1 ] 菲律宾 · 01 · 线路2
+      - TG:@hkaa0|中国 3
+      - 🇭🇰 JCBB_香港 06【vip1】
+      - 🇯🇵 vip1 日本-10
       - 🇭🇰 [ 移动 ] 香港 · E1 · 03 · 线路2 2
-      - 🇺🇸 美国 流媒体解锁_2
+      - 🇸🇬 vip1 新加坡-05
+      - 🇺🇸 (免费)美国 04 电报群t.me/piaoya
+      - 🇬🇧 英国 流媒体解锁_l
+      - _CN_中国
+      - 🇸🇬 [ v1 ] 新加坡 · 03 · 线路2
+      - 🇮🇳 Stand - 印度 IN 隧道二线
+      - 🇰🇷 Relay 🇰🇷 South Korea(ChatGPT) 02 TG:@nodpai
+      - 🇺🇸 [ v1 ] 美国 · 02 · 线路1
+      - 🇯🇵 日本-东京｜中转｜NJP-A XV
+      - VNPT CLOUD SERVER FREE(LQ)
+      - 🇬🇧 United Kingdom(ChatGPT) 02 TG:@nodpai
+      - 🇺🇸 _US_美国->🇫🇷_FR_法国_45
+      - 伊拉克 01  | ws
+      - 🇺🇸 _US_美国 2
+      - 🇷🇴 _RO_罗马尼亚_5
+      - 🇸🇬 Singapore 01 (TLS)🔐
+      - 🇰🇷 TG:@hkaa0|韩国
+      - 🇨🇳 台湾 01 | ws
+      - 🇸🇬 Pro - 新加坡 原生 Netflix 隧道备线
+      - 🇺🇸 United States(ChatGPT) 01 TG:@nodpai
+      - 🇬🇧 [ v1 ] 英国原生 · 01 · 线路1
+      - 🇭🇰 [ 联通 ] 香港 · F1 · 03 · 线路2 2
+      - 🇨🇳 vip1 台湾-03
+      - TG:@hkaa0|中国 4
+      - 🇭🇰 _HK_香港_6_27
+      - 🇯🇵 日本特殊|tg:@ripaojiedian
+      - 🇯🇵 JCBB_日本03【vip1】
+      - 🇮🇳 [ v1 ] 印度 · 01 · 线路1 2
+      - 🇯🇵 日本-东京｜中转｜NJP-B XT
+      - TG:@hkaa0|中国 5
+      - 🇯🇵 D23 日本*
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇭🇰 D02 香港*
-      - 🇭🇰 TG:@hkaa0|香港
-      - 🇨🇳 vip1 台湾-03
-      - 🇺🇸 Stand - 美国 GPT放行 低速 隧道备线
-      - 🇨🇳 [ v1 ] 台湾原生 · 02 · 线路2
-      - 🇵🇭 [ v1 ] 菲律宾 · 01 · 线路2
-      - 🇺🇸 [ v1 ] 美国 · 02 · 线路1
-      - 🇮🇳 [ v1 ] 印度 · 01 · 线路1
-      - 🇭🇰 [ v1 ] 香港原生 · 02 · 线路2
-      - -----以下为国内区-----
-      - 🇸🇬 TG:@hkaa0|新加坡
-      - github.com/freefq - 欧盟  7
-      - 🇭🇰 香港-中国｜中转｜NHK-F XV
-      - 🇸🇬 狮城01|tg频道:@ripaojiedian
-      - 🇺🇸 美国2|tg频道:@ripaojiedian
-      - 🇯🇵 [ T1 ] 日本 · 02 · 线路1
-      - 🇭🇰 香港 腾讯云
-      - 🇯🇵 日本-东京｜中转｜NJP-A XT
-      - 🇯🇵 日本-东京｜中转｜NJP-D XS
-      - 🇭🇰 Stand - 香港 HK 隧道备线
-      - 🇭🇰 TG:@hkaa0|香港 2
-      - 🇨🇳 台湾 流媒体解锁_2
-      - 🇭🇰 vip1 香港-01
-      - 🇸🇬 新加坡 01 | ws
       - 🇬🇧 [ v1 ] 英国原生 · 02 · 线路2
-      - 🇨🇳 [ v1 ] 台湾原生 · 01 · 线路1
-      - 🇨🇳 台湾-中国｜中转｜NTW-B XS
-      - 🇳🇴 H60 挪威
-      - 🇭🇰 JCBB_香港 05【vip1】
-      - 🇯🇵 JCBB_日本04【vip1】
-      - 🇯🇵 vip1 日本-01
-      - 🇮🇸 H60 冰岛 [2]
-      - 🇳🇱 Stand - 荷兰 隧道二线
-      - 🇺🇸 _US_美国
-      - 🇹🇭 H60 泰国
-      - 🇺🇸 D42 美国*
-      - 🇳🇱 Stand - 荷兰 隧道主线
-      - 🇨🇳 [ v1 ] 台湾原生 · 02 · 线路2 2
-      - 🇭🇰 香港 2
-      - 🇦🇷 阿根廷 01 | ws
-      - 36.138.140.208:11023
-      - 🇭🇰 香港火箭|tg频道:@ripaojiedian
-      - 🇯🇵 [ 直连不保证国内 ] 日本 · U1 | 01
-      - 🇯🇵 [ v1 ] 日本 · 05 · 线路2
-      - 🇭🇰 香港-中国｜中转｜NHK-G XV
-      - 🇭🇰 [ 移动 ] 香港 · E1 · 03 · 线路2
-      - 🇯🇵 [ 联通 ] 日本 · F1 · 03 · 线路2
-      - 🇰🇷 [ 联通 ] 韩国 · E1 · 01 · 线路1
-      - 🇸🇬 [ v1 ] 新加坡 · 03 · 线路2
-      - "🇸🇬 _SG_新加坡\r_3_44\r"
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 22
-      - 🇰🇷 TG:@hkaa0|韩国
-      - 🇺🇸 [ 直连不保证国内 ] 美国 · U1 | 01
       - "🇯🇵 _JP_日本\r_2_37\r"
-      - 🇨🇦 _CA_加拿大
-      - ChatGPT解锁 · 01 · 线路1
-      - 🇮🇳 [ v1 ] 印度 · 01 · 线路1 2
-      - 🇭🇰 _HK_香港_2_来源：快嘴科技-kkzui.com3
-      - "🇺🇸 _US_美国\r_3_25\r"
-      - 🇺🇸 [ T1 ] 美国 · 01 · 线路1
-      - 🇯🇵 日本-东京｜中转｜NJP-C XV
-      - github.com/freefq - 欧盟  14
-      - 武汉电信 | ws | 非80
-      - 🇭🇰 vip1 香港-09
-      - 🇭🇰 海港隧道 | ws | 1.5x
-      - 🇸🇬 [ v1 ] 新加坡 · 01 · 线路1
-      - 🇯🇵 vip2 日本-02
-      - 🇺🇸 [ T1 ] 美国 · 01 · 线路1 2
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点(shopify) 26
-      - 🇭🇰 [ v1 ] 香港原生 · 01 · 线路2
-      - 🇮🇹 H60 意大利
-      - 更多节点关注@ShareCentrePro
-      - 🇩🇪 JCBB_德国02【vip1】
-      - 🇮🇱 H60 以色列
-      - 🇯🇵 日本 流媒体解锁_2
-      - 🇨🇳 JCBB_ 台湾 02【vip1】
-      - 🇯🇵 [ 联通 ] 日本 · F1 · 02 · 线路1
-      - 🇮🇳 [ v1 ] 印度 · 02 · 线路2
-      - 🇯🇵 Stand - 日本 JP 隧道备线
+      - TG:@hkaa0|中国
       - ""
-      - 🇺🇸 (免费)美国 02 电报群t.me/piaoya
-      - 🇨🇳 台湾 02 | tcp
-      - 🇨🇳 D11 台湾*
-      - 🇹🇷 H60 土耳其 [3]
-      - 🇸🇬 vip1 新加坡-05
-      - 🇭🇰 香港 01 | ws
-      - 🇯🇵 Lite3 - 中日隧道 3 普速 稳定
-      - 🇷🇺 github.com/freefq - 俄罗斯  21
-      - 🇯🇵 日本 02 | tcp
-      - 🇮🇳 JCBB_印度01【vip1】
-      - 🇯🇵 Lite12 - 中日隧道 高速 不稳定
+      - 🇭🇰 [ 联通 ] 香港 · F1 · 03 · 线路2
+      - 🇮🇳 [ v1 ] 印度 · 01 · 线路1
+      - 🇭🇰 [ v1 ] 香港原生 · 01 · 线路2
+      - 🇷🇺 H60 俄罗斯 [0.8]
+      - 🇭🇰 vip1 香港-05
+      - 🇲🇾 D50 马来西亚
       - 🇦🇪 阿联酋 流媒体解锁_l
+      - 🇲🇩 H60 摩尔多瓦
+      - 🇬🇧 [ v1 ] 英国原生 · 02 · 线路2 2
+      - 🇨🇳 台湾|tg频道:@ripaojiedian
+      - 🇨🇦 _CA_加拿大->🇫🇷_FR_法国_4来源：快嘴科技-kkzui.com
+      - 🇨🇳 台湾-中国｜中转｜NTW-B XV
+      - 🇯🇵 JP|tg频道:@ripaojiedian
+      - 🇬🇧 JCBB_ 英国01【vip1】
+      - TG:@hkaa0|中国 2
+      - 🇭🇰 [ 移动 ] 香港 · E1 · 04 · 线路2
+      - 🇭🇰 香港 流媒体解锁_2
+      - 🇰🇷 [ 联通 ] 韩国 · E1 · 01 · 线路1
+      - 🇰🇷 [ 联通 ] 韩国 · E1 · 02 · 线路2
+      - 🇺🇸 [ T1 ] 美国 · 01 · 线路1
+      - 🇰🇷 _KR_韩国
+      - 🇮🇹 H60 意大利
+      - 🇨🇳 vip1 台湾-01
+      - 🇭🇰 TG:@hkaa0|香港
+      - 🇺🇸 vip1 美国-05
+      - 🇯🇵 [ T1 ] 日本 · 01 · 线路1
+      - 🇨🇳 严禁回国
+      - 🇩🇰 github.com/freefq - 丹麦  11
+      - 🇯🇵 [ v1 ] 日本 · 05 · 线路2
+      - 🇭🇰 [ 移动 ] 香港 · E1 · 03 · 线路2
+      - 🇪🇸 H60 西班牙 [3]
+      - 🇸🇬 [ T1 ] 新加坡 · 01 · 线路1
+      - 🇯🇵 D24 日本*
+      - 🇭🇰 香港1|tg频道:@ripaojiedian
+      - 🇸🇬 D53 新加坡*
+      - 🇺🇸 [ T1 ] 美国 · 02 · 线路2
+      - 🇭🇰 香港小火箭-tg频道:@ripaojiedian
+      - 🇨🇳 [ v1 ] 台湾原生 · 01 · 线路1
+      - 🇰🇷 [ 联通 ] 韩国 · E1 · 01 · 线路1 2
+      - 🇯🇵 日本 01
+      - 🇺🇸 _US_美国
+      - 🇸🇬 Singapore 01 (GARENA)
+      - 🇩🇪 TG:@hkaa0|德国
+      - 🇬🇧 H60 英国2
+      - 🇯🇵 日本JP|@ripaojiedian
+      - 🇭🇰 香港 移动2
+      - 🇸🇬 新加坡｜中转｜NSG-B XS
+      - 🇭🇰 香港2|tg频道:@ripaojiedian
+      - 🇮🇳 Stand - 印度 IN 隧道备线
+      - 🇯🇵 [ 联通 ] 日本 · F1 · 01 · 线路1
+      - 🇳🇱 荷兰 01 | ws
+      - 🇩🇪 Pro - 德国 DE 隧道二线
+      - 🇭🇰 D05 香港*
+      - 🇺🇸 美国 03
+      - 🇯🇵 [ v1 ] 日本 · 06 · 线路2
+      - 太原电信 | ws | 非80
+      - 🇭🇰 _HK_香港
+      - 🇺🇸 美国 04
+      - 🇺🇸 github.com/freefq - 美国  17
+      - 🇵🇭 [ v1 ] 菲律宾 · 01 · 线路2
+      - TG:@hkaa0|中国 3
+      - 🇭🇰 JCBB_香港 06【vip1】
+      - 🇯🇵 vip1 日本-10
       - 🇭🇰 [ 移动 ] 香港 · E1 · 03 · 线路2 2
-      - 🇺🇸 美国 流媒体解锁_2
+      - 🇸🇬 vip1 新加坡-05
+      - 🇺🇸 (免费)美国 04 电报群t.me/piaoya
+      - 🇬🇧 英国 流媒体解锁_l
+      - _CN_中国
+      - 🇸🇬 [ v1 ] 新加坡 · 03 · 线路2
+      - 🇮🇳 Stand - 印度 IN 隧道二线
+      - 🇰🇷 Relay 🇰🇷 South Korea(ChatGPT) 02 TG:@nodpai
+      - 🇺🇸 [ v1 ] 美国 · 02 · 线路1
+      - 🇯🇵 日本-东京｜中转｜NJP-A XV
+      - VNPT CLOUD SERVER FREE(LQ)
+      - 🇬🇧 United Kingdom(ChatGPT) 02 TG:@nodpai
+      - 🇺🇸 _US_美国->🇫🇷_FR_法国_45
+      - 伊拉克 01  | ws
+      - 🇺🇸 _US_美国 2
+      - 🇷🇴 _RO_罗马尼亚_5
+      - 🇸🇬 Singapore 01 (TLS)🔐
+      - 🇰🇷 TG:@hkaa0|韩国
+      - 🇨🇳 台湾 01 | ws
+      - 🇸🇬 Pro - 新加坡 原生 Netflix 隧道备线
+      - 🇺🇸 United States(ChatGPT) 01 TG:@nodpai
+      - 🇬🇧 [ v1 ] 英国原生 · 01 · 线路1
+      - 🇭🇰 [ 联通 ] 香港 · F1 · 03 · 线路2 2
+      - 🇨🇳 vip1 台湾-03
+      - TG:@hkaa0|中国 4
+      - 🇭🇰 _HK_香港_6_27
+      - 🇯🇵 日本特殊|tg:@ripaojiedian
+      - 🇯🇵 JCBB_日本03【vip1】
+      - 🇮🇳 [ v1 ] 印度 · 01 · 线路1 2
+      - 🇯🇵 日本-东京｜中转｜NJP-B XT
+      - TG:@hkaa0|中国 5
+      - 🇯🇵 D23 日本*
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇭🇰 D02 香港*
-      - 🇭🇰 TG:@hkaa0|香港
-      - 🇨🇳 vip1 台湾-03
-      - 🇺🇸 Stand - 美国 GPT放行 低速 隧道备线
-      - 🇨🇳 [ v1 ] 台湾原生 · 02 · 线路2
-      - 🇵🇭 [ v1 ] 菲律宾 · 01 · 线路2
-      - 🇺🇸 [ v1 ] 美国 · 02 · 线路1
-      - 🇮🇳 [ v1 ] 印度 · 01 · 线路1
-      - 🇭🇰 [ v1 ] 香港原生 · 02 · 线路2
-      - -----以下为国内区-----
-      - 🇸🇬 TG:@hkaa0|新加坡
-      - github.com/freefq - 欧盟  7
-      - 🇭🇰 香港-中国｜中转｜NHK-F XV
-      - 🇸🇬 狮城01|tg频道:@ripaojiedian
-      - 🇺🇸 美国2|tg频道:@ripaojiedian
-      - 🇯🇵 [ T1 ] 日本 · 02 · 线路1
-      - 🇭🇰 香港 腾讯云
-      - 🇯🇵 日本-东京｜中转｜NJP-A XT
-      - 🇯🇵 日本-东京｜中转｜NJP-D XS
-      - 🇭🇰 Stand - 香港 HK 隧道备线
-      - 🇭🇰 TG:@hkaa0|香港 2
-      - 🇨🇳 台湾 流媒体解锁_2
-      - 🇭🇰 vip1 香港-01
-      - 🇸🇬 新加坡 01 | ws
       - 🇬🇧 [ v1 ] 英国原生 · 02 · 线路2
-      - 🇨🇳 [ v1 ] 台湾原生 · 01 · 线路1
-      - 🇨🇳 台湾-中国｜中转｜NTW-B XS
-      - 🇳🇴 H60 挪威
-      - 🇭🇰 JCBB_香港 05【vip1】
-      - 🇯🇵 JCBB_日本04【vip1】
-      - 🇯🇵 vip1 日本-01
-      - 🇮🇸 H60 冰岛 [2]
-      - 🇳🇱 Stand - 荷兰 隧道二线
-      - 🇺🇸 _US_美国
-      - 🇹🇭 H60 泰国
-      - 🇺🇸 D42 美国*
-      - 🇳🇱 Stand - 荷兰 隧道主线
-      - 🇨🇳 [ v1 ] 台湾原生 · 02 · 线路2 2
-      - 🇭🇰 香港 2
-      - 🇦🇷 阿根廷 01 | ws
-      - 36.138.140.208:11023
-      - 🇭🇰 香港火箭|tg频道:@ripaojiedian
-      - 🇯🇵 [ 直连不保证国内 ] 日本 · U1 | 01
-      - 🇯🇵 [ v1 ] 日本 · 05 · 线路2
-      - 🇭🇰 香港-中国｜中转｜NHK-G XV
-      - 🇭🇰 [ 移动 ] 香港 · E1 · 03 · 线路2
-      - 🇯🇵 [ 联通 ] 日本 · F1 · 03 · 线路2
-      - 🇰🇷 [ 联通 ] 韩国 · E1 · 01 · 线路1
-      - 🇸🇬 [ v1 ] 新加坡 · 03 · 线路2
-      - "🇸🇬 _SG_新加坡\r_3_44\r"
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 22
-      - 🇰🇷 TG:@hkaa0|韩国
-      - 🇺🇸 [ 直连不保证国内 ] 美国 · U1 | 01
       - "🇯🇵 _JP_日本\r_2_37\r"
-      - 🇨🇦 _CA_加拿大
-      - ChatGPT解锁 · 01 · 线路1
-      - 🇮🇳 [ v1 ] 印度 · 01 · 线路1 2
-      - 🇭🇰 _HK_香港_2_来源：快嘴科技-kkzui.com3
-      - "🇺🇸 _US_美国\r_3_25\r"
-      - 🇺🇸 [ T1 ] 美国 · 01 · 线路1
-      - 🇯🇵 日本-东京｜中转｜NJP-C XV
-      - github.com/freefq - 欧盟  14
-      - 武汉电信 | ws | 非80
-      - 🇭🇰 vip1 香港-09
-      - 🇭🇰 海港隧道 | ws | 1.5x
-      - 🇸🇬 [ v1 ] 新加坡 · 01 · 线路1
-      - 🇯🇵 vip2 日本-02
-      - 🇺🇸 [ T1 ] 美国 · 01 · 线路1 2
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点(shopify) 26
-      - 🇭🇰 [ v1 ] 香港原生 · 01 · 线路2
-      - 🇮🇹 H60 意大利
-      - 更多节点关注@ShareCentrePro
-      - 🇩🇪 JCBB_德国02【vip1】
-      - 🇮🇱 H60 以色列
-      - 🇯🇵 日本 流媒体解锁_2
-      - 🇨🇳 JCBB_ 台湾 02【vip1】
-      - 🇯🇵 [ 联通 ] 日本 · F1 · 02 · 线路1
-      - 🇮🇳 [ v1 ] 印度 · 02 · 线路2
-      - 🇯🇵 Stand - 日本 JP 隧道备线
+      - TG:@hkaa0|中国
       - ""
-      - 🇺🇸 (免费)美国 02 电报群t.me/piaoya
-      - 🇨🇳 台湾 02 | tcp
-      - 🇨🇳 D11 台湾*
-      - 🇹🇷 H60 土耳其 [3]
-      - 🇸🇬 vip1 新加坡-05
-      - 🇭🇰 香港 01 | ws
-      - 🇯🇵 Lite3 - 中日隧道 3 普速 稳定
-      - 🇷🇺 github.com/freefq - 俄罗斯  21
-      - 🇯🇵 日本 02 | tcp
-      - 🇮🇳 JCBB_印度01【vip1】
-      - 🇯🇵 Lite12 - 中日隧道 高速 不稳定
+      - 🇭🇰 [ 联通 ] 香港 · F1 · 03 · 线路2
+      - 🇮🇳 [ v1 ] 印度 · 01 · 线路1
+      - 🇭🇰 [ v1 ] 香港原生 · 01 · 线路2
+      - 🇷🇺 H60 俄罗斯 [0.8]
+      - 🇭🇰 vip1 香港-05
+      - 🇲🇾 D50 马来西亚
       - 🇦🇪 阿联酋 流媒体解锁_l
+      - 🇲🇩 H60 摩尔多瓦
+      - 🇬🇧 [ v1 ] 英国原生 · 02 · 线路2 2
+      - 🇨🇳 台湾|tg频道:@ripaojiedian
+      - 🇨🇦 _CA_加拿大->🇫🇷_FR_法国_4来源：快嘴科技-kkzui.com
+      - 🇨🇳 台湾-中国｜中转｜NTW-B XV
+      - 🇯🇵 JP|tg频道:@ripaojiedian
+      - 🇬🇧 JCBB_ 英国01【vip1】
+      - TG:@hkaa0|中国 2
+      - 🇭🇰 [ 移动 ] 香港 · E1 · 04 · 线路2
+      - 🇭🇰 香港 流媒体解锁_2
+      - 🇰🇷 [ 联通 ] 韩国 · E1 · 01 · 线路1
+      - 🇰🇷 [ 联通 ] 韩国 · E1 · 02 · 线路2
+      - 🇺🇸 [ T1 ] 美国 · 01 · 线路1
+      - 🇰🇷 _KR_韩国
+      - 🇮🇹 H60 意大利
+      - 🇨🇳 vip1 台湾-01
+      - 🇭🇰 TG:@hkaa0|香港
+      - 🇺🇸 vip1 美国-05
+      - 🇯🇵 [ T1 ] 日本 · 01 · 线路1
+      - 🇨🇳 严禁回国
+      - 🇩🇰 github.com/freefq - 丹麦  11
+      - 🇯🇵 [ v1 ] 日本 · 05 · 线路2
+      - 🇭🇰 [ 移动 ] 香港 · E1 · 03 · 线路2
+      - 🇪🇸 H60 西班牙 [3]
+      - 🇸🇬 [ T1 ] 新加坡 · 01 · 线路1
+      - 🇯🇵 D24 日本*
+      - 🇭🇰 香港1|tg频道:@ripaojiedian
+      - 🇸🇬 D53 新加坡*
+      - 🇺🇸 [ T1 ] 美国 · 02 · 线路2
+      - 🇭🇰 香港小火箭-tg频道:@ripaojiedian
+      - 🇨🇳 [ v1 ] 台湾原生 · 01 · 线路1
+      - 🇰🇷 [ 联通 ] 韩国 · E1 · 01 · 线路1 2
+      - 🇯🇵 日本 01
+      - 🇺🇸 _US_美国
+      - 🇸🇬 Singapore 01 (GARENA)
+      - 🇩🇪 TG:@hkaa0|德国
+      - 🇬🇧 H60 英国2
+      - 🇯🇵 日本JP|@ripaojiedian
+      - 🇭🇰 香港 移动2
+      - 🇸🇬 新加坡｜中转｜NSG-B XS
+      - 🇭🇰 香港2|tg频道:@ripaojiedian
+      - 🇮🇳 Stand - 印度 IN 隧道备线
+      - 🇯🇵 [ 联通 ] 日本 · F1 · 01 · 线路1
+      - 🇳🇱 荷兰 01 | ws
+      - 🇩🇪 Pro - 德国 DE 隧道二线
+      - 🇭🇰 D05 香港*
+      - 🇺🇸 美国 03
+      - 🇯🇵 [ v1 ] 日本 · 06 · 线路2
+      - 太原电信 | ws | 非80
+      - 🇭🇰 _HK_香港
+      - 🇺🇸 美国 04
+      - 🇺🇸 github.com/freefq - 美国  17
+      - 🇵🇭 [ v1 ] 菲律宾 · 01 · 线路2
+      - TG:@hkaa0|中国 3
+      - 🇭🇰 JCBB_香港 06【vip1】
+      - 🇯🇵 vip1 日本-10
       - 🇭🇰 [ 移动 ] 香港 · E1 · 03 · 线路2 2
-      - 🇺🇸 美国 流媒体解锁_2
+      - 🇸🇬 vip1 新加坡-05
+      - 🇺🇸 (免费)美国 04 电报群t.me/piaoya
+      - 🇬🇧 英国 流媒体解锁_l
+      - _CN_中国
+      - 🇸🇬 [ v1 ] 新加坡 · 03 · 线路2
+      - 🇮🇳 Stand - 印度 IN 隧道二线
+      - 🇰🇷 Relay 🇰🇷 South Korea(ChatGPT) 02 TG:@nodpai
+      - 🇺🇸 [ v1 ] 美国 · 02 · 线路1
+      - 🇯🇵 日本-东京｜中转｜NJP-A XV
+      - VNPT CLOUD SERVER FREE(LQ)
+      - 🇬🇧 United Kingdom(ChatGPT) 02 TG:@nodpai
+      - 🇺🇸 _US_美国->🇫🇷_FR_法国_45
+      - 伊拉克 01  | ws
+      - 🇺🇸 _US_美国 2
+      - 🇷🇴 _RO_罗马尼亚_5
+      - 🇸🇬 Singapore 01 (TLS)🔐
+      - 🇰🇷 TG:@hkaa0|韩国
+      - 🇨🇳 台湾 01 | ws
+      - 🇸🇬 Pro - 新加坡 原生 Netflix 隧道备线
+      - 🇺🇸 United States(ChatGPT) 01 TG:@nodpai
+      - 🇬🇧 [ v1 ] 英国原生 · 01 · 线路1
+      - 🇭🇰 [ 联通 ] 香港 · F1 · 03 · 线路2 2
+      - 🇨🇳 vip1 台湾-03
+      - TG:@hkaa0|中国 4
+      - 🇭🇰 _HK_香港_6_27
+      - 🇯🇵 日本特殊|tg:@ripaojiedian
+      - 🇯🇵 JCBB_日本03【vip1】
+      - 🇮🇳 [ v1 ] 印度 · 01 · 线路1 2
+      - 🇯🇵 日本-东京｜中转｜NJP-B XT
+      - TG:@hkaa0|中国 5
+      - 🇯🇵 D23 日本*
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 D02 香港*
-      - 🇭🇰 TG:@hkaa0|香港
-      - 🇨🇳 vip1 台湾-03
-      - 🇺🇸 Stand - 美国 GPT放行 低速 隧道备线
-      - 🇨🇳 [ v1 ] 台湾原生 · 02 · 线路2
-      - 🇵🇭 [ v1 ] 菲律宾 · 01 · 线路2
-      - 🇺🇸 [ v1 ] 美国 · 02 · 线路1
-      - 🇮🇳 [ v1 ] 印度 · 01 · 线路1
-      - 🇭🇰 [ v1 ] 香港原生 · 02 · 线路2
-      - -----以下为国内区-----
-      - 🇸🇬 TG:@hkaa0|新加坡
-      - github.com/freefq - 欧盟  7
-      - 🇭🇰 香港-中国｜中转｜NHK-F XV
-      - 🇸🇬 狮城01|tg频道:@ripaojiedian
-      - 🇺🇸 美国2|tg频道:@ripaojiedian
-      - 🇯🇵 [ T1 ] 日本 · 02 · 线路1
-      - 🇭🇰 香港 腾讯云
-      - 🇯🇵 日本-东京｜中转｜NJP-A XT
-      - 🇯🇵 日本-东京｜中转｜NJP-D XS
-      - 🇭🇰 Stand - 香港 HK 隧道备线
-      - 🇭🇰 TG:@hkaa0|香港 2
-      - 🇨🇳 台湾 流媒体解锁_2
-      - 🇭🇰 vip1 香港-01
-      - 🇸🇬 新加坡 01 | ws
       - 🇬🇧 [ v1 ] 英国原生 · 02 · 线路2
-      - 🇨🇳 [ v1 ] 台湾原生 · 01 · 线路1
-      - 🇨🇳 台湾-中国｜中转｜NTW-B XS
-      - 🇳🇴 H60 挪威
-      - 🇭🇰 JCBB_香港 05【vip1】
-      - 🇯🇵 JCBB_日本04【vip1】
-      - 🇯🇵 vip1 日本-01
-      - 🇮🇸 H60 冰岛 [2]
-      - 🇳🇱 Stand - 荷兰 隧道二线
-      - 🇺🇸 _US_美国
-      - 🇹🇭 H60 泰国
-      - 🇺🇸 D42 美国*
-      - 🇳🇱 Stand - 荷兰 隧道主线
-      - 🇨🇳 [ v1 ] 台湾原生 · 02 · 线路2 2
-      - 🇭🇰 香港 2
-      - 🇦🇷 阿根廷 01 | ws
-      - 36.138.140.208:11023
-      - 🇭🇰 香港火箭|tg频道:@ripaojiedian
-      - 🇯🇵 [ 直连不保证国内 ] 日本 · U1 | 01
-      - 🇯🇵 [ v1 ] 日本 · 05 · 线路2
-      - 🇭🇰 香港-中国｜中转｜NHK-G XV
-      - 🇭🇰 [ 移动 ] 香港 · E1 · 03 · 线路2
-      - 🇯🇵 [ 联通 ] 日本 · F1 · 03 · 线路2
-      - 🇰🇷 [ 联通 ] 韩国 · E1 · 01 · 线路1
-      - 🇸🇬 [ v1 ] 新加坡 · 03 · 线路2
-      - "🇸🇬 _SG_新加坡\r_3_44\r"
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 22
-      - 🇰🇷 TG:@hkaa0|韩国
-      - 🇺🇸 [ 直连不保证国内 ] 美国 · U1 | 01
       - "🇯🇵 _JP_日本\r_2_37\r"
-      - 🇨🇦 _CA_加拿大
-      - ChatGPT解锁 · 01 · 线路1
-      - 🇮🇳 [ v1 ] 印度 · 01 · 线路1 2
-      - 🇭🇰 _HK_香港_2_来源：快嘴科技-kkzui.com3
-      - "🇺🇸 _US_美国\r_3_25\r"
-      - 🇺🇸 [ T1 ] 美国 · 01 · 线路1
-      - 🇯🇵 日本-东京｜中转｜NJP-C XV
-      - github.com/freefq - 欧盟  14
-      - 武汉电信 | ws | 非80
-      - 🇭🇰 vip1 香港-09
-      - 🇭🇰 海港隧道 | ws | 1.5x
-      - 🇸🇬 [ v1 ] 新加坡 · 01 · 线路1
-      - 🇯🇵 vip2 日本-02
-      - 🇺🇸 [ T1 ] 美国 · 01 · 线路1 2
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点(shopify) 26
-      - 🇭🇰 [ v1 ] 香港原生 · 01 · 线路2
-      - 🇮🇹 H60 意大利
-      - 更多节点关注@ShareCentrePro
-      - 🇩🇪 JCBB_德国02【vip1】
-      - 🇮🇱 H60 以色列
-      - 🇯🇵 日本 流媒体解锁_2
-      - 🇨🇳 JCBB_ 台湾 02【vip1】
-      - 🇯🇵 [ 联通 ] 日本 · F1 · 02 · 线路1
-      - 🇮🇳 [ v1 ] 印度 · 02 · 线路2
-      - 🇯🇵 Stand - 日本 JP 隧道备线
+      - TG:@hkaa0|中国
       - ""
-      - 🇺🇸 (免费)美国 02 电报群t.me/piaoya
-      - 🇨🇳 台湾 02 | tcp
-      - 🇨🇳 D11 台湾*
-      - 🇹🇷 H60 土耳其 [3]
-      - 🇸🇬 vip1 新加坡-05
-      - 🇭🇰 香港 01 | ws
-      - 🇯🇵 Lite3 - 中日隧道 3 普速 稳定
-      - 🇷🇺 github.com/freefq - 俄罗斯  21
-      - 🇯🇵 日本 02 | tcp
-      - 🇮🇳 JCBB_印度01【vip1】
-      - 🇯🇵 Lite12 - 中日隧道 高速 不稳定
+      - 🇭🇰 [ 联通 ] 香港 · F1 · 03 · 线路2
+      - 🇮🇳 [ v1 ] 印度 · 01 · 线路1
+      - 🇭🇰 [ v1 ] 香港原生 · 01 · 线路2
+      - 🇷🇺 H60 俄罗斯 [0.8]
+      - 🇭🇰 vip1 香港-05
+      - 🇲🇾 D50 马来西亚
       - 🇦🇪 阿联酋 流媒体解锁_l
+      - 🇲🇩 H60 摩尔多瓦
+      - 🇬🇧 [ v1 ] 英国原生 · 02 · 线路2 2
+      - 🇨🇳 台湾|tg频道:@ripaojiedian
+      - 🇨🇦 _CA_加拿大->🇫🇷_FR_法国_4来源：快嘴科技-kkzui.com
+      - 🇨🇳 台湾-中国｜中转｜NTW-B XV
+      - 🇯🇵 JP|tg频道:@ripaojiedian
+      - 🇬🇧 JCBB_ 英国01【vip1】
+      - TG:@hkaa0|中国 2
+      - 🇭🇰 [ 移动 ] 香港 · E1 · 04 · 线路2
+      - 🇭🇰 香港 流媒体解锁_2
+      - 🇰🇷 [ 联通 ] 韩国 · E1 · 01 · 线路1
+      - 🇰🇷 [ 联通 ] 韩国 · E1 · 02 · 线路2
+      - 🇺🇸 [ T1 ] 美国 · 01 · 线路1
+      - 🇰🇷 _KR_韩国
+      - 🇮🇹 H60 意大利
+      - 🇨🇳 vip1 台湾-01
+      - 🇭🇰 TG:@hkaa0|香港
+      - 🇺🇸 vip1 美国-05
+      - 🇯🇵 [ T1 ] 日本 · 01 · 线路1
+      - 🇨🇳 严禁回国
+      - 🇩🇰 github.com/freefq - 丹麦  11
+      - 🇯🇵 [ v1 ] 日本 · 05 · 线路2
+      - 🇭🇰 [ 移动 ] 香港 · E1 · 03 · 线路2
+      - 🇪🇸 H60 西班牙 [3]
+      - 🇸🇬 [ T1 ] 新加坡 · 01 · 线路1
+      - 🇯🇵 D24 日本*
+      - 🇭🇰 香港1|tg频道:@ripaojiedian
+      - 🇸🇬 D53 新加坡*
+      - 🇺🇸 [ T1 ] 美国 · 02 · 线路2
+      - 🇭🇰 香港小火箭-tg频道:@ripaojiedian
+      - 🇨🇳 [ v1 ] 台湾原生 · 01 · 线路1
+      - 🇰🇷 [ 联通 ] 韩国 · E1 · 01 · 线路1 2
+      - 🇯🇵 日本 01
+      - 🇺🇸 _US_美国
+      - 🇸🇬 Singapore 01 (GARENA)
+      - 🇩🇪 TG:@hkaa0|德国
+      - 🇬🇧 H60 英国2
+      - 🇯🇵 日本JP|@ripaojiedian
+      - 🇭🇰 香港 移动2
+      - 🇸🇬 新加坡｜中转｜NSG-B XS
+      - 🇭🇰 香港2|tg频道:@ripaojiedian
+      - 🇮🇳 Stand - 印度 IN 隧道备线
+      - 🇯🇵 [ 联通 ] 日本 · F1 · 01 · 线路1
+      - 🇳🇱 荷兰 01 | ws
+      - 🇩🇪 Pro - 德国 DE 隧道二线
+      - 🇭🇰 D05 香港*
+      - 🇺🇸 美国 03
+      - 🇯🇵 [ v1 ] 日本 · 06 · 线路2
+      - 太原电信 | ws | 非80
+      - 🇭🇰 _HK_香港
+      - 🇺🇸 美国 04
+      - 🇺🇸 github.com/freefq - 美国  17
+      - 🇵🇭 [ v1 ] 菲律宾 · 01 · 线路2
+      - TG:@hkaa0|中国 3
+      - 🇭🇰 JCBB_香港 06【vip1】
+      - 🇯🇵 vip1 日本-10
       - 🇭🇰 [ 移动 ] 香港 · E1 · 03 · 线路2 2
-      - 🇺🇸 美国 流媒体解锁_2
+      - 🇸🇬 vip1 新加坡-05
+      - 🇺🇸 (免费)美国 04 电报群t.me/piaoya
+      - 🇬🇧 英国 流媒体解锁_l
+      - _CN_中国
+      - 🇸🇬 [ v1 ] 新加坡 · 03 · 线路2
+      - 🇮🇳 Stand - 印度 IN 隧道二线
+      - 🇰🇷 Relay 🇰🇷 South Korea(ChatGPT) 02 TG:@nodpai
+      - 🇺🇸 [ v1 ] 美国 · 02 · 线路1
+      - 🇯🇵 日本-东京｜中转｜NJP-A XV
+      - VNPT CLOUD SERVER FREE(LQ)
+      - 🇬🇧 United Kingdom(ChatGPT) 02 TG:@nodpai
+      - 🇺🇸 _US_美国->🇫🇷_FR_法国_45
+      - 伊拉克 01  | ws
+      - 🇺🇸 _US_美国 2
+      - 🇷🇴 _RO_罗马尼亚_5
+      - 🇸🇬 Singapore 01 (TLS)🔐
+      - 🇰🇷 TG:@hkaa0|韩国
+      - 🇨🇳 台湾 01 | ws
+      - 🇸🇬 Pro - 新加坡 原生 Netflix 隧道备线
+      - 🇺🇸 United States(ChatGPT) 01 TG:@nodpai
+      - 🇬🇧 [ v1 ] 英国原生 · 01 · 线路1
+      - 🇭🇰 [ 联通 ] 香港 · F1 · 03 · 线路2 2
+      - 🇨🇳 vip1 台湾-03
+      - TG:@hkaa0|中国 4
+      - 🇭🇰 _HK_香港_6_27
+      - 🇯🇵 日本特殊|tg:@ripaojiedian
+      - 🇯🇵 JCBB_日本03【vip1】
+      - 🇮🇳 [ v1 ] 印度 · 01 · 线路1 2
+      - 🇯🇵 日本-东京｜中转｜NJP-B XT
+      - TG:@hkaa0|中国 5
+      - 🇯🇵 D23 日本*
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -818,100 +858,105 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 D02 香港*
-      - 🇭🇰 TG:@hkaa0|香港
-      - 🇨🇳 vip1 台湾-03
-      - 🇺🇸 Stand - 美国 GPT放行 低速 隧道备线
-      - 🇨🇳 [ v1 ] 台湾原生 · 02 · 线路2
-      - 🇵🇭 [ v1 ] 菲律宾 · 01 · 线路2
-      - 🇺🇸 [ v1 ] 美国 · 02 · 线路1
-      - 🇮🇳 [ v1 ] 印度 · 01 · 线路1
-      - 🇭🇰 [ v1 ] 香港原生 · 02 · 线路2
-      - -----以下为国内区-----
-      - 🇸🇬 TG:@hkaa0|新加坡
-      - github.com/freefq - 欧盟  7
-      - 🇭🇰 香港-中国｜中转｜NHK-F XV
-      - 🇸🇬 狮城01|tg频道:@ripaojiedian
-      - 🇺🇸 美国2|tg频道:@ripaojiedian
-      - 🇯🇵 [ T1 ] 日本 · 02 · 线路1
-      - 🇭🇰 香港 腾讯云
-      - 🇯🇵 日本-东京｜中转｜NJP-A XT
-      - 🇯🇵 日本-东京｜中转｜NJP-D XS
-      - 🇭🇰 Stand - 香港 HK 隧道备线
-      - 🇭🇰 TG:@hkaa0|香港 2
-      - 🇨🇳 台湾 流媒体解锁_2
-      - 🇭🇰 vip1 香港-01
-      - 🇸🇬 新加坡 01 | ws
       - 🇬🇧 [ v1 ] 英国原生 · 02 · 线路2
-      - 🇨🇳 [ v1 ] 台湾原生 · 01 · 线路1
-      - 🇨🇳 台湾-中国｜中转｜NTW-B XS
-      - 🇳🇴 H60 挪威
-      - 🇭🇰 JCBB_香港 05【vip1】
-      - 🇯🇵 JCBB_日本04【vip1】
-      - 🇯🇵 vip1 日本-01
-      - 🇮🇸 H60 冰岛 [2]
-      - 🇳🇱 Stand - 荷兰 隧道二线
-      - 🇺🇸 _US_美国
-      - 🇹🇭 H60 泰国
-      - 🇺🇸 D42 美国*
-      - 🇳🇱 Stand - 荷兰 隧道主线
-      - 🇨🇳 [ v1 ] 台湾原生 · 02 · 线路2 2
-      - 🇭🇰 香港 2
-      - 🇦🇷 阿根廷 01 | ws
-      - 36.138.140.208:11023
-      - 🇭🇰 香港火箭|tg频道:@ripaojiedian
-      - 🇯🇵 [ 直连不保证国内 ] 日本 · U1 | 01
-      - 🇯🇵 [ v1 ] 日本 · 05 · 线路2
-      - 🇭🇰 香港-中国｜中转｜NHK-G XV
-      - 🇭🇰 [ 移动 ] 香港 · E1 · 03 · 线路2
-      - 🇯🇵 [ 联通 ] 日本 · F1 · 03 · 线路2
-      - 🇰🇷 [ 联通 ] 韩国 · E1 · 01 · 线路1
-      - 🇸🇬 [ v1 ] 新加坡 · 03 · 线路2
-      - "🇸🇬 _SG_新加坡\r_3_44\r"
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 22
-      - 🇰🇷 TG:@hkaa0|韩国
-      - 🇺🇸 [ 直连不保证国内 ] 美国 · U1 | 01
       - "🇯🇵 _JP_日本\r_2_37\r"
-      - 🇨🇦 _CA_加拿大
-      - ChatGPT解锁 · 01 · 线路1
-      - 🇮🇳 [ v1 ] 印度 · 01 · 线路1 2
-      - 🇭🇰 _HK_香港_2_来源：快嘴科技-kkzui.com3
-      - "🇺🇸 _US_美国\r_3_25\r"
-      - 🇺🇸 [ T1 ] 美国 · 01 · 线路1
-      - 🇯🇵 日本-东京｜中转｜NJP-C XV
-      - github.com/freefq - 欧盟  14
-      - 武汉电信 | ws | 非80
-      - 🇭🇰 vip1 香港-09
-      - 🇭🇰 海港隧道 | ws | 1.5x
-      - 🇸🇬 [ v1 ] 新加坡 · 01 · 线路1
-      - 🇯🇵 vip2 日本-02
-      - 🇺🇸 [ T1 ] 美国 · 01 · 线路1 2
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点(shopify) 26
-      - 🇭🇰 [ v1 ] 香港原生 · 01 · 线路2
-      - 🇮🇹 H60 意大利
-      - 更多节点关注@ShareCentrePro
-      - 🇩🇪 JCBB_德国02【vip1】
-      - 🇮🇱 H60 以色列
-      - 🇯🇵 日本 流媒体解锁_2
-      - 🇨🇳 JCBB_ 台湾 02【vip1】
-      - 🇯🇵 [ 联通 ] 日本 · F1 · 02 · 线路1
-      - 🇮🇳 [ v1 ] 印度 · 02 · 线路2
-      - 🇯🇵 Stand - 日本 JP 隧道备线
+      - TG:@hkaa0|中国
       - ""
-      - 🇺🇸 (免费)美国 02 电报群t.me/piaoya
-      - 🇨🇳 台湾 02 | tcp
-      - 🇨🇳 D11 台湾*
-      - 🇹🇷 H60 土耳其 [3]
-      - 🇸🇬 vip1 新加坡-05
-      - 🇭🇰 香港 01 | ws
-      - 🇯🇵 Lite3 - 中日隧道 3 普速 稳定
-      - 🇷🇺 github.com/freefq - 俄罗斯  21
-      - 🇯🇵 日本 02 | tcp
-      - 🇮🇳 JCBB_印度01【vip1】
-      - 🇯🇵 Lite12 - 中日隧道 高速 不稳定
+      - 🇭🇰 [ 联通 ] 香港 · F1 · 03 · 线路2
+      - 🇮🇳 [ v1 ] 印度 · 01 · 线路1
+      - 🇭🇰 [ v1 ] 香港原生 · 01 · 线路2
+      - 🇷🇺 H60 俄罗斯 [0.8]
+      - 🇭🇰 vip1 香港-05
+      - 🇲🇾 D50 马来西亚
       - 🇦🇪 阿联酋 流媒体解锁_l
+      - 🇲🇩 H60 摩尔多瓦
+      - 🇬🇧 [ v1 ] 英国原生 · 02 · 线路2 2
+      - 🇨🇳 台湾|tg频道:@ripaojiedian
+      - 🇨🇦 _CA_加拿大->🇫🇷_FR_法国_4来源：快嘴科技-kkzui.com
+      - 🇨🇳 台湾-中国｜中转｜NTW-B XV
+      - 🇯🇵 JP|tg频道:@ripaojiedian
+      - 🇬🇧 JCBB_ 英国01【vip1】
+      - TG:@hkaa0|中国 2
+      - 🇭🇰 [ 移动 ] 香港 · E1 · 04 · 线路2
+      - 🇭🇰 香港 流媒体解锁_2
+      - 🇰🇷 [ 联通 ] 韩国 · E1 · 01 · 线路1
+      - 🇰🇷 [ 联通 ] 韩国 · E1 · 02 · 线路2
+      - 🇺🇸 [ T1 ] 美国 · 01 · 线路1
+      - 🇰🇷 _KR_韩国
+      - 🇮🇹 H60 意大利
+      - 🇨🇳 vip1 台湾-01
+      - 🇭🇰 TG:@hkaa0|香港
+      - 🇺🇸 vip1 美国-05
+      - 🇯🇵 [ T1 ] 日本 · 01 · 线路1
+      - 🇨🇳 严禁回国
+      - 🇩🇰 github.com/freefq - 丹麦  11
+      - 🇯🇵 [ v1 ] 日本 · 05 · 线路2
+      - 🇭🇰 [ 移动 ] 香港 · E1 · 03 · 线路2
+      - 🇪🇸 H60 西班牙 [3]
+      - 🇸🇬 [ T1 ] 新加坡 · 01 · 线路1
+      - 🇯🇵 D24 日本*
+      - 🇭🇰 香港1|tg频道:@ripaojiedian
+      - 🇸🇬 D53 新加坡*
+      - 🇺🇸 [ T1 ] 美国 · 02 · 线路2
+      - 🇭🇰 香港小火箭-tg频道:@ripaojiedian
+      - 🇨🇳 [ v1 ] 台湾原生 · 01 · 线路1
+      - 🇰🇷 [ 联通 ] 韩国 · E1 · 01 · 线路1 2
+      - 🇯🇵 日本 01
+      - 🇺🇸 _US_美国
+      - 🇸🇬 Singapore 01 (GARENA)
+      - 🇩🇪 TG:@hkaa0|德国
+      - 🇬🇧 H60 英国2
+      - 🇯🇵 日本JP|@ripaojiedian
+      - 🇭🇰 香港 移动2
+      - 🇸🇬 新加坡｜中转｜NSG-B XS
+      - 🇭🇰 香港2|tg频道:@ripaojiedian
+      - 🇮🇳 Stand - 印度 IN 隧道备线
+      - 🇯🇵 [ 联通 ] 日本 · F1 · 01 · 线路1
+      - 🇳🇱 荷兰 01 | ws
+      - 🇩🇪 Pro - 德国 DE 隧道二线
+      - 🇭🇰 D05 香港*
+      - 🇺🇸 美国 03
+      - 🇯🇵 [ v1 ] 日本 · 06 · 线路2
+      - 太原电信 | ws | 非80
+      - 🇭🇰 _HK_香港
+      - 🇺🇸 美国 04
+      - 🇺🇸 github.com/freefq - 美国  17
+      - 🇵🇭 [ v1 ] 菲律宾 · 01 · 线路2
+      - TG:@hkaa0|中国 3
+      - 🇭🇰 JCBB_香港 06【vip1】
+      - 🇯🇵 vip1 日本-10
       - 🇭🇰 [ 移动 ] 香港 · E1 · 03 · 线路2 2
-      - 🇺🇸 美国 流媒体解锁_2
+      - 🇸🇬 vip1 新加坡-05
+      - 🇺🇸 (免费)美国 04 电报群t.me/piaoya
+      - 🇬🇧 英国 流媒体解锁_l
+      - _CN_中国
+      - 🇸🇬 [ v1 ] 新加坡 · 03 · 线路2
+      - 🇮🇳 Stand - 印度 IN 隧道二线
+      - 🇰🇷 Relay 🇰🇷 South Korea(ChatGPT) 02 TG:@nodpai
+      - 🇺🇸 [ v1 ] 美国 · 02 · 线路1
+      - 🇯🇵 日本-东京｜中转｜NJP-A XV
+      - VNPT CLOUD SERVER FREE(LQ)
+      - 🇬🇧 United Kingdom(ChatGPT) 02 TG:@nodpai
+      - 🇺🇸 _US_美国->🇫🇷_FR_法国_45
+      - 伊拉克 01  | ws
+      - 🇺🇸 _US_美国 2
+      - 🇷🇴 _RO_罗马尼亚_5
+      - 🇸🇬 Singapore 01 (TLS)🔐
+      - 🇰🇷 TG:@hkaa0|韩国
+      - 🇨🇳 台湾 01 | ws
+      - 🇸🇬 Pro - 新加坡 原生 Netflix 隧道备线
+      - 🇺🇸 United States(ChatGPT) 01 TG:@nodpai
+      - 🇬🇧 [ v1 ] 英国原生 · 01 · 线路1
+      - 🇭🇰 [ 联通 ] 香港 · F1 · 03 · 线路2 2
+      - 🇨🇳 vip1 台湾-03
+      - TG:@hkaa0|中国 4
+      - 🇭🇰 _HK_香港_6_27
+      - 🇯🇵 日本特殊|tg:@ripaojiedian
+      - 🇯🇵 JCBB_日本03【vip1】
+      - 🇮🇳 [ v1 ] 印度 · 01 · 线路1 2
+      - 🇯🇵 日本-东京｜中转｜NJP-B XT
+      - TG:@hkaa0|中国 5
+      - 🇯🇵 D23 日本*
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
