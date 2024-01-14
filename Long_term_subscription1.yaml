@@ -19,576 +19,432 @@ dns:
   fallback: [https://101.101.101.101/dns-query, https://public.dns.iij.jp/dns-query, https://208.67.220.220/dns-query]
   fallback-filter: {geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32, 223.75.236.241/32, 182.43.124.6/32, 106.74.25.198/32], domain: [+.bianyuan.xyz, +.happynothings031.xyz, +.jsdelivr.net, +.proton.me]}
 proxies:
-  - {name: 🇺🇸 美国|@ripaojiedian, server: cfcdn1.sanfencdn9.com, port: 8880, type: vmess, uuid: a7d5e71f-3905-42be-8115-bbc1844eb833, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /video/bYdJ7Vc2We, headers: {Host: us6gzxQRrE4.fzbqfrse.xyz}}, udp: true}
-  - {name: "", server: xt.ylks01.eu.org, port: 2095, type: vmess, uuid: b710770a-fdaf-41fb-bbe4-68a6c41e2605, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /blue, headers: {Host: xt.ylks01.eu.org}}, udp: true}
-  - {name: 🇨🇭 _CH_瑞士, server: 94.131.99.8, port: 47182, type: vmess, uuid: 81b2b630-8b6a-404f-b996-b12f13db5786, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 US-154.3.8.151-0755, server: 154.3.8.151, port: 30067, type: ss, cipher: aes-256-gcm, password: iUB0923RBA, udp: true}
-  - {name: 🇰🇷 韩国特殊|@ripaojiedian, server: 18.179.12.155, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇰🇷 KR-43.201.253.222-1555, server: 43.201.253.222, port: 26540, type: vmess, uuid: c841c903-7657-41f7-bf55-b41dd9456179, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 43.201.253.222}}, udp: true}
-  - {name: "%�\x11�<'��\x14��LL\fˌM̋�LM���KN\x0e\f�", server: 103.172.116.79, port: 9056, type: ss, cipher: aes-256-cfb, password: rNBfNuuANFCAk7KB, udp: true}
-  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国, server: tgju.org, port: 443, type: vmess, uuid: 562ae412-d7b5-4f1e-dd0d-82e073193b21, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /fa, headers: {Host: cdn.pokerad.fun}}, udp: true}
-  - {name: 🇺🇸 TG频道:@hkaa0|美国, server: 169.197.141.186, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: tvX1v#NSFP_LG_bJ, udp: true}
-  - {name: 🇫🇷 FR-103.252.90.93-0818, server: de2.test3.net, port: 443, type: trojan, password: d47423d0-b161-11ee-8640-1239d0255272, skip-cert-verify: false, udp: true}
-  - {name: 🇬🇧 GB-18.130.188.89-0805, server: series-a1.samanehha.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: W74XFALLLuw6m5IA, udp: true}
-  - {name: 🇺🇸 USA美国001, server: usa.liangyuandiancloud.com, port: 443, type: trojan, password: 272cd64a-9f71-4e08-8fbd-0988d7fa99c8, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 _US_美国, server: glaSco.fx-trAder.shop, port: 80, type: vmess, uuid: cdbb0899-7113-4d4e-f868-31339c75ad3c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: vvv2vayo2.everythingisreve.shop}}, udp: true}
-  - {name: 🇯🇵 日本01|高速EIP, server: sh.eip-cm.hongxing.pro, port: 44013, type: ss, cipher: chacha20-ietf-poly1305, password: 45ad5228-c94d-431b-9cc4-1e8251dd6250, udp: true}
-  - {name: 🇭🇰 HongKong S-02 NEO, server: gzydc.073505.cn, port: 46371, type: ss, cipher: aes-256-gcm, password: e4e60a0e-2d89-4f5d-80e7-b8f6a2d5b257, udp: true}
-  - {name: 🇬🇧 UK英国001, server: uk.liangyuandiancloud.com, port: 443, type: trojan, password: 272cd64a-9f71-4e08-8fbd-0988d7fa99c8, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇦 SA沙特阿拉伯流媒体节点003, server: sajs.liangyuandiancloud.com, port: 443, type: trojan, password: 272cd64a-9f71-4e08-8fbd-0988d7fa99c8, skip-cert-verify: false, udp: true}
-  - {name: 🇫🇷 FR-51.159.106.157-0811, server: 51.159.106.157, port: 6917, type: ss, cipher: chacha20-ietf-poly1305, password: VV5v4GjMdKsNt8j0bfTW6y, udp: true}
-  - {name: 🇯🇵 TG频道:@hkaa0|日本, server: tw01.trojanyyds.xyz, port: 443, type: trojan, password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, sni: tw01.trojanyyds.xyz, skip-cert-verify: false, udp: true}
-  - {name: 🇭🇰 香港03|高速EIP, server: js.eip-cm.hongxing.pro, port: 44002, type: ss, cipher: chacha20-ietf-poly1305, password: 571ecf4d-22a2-4fa6-83fc-5bc395f98e2c, udp: true}
-  - {name: 🇩🇪 德国04|高速EIP, server: sh.eip-cm.hongxing.pro, port: 44031, type: ss, cipher: chacha20-ietf-poly1305, password: 45ad5228-c94d-431b-9cc4-1e8251dd6250, udp: true}
-  - {name: 🇺🇸 US-68.183.159.199-0171, server: 68.183.159.199, port: 2092, type: vmess, uuid: 038e2714-5cbf-4812-fcfb-8726665c63b6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: Telegram-Channel.hkaa0_shop.66688888.xyz}}, udp: true}
-  - {name: 🇯🇵 日本KT|@ripaojiedian, server: 122.118.163.179, port: 10016, type: ss, cipher: aes-128-gcm, password: "g12sQi#ss#&1", plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: "", path: "", tls: false, mux: true, skip-cert-verify: false}, udp: true}
-  - {name: 🇬🇧 GB-212.102.53.79-0782, server: 212.102.53.79, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
-  - {name: 🇹🇭 Thailand V-01 Test, server: cdn.ahdark.gay, port: 80, type: vmess, uuid: e4e60a0e-2d89-4f5d-80e7-b8f6a2d5b257, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: th.陈非子.rip}}, udp: true}
-  - {name: 🇬🇧 GB-212.102.53.197-0781, server: 212.102.53.197, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
-  - {name: " 2", server: hkd1.quickerlink.xyz, port: 443, type: vmess, uuid: 3853a2ab-6bec-4503-89b9-d3cbcc6b69c9, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /h6jr23x9h3lqiitg, headers: {Host: hkd1.quickerlink.xyz}}, udp: true}
-  - {name: 🇳🇱 NL荷兰流媒体节点003, server: nljs.liangyuandiancloud.com, port: 443, type: trojan, password: 272cd64a-9f71-4e08-8fbd-0988d7fa99c8, skip-cert-verify: false, udp: true}
-  - {name: 🇦🇺 AU澳大利亚001, server: ap.liangyuandiancloud.com, port: 443, type: trojan, password: 272cd64a-9f71-4e08-8fbd-0988d7fa99c8, skip-cert-verify: false, udp: true}
-  - {name: 🇬🇧 英国02|高速EIP, server: sh.eip-cm.hongxing.pro, port: 44035, type: ss, cipher: chacha20-ietf-poly1305, password: 571ecf4d-22a2-4fa6-83fc-5bc395f98e2c, udp: true}
-  - {name: U.S.A A - Unlocked 🔓, server: usa.kalaa.online, port: 80, type: vmess, uuid: 83259a7a-6a3c-4b1c-9431-b13c8343a83f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: usa.kalaa.online}}, udp: true}
-  - {name: 🇸🇬 SG新加坡001 两元店yyds, server: sg.liangyuandiancloud.com, port: 443, type: trojan, password: 272cd64a-9f71-4e08-8fbd-0988d7fa99c8, skip-cert-verify: false, udp: true}
-  - {name: UA-5.188.6.8-0859, server: 5.188.6.8, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: CH-94.131.12.245-0825, server: 94.131.12.245, port: 37726, type: ss, cipher: chacha20-ietf-poly1305, password: AK4J1sRt2v3dLDUVC2P5lj, udp: true}
-  - {name: 🇮🇳 IN印度003, server: in.liangyuandiancloud.com, port: 443, type: trojan, password: 272cd64a-9f71-4e08-8fbd-0988d7fa99c8, skip-cert-verify: false, udp: true}
-  - {name: 🇱🇺 lu卢森堡001, server: lu.liangyuandiancloud.com, port: 443, type: trojan, password: 272cd64a-9f71-4e08-8fbd-0988d7fa99c8, skip-cert-verify: false, udp: true}
+  - {name: 🇬🇧 GB-212.102.53.80-0778, server: 212.102.53.80, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: github.com/freefq - 广东省移动 12, server: data-us-v1.shwjfkw.cn, port: 20401, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /debian, headers: {Host: data-us-v1.shwjfkw.cn}}, udp: true}
+  - {name: AZ-180.149.44.120-0872, server: 180.149.44.120, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 🇰🇷 KR-152.67.218.38-0866, server: 152.67.218.38, port: 443, type: vmess, uuid: b5e9480a-b7aa-40a4-f9a7-5299b5e363b4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 152.67.218.38}}, udp: true}
+  - {name: 🇺🇸 US-172.233.178.7-0752, server: passconf.xyz, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: qGjmI8WQlF0tfhDbkLqGdN, udp: true}
+  - {name: 🇸🇬 SG-103.172.116.90-0919, server: 103.172.116.90, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
   - {name: 🇫🇷 FR-172.232.56.121-8797, server: 172.232.56.121, port: 443, type: trojan, password: 4bbbb975-f2ff-4c1f-b69e-e3831504f7d3, sni: fr-full.privateip.net, skip-cert-verify: false, udp: true}
-  - {name: 🇺🇸 美国05|高速EIP, server: sh.eip-cm.hongxing.pro, port: 44025, type: ss, cipher: chacha20-ietf-poly1305, password: 45ad5228-c94d-431b-9cc4-1e8251dd6250, udp: true}
-  - {name: 🇫🇷 法国01|高速EIP, server: sh.eip-cm.hongxing.pro, port: 44039, type: ss, cipher: chacha20-ietf-poly1305, password: 571ecf4d-22a2-4fa6-83fc-5bc395f98e2c, udp: true}
-  - {name: 🇺🇸 US-68.183.159.199-8787, server: 68.183.159.199, port: 2092, type: vmess, uuid: 038e2714-5cbf-4812-fcfb-8726665c63b6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: 68.183.159.199, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇪🇸 ES-5.188.181.201-0878, server: 5.188.181.201, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
-  - {name: 🇩🇪 TG频道:@hkaa0|德国, server: 217.160.45.31, port: 8880, type: vmess, uuid: 4e186678-fcca-4325-e4bc-b2916bdf6708, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇸🇬 TG频道:@hkaa0|新西兰, server: 141.11.123.205, port: 30870, type: vmess, uuid: f8e7c07a-4c32-4fc7-9169-073669416331, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇩🇪 DE-217.160.45.31-0376, server: 217.160.45.31, port: 8880, type: vmess, uuid: 4e186678-fcca-4325-e4bc-b2916bdf6708, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇨🇭 TG频道:@hkaa0|瑞士, server: unlk3.lvwf8n-hh8e-2300-nmoo-d2e9naobeacn.9d8f269f96b25232-759cbb36d6548597.kaufen, port: 21852, type: trojan, password: 7ea8830e-3120-4973-a0b6-4c25219eadfc, sni: ip3691376078.mobgslb.tbcache.com, skip-cert-verify: false, udp: true}
-  - {name: "官方tg频道: @qcjs_channel", server: gzydc.073505.cn, port: 46371, type: ss, cipher: aes-256-gcm, password: e4e60a0e-2d89-4f5d-80e7-b8f6a2d5b257, udp: true}
-  - {name: 🇳🇱 NL-185.246.153.12-0843, server: 185.246.153.12, port: 51348, type: ss, cipher: chacha20-ietf-poly1305, password: verRi65HGFTh76sGesh, udp: true}
-  - {name: 🇲🇾 马来西亚04|高速EIP, server: js.eip-cm.hongxing.pro, port: 44047, type: ss, cipher: chacha20-ietf-poly1305, password: 571ecf4d-22a2-4fa6-83fc-5bc395f98e2c, udp: true}
-  - {name: 🇺🇸 US-205.134.180.137-0745, server: 205.134.180.137, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: g13S7doXar0A, udp: true}
-  - {name: 🇩🇪 DE德国流媒体节点001, server: dejs.liangyuandiancloud.com, port: 443, type: trojan, password: 272cd64a-9f71-4e08-8fbd-0988d7fa99c8, skip-cert-verify: false, udp: true}
-  - {name: 🇩🇪 DE德国001, server: de.liangyuandiancloud.com, port: 443, type: trojan, password: 272cd64a-9f71-4e08-8fbd-0988d7fa99c8, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 新加坡2|@ripaojiedian, server: 146.190.100.185, port: 51727, type: vmess, uuid: 7cfe06b4-8130-4b30-9338-9de63be9a04f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇨🇳 Taiwan S-02 NEO, server: line1.doves.top, port: 36420, type: ss, cipher: aes-256-gcm, password: e4e60a0e-2d89-4f5d-80e7-b8f6a2d5b257, udp: true}
+  - {name: 🇺🇸 US-23.142.200.175-0153, server: 23.142.200.175, port: 443, type: trojan, password: 27876_t7d7f4e3f, sni: los16.ttddd.xyz, skip-cert-verify: false, udp: true}
   - {name: "%�\x11�<'��\x14��LL\fˌM̋�LM���KN\x0e\f�", server: 103.172.116.79, port: 9094, type: ss, cipher: aes-256-cfb, password: rpgbNnU9rDDU4aWZ, udp: true}
-  - {name: 🇪🇸 ES-5.188.181.201-0849, server: 5.188.181.201, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
-  - {name: 🇨🇳 广东省广州市 移动, server: xijinping.19890604.day, port: 10818, type: trojan, password: 12873c24-c18b-4cbc-a2d8-fd94611fecd7, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: false, udp: true}
-  - {name: 🇧🇷 BR巴西流媒体节点001, server: brjs.liangyuandiancloud.com, port: 443, type: trojan, password: 272cd64a-9f71-4e08-8fbd-0988d7fa99c8, skip-cert-verify: false, udp: true}
-  - {name: 🇸🇬 SG-103.172.116.103-1079, server: 103.172.116.103, port: 9032, type: ss, cipher: aes-256-cfb, password: UWZQeLRWnkqgkseq, udp: true}
-  - {name: "%�\x11�<'��\x14��LL\fˌM̋�LM���KN\x0e\f�", server: 103.172.116.79, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
-  - {name: 🇭🇰 HongKong B - Unlocked 🔓, server: hkb.kalaa.online, port: 80, type: vmess, uuid: 83259a7a-6a3c-4b1c-9431-b13c8343a83f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hkb.kalaa.online}}, udp: true}
-  - {name: 🇺🇸 United States 01 @nodpai, server: hytron.io, port: 8080, type: vmess, uuid: 9c4a3ad3-4f1d-4138-e7ee-8bb5325b411d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hytron.io}}, udp: true}
-  - {name: 🇸🇬 SG-194.233.81.125-7193, server: sg-v.sshmax.xyz, port: 80, type: vmess, uuid: 0baaf014-af04-4028-be53-f5c75bb276ae, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sg-v.sshmax.xyz}}, udp: true}
-  - {name: NO-185.90.61.153-0858, server: 185.90.61.153, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: 🇩🇰 DK-89.23.86.189-8695, server: 89.23.86.189, port: 59492, type: vmess, uuid: 3cd1a2f0-499f-4eb0-862a-cdd0ecd821c7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: dm.imzcc.com, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇸🇬 新加坡03|高速EIP, server: js.eip-cm.hongxing.pro, port: 44007, type: ss, cipher: chacha20-ietf-poly1305, password: 45ad5228-c94d-431b-9cc4-1e8251dd6250, udp: true}
-  - {name: 🇺🇸 America S-02 NEO, server: shdx.073505.cn, port: 19193, type: ss, cipher: aes-128-gcm, password: e4e60a0e-2d89-4f5d-80e7-b8f6a2d5b257, udp: true}
-  - {name: 🇨🇳 广东省广州市 移动 2, server: service.ouluyun9803.com, port: 26666, type: ss, cipher: chacha20-ietf-poly1305, password: 7f821ff8-2ef2-4433-b810-f0ce77fd5491, udp: true}
-  - {name: 🇨🇦 CA加拿大003, server: ca.liangyuandiancloud.com, port: 443, type: trojan, password: 272cd64a-9f71-4e08-8fbd-0988d7fa99c8, skip-cert-verify: false, udp: true}
-  - {name: 🇯🇵 Japan S-01 NEO, server: biedaxxmmt.073505.cn, port: 47834, type: ss, cipher: aes-128-gcm, password: e4e60a0e-2d89-4f5d-80e7-b8f6a2d5b257, udp: true}
-  - {name: 🇲🇾 马来西亚02|高速EIP, server: js.eip-cm.hongxing.pro, port: 44047, type: ss, cipher: chacha20-ietf-poly1305, password: 45ad5228-c94d-431b-9cc4-1e8251dd6250, udp: true}
-  - {name: 🇰🇷 KR-222.112.15.135-8683, server: p235.panda004.net, port: 2212, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
+  - {name: 🇸🇬 狮城特殊2|@ripaojiedian, server: 13.125.218.115, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: RELAY-104.21.91.73-1469, server: 104.21.91.73, port: 443, type: vmess, uuid: 45f63e92-f782-4cac-84b8-e61cb5a5bfd0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: adenc35.fixedlfoat.top}}, udp: true}
+  - {name: github.com/freefq - 乌克兰  9, server: 94.131.10.135, port: 80, type: vmess, uuid: 099b5b7a-9d71-43cd-80e3-b8fbe1cc2695, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /vmess}, udp: true}
+  - {name: 🇬🇧 GB-18.135.215.31-0804, server: series-a2-mec.samanehha.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: u17T3BvpYaaiuW2c, udp: true}
+  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国, server: tgju.org, port: 443, type: vmess, uuid: 562ae412-d7b5-4f1e-dd0d-82e073193b21, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /fa, headers: {Host: cdn.pokerad.fun}}, udp: true}
+  - {name: 🇭🇰 香港2|@ripaojiedian, server: 38.147.191.185, port: 10241, type: vmess, uuid: e820d6f7-57ef-4575-99da-bcd7d318c742, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: 🇺🇸 US-129.146.113.254-0762, server: 129.146.113.254, port: 44107, type: vmess, uuid: fd84746b-24ed-449f-c53e-def4b90e122e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇩🇪 DE-168.119.124.17-3027, server: masting.xyz, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: XlUFgoOqDlVqlZFD3Js0YA, udp: true}
+  - {name: 🇭🇰 _SC_塞舌尔->🇭🇰_HK_香港, server: 156.251.226.142, port: 56120, type: vmess, uuid: a3dfbdd6-7e01-4735-9973-e3dd056c129e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: "/changding-tls1?ed=2048", headers: {Host: hk-300.changding.tech}}, udp: true}
+  - {name: "%�\x11�<'��\x14��LL\fˌM̋�LM���KN\x0e\f\r", server: 103.172.116.79, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
+  - {name: 🇯🇵 TG频道:@hkaa0|日本, server: tw01.trojanyyds.xyz, port: 443, type: trojan, password: 93ec7261-1c92-4149-848a-26b6fb9fc4ce, sni: tw01.trojanyyds.xyz, skip-cert-verify: false, udp: true}
+  - {name: "", server: hkd1.quickerlink.xyz, port: 443, type: vmess, uuid: 3853a2ab-6bec-4503-89b9-d3cbcc6b69c9, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /h6jr23x9h3lqiitg, headers: {Host: hkd1.quickerlink.xyz}}, udp: true}
+  - {name: 🇮🇷 伊朗 V2CROSS.COM, server: 81.12.27.7, port: 21975, type: vmess, uuid: b3c49b53-2d5d-4d13-d195-76d48aeccd11, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: "@kalaamegp 加入TG群组", server: x, port: 80, type: vmess, uuid: 00000000-0000-0000-0000-000000000000, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: x}}, udp: true}
+  - {name: 🇯🇵 日本01|高速EIP, server: sh.eip-cm.hongxing.pro, port: 44013, type: ss, cipher: chacha20-ietf-poly1305, password: 45ad5228-c94d-431b-9cc4-1e8251dd6250, udp: true}
+  - {name: 🇨🇳 github.com/freefq - 广东省广州市移动 21, server: service.ouluyun9803.com, port: 20007, type: ss, cipher: chacha20-ietf-poly1305, password: 7f821ff8-2ef2-4433-b810-f0ce77fd5491, udp: true}
+  - {name: 🇯🇵 JP-13.230.96.57-0844, server: 13.230.96.57, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇺🇸 US-156.146.38.163-0218, server: 156.146.38.163, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks, udp: true}
+  - {name: 🇰🇷 KR-43.201.103.12-7358, server: 43.201.103.12, port: 29930, type: vmess, uuid: f46b2e2a-e02c-437a-833c-023410840a80, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: 43.201.103.12, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 TG频道:@hkaa0|美国, server: 45.58.153.24, port: 30000, type: vmess, uuid: 4242f9e0-6b7e-4257-9e93-7ad38015c46a, alterId: 64, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /path/1702392255355, headers: {Host: www.77935707.xyz}}, udp: true}
+  - {name: 13.213.46.196:443, server: 13.213.46.196, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇹🇭 Thailand V-01 Test, server: cdn.ahdark.gay, port: 80, type: vmess, uuid: e4e60a0e-2d89-4f5d-80e7-b8f6a2d5b257, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: th.陈非子.rip}}, udp: true}
+  - {name: 🇪🇸 _ES_西班牙, server: 92.38.171.89, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: "%�\x11�<'��\x14��LL\fˌM̋�LM���KN\x0e\f�", server: 103.172.116.79, port: 9041, type: ss, cipher: aes-256-cfb, password: U6qnYRhfyDmn8sgn, udp: true}
+  - {name: 🇸🇪 瑞典 V2CROSS.COM, server: 185.146.173.27, port: 8880, type: vmess, uuid: 8ec29f7f-edee-4065-bec5-b31d10c2d7e4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /main, headers: {Host: telegram.shadowbrowse.online}}, udp: true}
+  - {name: 🇲🇾 马来西亚04|高速EIP, server: js.eip-cm.hongxing.pro, port: 44047, type: ss, cipher: chacha20-ietf-poly1305, password: 45ad5228-c94d-431b-9cc4-1e8251dd6250, udp: true}
+  - {name: 🇺🇸 US-23.142.200.175-0175, server: los16.ttddd.xyz, port: 443, type: trojan, password: 27876_t7d7f4e3f, sni: los16.ttddd.xyz, skip-cert-verify: false, udp: true}
+  - {name: 距离下次重置剩余：20 天, server: js.eip-cm.hongxing.pro, port: 44002, type: ss, cipher: chacha20-ietf-poly1305, password: 45ad5228-c94d-431b-9cc4-1e8251dd6250, udp: true}
+  - {name: 🇸🇬 Singapore Tj, server: agroup.node3.t.nodelist-gfwairport2.top, port: 50001, type: trojan, password: aed77924-0942-4568-9485-a53829b314d9, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇦 CA-134.195.196.178-0879, server: 134.195.196.178, port: 804, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
+  - {name: California Tj, server: agroup.node5.t.nodelist-gfwairport2.top, port: 50001, type: trojan, password: aed77924-0942-4568-9485-a53829b314d9, skip-cert-verify: false, udp: true}
+  - {name: 🇲🇾 马来西亚03|高速EIP, server: js.eip-cm.hongxing.pro, port: 44047, type: ss, cipher: chacha20-ietf-poly1305, password: 45ad5228-c94d-431b-9cc4-1e8251dd6250, udp: true}
+  - {name: 🇺🇸 美国4|@ripaojiedian, server: los16.ttddd.xyz, port: 443, type: trojan, password: 27876_t7d7f4e3f, sni: los16.ttddd.xyz, skip-cert-verify: false, udp: true}
+  - {name: 🇸🇬 新加坡|@ripaojiedian, server: service.ouluyun9803.com, port: 20109, type: ss, cipher: chacha20-ietf-poly1305, password: 70f97d7a-7eef-4637-b2fc-c9cb9f79869b, udp: true}
+  - {name: CH-94.131.12.245-0825, server: 94.131.12.245, port: 37726, type: ss, cipher: chacha20-ietf-poly1305, password: AK4J1sRt2v3dLDUVC2P5lj, udp: true}
+  - {name: 🇲🇾 马来西亚01|高速EIP, server: js.eip-cm.hongxing.pro, port: 44047, type: ss, cipher: chacha20-ietf-poly1305, password: 45ad5228-c94d-431b-9cc4-1e8251dd6250, udp: true}
+  - {name: 🇬🇧 United Kingdom 01 @nodpai, server: 172.99.190.109, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: linkvws}, udp: true}
+  - {name: 🇬🇧 GB-212.102.53.78-0809, server: 212.102.53.78, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: 🇺🇸 US-45.55.2.232-0765, server: 45.55.2.232, port: 14293, type: ss, cipher: aes-256-cfb, password: 2170f8, udp: true}
+  - {name: 🇯🇵 日本03|高速EIP, server: sh.eip-cm.hongxing.pro, port: 44013, type: ss, cipher: chacha20-ietf-poly1305, password: 45ad5228-c94d-431b-9cc4-1e8251dd6250, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇺🇸 美国|@ripaojiedian
-      - ""
-      - 🇨🇭 _CH_瑞士
-      - 🇺🇸 US-154.3.8.151-0755
-      - 🇰🇷 韩国特殊|@ripaojiedian
-      - 🇰🇷 KR-43.201.253.222-1555
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国
-      - 🇺🇸 TG频道:@hkaa0|美国
-      - 🇫🇷 FR-103.252.90.93-0818
-      - 🇬🇧 GB-18.130.188.89-0805
-      - 🇺🇸 USA美国001
-      - 🇺🇸 _US_美国
-      - 🇯🇵 日本01|高速EIP
-      - 🇭🇰 HongKong S-02 NEO
-      - 🇬🇧 UK英国001
-      - 🇸🇦 SA沙特阿拉伯流媒体节点003
-      - 🇫🇷 FR-51.159.106.157-0811
-      - 🇯🇵 TG频道:@hkaa0|日本
-      - 🇭🇰 香港03|高速EIP
-      - 🇩🇪 德国04|高速EIP
-      - 🇺🇸 US-68.183.159.199-0171
-      - 🇯🇵 日本KT|@ripaojiedian
-      - 🇬🇧 GB-212.102.53.79-0782
-      - 🇹🇭 Thailand V-01 Test
-      - 🇬🇧 GB-212.102.53.197-0781
-      - " 2"
-      - 🇳🇱 NL荷兰流媒体节点003
-      - 🇦🇺 AU澳大利亚001
-      - 🇬🇧 英国02|高速EIP
-      - U.S.A A - Unlocked 🔓
-      - 🇸🇬 SG新加坡001 两元店yyds
-      - UA-5.188.6.8-0859
-      - CH-94.131.12.245-0825
-      - 🇮🇳 IN印度003
-      - 🇱🇺 lu卢森堡001
+      - 🇬🇧 GB-212.102.53.80-0778
+      - github.com/freefq - 广东省移动 12
+      - AZ-180.149.44.120-0872
+      - 🇰🇷 KR-152.67.218.38-0866
+      - 🇺🇸 US-172.233.178.7-0752
+      - 🇸🇬 SG-103.172.116.90-0919
       - 🇫🇷 FR-172.232.56.121-8797
-      - 🇺🇸 美国05|高速EIP
-      - 🇫🇷 法国01|高速EIP
-      - 🇺🇸 US-68.183.159.199-8787
-      - 🇪🇸 ES-5.188.181.201-0878
-      - 🇩🇪 TG频道:@hkaa0|德国
-      - 🇸🇬 TG频道:@hkaa0|新西兰
-      - 🇩🇪 DE-217.160.45.31-0376
-      - 🇨🇭 TG频道:@hkaa0|瑞士
-      - "官方tg频道: @qcjs_channel"
-      - 🇳🇱 NL-185.246.153.12-0843
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇨🇳 Taiwan S-02 NEO
+      - 🇺🇸 US-23.142.200.175-0153
+      - 🇸🇬 狮城特殊2|@ripaojiedian
+      - RELAY-104.21.91.73-1469
+      - github.com/freefq - 乌克兰  9
+      - 🇬🇧 GB-18.135.215.31-0804
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇺🇸 US-129.146.113.254-0762
+      - 🇩🇪 DE-168.119.124.17-3027
+      - 🇭🇰 _SC_塞舌尔->🇭🇰_HK_香港
+      - 🇯🇵 TG频道:@hkaa0|日本
+      - ""
+      - 🇮🇷 伊朗 V2CROSS.COM
+      - "@kalaamegp 加入TG群组"
+      - 🇯🇵 日本01|高速EIP
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 21
+      - 🇯🇵 JP-13.230.96.57-0844
+      - 🇺🇸 US-156.146.38.163-0218
+      - 🇰🇷 KR-43.201.103.12-7358
+      - 🇺🇸 TG频道:@hkaa0|美国
+      - 13.213.46.196:443
+      - 🇹🇭 Thailand V-01 Test
+      - 🇪🇸 _ES_西班牙
+      - 🇸🇪 瑞典 V2CROSS.COM
       - 🇲🇾 马来西亚04|高速EIP
-      - 🇺🇸 US-205.134.180.137-0745
-      - 🇩🇪 DE德国流媒体节点001
-      - 🇩🇪 DE德国001
-      - 🇪🇸 ES-5.188.181.201-0849
-      - 🇨🇳 广东省广州市 移动
-      - 🇧🇷 BR巴西流媒体节点001
-      - 🇸🇬 SG-103.172.116.103-1079
-      - 🇭🇰 HongKong B - Unlocked 🔓
-      - 🇺🇸 United States 01 @nodpai
-      - 🇸🇬 SG-194.233.81.125-7193
-      - NO-185.90.61.153-0858
-      - 🇩🇰 DK-89.23.86.189-8695
-      - 🇸🇬 新加坡03|高速EIP
-      - 🇺🇸 America S-02 NEO
-      - 🇨🇳 广东省广州市 移动 2
-      - 🇨🇦 CA加拿大003
-      - 🇯🇵 Japan S-01 NEO
-      - 🇲🇾 马来西亚02|高速EIP
-      - 🇰🇷 KR-222.112.15.135-8683
+      - 🇺🇸 US-23.142.200.175-0175
+      - 距离下次重置剩余：20 天
+      - 🇸🇬 Singapore Tj
+      - 🇨🇦 CA-134.195.196.178-0879
+      - California Tj
+      - 🇲🇾 马来西亚03|高速EIP
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇸🇬 新加坡|@ripaojiedian
+      - CH-94.131.12.245-0825
+      - 🇲🇾 马来西亚01|高速EIP
+      - 🇬🇧 United Kingdom 01 @nodpai
+      - 🇬🇧 GB-212.102.53.78-0809
+      - 🇺🇸 US-45.55.2.232-0765
+      - 🇯🇵 日本03|高速EIP
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇸 美国|@ripaojiedian
-      - ""
-      - 🇨🇭 _CH_瑞士
-      - 🇺🇸 US-154.3.8.151-0755
-      - 🇰🇷 韩国特殊|@ripaojiedian
-      - 🇰🇷 KR-43.201.253.222-1555
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国
-      - 🇺🇸 TG频道:@hkaa0|美国
-      - 🇫🇷 FR-103.252.90.93-0818
-      - 🇬🇧 GB-18.130.188.89-0805
-      - 🇺🇸 USA美国001
-      - 🇺🇸 _US_美国
-      - 🇯🇵 日本01|高速EIP
-      - 🇭🇰 HongKong S-02 NEO
-      - 🇬🇧 UK英国001
-      - 🇸🇦 SA沙特阿拉伯流媒体节点003
-      - 🇫🇷 FR-51.159.106.157-0811
-      - 🇯🇵 TG频道:@hkaa0|日本
-      - 🇭🇰 香港03|高速EIP
-      - 🇩🇪 德国04|高速EIP
-      - 🇺🇸 US-68.183.159.199-0171
-      - 🇯🇵 日本KT|@ripaojiedian
-      - 🇬🇧 GB-212.102.53.79-0782
-      - 🇹🇭 Thailand V-01 Test
-      - 🇬🇧 GB-212.102.53.197-0781
-      - " 2"
-      - 🇳🇱 NL荷兰流媒体节点003
-      - 🇦🇺 AU澳大利亚001
-      - 🇬🇧 英国02|高速EIP
-      - U.S.A A - Unlocked 🔓
-      - 🇸🇬 SG新加坡001 两元店yyds
-      - UA-5.188.6.8-0859
-      - CH-94.131.12.245-0825
-      - 🇮🇳 IN印度003
-      - 🇱🇺 lu卢森堡001
+      - 🇬🇧 GB-212.102.53.80-0778
+      - github.com/freefq - 广东省移动 12
+      - AZ-180.149.44.120-0872
+      - 🇰🇷 KR-152.67.218.38-0866
+      - 🇺🇸 US-172.233.178.7-0752
+      - 🇸🇬 SG-103.172.116.90-0919
       - 🇫🇷 FR-172.232.56.121-8797
-      - 🇺🇸 美国05|高速EIP
-      - 🇫🇷 法国01|高速EIP
-      - 🇺🇸 US-68.183.159.199-8787
-      - 🇪🇸 ES-5.188.181.201-0878
-      - 🇩🇪 TG频道:@hkaa0|德国
-      - 🇸🇬 TG频道:@hkaa0|新西兰
-      - 🇩🇪 DE-217.160.45.31-0376
-      - 🇨🇭 TG频道:@hkaa0|瑞士
-      - "官方tg频道: @qcjs_channel"
-      - 🇳🇱 NL-185.246.153.12-0843
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇨🇳 Taiwan S-02 NEO
+      - 🇺🇸 US-23.142.200.175-0153
+      - 🇸🇬 狮城特殊2|@ripaojiedian
+      - RELAY-104.21.91.73-1469
+      - github.com/freefq - 乌克兰  9
+      - 🇬🇧 GB-18.135.215.31-0804
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇺🇸 US-129.146.113.254-0762
+      - 🇩🇪 DE-168.119.124.17-3027
+      - 🇭🇰 _SC_塞舌尔->🇭🇰_HK_香港
+      - 🇯🇵 TG频道:@hkaa0|日本
+      - ""
+      - 🇮🇷 伊朗 V2CROSS.COM
+      - "@kalaamegp 加入TG群组"
+      - 🇯🇵 日本01|高速EIP
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 21
+      - 🇯🇵 JP-13.230.96.57-0844
+      - 🇺🇸 US-156.146.38.163-0218
+      - 🇰🇷 KR-43.201.103.12-7358
+      - 🇺🇸 TG频道:@hkaa0|美国
+      - 13.213.46.196:443
+      - 🇹🇭 Thailand V-01 Test
+      - 🇪🇸 _ES_西班牙
+      - 🇸🇪 瑞典 V2CROSS.COM
       - 🇲🇾 马来西亚04|高速EIP
-      - 🇺🇸 US-205.134.180.137-0745
-      - 🇩🇪 DE德国流媒体节点001
-      - 🇩🇪 DE德国001
-      - 🇪🇸 ES-5.188.181.201-0849
-      - 🇨🇳 广东省广州市 移动
-      - 🇧🇷 BR巴西流媒体节点001
-      - 🇸🇬 SG-103.172.116.103-1079
-      - 🇭🇰 HongKong B - Unlocked 🔓
-      - 🇺🇸 United States 01 @nodpai
-      - 🇸🇬 SG-194.233.81.125-7193
-      - NO-185.90.61.153-0858
-      - 🇩🇰 DK-89.23.86.189-8695
-      - 🇸🇬 新加坡03|高速EIP
-      - 🇺🇸 America S-02 NEO
-      - 🇨🇳 广东省广州市 移动 2
-      - 🇨🇦 CA加拿大003
-      - 🇯🇵 Japan S-01 NEO
-      - 🇲🇾 马来西亚02|高速EIP
-      - 🇰🇷 KR-222.112.15.135-8683
+      - 🇺🇸 US-23.142.200.175-0175
+      - 距离下次重置剩余：20 天
+      - 🇸🇬 Singapore Tj
+      - 🇨🇦 CA-134.195.196.178-0879
+      - California Tj
+      - 🇲🇾 马来西亚03|高速EIP
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇸🇬 新加坡|@ripaojiedian
+      - CH-94.131.12.245-0825
+      - 🇲🇾 马来西亚01|高速EIP
+      - 🇬🇧 United Kingdom 01 @nodpai
+      - 🇬🇧 GB-212.102.53.78-0809
+      - 🇺🇸 US-45.55.2.232-0765
+      - 🇯🇵 日本03|高速EIP
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 美国|@ripaojiedian
-      - ""
-      - 🇨🇭 _CH_瑞士
-      - 🇺🇸 US-154.3.8.151-0755
-      - 🇰🇷 韩国特殊|@ripaojiedian
-      - 🇰🇷 KR-43.201.253.222-1555
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国
-      - 🇺🇸 TG频道:@hkaa0|美国
-      - 🇫🇷 FR-103.252.90.93-0818
-      - 🇬🇧 GB-18.130.188.89-0805
-      - 🇺🇸 USA美国001
-      - 🇺🇸 _US_美国
-      - 🇯🇵 日本01|高速EIP
-      - 🇭🇰 HongKong S-02 NEO
-      - 🇬🇧 UK英国001
-      - 🇸🇦 SA沙特阿拉伯流媒体节点003
-      - 🇫🇷 FR-51.159.106.157-0811
-      - 🇯🇵 TG频道:@hkaa0|日本
-      - 🇭🇰 香港03|高速EIP
-      - 🇩🇪 德国04|高速EIP
-      - 🇺🇸 US-68.183.159.199-0171
-      - 🇯🇵 日本KT|@ripaojiedian
-      - 🇬🇧 GB-212.102.53.79-0782
-      - 🇹🇭 Thailand V-01 Test
-      - 🇬🇧 GB-212.102.53.197-0781
-      - " 2"
-      - 🇳🇱 NL荷兰流媒体节点003
-      - 🇦🇺 AU澳大利亚001
-      - 🇬🇧 英国02|高速EIP
-      - U.S.A A - Unlocked 🔓
-      - 🇸🇬 SG新加坡001 两元店yyds
-      - UA-5.188.6.8-0859
-      - CH-94.131.12.245-0825
-      - 🇮🇳 IN印度003
-      - 🇱🇺 lu卢森堡001
+      - 🇬🇧 GB-212.102.53.80-0778
+      - github.com/freefq - 广东省移动 12
+      - AZ-180.149.44.120-0872
+      - 🇰🇷 KR-152.67.218.38-0866
+      - 🇺🇸 US-172.233.178.7-0752
+      - 🇸🇬 SG-103.172.116.90-0919
       - 🇫🇷 FR-172.232.56.121-8797
-      - 🇺🇸 美国05|高速EIP
-      - 🇫🇷 法国01|高速EIP
-      - 🇺🇸 US-68.183.159.199-8787
-      - 🇪🇸 ES-5.188.181.201-0878
-      - 🇩🇪 TG频道:@hkaa0|德国
-      - 🇸🇬 TG频道:@hkaa0|新西兰
-      - 🇩🇪 DE-217.160.45.31-0376
-      - 🇨🇭 TG频道:@hkaa0|瑞士
-      - "官方tg频道: @qcjs_channel"
-      - 🇳🇱 NL-185.246.153.12-0843
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇨🇳 Taiwan S-02 NEO
+      - 🇺🇸 US-23.142.200.175-0153
+      - 🇸🇬 狮城特殊2|@ripaojiedian
+      - RELAY-104.21.91.73-1469
+      - github.com/freefq - 乌克兰  9
+      - 🇬🇧 GB-18.135.215.31-0804
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇺🇸 US-129.146.113.254-0762
+      - 🇩🇪 DE-168.119.124.17-3027
+      - 🇭🇰 _SC_塞舌尔->🇭🇰_HK_香港
+      - 🇯🇵 TG频道:@hkaa0|日本
+      - ""
+      - 🇮🇷 伊朗 V2CROSS.COM
+      - "@kalaamegp 加入TG群组"
+      - 🇯🇵 日本01|高速EIP
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 21
+      - 🇯🇵 JP-13.230.96.57-0844
+      - 🇺🇸 US-156.146.38.163-0218
+      - 🇰🇷 KR-43.201.103.12-7358
+      - 🇺🇸 TG频道:@hkaa0|美国
+      - 13.213.46.196:443
+      - 🇹🇭 Thailand V-01 Test
+      - 🇪🇸 _ES_西班牙
+      - 🇸🇪 瑞典 V2CROSS.COM
       - 🇲🇾 马来西亚04|高速EIP
-      - 🇺🇸 US-205.134.180.137-0745
-      - 🇩🇪 DE德国流媒体节点001
-      - 🇩🇪 DE德国001
-      - 🇪🇸 ES-5.188.181.201-0849
-      - 🇨🇳 广东省广州市 移动
-      - 🇧🇷 BR巴西流媒体节点001
-      - 🇸🇬 SG-103.172.116.103-1079
-      - 🇭🇰 HongKong B - Unlocked 🔓
-      - 🇺🇸 United States 01 @nodpai
-      - 🇸🇬 SG-194.233.81.125-7193
-      - NO-185.90.61.153-0858
-      - 🇩🇰 DK-89.23.86.189-8695
-      - 🇸🇬 新加坡03|高速EIP
-      - 🇺🇸 America S-02 NEO
-      - 🇨🇳 广东省广州市 移动 2
-      - 🇨🇦 CA加拿大003
-      - 🇯🇵 Japan S-01 NEO
-      - 🇲🇾 马来西亚02|高速EIP
-      - 🇰🇷 KR-222.112.15.135-8683
+      - 🇺🇸 US-23.142.200.175-0175
+      - 距离下次重置剩余：20 天
+      - 🇸🇬 Singapore Tj
+      - 🇨🇦 CA-134.195.196.178-0879
+      - California Tj
+      - 🇲🇾 马来西亚03|高速EIP
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇸🇬 新加坡|@ripaojiedian
+      - CH-94.131.12.245-0825
+      - 🇲🇾 马来西亚01|高速EIP
+      - 🇬🇧 United Kingdom 01 @nodpai
+      - 🇬🇧 GB-212.102.53.78-0809
+      - 🇺🇸 US-45.55.2.232-0765
+      - 🇯🇵 日本03|高速EIP
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸 美国|@ripaojiedian
-      - ""
-      - 🇨🇭 _CH_瑞士
-      - 🇺🇸 US-154.3.8.151-0755
-      - 🇰🇷 韩国特殊|@ripaojiedian
-      - 🇰🇷 KR-43.201.253.222-1555
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国
-      - 🇺🇸 TG频道:@hkaa0|美国
-      - 🇫🇷 FR-103.252.90.93-0818
-      - 🇬🇧 GB-18.130.188.89-0805
-      - 🇺🇸 USA美国001
-      - 🇺🇸 _US_美国
-      - 🇯🇵 日本01|高速EIP
-      - 🇭🇰 HongKong S-02 NEO
-      - 🇬🇧 UK英国001
-      - 🇸🇦 SA沙特阿拉伯流媒体节点003
-      - 🇫🇷 FR-51.159.106.157-0811
-      - 🇯🇵 TG频道:@hkaa0|日本
-      - 🇭🇰 香港03|高速EIP
-      - 🇩🇪 德国04|高速EIP
-      - 🇺🇸 US-68.183.159.199-0171
-      - 🇯🇵 日本KT|@ripaojiedian
-      - 🇬🇧 GB-212.102.53.79-0782
-      - 🇹🇭 Thailand V-01 Test
-      - 🇬🇧 GB-212.102.53.197-0781
-      - " 2"
-      - 🇳🇱 NL荷兰流媒体节点003
-      - 🇦🇺 AU澳大利亚001
-      - 🇬🇧 英国02|高速EIP
-      - U.S.A A - Unlocked 🔓
-      - 🇸🇬 SG新加坡001 两元店yyds
-      - UA-5.188.6.8-0859
-      - CH-94.131.12.245-0825
-      - 🇮🇳 IN印度003
-      - 🇱🇺 lu卢森堡001
+      - 🇬🇧 GB-212.102.53.80-0778
+      - github.com/freefq - 广东省移动 12
+      - AZ-180.149.44.120-0872
+      - 🇰🇷 KR-152.67.218.38-0866
+      - 🇺🇸 US-172.233.178.7-0752
+      - 🇸🇬 SG-103.172.116.90-0919
       - 🇫🇷 FR-172.232.56.121-8797
-      - 🇺🇸 美国05|高速EIP
-      - 🇫🇷 法国01|高速EIP
-      - 🇺🇸 US-68.183.159.199-8787
-      - 🇪🇸 ES-5.188.181.201-0878
-      - 🇩🇪 TG频道:@hkaa0|德国
-      - 🇸🇬 TG频道:@hkaa0|新西兰
-      - 🇩🇪 DE-217.160.45.31-0376
-      - 🇨🇭 TG频道:@hkaa0|瑞士
-      - "官方tg频道: @qcjs_channel"
-      - 🇳🇱 NL-185.246.153.12-0843
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇨🇳 Taiwan S-02 NEO
+      - 🇺🇸 US-23.142.200.175-0153
+      - 🇸🇬 狮城特殊2|@ripaojiedian
+      - RELAY-104.21.91.73-1469
+      - github.com/freefq - 乌克兰  9
+      - 🇬🇧 GB-18.135.215.31-0804
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇺🇸 US-129.146.113.254-0762
+      - 🇩🇪 DE-168.119.124.17-3027
+      - 🇭🇰 _SC_塞舌尔->🇭🇰_HK_香港
+      - 🇯🇵 TG频道:@hkaa0|日本
+      - ""
+      - 🇮🇷 伊朗 V2CROSS.COM
+      - "@kalaamegp 加入TG群组"
+      - 🇯🇵 日本01|高速EIP
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 21
+      - 🇯🇵 JP-13.230.96.57-0844
+      - 🇺🇸 US-156.146.38.163-0218
+      - 🇰🇷 KR-43.201.103.12-7358
+      - 🇺🇸 TG频道:@hkaa0|美国
+      - 13.213.46.196:443
+      - 🇹🇭 Thailand V-01 Test
+      - 🇪🇸 _ES_西班牙
+      - 🇸🇪 瑞典 V2CROSS.COM
       - 🇲🇾 马来西亚04|高速EIP
-      - 🇺🇸 US-205.134.180.137-0745
-      - 🇩🇪 DE德国流媒体节点001
-      - 🇩🇪 DE德国001
-      - 🇪🇸 ES-5.188.181.201-0849
-      - 🇨🇳 广东省广州市 移动
-      - 🇧🇷 BR巴西流媒体节点001
-      - 🇸🇬 SG-103.172.116.103-1079
-      - 🇭🇰 HongKong B - Unlocked 🔓
-      - 🇺🇸 United States 01 @nodpai
-      - 🇸🇬 SG-194.233.81.125-7193
-      - NO-185.90.61.153-0858
-      - 🇩🇰 DK-89.23.86.189-8695
-      - 🇸🇬 新加坡03|高速EIP
-      - 🇺🇸 America S-02 NEO
-      - 🇨🇳 广东省广州市 移动 2
-      - 🇨🇦 CA加拿大003
-      - 🇯🇵 Japan S-01 NEO
-      - 🇲🇾 马来西亚02|高速EIP
-      - 🇰🇷 KR-222.112.15.135-8683
+      - 🇺🇸 US-23.142.200.175-0175
+      - 距离下次重置剩余：20 天
+      - 🇸🇬 Singapore Tj
+      - 🇨🇦 CA-134.195.196.178-0879
+      - California Tj
+      - 🇲🇾 马来西亚03|高速EIP
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇸🇬 新加坡|@ripaojiedian
+      - CH-94.131.12.245-0825
+      - 🇲🇾 马来西亚01|高速EIP
+      - 🇬🇧 United Kingdom 01 @nodpai
+      - 🇬🇧 GB-212.102.53.78-0809
+      - 🇺🇸 US-45.55.2.232-0765
+      - 🇯🇵 日本03|高速EIP
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇺🇸 美国|@ripaojiedian
-      - ""
-      - 🇨🇭 _CH_瑞士
-      - 🇺🇸 US-154.3.8.151-0755
-      - 🇰🇷 韩国特殊|@ripaojiedian
-      - 🇰🇷 KR-43.201.253.222-1555
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国
-      - 🇺🇸 TG频道:@hkaa0|美国
-      - 🇫🇷 FR-103.252.90.93-0818
-      - 🇬🇧 GB-18.130.188.89-0805
-      - 🇺🇸 USA美国001
-      - 🇺🇸 _US_美国
-      - 🇯🇵 日本01|高速EIP
-      - 🇭🇰 HongKong S-02 NEO
-      - 🇬🇧 UK英国001
-      - 🇸🇦 SA沙特阿拉伯流媒体节点003
-      - 🇫🇷 FR-51.159.106.157-0811
-      - 🇯🇵 TG频道:@hkaa0|日本
-      - 🇭🇰 香港03|高速EIP
-      - 🇩🇪 德国04|高速EIP
-      - 🇺🇸 US-68.183.159.199-0171
-      - 🇯🇵 日本KT|@ripaojiedian
-      - 🇬🇧 GB-212.102.53.79-0782
-      - 🇹🇭 Thailand V-01 Test
-      - 🇬🇧 GB-212.102.53.197-0781
-      - " 2"
-      - 🇳🇱 NL荷兰流媒体节点003
-      - 🇦🇺 AU澳大利亚001
-      - 🇬🇧 英国02|高速EIP
-      - U.S.A A - Unlocked 🔓
-      - 🇸🇬 SG新加坡001 两元店yyds
-      - UA-5.188.6.8-0859
-      - CH-94.131.12.245-0825
-      - 🇮🇳 IN印度003
-      - 🇱🇺 lu卢森堡001
+      - 🇬🇧 GB-212.102.53.80-0778
+      - github.com/freefq - 广东省移动 12
+      - AZ-180.149.44.120-0872
+      - 🇰🇷 KR-152.67.218.38-0866
+      - 🇺🇸 US-172.233.178.7-0752
+      - 🇸🇬 SG-103.172.116.90-0919
       - 🇫🇷 FR-172.232.56.121-8797
-      - 🇺🇸 美国05|高速EIP
-      - 🇫🇷 法国01|高速EIP
-      - 🇺🇸 US-68.183.159.199-8787
-      - 🇪🇸 ES-5.188.181.201-0878
-      - 🇩🇪 TG频道:@hkaa0|德国
-      - 🇸🇬 TG频道:@hkaa0|新西兰
-      - 🇩🇪 DE-217.160.45.31-0376
-      - 🇨🇭 TG频道:@hkaa0|瑞士
-      - "官方tg频道: @qcjs_channel"
-      - 🇳🇱 NL-185.246.153.12-0843
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇨🇳 Taiwan S-02 NEO
+      - 🇺🇸 US-23.142.200.175-0153
+      - 🇸🇬 狮城特殊2|@ripaojiedian
+      - RELAY-104.21.91.73-1469
+      - github.com/freefq - 乌克兰  9
+      - 🇬🇧 GB-18.135.215.31-0804
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇺🇸 US-129.146.113.254-0762
+      - 🇩🇪 DE-168.119.124.17-3027
+      - 🇭🇰 _SC_塞舌尔->🇭🇰_HK_香港
+      - 🇯🇵 TG频道:@hkaa0|日本
+      - ""
+      - 🇮🇷 伊朗 V2CROSS.COM
+      - "@kalaamegp 加入TG群组"
+      - 🇯🇵 日本01|高速EIP
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 21
+      - 🇯🇵 JP-13.230.96.57-0844
+      - 🇺🇸 US-156.146.38.163-0218
+      - 🇰🇷 KR-43.201.103.12-7358
+      - 🇺🇸 TG频道:@hkaa0|美国
+      - 13.213.46.196:443
+      - 🇹🇭 Thailand V-01 Test
+      - 🇪🇸 _ES_西班牙
+      - 🇸🇪 瑞典 V2CROSS.COM
       - 🇲🇾 马来西亚04|高速EIP
-      - 🇺🇸 US-205.134.180.137-0745
-      - 🇩🇪 DE德国流媒体节点001
-      - 🇩🇪 DE德国001
-      - 🇪🇸 ES-5.188.181.201-0849
-      - 🇨🇳 广东省广州市 移动
-      - 🇧🇷 BR巴西流媒体节点001
-      - 🇸🇬 SG-103.172.116.103-1079
-      - 🇭🇰 HongKong B - Unlocked 🔓
-      - 🇺🇸 United States 01 @nodpai
-      - 🇸🇬 SG-194.233.81.125-7193
-      - NO-185.90.61.153-0858
-      - 🇩🇰 DK-89.23.86.189-8695
-      - 🇸🇬 新加坡03|高速EIP
-      - 🇺🇸 America S-02 NEO
-      - 🇨🇳 广东省广州市 移动 2
-      - 🇨🇦 CA加拿大003
-      - 🇯🇵 Japan S-01 NEO
-      - 🇲🇾 马来西亚02|高速EIP
-      - 🇰🇷 KR-222.112.15.135-8683
+      - 🇺🇸 US-23.142.200.175-0175
+      - 距离下次重置剩余：20 天
+      - 🇸🇬 Singapore Tj
+      - 🇨🇦 CA-134.195.196.178-0879
+      - California Tj
+      - 🇲🇾 马来西亚03|高速EIP
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇸🇬 新加坡|@ripaojiedian
+      - CH-94.131.12.245-0825
+      - 🇲🇾 马来西亚01|高速EIP
+      - 🇬🇧 United Kingdom 01 @nodpai
+      - 🇬🇧 GB-212.102.53.78-0809
+      - 🇺🇸 US-45.55.2.232-0765
+      - 🇯🇵 日本03|高速EIP
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇸 美国|@ripaojiedian
-      - ""
-      - 🇨🇭 _CH_瑞士
-      - 🇺🇸 US-154.3.8.151-0755
-      - 🇰🇷 韩国特殊|@ripaojiedian
-      - 🇰🇷 KR-43.201.253.222-1555
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国
-      - 🇺🇸 TG频道:@hkaa0|美国
-      - 🇫🇷 FR-103.252.90.93-0818
-      - 🇬🇧 GB-18.130.188.89-0805
-      - 🇺🇸 USA美国001
-      - 🇺🇸 _US_美国
-      - 🇯🇵 日本01|高速EIP
-      - 🇭🇰 HongKong S-02 NEO
-      - 🇬🇧 UK英国001
-      - 🇸🇦 SA沙特阿拉伯流媒体节点003
-      - 🇫🇷 FR-51.159.106.157-0811
-      - 🇯🇵 TG频道:@hkaa0|日本
-      - 🇭🇰 香港03|高速EIP
-      - 🇩🇪 德国04|高速EIP
-      - 🇺🇸 US-68.183.159.199-0171
-      - 🇯🇵 日本KT|@ripaojiedian
-      - 🇬🇧 GB-212.102.53.79-0782
-      - 🇹🇭 Thailand V-01 Test
-      - 🇬🇧 GB-212.102.53.197-0781
-      - " 2"
-      - 🇳🇱 NL荷兰流媒体节点003
-      - 🇦🇺 AU澳大利亚001
-      - 🇬🇧 英国02|高速EIP
-      - U.S.A A - Unlocked 🔓
-      - 🇸🇬 SG新加坡001 两元店yyds
-      - UA-5.188.6.8-0859
-      - CH-94.131.12.245-0825
-      - 🇮🇳 IN印度003
-      - 🇱🇺 lu卢森堡001
+      - 🇬🇧 GB-212.102.53.80-0778
+      - github.com/freefq - 广东省移动 12
+      - AZ-180.149.44.120-0872
+      - 🇰🇷 KR-152.67.218.38-0866
+      - 🇺🇸 US-172.233.178.7-0752
+      - 🇸🇬 SG-103.172.116.90-0919
       - 🇫🇷 FR-172.232.56.121-8797
-      - 🇺🇸 美国05|高速EIP
-      - 🇫🇷 法国01|高速EIP
-      - 🇺🇸 US-68.183.159.199-8787
-      - 🇪🇸 ES-5.188.181.201-0878
-      - 🇩🇪 TG频道:@hkaa0|德国
-      - 🇸🇬 TG频道:@hkaa0|新西兰
-      - 🇩🇪 DE-217.160.45.31-0376
-      - 🇨🇭 TG频道:@hkaa0|瑞士
-      - "官方tg频道: @qcjs_channel"
-      - 🇳🇱 NL-185.246.153.12-0843
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇨🇳 Taiwan S-02 NEO
+      - 🇺🇸 US-23.142.200.175-0153
+      - 🇸🇬 狮城特殊2|@ripaojiedian
+      - RELAY-104.21.91.73-1469
+      - github.com/freefq - 乌克兰  9
+      - 🇬🇧 GB-18.135.215.31-0804
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇺🇸 US-129.146.113.254-0762
+      - 🇩🇪 DE-168.119.124.17-3027
+      - 🇭🇰 _SC_塞舌尔->🇭🇰_HK_香港
+      - 🇯🇵 TG频道:@hkaa0|日本
+      - ""
+      - 🇮🇷 伊朗 V2CROSS.COM
+      - "@kalaamegp 加入TG群组"
+      - 🇯🇵 日本01|高速EIP
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 21
+      - 🇯🇵 JP-13.230.96.57-0844
+      - 🇺🇸 US-156.146.38.163-0218
+      - 🇰🇷 KR-43.201.103.12-7358
+      - 🇺🇸 TG频道:@hkaa0|美国
+      - 13.213.46.196:443
+      - 🇹🇭 Thailand V-01 Test
+      - 🇪🇸 _ES_西班牙
+      - 🇸🇪 瑞典 V2CROSS.COM
       - 🇲🇾 马来西亚04|高速EIP
-      - 🇺🇸 US-205.134.180.137-0745
-      - 🇩🇪 DE德国流媒体节点001
-      - 🇩🇪 DE德国001
-      - 🇪🇸 ES-5.188.181.201-0849
-      - 🇨🇳 广东省广州市 移动
-      - 🇧🇷 BR巴西流媒体节点001
-      - 🇸🇬 SG-103.172.116.103-1079
-      - 🇭🇰 HongKong B - Unlocked 🔓
-      - 🇺🇸 United States 01 @nodpai
-      - 🇸🇬 SG-194.233.81.125-7193
-      - NO-185.90.61.153-0858
-      - 🇩🇰 DK-89.23.86.189-8695
-      - 🇸🇬 新加坡03|高速EIP
-      - 🇺🇸 America S-02 NEO
-      - 🇨🇳 广东省广州市 移动 2
-      - 🇨🇦 CA加拿大003
-      - 🇯🇵 Japan S-01 NEO
-      - 🇲🇾 马来西亚02|高速EIP
-      - 🇰🇷 KR-222.112.15.135-8683
+      - 🇺🇸 US-23.142.200.175-0175
+      - 距离下次重置剩余：20 天
+      - 🇸🇬 Singapore Tj
+      - 🇨🇦 CA-134.195.196.178-0879
+      - California Tj
+      - 🇲🇾 马来西亚03|高速EIP
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇸🇬 新加坡|@ripaojiedian
+      - CH-94.131.12.245-0825
+      - 🇲🇾 马来西亚01|高速EIP
+      - 🇬🇧 United Kingdom 01 @nodpai
+      - 🇬🇧 GB-212.102.53.78-0809
+      - 🇺🇸 US-45.55.2.232-0765
+      - 🇯🇵 日本03|高速EIP
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 美国|@ripaojiedian
-      - ""
-      - 🇨🇭 _CH_瑞士
-      - 🇺🇸 US-154.3.8.151-0755
-      - 🇰🇷 韩国特殊|@ripaojiedian
-      - 🇰🇷 KR-43.201.253.222-1555
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国
-      - 🇺🇸 TG频道:@hkaa0|美国
-      - 🇫🇷 FR-103.252.90.93-0818
-      - 🇬🇧 GB-18.130.188.89-0805
-      - 🇺🇸 USA美国001
-      - 🇺🇸 _US_美国
-      - 🇯🇵 日本01|高速EIP
-      - 🇭🇰 HongKong S-02 NEO
-      - 🇬🇧 UK英国001
-      - 🇸🇦 SA沙特阿拉伯流媒体节点003
-      - 🇫🇷 FR-51.159.106.157-0811
-      - 🇯🇵 TG频道:@hkaa0|日本
-      - 🇭🇰 香港03|高速EIP
-      - 🇩🇪 德国04|高速EIP
-      - 🇺🇸 US-68.183.159.199-0171
-      - 🇯🇵 日本KT|@ripaojiedian
-      - 🇬🇧 GB-212.102.53.79-0782
-      - 🇹🇭 Thailand V-01 Test
-      - 🇬🇧 GB-212.102.53.197-0781
-      - " 2"
-      - 🇳🇱 NL荷兰流媒体节点003
-      - 🇦🇺 AU澳大利亚001
-      - 🇬🇧 英国02|高速EIP
-      - U.S.A A - Unlocked 🔓
-      - 🇸🇬 SG新加坡001 两元店yyds
-      - UA-5.188.6.8-0859
-      - CH-94.131.12.245-0825
-      - 🇮🇳 IN印度003
-      - 🇱🇺 lu卢森堡001
+      - 🇬🇧 GB-212.102.53.80-0778
+      - github.com/freefq - 广东省移动 12
+      - AZ-180.149.44.120-0872
+      - 🇰🇷 KR-152.67.218.38-0866
+      - 🇺🇸 US-172.233.178.7-0752
+      - 🇸🇬 SG-103.172.116.90-0919
       - 🇫🇷 FR-172.232.56.121-8797
-      - 🇺🇸 美国05|高速EIP
-      - 🇫🇷 法国01|高速EIP
-      - 🇺🇸 US-68.183.159.199-8787
-      - 🇪🇸 ES-5.188.181.201-0878
-      - 🇩🇪 TG频道:@hkaa0|德国
-      - 🇸🇬 TG频道:@hkaa0|新西兰
-      - 🇩🇪 DE-217.160.45.31-0376
-      - 🇨🇭 TG频道:@hkaa0|瑞士
-      - "官方tg频道: @qcjs_channel"
-      - 🇳🇱 NL-185.246.153.12-0843
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇨🇳 Taiwan S-02 NEO
+      - 🇺🇸 US-23.142.200.175-0153
+      - 🇸🇬 狮城特殊2|@ripaojiedian
+      - RELAY-104.21.91.73-1469
+      - github.com/freefq - 乌克兰  9
+      - 🇬🇧 GB-18.135.215.31-0804
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇺🇸 US-129.146.113.254-0762
+      - 🇩🇪 DE-168.119.124.17-3027
+      - 🇭🇰 _SC_塞舌尔->🇭🇰_HK_香港
+      - 🇯🇵 TG频道:@hkaa0|日本
+      - ""
+      - 🇮🇷 伊朗 V2CROSS.COM
+      - "@kalaamegp 加入TG群组"
+      - 🇯🇵 日本01|高速EIP
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 21
+      - 🇯🇵 JP-13.230.96.57-0844
+      - 🇺🇸 US-156.146.38.163-0218
+      - 🇰🇷 KR-43.201.103.12-7358
+      - 🇺🇸 TG频道:@hkaa0|美国
+      - 13.213.46.196:443
+      - 🇹🇭 Thailand V-01 Test
+      - 🇪🇸 _ES_西班牙
+      - 🇸🇪 瑞典 V2CROSS.COM
       - 🇲🇾 马来西亚04|高速EIP
-      - 🇺🇸 US-205.134.180.137-0745
-      - 🇩🇪 DE德国流媒体节点001
-      - 🇩🇪 DE德国001
-      - 🇪🇸 ES-5.188.181.201-0849
-      - 🇨🇳 广东省广州市 移动
-      - 🇧🇷 BR巴西流媒体节点001
-      - 🇸🇬 SG-103.172.116.103-1079
-      - 🇭🇰 HongKong B - Unlocked 🔓
-      - 🇺🇸 United States 01 @nodpai
-      - 🇸🇬 SG-194.233.81.125-7193
-      - NO-185.90.61.153-0858
-      - 🇩🇰 DK-89.23.86.189-8695
-      - 🇸🇬 新加坡03|高速EIP
-      - 🇺🇸 America S-02 NEO
-      - 🇨🇳 广东省广州市 移动 2
-      - 🇨🇦 CA加拿大003
-      - 🇯🇵 Japan S-01 NEO
-      - 🇲🇾 马来西亚02|高速EIP
-      - 🇰🇷 KR-222.112.15.135-8683
+      - 🇺🇸 US-23.142.200.175-0175
+      - 距离下次重置剩余：20 天
+      - 🇸🇬 Singapore Tj
+      - 🇨🇦 CA-134.195.196.178-0879
+      - California Tj
+      - 🇲🇾 马来西亚03|高速EIP
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇸🇬 新加坡|@ripaojiedian
+      - CH-94.131.12.245-0825
+      - 🇲🇾 马来西亚01|高速EIP
+      - 🇬🇧 United Kingdom 01 @nodpai
+      - 🇬🇧 GB-212.102.53.78-0809
+      - 🇺🇸 US-45.55.2.232-0765
+      - 🇯🇵 日本03|高速EIP
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -611,72 +467,54 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 美国|@ripaojiedian
-      - ""
-      - 🇨🇭 _CH_瑞士
-      - 🇺🇸 US-154.3.8.151-0755
-      - 🇰🇷 韩国特殊|@ripaojiedian
-      - 🇰🇷 KR-43.201.253.222-1555
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国
-      - 🇺🇸 TG频道:@hkaa0|美国
-      - 🇫🇷 FR-103.252.90.93-0818
-      - 🇬🇧 GB-18.130.188.89-0805
-      - 🇺🇸 USA美国001
-      - 🇺🇸 _US_美国
-      - 🇯🇵 日本01|高速EIP
-      - 🇭🇰 HongKong S-02 NEO
-      - 🇬🇧 UK英国001
-      - 🇸🇦 SA沙特阿拉伯流媒体节点003
-      - 🇫🇷 FR-51.159.106.157-0811
-      - 🇯🇵 TG频道:@hkaa0|日本
-      - 🇭🇰 香港03|高速EIP
-      - 🇩🇪 德国04|高速EIP
-      - 🇺🇸 US-68.183.159.199-0171
-      - 🇯🇵 日本KT|@ripaojiedian
-      - 🇬🇧 GB-212.102.53.79-0782
-      - 🇹🇭 Thailand V-01 Test
-      - 🇬🇧 GB-212.102.53.197-0781
-      - " 2"
-      - 🇳🇱 NL荷兰流媒体节点003
-      - 🇦🇺 AU澳大利亚001
-      - 🇬🇧 英国02|高速EIP
-      - U.S.A A - Unlocked 🔓
-      - 🇸🇬 SG新加坡001 两元店yyds
-      - UA-5.188.6.8-0859
-      - CH-94.131.12.245-0825
-      - 🇮🇳 IN印度003
-      - 🇱🇺 lu卢森堡001
+      - 🇬🇧 GB-212.102.53.80-0778
+      - github.com/freefq - 广东省移动 12
+      - AZ-180.149.44.120-0872
+      - 🇰🇷 KR-152.67.218.38-0866
+      - 🇺🇸 US-172.233.178.7-0752
+      - 🇸🇬 SG-103.172.116.90-0919
       - 🇫🇷 FR-172.232.56.121-8797
-      - 🇺🇸 美国05|高速EIP
-      - 🇫🇷 法国01|高速EIP
-      - 🇺🇸 US-68.183.159.199-8787
-      - 🇪🇸 ES-5.188.181.201-0878
-      - 🇩🇪 TG频道:@hkaa0|德国
-      - 🇸🇬 TG频道:@hkaa0|新西兰
-      - 🇩🇪 DE-217.160.45.31-0376
-      - 🇨🇭 TG频道:@hkaa0|瑞士
-      - "官方tg频道: @qcjs_channel"
-      - 🇳🇱 NL-185.246.153.12-0843
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇨🇳 Taiwan S-02 NEO
+      - 🇺🇸 US-23.142.200.175-0153
+      - 🇸🇬 狮城特殊2|@ripaojiedian
+      - RELAY-104.21.91.73-1469
+      - github.com/freefq - 乌克兰  9
+      - 🇬🇧 GB-18.135.215.31-0804
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇺🇸 US-129.146.113.254-0762
+      - 🇩🇪 DE-168.119.124.17-3027
+      - 🇭🇰 _SC_塞舌尔->🇭🇰_HK_香港
+      - 🇯🇵 TG频道:@hkaa0|日本
+      - ""
+      - 🇮🇷 伊朗 V2CROSS.COM
+      - "@kalaamegp 加入TG群组"
+      - 🇯🇵 日本01|高速EIP
+      - 🇨🇳 github.com/freefq - 广东省广州市移动 21
+      - 🇯🇵 JP-13.230.96.57-0844
+      - 🇺🇸 US-156.146.38.163-0218
+      - 🇰🇷 KR-43.201.103.12-7358
+      - 🇺🇸 TG频道:@hkaa0|美国
+      - 13.213.46.196:443
+      - 🇹🇭 Thailand V-01 Test
+      - 🇪🇸 _ES_西班牙
+      - 🇸🇪 瑞典 V2CROSS.COM
       - 🇲🇾 马来西亚04|高速EIP
-      - 🇺🇸 US-205.134.180.137-0745
-      - 🇩🇪 DE德国流媒体节点001
-      - 🇩🇪 DE德国001
-      - 🇪🇸 ES-5.188.181.201-0849
-      - 🇨🇳 广东省广州市 移动
-      - 🇧🇷 BR巴西流媒体节点001
-      - 🇸🇬 SG-103.172.116.103-1079
-      - 🇭🇰 HongKong B - Unlocked 🔓
-      - 🇺🇸 United States 01 @nodpai
-      - 🇸🇬 SG-194.233.81.125-7193
-      - NO-185.90.61.153-0858
-      - 🇩🇰 DK-89.23.86.189-8695
-      - 🇸🇬 新加坡03|高速EIP
-      - 🇺🇸 America S-02 NEO
-      - 🇨🇳 广东省广州市 移动 2
-      - 🇨🇦 CA加拿大003
-      - 🇯🇵 Japan S-01 NEO
-      - 🇲🇾 马来西亚02|高速EIP
-      - 🇰🇷 KR-222.112.15.135-8683
+      - 🇺🇸 US-23.142.200.175-0175
+      - 距离下次重置剩余：20 天
+      - 🇸🇬 Singapore Tj
+      - 🇨🇦 CA-134.195.196.178-0879
+      - California Tj
+      - 🇲🇾 马来西亚03|高速EIP
+      - 🇺🇸 美国4|@ripaojiedian
+      - 🇸🇬 新加坡|@ripaojiedian
+      - CH-94.131.12.245-0825
+      - 🇲🇾 马来西亚01|高速EIP
+      - 🇬🇧 United Kingdom 01 @nodpai
+      - 🇬🇧 GB-212.102.53.78-0809
+      - 🇺🇸 US-45.55.2.232-0765
+      - 🇯🇵 日本03|高速EIP
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
