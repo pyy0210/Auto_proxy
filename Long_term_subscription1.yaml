@@ -19,670 +19,662 @@ dns:
   fallback: [https://101.101.101.101/dns-query, https://public.dns.iij.jp/dns-query, https://208.67.220.220/dns-query]
   fallback-filter: {geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32, 223.75.236.241/32, 182.43.124.6/32, 106.74.25.198/32], domain: [+.bianyuan.xyz, +.happynothings031.xyz, +.jsdelivr.net, +.proton.me]}
 proxies:
-  - {name: 🇸🇬 Video 新加坡B-标准, server: 231103level2.unclemanco.com, port: 19998, type: ssr, cipher: aes-256-cfb, password: "dajkdkjda&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇯🇵 Game 日本04-原生, server: 231103level3.unclemanco.com, port: 20029, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇯🇵 JP-185.172.113.182-1109, server: 185.172.113.182, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: 🇺🇸 US-167.88.61.175-9203, server: 167.88.61.175, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇺🇸 github.com/freefq - 美国Fastly全球Anycast节点 13, server: gov.uk, port: 443, type: vmess, uuid: 77848824-93b7-4b89-ffd0-e91afff406ce, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /77848824, headers: {Host: zheshiscp.com}}, udp: true}
-  - {name: 🇰🇷 韩国2|@ripaojiedian, server: service.ouluyun9803.com, port: 26666, type: ss, cipher: chacha20-ietf-poly1305, password: cfa17a0d-5e7d-4871-976e-f116e0818123, udp: true}
-  - {name: 🇺🇸 美国测试节点, server: gov.uk, port: 443, type: vmess, uuid: 77848824-93b7-4b89-ffd0-e91afff406ce, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: gov.uk, network: ws, ws-opts: {path: /77848824, headers: {Host: zheshiscp.com}}, udp: true}
-  - {name: 🇨🇳 Video 台湾C-原生, server: 231103level2.unclemanco.com, port: 1001, type: ssr, cipher: chacha20-ietf, password: fsfal2, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国, server: 104.21.69.44, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: a.prapt4.ir}}, udp: true}
-  - {name: 🇷🇺 Game 俄罗斯01-标准, server: 231103level3.unclemanco.com, port: 37862, type: ssr, cipher: aes-256-cfb, password: "dajkdkjda&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇸🇬 Singapore 06, server: cb56dd690da64a74880b91e1224f5ec6.5.ss03.net, port: 22377, type: ss, cipher: chacha20-ietf-poly1305, password: b66e5bb3-d8cb-4213-9683-cdba40e53b93, udp: true}
-  - {name: 🇺🇸 US-38.75.136.135-1172, server: 38.75.136.135, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: RELAY-172.67.172.127-4020, server: cf.openxai.link, port: 8080, type: vmess, uuid: aa1dbb68-bfb5-4484-f7e7-7335eac3988c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: eu2.openxai.link}}, udp: true}
-  - {name: 🇩🇪 Manifold-德国01-标准, server: 231103level4.unclemanco.com, port: 10059, type: ssr, cipher: aes-256-cfb, password: 2sa2/1a, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: "Traffic Reset: 16 Day", server: cb56dd690da64a74880b91e1224f5ec6.1.ss03.net, port: 22350, type: ss, cipher: chacha20-ietf-poly1305, password: b66e5bb3-d8cb-4213-9683-cdba40e53b93, udp: true}
-  - {name: 🇦🇺 Australia 04, server: cb56dd690da64a74880b91e1224f5ec6.7.ss03.net, port: 22407, type: ss, cipher: chacha20-ietf-poly1305, password: b66e5bb3-d8cb-4213-9683-cdba40e53b93, udp: true}
-  - {name: 🇯🇵 Game 日本03-标准, server: 231103level3.unclemanco.com, port: 20030, type: ssr, cipher: chacha20, password: ayucloud1, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇬🇧 GB-51.142.159.23-1036, server: 51.142.159.23, port: 32790, type: ss, cipher: chacha20-ietf-poly1305, password: 5ii16fmPTms8icYnYvxUfa, udp: true}
-  - {name: RELAY-172.67.131.150-2787, server: 172.67.131.150, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, servername: oliv.beauty, network: ws, ws-opts: {path: /, headers: {Host: oliv.beauty}}, udp: true}
-  - {name: "🇭🇰 Lv3 香港 05 [2.0]", server: sdv3-hk.04xvkr9ed1.com, port: 6605, type: ss, cipher: aes-128-gcm, password: e29cb863-da5f-4ba9-955e-b3a777b0b7cd, udp: true}
-  - {name: 🇬🇧 GB-18.133.104.13-1517, server: wxwctxxx.arvancode.eu.org, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: u17T3BvpYaaiuW2c, udp: true}
-  - {name: 🇹🇭 Manifold-泰国01-标准, server: 231103level4.unclemanco.com, port: 10011, type: ssr, cipher: aes-256-cfb, password: aa2cs/1a, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 Taiwan Media 02, server: cb56dd690da64a74880b91e1224f5ec6.2.ss03.net, port: 12357, type: ss, cipher: chacha20-ietf-poly1305, password: b66e5bb3-d8cb-4213-9683-cdba40e53b93, udp: true}
-  - {name: RELAY-172.67.132.15-1813, server: 172.67.132.15, port: 443, type: vmess, uuid: 18e5f40f-bda6-4c15-9334-e87cda6047af, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: ming2.kiwireich.com}}, udp: true}
-  - {name: TR-45.89.52.66-9669, server: 45.89.52.66, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
-  - {name: 🇸🇬 SG-103.172.116.103-4366, server: 103.172.116.103, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
-  - {name: 🇺🇸 US-38.68.134.85-8976, server: 38.68.134.85, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 🇮🇳 India 01, server: cb56dd690da64a74880b91e1224f5ec6.7.ss03.net, port: 12372, type: ss, cipher: chacha20-ietf-poly1305, password: b66e5bb3-d8cb-4213-9683-cdba40e53b93, udp: true}
-  - {name: "🇺🇸 Lv3 美国 01 [2.0]", server: sdv3-us.04xvkr9ed1.com, port: 6627, type: ss, cipher: aes-128-gcm, password: e29cb863-da5f-4ba9-955e-b3a777b0b7cd, udp: true}
-  - {name: RELAY-104.21.91.254-2753, server: 104.21.91.254, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: waynn.makeup, network: ws, ws-opts: {path: /, headers: {Host: waynn.makeup}}, udp: true}
-  - {name: 🇺🇸 US-38.75.136.135-8283, server: 38.75.136.135, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 🇫🇮 Manifold 芬兰01 原生, server: 231103level4.unclemanco.com, port: 36005, type: ssr, cipher: chacha20, password: Vdss2Zr, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: "%�\x11�%�P���JP-18.176.54.238-10%�", server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 🇯🇵 日本2|@ripaojiedian, server: cfcdn3.sanfencdn9.com, port: 80, type: vmess, uuid: 9c4723d9-29e7-4502-a021-7c79355cb7e1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /video/ibCT6z55, headers: {Host: agzbjszujp4.yofnhkfc.xyz}}, udp: true}
-  - {name: "🇨🇳 Lv3 台湾 02 [2.0]", server: sdv3-tw.04xvkr9ed1.com, port: 6622, type: ss, cipher: aes-128-gcm, password: e29cb863-da5f-4ba9-955e-b3a777b0b7cd, udp: true}
-  - {name: 🇨🇳 Taiwan 09, server: cb56dd690da64a74880b91e1224f5ec6.2.ss03.net, port: 12348, type: ss, cipher: chacha20-ietf-poly1305, password: b66e5bb3-d8cb-4213-9683-cdba40e53b93, udp: true}
-  - {name: 🇺🇸 US-38.75.136.135-1183, server: 38.75.136.135, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: 🇺🇸 Manifold 美国02-原生, server: 231103level4.unclemanco.com, port: 2541, type: ssr, cipher: aes-256-cfb, password: ayds232112sffssd1, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇨🇳 Game 台湾02-标准, server: 231103level3.unclemanco.com, port: 26700, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 2, server: 104.22.51.162, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: my1.tooters.ir}}, udp: true}
-  - {name: 🇸🇪 Sweden 01, server: cb56dd690da64a74880b91e1224f5ec6.7.ss03.net, port: 12384, type: ss, cipher: chacha20-ietf-poly1305, password: b66e5bb3-d8cb-4213-9683-cdba40e53b93, udp: true}
-  - {name: "🏳️‍🌈 Expire: 2024-05-17", server: cb56dd690da64a74880b91e1224f5ec6.1.ss03.net, port: 22350, type: ss, cipher: chacha20-ietf-poly1305, password: b66e5bb3-d8cb-4213-9683-cdba40e53b93, udp: true}
-  - {name: 🇯🇵 JP-18.181.194.63-4312, server: 18.181.194.63, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 54.199.83.239:2333, server: 54.199.83.239, port: 2333, type: ss, cipher: aes-256-cfb, password: doub.io, udp: true}
-  - {name: 🇺🇸 美国3|@ripaojiedian, server: www.brightocean.lol, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: www.brightocean.lol}}, udp: true}
-  - {name: 🇺🇸 Video 美国A-标准, server: 231103level2.unclemanco.com, port: 20033, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇺🇸 US-38.75.136.135-1149, server: 38.75.136.135, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 🇵🇰 Manifold 巴基斯坦01 标准, server: 231103levelx.unclemanco.com, port: 11110, type: ssr, cipher: aes-256-cfb, password: "dajkdkjda&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: Video 阿布扎比A- 标准, server: 231103level2.unclemanco.com, port: 38001, type: ssr, cipher: aes-256-cfb, password: "dajkdkjdssa&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇮🇳 github.com/freefq - 印度  2, server: 202.78.162.5, port: 443, type: vmess, uuid: 2ff97c6d-8557-42a4-b43f-19c77c5959ea, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: irsoft.sytes.net}}, udp: true}
-  - {name: 🇺🇸 US-38.75.136.135-1142, server: 38.75.136.135, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: "", server: 159.223.94.156, port: 80, type: vmess, uuid: 533724ad-58ef-4147-88dc-9da523c15fc4, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /anti13.zingfast.vn}, udp: true}
-  - {name: 🇭🇰 Hong Kong 21, server: cb56dd690da64a74880b91e1224f5ec6.1.ss03.net, port: 22411, type: ss, cipher: chacha20-ietf-poly1305, password: b66e5bb3-d8cb-4213-9683-cdba40e53b93, udp: true}
-  - {name: 🇲🇾 Malaysia 02, server: cb56dd690da64a74880b91e1224f5ec6.7.ss03.net, port: 12355, type: ss, cipher: chacha20-ietf-poly1305, password: b66e5bb3-d8cb-4213-9683-cdba40e53b93, udp: true}
-  - {name: RELAY-188.114.99.0-2744, server: 188.114.99.0, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, servername: ophelia.mom, network: ws, ws-opts: {path: /, headers: {Host: ophelia.mom}}, udp: true}
-  - {name: 🇺🇸 US-167.88.61.175-8809, server: 167.88.61.175, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 🇮🇳 Web 印度I-通用, server: 231103level1.unclemanco.com, port: 20001, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇺🇸 US-38.68.134.85-1197, server: 38.68.134.85, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇭🇰 香港2|@ripaojiedian, server: 120.238.122.198, port: 40002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: RELAY-104.21.12.103-9423, server: ming2.kiwireich.com, port: 443, type: vmess, uuid: 18e5f40f-bda6-4c15-9334-e87cda6047af, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: ming2.kiwireich.com}}, udp: true}
+  - {name: RELAY-172.67.164.184-7432, server: alvvin.click, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, servername: alvvin.click, network: ws, ws-opts: {path: /, headers: {Host: alvvin.click}}, udp: true}
+  - {name: 🇧🇪 Manifold-比利时01-原生, server: 231103level4.unclemanco.com, port: 10071, type: ssr, cipher: aes-256-cfb, password: 2sa2/321a, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇱 Video 智利A-标准, server: 231103level2.unclemanco.com, port: 2200, type: ssr, cipher: aes-256-cfb, password: "dajsdkdkjda&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇸🇬 Singapore 05, server: cb56dd690da64a74880b91e1224f5ec6.5.ss03.net, port: 22385, type: ss, cipher: chacha20-ietf-poly1305, password: b66e5bb3-d8cb-4213-9683-cdba40e53b93, udp: true}
+  - {name: RELAY-104.21.31.183-2704, server: 104.21.31.183, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: false, servername: octavi.cfd, network: ws, ws-opts: {path: /, headers: {Host: octavi.cfd}}, udp: true}
+  - {name: 🇯🇵 JP-152.69.197.74-3538, server: 152.69.197.74, port: 12345, type: vmess, uuid: b8a6bf58-485a-4046-b386-b3661bf65eff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇸 US-38.107.226.146-1132, server: 38.107.226.146, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: UK02, server: 111.12.60.116, port: 2200, type: ss, cipher: chacha20-ietf-poly1305, password: fd3edf71-5692-4d08-8a23-a9d22b616de4, udp: true}
+  - {name: 🇬🇧 TG频道:@hkaa0▓英国, server: v1.arvancode.eu.org, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: mps3FwmDjLrWaOVg, udp: true}
+  - {name: Manifold-缅甸01-标准, server: 231103level4.unclemanco.com, port: 36455, type: ssr, cipher: chacha20, password: 1mj21sr, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇦🇺 Web 澳大利亚I-标准, server: 231103level1.unclemanco.com, port: 29501, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇭🇰 Hong Kong 10, server: cb56dd690da64a74880b91e1224f5ec6.1.ss03.net, port: 22360, type: ss, cipher: chacha20-ietf-poly1305, password: b66e5bb3-d8cb-4213-9683-cdba40e53b93, udp: true}
+  - {name: BA-185.164.35.9-1050, server: 185.164.35.9, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: TR-45.89.52.66-1100, server: 45.89.52.66, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN, udp: true}
+  - {name: 🇺🇸 US-38.107.226.49-1144, server: 38.107.226.49, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 🇭🇰 Game 香港05-标准, server: 231103level3.unclemanco.com, port: 29999, type: ssr, cipher: chacha20-ietf, password: ayucles1, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇸🇬 Manifold-新加坡02-标准, server: 231103level4.unclemanco.com, port: 19996, type: ssr, cipher: aes-256-cfb, password: "dajkdkjda&dj23gsa", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇺🇸 US-38.121.43.97-8029, server: 38.121.43.97, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: 🇲🇾 Malaysia 03, server: cb56dd690da64a74880b91e1224f5ec6.7.ss03.net, port: 12381, type: ss, cipher: chacha20-ietf-poly1305, password: b66e5bb3-d8cb-4213-9683-cdba40e53b93, udp: true}
+  - {name: 🇦🇹 Manifold-奥地利01-原生, server: 231103level4.unclemanco.com, port: 39070, type: ssr, cipher: aes-256-cfb, password: "dajkdkjda&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
   - {name: 🇺🇸 Game 美国02-原生, server: 231103level3.unclemanco.com, port: 20036, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇯🇵 Video 日本B-解锁, server: 231103level2.unclemanco.com, port: 20031, type: ssr, cipher: chacha20, password: ayucloud1, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇺🇸 US-80.92.205.112-1064, server: 80.92.205.112, port: 443, type: vmess, uuid: 4c90ba75-230b-4f8b-bbff-8efa0eb0415f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}, udp: true}
   - {name: 🇺🇸 United States 04, server: cb56dd690da64a74880b91e1224f5ec6.4.ss03.net, port: 22374, type: ss, cipher: chacha20-ietf-poly1305, password: b66e5bb3-d8cb-4213-9683-cdba40e53b93, udp: true}
-  - {name: 🇭🇰 Hong Kong Media 02, server: cb56dd690da64a74880b91e1224f5ec6.1.ss03.net, port: 22362, type: ss, cipher: chacha20-ietf-poly1305, password: b66e5bb3-d8cb-4213-9683-cdba40e53b93, udp: true}
-  - {name: 🇸🇬 Game 新加坡02-标准, server: 231103level3.unclemanco.com, port: 27008, type: ssr, cipher: chacha20, password: ayucloud1, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇺🇸 Manifold 美国01-解锁, server: 231103level4.unclemanco.com, port: 2323, type: ssr, cipher: chacha20, password: ays2d, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇯🇵 Video 日本A-标准, server: 231103level2.unclemanco.com, port: 20027, type: ssr, cipher: chacha20, password: ayucloud1, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇯🇵 JP-185.172.113.182-1118, server: 185.172.113.182, port: 804, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: 🇺🇸 US-167.88.61.175-8659, server: 167.88.61.175, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国 3, server: 172.67.253.230, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: my1.tooters.ir}}, udp: true}
-  - {name: 🇭🇰 Hong Kong 18, server: cb56dd690da64a74880b91e1224f5ec6.1.ss03.net, port: 22364, type: ss, cipher: chacha20-ietf-poly1305, password: b66e5bb3-d8cb-4213-9683-cdba40e53b93, udp: true}
-  - {name: 🇭🇰 Hong Kong 19, server: cb56dd690da64a74880b91e1224f5ec6.1.ss03.net, port: 22354, type: ss, cipher: chacha20-ietf-poly1305, password: b66e5bb3-d8cb-4213-9683-cdba40e53b93, udp: true}
-  - {name: 🇯🇵 JP-185.172.113.182-1113, server: 185.172.113.182, port: 810, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao, udp: true}
-  - {name: 🇯🇵 日本特殊|@ripaojiedian, server: 13.250.104.109, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: " 2", server: xt.ylks01.eu.org, port: 2095, type: vmess, uuid: b710770a-fdaf-41fb-bbe4-68a6c41e2605, alterId: 64, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /blue, headers: {Host: xt.ylks01.eu.org}}, udp: true}
-  - {name: 🇭🇰 Hong Kong Media 04, server: cb56dd690da64a74880b91e1224f5ec6.1.ss03.net, port: 12379, type: ss, cipher: chacha20-ietf-poly1305, password: b66e5bb3-d8cb-4213-9683-cdba40e53b93, udp: true}
-  - {name: 🇺🇸 Video 美国C-原生, server: 231103level2.unclemanco.com, port: 29602, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
-  - {name: 🇫🇷 FR-51.159.111.208-1038, server: 51.159.111.208, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 🇺🇸 _US_美国->🇩🇪_DE_德国, server: 104.22.51.162, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: my1.tooters.ir}}, udp: true}
+  - {name: 🇬🇧 GB-51.143.138.171-1008, server: 51.143.138.171, port: 9424, type: ss, cipher: chacha20-ietf-poly1305, password: EaCRQJmijrVP3uZuCwDLr9, udp: true}
+  - {name: 🇺🇸 美国2|@ripaojiedian, server: 104.21.226.254, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: a.prapt5.ir}}, udp: true}
+  - {name: 🇯🇵 Game 日本06-标准, server: 231103level3.unclemanco.com, port: 23303, type: ssr, cipher: chacha20, password: ayu1245, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇫🇷 法国 巴黎Online S.A.S, server: 51.158.146.102, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 🇳🇱 Netherlands 01, server: cb56dd690da64a74880b91e1224f5ec6.7.ss03.net, port: 12386, type: ss, cipher: chacha20-ietf-poly1305, password: b66e5bb3-d8cb-4213-9683-cdba40e53b93, udp: true}
+  - {name: 🇬🇧 GB-212.102.53.81-0986, server: 212.102.53.81, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: HK03, server: 111.12.60.102, port: 810, type: ss, cipher: chacha20-ietf-poly1305, password: fd3edf71-5692-4d08-8a23-a9d22b616de4, udp: true}
+  - {name: 🇪🇬 Egypt 01, server: cb56dd690da64a74880b91e1224f5ec6.7.ss03.net, port: 22402, type: ss, cipher: chacha20-ietf-poly1305, password: b66e5bb3-d8cb-4213-9683-cdba40e53b93, udp: true}
+  - {name: HK02, server: 111.12.60.102, port: 810, type: ss, cipher: chacha20-ietf-poly1305, password: fd3edf71-5692-4d08-8a23-a9d22b616de4, udp: true}
+  - {name: 🇨🇱 Chile 01, server: cb56dd690da64a74880b91e1224f5ec6.7.ss03.net, port: 22403, type: ss, cipher: chacha20-ietf-poly1305, password: b66e5bb3-d8cb-4213-9683-cdba40e53b93, udp: true}
+  - {name: 🇨🇳 Video 台湾D-标准, server: 231103level2.unclemanco.com, port: 167, type: ssr, cipher: chacha20, password: ayucloud1, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇺🇸 US-38.75.136.135-8393, server: 38.75.136.135, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 🇸🇬 新加坡2|@ripaojiedian, server: service.ouluyun9803.com, port: 20009, type: ss, cipher: chacha20-ietf-poly1305, password: cfa17a0d-5e7d-4871-976e-f116e0818123, udp: true}
+  - {name: "🇨🇳 Lv3 台湾 03 [2.0]", server: sdv3-tw.04xvkr9ed1.com, port: 6623, type: ss, cipher: aes-128-gcm, password: e29cb863-da5f-4ba9-955e-b3a777b0b7cd, udp: true}
+  - {name: 🇸🇬 Singapore 06, server: cb56dd690da64a74880b91e1224f5ec6.5.ss03.net, port: 22377, type: ss, cipher: chacha20-ietf-poly1305, password: b66e5bb3-d8cb-4213-9683-cdba40e53b93, udp: true}
+  - {name: 🇭🇰 Game 香港06-标准, server: 231103level3.unclemanco.com, port: 26604, type: ssr, cipher: chacha20, password: ayucloud1, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇧🇷 _BR_巴西, server: 152.67.41.90, port: 7703, type: ss, cipher: aes-256-gcm, password: 86379168-47dd-4fc3-a2d7-5183802487f6, udp: true}
+  - {name: IE-23.92.127.134-9665, server: 23.92.127.134, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 🇺🇸 United States 01 @nodpai, server: hytron.io, port: 8080, type: vmess, uuid: 9c4a3ad3-4f1d-4138-e7ee-8bb5325b411d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hytron.io}}, udp: true}
+  - {name: 🇨🇭 Manifold-瑞士01-标准, server: 231103level4.unclemanco.com, port: 6558, type: ssr, cipher: aes-256-cfb, password: "dajkdkjda&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 台湾|@ripaojiedian, server: 183.232.170.22, port: 30059, type: vmess, uuid: 6ae43308-07ef-4f0d-aa8f-25e480de542c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  - {name: RELAY-104.21.75.246-0310, server: 104.21.75.246, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: cf.tonyluk.link, network: ws, ws-opts: {path: /, headers: {Host: cf.tonyluk.link}}, udp: true}
+  - {name: 🇺🇸 美国3|@ripaojiedian, server: www.brightocean.lol, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: www.brightocean.lol}}, udp: true}
+  - {name: 🇨🇳 Game 台湾02-标准, server: 231103level3.unclemanco.com, port: 26700, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 Taiwan Media 05, server: cb56dd690da64a74880b91e1224f5ec6.2.ss03.net, port: 12360, type: ss, cipher: chacha20-ietf-poly1305, password: b66e5bb3-d8cb-4213-9683-cdba40e53b93, udp: true}
+  - {name: 🇮🇳 github.com/freefq - 印度  3, server: 202.78.162.5, port: 443, type: vmess, uuid: 118287d2-e968-42e1-80d0-12fa2f5d38d6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sahand.serveminecraft.net}}, udp: true}
+  - {name: 🇺🇸 US-38.68.134.85-8988, server: 38.68.134.85, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: SG03, server: 111.12.60.116, port: 2100, type: ss, cipher: chacha20-ietf-poly1305, password: fd3edf71-5692-4d08-8a23-a9d22b616de4, udp: true}
+  - {name: RELAY-104.21.91.254-2688, server: 104.21.91.254, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: waynn.makeup, network: ws, ws-opts: {path: /, headers: {Host: waynn.makeup}}, udp: true}
+  - {name: "%�\x11�%�P���JP-57.180.245.219-1049", server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
+  - {name: ZA-41.203.4.34-1061, server: 41.203.4.34, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: NO-185.90.61.153-1070, server: 185.90.61.153, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 🇸🇬 Singapore 10, server: cb56dd690da64a74880b91e1224f5ec6.5.ss03.net, port: 22369, type: ss, cipher: chacha20-ietf-poly1305, password: b66e5bb3-d8cb-4213-9683-cdba40e53b93, udp: true}
+  - {name: 🇨🇳 Taiwan Media 01, server: cb56dd690da64a74880b91e1224f5ec6.2.ss03.net, port: 12356, type: ss, cipher: chacha20-ietf-poly1305, password: b66e5bb3-d8cb-4213-9683-cdba40e53b93, udp: true}
+  - {name: 🇸🇪 Manifold-瑞典01-标准, server: 231103level4.unclemanco.com, port: 6450, type: ssr, cipher: aes-256-cfb, password: "dajkdkjda&dja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇬🇧 GB-145.239.6.202-7348, server: 145.239.6.202, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: 🇨🇳 Game 台湾01-标准, server: 231103level3.unclemanco.com, port: 20050, type: ssr, cipher: chacha20, password: ayucloud1, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇺🇸 US-205.134.180.151-0972, server: 205.134.180.151, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 5cp9Z3iWnJZ2, udp: true}
+  - {name: 🇺🇸 US-38.107.226.49-1155, server: 38.107.226.49, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 🇺🇸 美国 华盛顿州昆西Microsoft公司, server: 51.143.138.98, port: 47763, type: ss, cipher: chacha20-ietf-poly1305, password: hzXn7UYop5msnpf3DyzcYT, udp: true}
+  - {name: 🇫🇷 France 01, server: cb56dd690da64a74880b91e1224f5ec6.7.ss03.net, port: 12388, type: ss, cipher: chacha20-ietf-poly1305, password: b66e5bb3-d8cb-4213-9683-cdba40e53b93, udp: true}
+  - {name: 🇭🇰 Manifold-香港01-原生, server: 231103level4.unclemanco.com, port: 2322, type: ssr, cipher: chacha20, password: a212d, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇰🇷 Game 韩国08-通用, server: 231103level3.unclemanco.com, port: 29009, type: ssr, cipher: chacha20, password: ayucloud1, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇮🇪 Web 爱尔兰I-原生, server: 231103level1.unclemanco.com, port: 36200, type: ssr, cipher: chacha20, password: Vdssf.mj/2Zr, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇧🇬 Video 保加利亚A-原生, server: 231103level2.unclemanco.com, port: 39072, type: ssr, cipher: aes-256-cfb, password: "dajkbgja*/?", protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇨🇳 Taiwan Media 07, server: cb56dd690da64a74880b91e1224f5ec6.2.ss03.net, port: 12362, type: ss, cipher: chacha20-ietf-poly1305, password: b66e5bb3-d8cb-4213-9683-cdba40e53b93, udp: true}
+  - {name: 🇰🇷 Game 韩国02-标准, server: 231103level3.unclemanco.com, port: 20004, type: ssr, cipher: aes-256-cfb, password: QHPy2u, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: 🇺🇸 US-167.88.63.71-0030, server: 167.88.63.71, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: 🇪🇸 Spain 01, server: cb56dd690da64a74880b91e1224f5ec6.7.ss03.net, port: 22408, type: ss, cipher: chacha20-ietf-poly1305, password: b66e5bb3-d8cb-4213-9683-cdba40e53b93, udp: true}
+  - {name: 🇭🇰 Hong Kong 08, server: cb56dd690da64a74880b91e1224f5ec6.1.ss03.net, port: 22358, type: ss, cipher: chacha20-ietf-poly1305, password: b66e5bb3-d8cb-4213-9683-cdba40e53b93, udp: true}
+  - {name: 🇺🇸 TG频道:@hkaa0▓美国, server: www.velvetmountain.shop, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: www.velvetmountain.shop}}, udp: true}
+  - {name: RELAY-104.21.15.212-1515, server: hms182.glweidf.sbs, port: 443, type: vmess, uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: glweidf.sbs}}, udp: true}
+  - {name: 🇰🇷 Game 韩国10-原生, server: 231103level3.unclemanco.com, port: 1875, type: ssr, cipher: chacha20-ietf, password: ayucew2, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
+  - {name: TG频道:@hkaa0▓中国, server: tiananmen.19890604.day, port: 10806, type: trojan, password: 2fadf1dc-f401-4225-ac95-da030118eaef, sni: cloudflare.node-ssl.cdn-alibaba.com, skip-cert-verify: false, udp: true}
+  - {name: 🇨🇳 Game 台湾07-标准, server: 231103level3.unclemanco.com, port: 29542, type: ssr, cipher: chacha20-ietf, password: ayucloud1, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: 61610:G5gdyp, obfs-param: 68e7b61610.download.windowsupdate.com, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇸🇬 Video 新加坡B-标准
-      - 🇯🇵 Game 日本04-原生
-      - 🇯🇵 JP-185.172.113.182-1109
-      - 🇺🇸 US-167.88.61.175-9203
-      - 🇺🇸 github.com/freefq - 美国Fastly全球Anycast节点 13
-      - 🇰🇷 韩国2|@ripaojiedian
-      - 🇺🇸 美国测试节点
-      - 🇨🇳 Video 台湾C-原生
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国
-      - 🇷🇺 Game 俄罗斯01-标准
-      - 🇸🇬 Singapore 06
-      - 🇺🇸 US-38.75.136.135-1172
-      - RELAY-172.67.172.127-4020
-      - 🇩🇪 Manifold-德国01-标准
-      - "Traffic Reset: 16 Day"
-      - 🇦🇺 Australia 04
-      - 🇯🇵 Game 日本03-标准
-      - 🇬🇧 GB-51.142.159.23-1036
-      - RELAY-172.67.131.150-2787
-      - 🇭🇰 Lv3 香港 05 [2.0]
-      - 🇬🇧 GB-18.133.104.13-1517
-      - 🇹🇭 Manifold-泰国01-标准
-      - 🇨🇳 Taiwan Media 02
-      - RELAY-172.67.132.15-1813
-      - TR-45.89.52.66-9669
-      - 🇸🇬 SG-103.172.116.103-4366
-      - 🇺🇸 US-38.68.134.85-8976
-      - 🇮🇳 India 01
-      - 🇺🇸 Lv3 美国 01 [2.0]
-      - RELAY-104.21.91.254-2753
-      - 🇺🇸 US-38.75.136.135-8283
-      - 🇫🇮 Manifold 芬兰01 原生
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇨🇳 Lv3 台湾 02 [2.0]
-      - 🇨🇳 Taiwan 09
-      - 🇺🇸 US-38.75.136.135-1183
-      - 🇺🇸 Manifold 美国02-原生
-      - 🇨🇳 Game 台湾02-标准
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 2
-      - 🇸🇪 Sweden 01
-      - "🏳️‍🌈 Expire: 2024-05-17"
-      - 🇯🇵 JP-18.181.194.63-4312
-      - 54.199.83.239:2333
-      - 🇺🇸 美国3|@ripaojiedian
-      - 🇺🇸 Video 美国A-标准
-      - 🇺🇸 US-38.75.136.135-1149
-      - 🇵🇰 Manifold 巴基斯坦01 标准
-      - Video 阿布扎比A- 标准
-      - 🇮🇳 github.com/freefq - 印度  2
-      - 🇺🇸 US-38.75.136.135-1142
-      - ""
-      - 🇭🇰 Hong Kong 21
-      - 🇲🇾 Malaysia 02
-      - RELAY-188.114.99.0-2744
-      - 🇺🇸 US-167.88.61.175-8809
-      - 🇮🇳 Web 印度I-通用
-      - 🇺🇸 US-38.68.134.85-1197
-      - 🇭🇰 香港2|@ripaojiedian
-      - RELAY-104.21.12.103-9423
+      - RELAY-172.67.164.184-7432
+      - 🇧🇪 Manifold-比利时01-原生
+      - 🇨🇱 Video 智利A-标准
+      - 🇸🇬 Singapore 05
+      - RELAY-104.21.31.183-2704
+      - 🇯🇵 JP-152.69.197.74-3538
+      - 🇺🇸 US-38.107.226.146-1132
+      - UK02
+      - 🇬🇧 TG频道:@hkaa0▓英国
+      - Manifold-缅甸01-标准
+      - 🇦🇺 Web 澳大利亚I-标准
+      - 🇭🇰 Hong Kong 10
+      - BA-185.164.35.9-1050
+      - TR-45.89.52.66-1100
+      - 🇺🇸 US-38.107.226.49-1144
+      - 🇭🇰 Game 香港05-标准
+      - 🇸🇬 Manifold-新加坡02-标准
+      - 🇺🇸 US-38.121.43.97-8029
+      - 🇲🇾 Malaysia 03
+      - 🇦🇹 Manifold-奥地利01-原生
       - 🇺🇸 Game 美国02-原生
-      - 🇯🇵 Video 日本B-解锁
-      - 🇺🇸 US-80.92.205.112-1064
       - 🇺🇸 United States 04
-      - 🇭🇰 Hong Kong Media 02
-      - 🇸🇬 Game 新加坡02-标准
-      - 🇺🇸 Manifold 美国01-解锁
-      - 🇯🇵 Video 日本A-标准
-      - 🇯🇵 JP-185.172.113.182-1118
-      - 🇺🇸 US-167.88.61.175-8659
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 3
-      - 🇭🇰 Hong Kong 18
-      - 🇭🇰 Hong Kong 19
-      - 🇯🇵 JP-185.172.113.182-1113
-      - 🇯🇵 日本特殊|@ripaojiedian
-      - " 2"
-      - 🇭🇰 Hong Kong Media 04
-      - 🇺🇸 Video 美国C-原生
-      - 🇫🇷 FR-51.159.111.208-1038
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国
+      - 🇬🇧 GB-51.143.138.171-1008
+      - 🇺🇸 美国2|@ripaojiedian
+      - 🇯🇵 Game 日本06-标准
+      - 🇫🇷 法国 巴黎Online S.A.S
+      - 🇳🇱 Netherlands 01
+      - 🇬🇧 GB-212.102.53.81-0986
+      - HK03
+      - 🇪🇬 Egypt 01
+      - HK02
+      - 🇨🇱 Chile 01
+      - 🇨🇳 Video 台湾D-标准
+      - 🇺🇸 US-38.75.136.135-8393
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇨🇳 Lv3 台湾 03 [2.0]
+      - 🇸🇬 Singapore 06
+      - 🇭🇰 Game 香港06-标准
+      - 🇧🇷 _BR_巴西
+      - IE-23.92.127.134-9665
+      - 🇺🇸 United States 01 @nodpai
+      - 🇨🇭 Manifold-瑞士01-标准
+      - 🇨🇳 台湾|@ripaojiedian
+      - RELAY-104.21.75.246-0310
+      - 🇺🇸 美国3|@ripaojiedian
+      - 🇨🇳 Game 台湾02-标准
+      - 🇨🇳 Taiwan Media 05
+      - 🇮🇳 github.com/freefq - 印度  3
+      - 🇺🇸 US-38.68.134.85-8988
+      - SG03
+      - RELAY-104.21.91.254-2688
+      - ZA-41.203.4.34-1061
+      - NO-185.90.61.153-1070
+      - 🇸🇬 Singapore 10
+      - 🇨🇳 Taiwan Media 01
+      - 🇸🇪 Manifold-瑞典01-标准
+      - 🇬🇧 GB-145.239.6.202-7348
+      - 🇨🇳 Game 台湾01-标准
+      - 🇺🇸 US-205.134.180.151-0972
+      - 🇺🇸 US-38.107.226.49-1155
+      - 🇺🇸 美国 华盛顿州昆西Microsoft公司
+      - 🇫🇷 France 01
+      - 🇭🇰 Manifold-香港01-原生
+      - 🇰🇷 Game 韩国08-通用
+      - 🇮🇪 Web 爱尔兰I-原生
+      - 🇧🇬 Video 保加利亚A-原生
+      - 🇨🇳 Taiwan Media 07
+      - 🇰🇷 Game 韩国02-标准
+      - 🇺🇸 US-167.88.63.71-0030
+      - 🇪🇸 Spain 01
+      - 🇭🇰 Hong Kong 08
+      - 🇺🇸 TG频道:@hkaa0▓美国
+      - RELAY-104.21.15.212-1515
+      - 🇰🇷 Game 韩国10-原生
+      - TG频道:@hkaa0▓中国
+      - 🇨🇳 Game 台湾07-标准
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇸🇬 Video 新加坡B-标准
-      - 🇯🇵 Game 日本04-原生
-      - 🇯🇵 JP-185.172.113.182-1109
-      - 🇺🇸 US-167.88.61.175-9203
-      - 🇺🇸 github.com/freefq - 美国Fastly全球Anycast节点 13
-      - 🇰🇷 韩国2|@ripaojiedian
-      - 🇺🇸 美国测试节点
-      - 🇨🇳 Video 台湾C-原生
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国
-      - 🇷🇺 Game 俄罗斯01-标准
-      - 🇸🇬 Singapore 06
-      - 🇺🇸 US-38.75.136.135-1172
-      - RELAY-172.67.172.127-4020
-      - 🇩🇪 Manifold-德国01-标准
-      - "Traffic Reset: 16 Day"
-      - 🇦🇺 Australia 04
-      - 🇯🇵 Game 日本03-标准
-      - 🇬🇧 GB-51.142.159.23-1036
-      - RELAY-172.67.131.150-2787
-      - 🇭🇰 Lv3 香港 05 [2.0]
-      - 🇬🇧 GB-18.133.104.13-1517
-      - 🇹🇭 Manifold-泰国01-标准
-      - 🇨🇳 Taiwan Media 02
-      - RELAY-172.67.132.15-1813
-      - TR-45.89.52.66-9669
-      - 🇸🇬 SG-103.172.116.103-4366
-      - 🇺🇸 US-38.68.134.85-8976
-      - 🇮🇳 India 01
-      - 🇺🇸 Lv3 美国 01 [2.0]
-      - RELAY-104.21.91.254-2753
-      - 🇺🇸 US-38.75.136.135-8283
-      - 🇫🇮 Manifold 芬兰01 原生
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇨🇳 Lv3 台湾 02 [2.0]
-      - 🇨🇳 Taiwan 09
-      - 🇺🇸 US-38.75.136.135-1183
-      - 🇺🇸 Manifold 美国02-原生
-      - 🇨🇳 Game 台湾02-标准
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 2
-      - 🇸🇪 Sweden 01
-      - "🏳️‍🌈 Expire: 2024-05-17"
-      - 🇯🇵 JP-18.181.194.63-4312
-      - 54.199.83.239:2333
-      - 🇺🇸 美国3|@ripaojiedian
-      - 🇺🇸 Video 美国A-标准
-      - 🇺🇸 US-38.75.136.135-1149
-      - 🇵🇰 Manifold 巴基斯坦01 标准
-      - Video 阿布扎比A- 标准
-      - 🇮🇳 github.com/freefq - 印度  2
-      - 🇺🇸 US-38.75.136.135-1142
-      - ""
-      - 🇭🇰 Hong Kong 21
-      - 🇲🇾 Malaysia 02
-      - RELAY-188.114.99.0-2744
-      - 🇺🇸 US-167.88.61.175-8809
-      - 🇮🇳 Web 印度I-通用
-      - 🇺🇸 US-38.68.134.85-1197
-      - 🇭🇰 香港2|@ripaojiedian
-      - RELAY-104.21.12.103-9423
+      - RELAY-172.67.164.184-7432
+      - 🇧🇪 Manifold-比利时01-原生
+      - 🇨🇱 Video 智利A-标准
+      - 🇸🇬 Singapore 05
+      - RELAY-104.21.31.183-2704
+      - 🇯🇵 JP-152.69.197.74-3538
+      - 🇺🇸 US-38.107.226.146-1132
+      - UK02
+      - 🇬🇧 TG频道:@hkaa0▓英国
+      - Manifold-缅甸01-标准
+      - 🇦🇺 Web 澳大利亚I-标准
+      - 🇭🇰 Hong Kong 10
+      - BA-185.164.35.9-1050
+      - TR-45.89.52.66-1100
+      - 🇺🇸 US-38.107.226.49-1144
+      - 🇭🇰 Game 香港05-标准
+      - 🇸🇬 Manifold-新加坡02-标准
+      - 🇺🇸 US-38.121.43.97-8029
+      - 🇲🇾 Malaysia 03
+      - 🇦🇹 Manifold-奥地利01-原生
       - 🇺🇸 Game 美国02-原生
-      - 🇯🇵 Video 日本B-解锁
-      - 🇺🇸 US-80.92.205.112-1064
       - 🇺🇸 United States 04
-      - 🇭🇰 Hong Kong Media 02
-      - 🇸🇬 Game 新加坡02-标准
-      - 🇺🇸 Manifold 美国01-解锁
-      - 🇯🇵 Video 日本A-标准
-      - 🇯🇵 JP-185.172.113.182-1118
-      - 🇺🇸 US-167.88.61.175-8659
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 3
-      - 🇭🇰 Hong Kong 18
-      - 🇭🇰 Hong Kong 19
-      - 🇯🇵 JP-185.172.113.182-1113
-      - 🇯🇵 日本特殊|@ripaojiedian
-      - " 2"
-      - 🇭🇰 Hong Kong Media 04
-      - 🇺🇸 Video 美国C-原生
-      - 🇫🇷 FR-51.159.111.208-1038
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国
+      - 🇬🇧 GB-51.143.138.171-1008
+      - 🇺🇸 美国2|@ripaojiedian
+      - 🇯🇵 Game 日本06-标准
+      - 🇫🇷 法国 巴黎Online S.A.S
+      - 🇳🇱 Netherlands 01
+      - 🇬🇧 GB-212.102.53.81-0986
+      - HK03
+      - 🇪🇬 Egypt 01
+      - HK02
+      - 🇨🇱 Chile 01
+      - 🇨🇳 Video 台湾D-标准
+      - 🇺🇸 US-38.75.136.135-8393
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇨🇳 Lv3 台湾 03 [2.0]
+      - 🇸🇬 Singapore 06
+      - 🇭🇰 Game 香港06-标准
+      - 🇧🇷 _BR_巴西
+      - IE-23.92.127.134-9665
+      - 🇺🇸 United States 01 @nodpai
+      - 🇨🇭 Manifold-瑞士01-标准
+      - 🇨🇳 台湾|@ripaojiedian
+      - RELAY-104.21.75.246-0310
+      - 🇺🇸 美国3|@ripaojiedian
+      - 🇨🇳 Game 台湾02-标准
+      - 🇨🇳 Taiwan Media 05
+      - 🇮🇳 github.com/freefq - 印度  3
+      - 🇺🇸 US-38.68.134.85-8988
+      - SG03
+      - RELAY-104.21.91.254-2688
+      - ZA-41.203.4.34-1061
+      - NO-185.90.61.153-1070
+      - 🇸🇬 Singapore 10
+      - 🇨🇳 Taiwan Media 01
+      - 🇸🇪 Manifold-瑞典01-标准
+      - 🇬🇧 GB-145.239.6.202-7348
+      - 🇨🇳 Game 台湾01-标准
+      - 🇺🇸 US-205.134.180.151-0972
+      - 🇺🇸 US-38.107.226.49-1155
+      - 🇺🇸 美国 华盛顿州昆西Microsoft公司
+      - 🇫🇷 France 01
+      - 🇭🇰 Manifold-香港01-原生
+      - 🇰🇷 Game 韩国08-通用
+      - 🇮🇪 Web 爱尔兰I-原生
+      - 🇧🇬 Video 保加利亚A-原生
+      - 🇨🇳 Taiwan Media 07
+      - 🇰🇷 Game 韩国02-标准
+      - 🇺🇸 US-167.88.63.71-0030
+      - 🇪🇸 Spain 01
+      - 🇭🇰 Hong Kong 08
+      - 🇺🇸 TG频道:@hkaa0▓美国
+      - RELAY-104.21.15.212-1515
+      - 🇰🇷 Game 韩国10-原生
+      - TG频道:@hkaa0▓中国
+      - 🇨🇳 Game 台湾07-标准
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇸🇬 Video 新加坡B-标准
-      - 🇯🇵 Game 日本04-原生
-      - 🇯🇵 JP-185.172.113.182-1109
-      - 🇺🇸 US-167.88.61.175-9203
-      - 🇺🇸 github.com/freefq - 美国Fastly全球Anycast节点 13
-      - 🇰🇷 韩国2|@ripaojiedian
-      - 🇺🇸 美国测试节点
-      - 🇨🇳 Video 台湾C-原生
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国
-      - 🇷🇺 Game 俄罗斯01-标准
-      - 🇸🇬 Singapore 06
-      - 🇺🇸 US-38.75.136.135-1172
-      - RELAY-172.67.172.127-4020
-      - 🇩🇪 Manifold-德国01-标准
-      - "Traffic Reset: 16 Day"
-      - 🇦🇺 Australia 04
-      - 🇯🇵 Game 日本03-标准
-      - 🇬🇧 GB-51.142.159.23-1036
-      - RELAY-172.67.131.150-2787
-      - 🇭🇰 Lv3 香港 05 [2.0]
-      - 🇬🇧 GB-18.133.104.13-1517
-      - 🇹🇭 Manifold-泰国01-标准
-      - 🇨🇳 Taiwan Media 02
-      - RELAY-172.67.132.15-1813
-      - TR-45.89.52.66-9669
-      - 🇸🇬 SG-103.172.116.103-4366
-      - 🇺🇸 US-38.68.134.85-8976
-      - 🇮🇳 India 01
-      - 🇺🇸 Lv3 美国 01 [2.0]
-      - RELAY-104.21.91.254-2753
-      - 🇺🇸 US-38.75.136.135-8283
-      - 🇫🇮 Manifold 芬兰01 原生
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇨🇳 Lv3 台湾 02 [2.0]
-      - 🇨🇳 Taiwan 09
-      - 🇺🇸 US-38.75.136.135-1183
-      - 🇺🇸 Manifold 美国02-原生
-      - 🇨🇳 Game 台湾02-标准
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 2
-      - 🇸🇪 Sweden 01
-      - "🏳️‍🌈 Expire: 2024-05-17"
-      - 🇯🇵 JP-18.181.194.63-4312
-      - 54.199.83.239:2333
-      - 🇺🇸 美国3|@ripaojiedian
-      - 🇺🇸 Video 美国A-标准
-      - 🇺🇸 US-38.75.136.135-1149
-      - 🇵🇰 Manifold 巴基斯坦01 标准
-      - Video 阿布扎比A- 标准
-      - 🇮🇳 github.com/freefq - 印度  2
-      - 🇺🇸 US-38.75.136.135-1142
-      - ""
-      - 🇭🇰 Hong Kong 21
-      - 🇲🇾 Malaysia 02
-      - RELAY-188.114.99.0-2744
-      - 🇺🇸 US-167.88.61.175-8809
-      - 🇮🇳 Web 印度I-通用
-      - 🇺🇸 US-38.68.134.85-1197
-      - 🇭🇰 香港2|@ripaojiedian
-      - RELAY-104.21.12.103-9423
+      - RELAY-172.67.164.184-7432
+      - 🇧🇪 Manifold-比利时01-原生
+      - 🇨🇱 Video 智利A-标准
+      - 🇸🇬 Singapore 05
+      - RELAY-104.21.31.183-2704
+      - 🇯🇵 JP-152.69.197.74-3538
+      - 🇺🇸 US-38.107.226.146-1132
+      - UK02
+      - 🇬🇧 TG频道:@hkaa0▓英国
+      - Manifold-缅甸01-标准
+      - 🇦🇺 Web 澳大利亚I-标准
+      - 🇭🇰 Hong Kong 10
+      - BA-185.164.35.9-1050
+      - TR-45.89.52.66-1100
+      - 🇺🇸 US-38.107.226.49-1144
+      - 🇭🇰 Game 香港05-标准
+      - 🇸🇬 Manifold-新加坡02-标准
+      - 🇺🇸 US-38.121.43.97-8029
+      - 🇲🇾 Malaysia 03
+      - 🇦🇹 Manifold-奥地利01-原生
       - 🇺🇸 Game 美国02-原生
-      - 🇯🇵 Video 日本B-解锁
-      - 🇺🇸 US-80.92.205.112-1064
       - 🇺🇸 United States 04
-      - 🇭🇰 Hong Kong Media 02
-      - 🇸🇬 Game 新加坡02-标准
-      - 🇺🇸 Manifold 美国01-解锁
-      - 🇯🇵 Video 日本A-标准
-      - 🇯🇵 JP-185.172.113.182-1118
-      - 🇺🇸 US-167.88.61.175-8659
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 3
-      - 🇭🇰 Hong Kong 18
-      - 🇭🇰 Hong Kong 19
-      - 🇯🇵 JP-185.172.113.182-1113
-      - 🇯🇵 日本特殊|@ripaojiedian
-      - " 2"
-      - 🇭🇰 Hong Kong Media 04
-      - 🇺🇸 Video 美国C-原生
-      - 🇫🇷 FR-51.159.111.208-1038
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国
+      - 🇬🇧 GB-51.143.138.171-1008
+      - 🇺🇸 美国2|@ripaojiedian
+      - 🇯🇵 Game 日本06-标准
+      - 🇫🇷 法国 巴黎Online S.A.S
+      - 🇳🇱 Netherlands 01
+      - 🇬🇧 GB-212.102.53.81-0986
+      - HK03
+      - 🇪🇬 Egypt 01
+      - HK02
+      - 🇨🇱 Chile 01
+      - 🇨🇳 Video 台湾D-标准
+      - 🇺🇸 US-38.75.136.135-8393
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇨🇳 Lv3 台湾 03 [2.0]
+      - 🇸🇬 Singapore 06
+      - 🇭🇰 Game 香港06-标准
+      - 🇧🇷 _BR_巴西
+      - IE-23.92.127.134-9665
+      - 🇺🇸 United States 01 @nodpai
+      - 🇨🇭 Manifold-瑞士01-标准
+      - 🇨🇳 台湾|@ripaojiedian
+      - RELAY-104.21.75.246-0310
+      - 🇺🇸 美国3|@ripaojiedian
+      - 🇨🇳 Game 台湾02-标准
+      - 🇨🇳 Taiwan Media 05
+      - 🇮🇳 github.com/freefq - 印度  3
+      - 🇺🇸 US-38.68.134.85-8988
+      - SG03
+      - RELAY-104.21.91.254-2688
+      - ZA-41.203.4.34-1061
+      - NO-185.90.61.153-1070
+      - 🇸🇬 Singapore 10
+      - 🇨🇳 Taiwan Media 01
+      - 🇸🇪 Manifold-瑞典01-标准
+      - 🇬🇧 GB-145.239.6.202-7348
+      - 🇨🇳 Game 台湾01-标准
+      - 🇺🇸 US-205.134.180.151-0972
+      - 🇺🇸 US-38.107.226.49-1155
+      - 🇺🇸 美国 华盛顿州昆西Microsoft公司
+      - 🇫🇷 France 01
+      - 🇭🇰 Manifold-香港01-原生
+      - 🇰🇷 Game 韩国08-通用
+      - 🇮🇪 Web 爱尔兰I-原生
+      - 🇧🇬 Video 保加利亚A-原生
+      - 🇨🇳 Taiwan Media 07
+      - 🇰🇷 Game 韩国02-标准
+      - 🇺🇸 US-167.88.63.71-0030
+      - 🇪🇸 Spain 01
+      - 🇭🇰 Hong Kong 08
+      - 🇺🇸 TG频道:@hkaa0▓美国
+      - RELAY-104.21.15.212-1515
+      - 🇰🇷 Game 韩国10-原生
+      - TG频道:@hkaa0▓中国
+      - 🇨🇳 Game 台湾07-标准
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇸🇬 Video 新加坡B-标准
-      - 🇯🇵 Game 日本04-原生
-      - 🇯🇵 JP-185.172.113.182-1109
-      - 🇺🇸 US-167.88.61.175-9203
-      - 🇺🇸 github.com/freefq - 美国Fastly全球Anycast节点 13
-      - 🇰🇷 韩国2|@ripaojiedian
-      - 🇺🇸 美国测试节点
-      - 🇨🇳 Video 台湾C-原生
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国
-      - 🇷🇺 Game 俄罗斯01-标准
-      - 🇸🇬 Singapore 06
-      - 🇺🇸 US-38.75.136.135-1172
-      - RELAY-172.67.172.127-4020
-      - 🇩🇪 Manifold-德国01-标准
-      - "Traffic Reset: 16 Day"
-      - 🇦🇺 Australia 04
-      - 🇯🇵 Game 日本03-标准
-      - 🇬🇧 GB-51.142.159.23-1036
-      - RELAY-172.67.131.150-2787
-      - 🇭🇰 Lv3 香港 05 [2.0]
-      - 🇬🇧 GB-18.133.104.13-1517
-      - 🇹🇭 Manifold-泰国01-标准
-      - 🇨🇳 Taiwan Media 02
-      - RELAY-172.67.132.15-1813
-      - TR-45.89.52.66-9669
-      - 🇸🇬 SG-103.172.116.103-4366
-      - 🇺🇸 US-38.68.134.85-8976
-      - 🇮🇳 India 01
-      - 🇺🇸 Lv3 美国 01 [2.0]
-      - RELAY-104.21.91.254-2753
-      - 🇺🇸 US-38.75.136.135-8283
-      - 🇫🇮 Manifold 芬兰01 原生
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇨🇳 Lv3 台湾 02 [2.0]
-      - 🇨🇳 Taiwan 09
-      - 🇺🇸 US-38.75.136.135-1183
-      - 🇺🇸 Manifold 美国02-原生
-      - 🇨🇳 Game 台湾02-标准
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 2
-      - 🇸🇪 Sweden 01
-      - "🏳️‍🌈 Expire: 2024-05-17"
-      - 🇯🇵 JP-18.181.194.63-4312
-      - 54.199.83.239:2333
-      - 🇺🇸 美国3|@ripaojiedian
-      - 🇺🇸 Video 美国A-标准
-      - 🇺🇸 US-38.75.136.135-1149
-      - 🇵🇰 Manifold 巴基斯坦01 标准
-      - Video 阿布扎比A- 标准
-      - 🇮🇳 github.com/freefq - 印度  2
-      - 🇺🇸 US-38.75.136.135-1142
-      - ""
-      - 🇭🇰 Hong Kong 21
-      - 🇲🇾 Malaysia 02
-      - RELAY-188.114.99.0-2744
-      - 🇺🇸 US-167.88.61.175-8809
-      - 🇮🇳 Web 印度I-通用
-      - 🇺🇸 US-38.68.134.85-1197
-      - 🇭🇰 香港2|@ripaojiedian
-      - RELAY-104.21.12.103-9423
+      - RELAY-172.67.164.184-7432
+      - 🇧🇪 Manifold-比利时01-原生
+      - 🇨🇱 Video 智利A-标准
+      - 🇸🇬 Singapore 05
+      - RELAY-104.21.31.183-2704
+      - 🇯🇵 JP-152.69.197.74-3538
+      - 🇺🇸 US-38.107.226.146-1132
+      - UK02
+      - 🇬🇧 TG频道:@hkaa0▓英国
+      - Manifold-缅甸01-标准
+      - 🇦🇺 Web 澳大利亚I-标准
+      - 🇭🇰 Hong Kong 10
+      - BA-185.164.35.9-1050
+      - TR-45.89.52.66-1100
+      - 🇺🇸 US-38.107.226.49-1144
+      - 🇭🇰 Game 香港05-标准
+      - 🇸🇬 Manifold-新加坡02-标准
+      - 🇺🇸 US-38.121.43.97-8029
+      - 🇲🇾 Malaysia 03
+      - 🇦🇹 Manifold-奥地利01-原生
       - 🇺🇸 Game 美国02-原生
-      - 🇯🇵 Video 日本B-解锁
-      - 🇺🇸 US-80.92.205.112-1064
       - 🇺🇸 United States 04
-      - 🇭🇰 Hong Kong Media 02
-      - 🇸🇬 Game 新加坡02-标准
-      - 🇺🇸 Manifold 美国01-解锁
-      - 🇯🇵 Video 日本A-标准
-      - 🇯🇵 JP-185.172.113.182-1118
-      - 🇺🇸 US-167.88.61.175-8659
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 3
-      - 🇭🇰 Hong Kong 18
-      - 🇭🇰 Hong Kong 19
-      - 🇯🇵 JP-185.172.113.182-1113
-      - 🇯🇵 日本特殊|@ripaojiedian
-      - " 2"
-      - 🇭🇰 Hong Kong Media 04
-      - 🇺🇸 Video 美国C-原生
-      - 🇫🇷 FR-51.159.111.208-1038
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国
+      - 🇬🇧 GB-51.143.138.171-1008
+      - 🇺🇸 美国2|@ripaojiedian
+      - 🇯🇵 Game 日本06-标准
+      - 🇫🇷 法国 巴黎Online S.A.S
+      - 🇳🇱 Netherlands 01
+      - 🇬🇧 GB-212.102.53.81-0986
+      - HK03
+      - 🇪🇬 Egypt 01
+      - HK02
+      - 🇨🇱 Chile 01
+      - 🇨🇳 Video 台湾D-标准
+      - 🇺🇸 US-38.75.136.135-8393
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇨🇳 Lv3 台湾 03 [2.0]
+      - 🇸🇬 Singapore 06
+      - 🇭🇰 Game 香港06-标准
+      - 🇧🇷 _BR_巴西
+      - IE-23.92.127.134-9665
+      - 🇺🇸 United States 01 @nodpai
+      - 🇨🇭 Manifold-瑞士01-标准
+      - 🇨🇳 台湾|@ripaojiedian
+      - RELAY-104.21.75.246-0310
+      - 🇺🇸 美国3|@ripaojiedian
+      - 🇨🇳 Game 台湾02-标准
+      - 🇨🇳 Taiwan Media 05
+      - 🇮🇳 github.com/freefq - 印度  3
+      - 🇺🇸 US-38.68.134.85-8988
+      - SG03
+      - RELAY-104.21.91.254-2688
+      - ZA-41.203.4.34-1061
+      - NO-185.90.61.153-1070
+      - 🇸🇬 Singapore 10
+      - 🇨🇳 Taiwan Media 01
+      - 🇸🇪 Manifold-瑞典01-标准
+      - 🇬🇧 GB-145.239.6.202-7348
+      - 🇨🇳 Game 台湾01-标准
+      - 🇺🇸 US-205.134.180.151-0972
+      - 🇺🇸 US-38.107.226.49-1155
+      - 🇺🇸 美国 华盛顿州昆西Microsoft公司
+      - 🇫🇷 France 01
+      - 🇭🇰 Manifold-香港01-原生
+      - 🇰🇷 Game 韩国08-通用
+      - 🇮🇪 Web 爱尔兰I-原生
+      - 🇧🇬 Video 保加利亚A-原生
+      - 🇨🇳 Taiwan Media 07
+      - 🇰🇷 Game 韩国02-标准
+      - 🇺🇸 US-167.88.63.71-0030
+      - 🇪🇸 Spain 01
+      - 🇭🇰 Hong Kong 08
+      - 🇺🇸 TG频道:@hkaa0▓美国
+      - RELAY-104.21.15.212-1515
+      - 🇰🇷 Game 韩国10-原生
+      - TG频道:@hkaa0▓中国
+      - 🇨🇳 Game 台湾07-标准
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇸🇬 Video 新加坡B-标准
-      - 🇯🇵 Game 日本04-原生
-      - 🇯🇵 JP-185.172.113.182-1109
-      - 🇺🇸 US-167.88.61.175-9203
-      - 🇺🇸 github.com/freefq - 美国Fastly全球Anycast节点 13
-      - 🇰🇷 韩国2|@ripaojiedian
-      - 🇺🇸 美国测试节点
-      - 🇨🇳 Video 台湾C-原生
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国
-      - 🇷🇺 Game 俄罗斯01-标准
-      - 🇸🇬 Singapore 06
-      - 🇺🇸 US-38.75.136.135-1172
-      - RELAY-172.67.172.127-4020
-      - 🇩🇪 Manifold-德国01-标准
-      - "Traffic Reset: 16 Day"
-      - 🇦🇺 Australia 04
-      - 🇯🇵 Game 日本03-标准
-      - 🇬🇧 GB-51.142.159.23-1036
-      - RELAY-172.67.131.150-2787
-      - 🇭🇰 Lv3 香港 05 [2.0]
-      - 🇬🇧 GB-18.133.104.13-1517
-      - 🇹🇭 Manifold-泰国01-标准
-      - 🇨🇳 Taiwan Media 02
-      - RELAY-172.67.132.15-1813
-      - TR-45.89.52.66-9669
-      - 🇸🇬 SG-103.172.116.103-4366
-      - 🇺🇸 US-38.68.134.85-8976
-      - 🇮🇳 India 01
-      - 🇺🇸 Lv3 美国 01 [2.0]
-      - RELAY-104.21.91.254-2753
-      - 🇺🇸 US-38.75.136.135-8283
-      - 🇫🇮 Manifold 芬兰01 原生
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇨🇳 Lv3 台湾 02 [2.0]
-      - 🇨🇳 Taiwan 09
-      - 🇺🇸 US-38.75.136.135-1183
-      - 🇺🇸 Manifold 美国02-原生
-      - 🇨🇳 Game 台湾02-标准
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 2
-      - 🇸🇪 Sweden 01
-      - "🏳️‍🌈 Expire: 2024-05-17"
-      - 🇯🇵 JP-18.181.194.63-4312
-      - 54.199.83.239:2333
-      - 🇺🇸 美国3|@ripaojiedian
-      - 🇺🇸 Video 美国A-标准
-      - 🇺🇸 US-38.75.136.135-1149
-      - 🇵🇰 Manifold 巴基斯坦01 标准
-      - Video 阿布扎比A- 标准
-      - 🇮🇳 github.com/freefq - 印度  2
-      - 🇺🇸 US-38.75.136.135-1142
-      - ""
-      - 🇭🇰 Hong Kong 21
-      - 🇲🇾 Malaysia 02
-      - RELAY-188.114.99.0-2744
-      - 🇺🇸 US-167.88.61.175-8809
-      - 🇮🇳 Web 印度I-通用
-      - 🇺🇸 US-38.68.134.85-1197
-      - 🇭🇰 香港2|@ripaojiedian
-      - RELAY-104.21.12.103-9423
+      - RELAY-172.67.164.184-7432
+      - 🇧🇪 Manifold-比利时01-原生
+      - 🇨🇱 Video 智利A-标准
+      - 🇸🇬 Singapore 05
+      - RELAY-104.21.31.183-2704
+      - 🇯🇵 JP-152.69.197.74-3538
+      - 🇺🇸 US-38.107.226.146-1132
+      - UK02
+      - 🇬🇧 TG频道:@hkaa0▓英国
+      - Manifold-缅甸01-标准
+      - 🇦🇺 Web 澳大利亚I-标准
+      - 🇭🇰 Hong Kong 10
+      - BA-185.164.35.9-1050
+      - TR-45.89.52.66-1100
+      - 🇺🇸 US-38.107.226.49-1144
+      - 🇭🇰 Game 香港05-标准
+      - 🇸🇬 Manifold-新加坡02-标准
+      - 🇺🇸 US-38.121.43.97-8029
+      - 🇲🇾 Malaysia 03
+      - 🇦🇹 Manifold-奥地利01-原生
       - 🇺🇸 Game 美国02-原生
-      - 🇯🇵 Video 日本B-解锁
-      - 🇺🇸 US-80.92.205.112-1064
       - 🇺🇸 United States 04
-      - 🇭🇰 Hong Kong Media 02
-      - 🇸🇬 Game 新加坡02-标准
-      - 🇺🇸 Manifold 美国01-解锁
-      - 🇯🇵 Video 日本A-标准
-      - 🇯🇵 JP-185.172.113.182-1118
-      - 🇺🇸 US-167.88.61.175-8659
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 3
-      - 🇭🇰 Hong Kong 18
-      - 🇭🇰 Hong Kong 19
-      - 🇯🇵 JP-185.172.113.182-1113
-      - 🇯🇵 日本特殊|@ripaojiedian
-      - " 2"
-      - 🇭🇰 Hong Kong Media 04
-      - 🇺🇸 Video 美国C-原生
-      - 🇫🇷 FR-51.159.111.208-1038
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国
+      - 🇬🇧 GB-51.143.138.171-1008
+      - 🇺🇸 美国2|@ripaojiedian
+      - 🇯🇵 Game 日本06-标准
+      - 🇫🇷 法国 巴黎Online S.A.S
+      - 🇳🇱 Netherlands 01
+      - 🇬🇧 GB-212.102.53.81-0986
+      - HK03
+      - 🇪🇬 Egypt 01
+      - HK02
+      - 🇨🇱 Chile 01
+      - 🇨🇳 Video 台湾D-标准
+      - 🇺🇸 US-38.75.136.135-8393
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇨🇳 Lv3 台湾 03 [2.0]
+      - 🇸🇬 Singapore 06
+      - 🇭🇰 Game 香港06-标准
+      - 🇧🇷 _BR_巴西
+      - IE-23.92.127.134-9665
+      - 🇺🇸 United States 01 @nodpai
+      - 🇨🇭 Manifold-瑞士01-标准
+      - 🇨🇳 台湾|@ripaojiedian
+      - RELAY-104.21.75.246-0310
+      - 🇺🇸 美国3|@ripaojiedian
+      - 🇨🇳 Game 台湾02-标准
+      - 🇨🇳 Taiwan Media 05
+      - 🇮🇳 github.com/freefq - 印度  3
+      - 🇺🇸 US-38.68.134.85-8988
+      - SG03
+      - RELAY-104.21.91.254-2688
+      - ZA-41.203.4.34-1061
+      - NO-185.90.61.153-1070
+      - 🇸🇬 Singapore 10
+      - 🇨🇳 Taiwan Media 01
+      - 🇸🇪 Manifold-瑞典01-标准
+      - 🇬🇧 GB-145.239.6.202-7348
+      - 🇨🇳 Game 台湾01-标准
+      - 🇺🇸 US-205.134.180.151-0972
+      - 🇺🇸 US-38.107.226.49-1155
+      - 🇺🇸 美国 华盛顿州昆西Microsoft公司
+      - 🇫🇷 France 01
+      - 🇭🇰 Manifold-香港01-原生
+      - 🇰🇷 Game 韩国08-通用
+      - 🇮🇪 Web 爱尔兰I-原生
+      - 🇧🇬 Video 保加利亚A-原生
+      - 🇨🇳 Taiwan Media 07
+      - 🇰🇷 Game 韩国02-标准
+      - 🇺🇸 US-167.88.63.71-0030
+      - 🇪🇸 Spain 01
+      - 🇭🇰 Hong Kong 08
+      - 🇺🇸 TG频道:@hkaa0▓美国
+      - RELAY-104.21.15.212-1515
+      - 🇰🇷 Game 韩国10-原生
+      - TG频道:@hkaa0▓中国
+      - 🇨🇳 Game 台湾07-标准
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇸🇬 Video 新加坡B-标准
-      - 🇯🇵 Game 日本04-原生
-      - 🇯🇵 JP-185.172.113.182-1109
-      - 🇺🇸 US-167.88.61.175-9203
-      - 🇺🇸 github.com/freefq - 美国Fastly全球Anycast节点 13
-      - 🇰🇷 韩国2|@ripaojiedian
-      - 🇺🇸 美国测试节点
-      - 🇨🇳 Video 台湾C-原生
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国
-      - 🇷🇺 Game 俄罗斯01-标准
-      - 🇸🇬 Singapore 06
-      - 🇺🇸 US-38.75.136.135-1172
-      - RELAY-172.67.172.127-4020
-      - 🇩🇪 Manifold-德国01-标准
-      - "Traffic Reset: 16 Day"
-      - 🇦🇺 Australia 04
-      - 🇯🇵 Game 日本03-标准
-      - 🇬🇧 GB-51.142.159.23-1036
-      - RELAY-172.67.131.150-2787
-      - 🇭🇰 Lv3 香港 05 [2.0]
-      - 🇬🇧 GB-18.133.104.13-1517
-      - 🇹🇭 Manifold-泰国01-标准
-      - 🇨🇳 Taiwan Media 02
-      - RELAY-172.67.132.15-1813
-      - TR-45.89.52.66-9669
-      - 🇸🇬 SG-103.172.116.103-4366
-      - 🇺🇸 US-38.68.134.85-8976
-      - 🇮🇳 India 01
-      - 🇺🇸 Lv3 美国 01 [2.0]
-      - RELAY-104.21.91.254-2753
-      - 🇺🇸 US-38.75.136.135-8283
-      - 🇫🇮 Manifold 芬兰01 原生
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇨🇳 Lv3 台湾 02 [2.0]
-      - 🇨🇳 Taiwan 09
-      - 🇺🇸 US-38.75.136.135-1183
-      - 🇺🇸 Manifold 美国02-原生
-      - 🇨🇳 Game 台湾02-标准
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 2
-      - 🇸🇪 Sweden 01
-      - "🏳️‍🌈 Expire: 2024-05-17"
-      - 🇯🇵 JP-18.181.194.63-4312
-      - 54.199.83.239:2333
-      - 🇺🇸 美国3|@ripaojiedian
-      - 🇺🇸 Video 美国A-标准
-      - 🇺🇸 US-38.75.136.135-1149
-      - 🇵🇰 Manifold 巴基斯坦01 标准
-      - Video 阿布扎比A- 标准
-      - 🇮🇳 github.com/freefq - 印度  2
-      - 🇺🇸 US-38.75.136.135-1142
-      - ""
-      - 🇭🇰 Hong Kong 21
-      - 🇲🇾 Malaysia 02
-      - RELAY-188.114.99.0-2744
-      - 🇺🇸 US-167.88.61.175-8809
-      - 🇮🇳 Web 印度I-通用
-      - 🇺🇸 US-38.68.134.85-1197
-      - 🇭🇰 香港2|@ripaojiedian
-      - RELAY-104.21.12.103-9423
+      - RELAY-172.67.164.184-7432
+      - 🇧🇪 Manifold-比利时01-原生
+      - 🇨🇱 Video 智利A-标准
+      - 🇸🇬 Singapore 05
+      - RELAY-104.21.31.183-2704
+      - 🇯🇵 JP-152.69.197.74-3538
+      - 🇺🇸 US-38.107.226.146-1132
+      - UK02
+      - 🇬🇧 TG频道:@hkaa0▓英国
+      - Manifold-缅甸01-标准
+      - 🇦🇺 Web 澳大利亚I-标准
+      - 🇭🇰 Hong Kong 10
+      - BA-185.164.35.9-1050
+      - TR-45.89.52.66-1100
+      - 🇺🇸 US-38.107.226.49-1144
+      - 🇭🇰 Game 香港05-标准
+      - 🇸🇬 Manifold-新加坡02-标准
+      - 🇺🇸 US-38.121.43.97-8029
+      - 🇲🇾 Malaysia 03
+      - 🇦🇹 Manifold-奥地利01-原生
       - 🇺🇸 Game 美国02-原生
-      - 🇯🇵 Video 日本B-解锁
-      - 🇺🇸 US-80.92.205.112-1064
       - 🇺🇸 United States 04
-      - 🇭🇰 Hong Kong Media 02
-      - 🇸🇬 Game 新加坡02-标准
-      - 🇺🇸 Manifold 美国01-解锁
-      - 🇯🇵 Video 日本A-标准
-      - 🇯🇵 JP-185.172.113.182-1118
-      - 🇺🇸 US-167.88.61.175-8659
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 3
-      - 🇭🇰 Hong Kong 18
-      - 🇭🇰 Hong Kong 19
-      - 🇯🇵 JP-185.172.113.182-1113
-      - 🇯🇵 日本特殊|@ripaojiedian
-      - " 2"
-      - 🇭🇰 Hong Kong Media 04
-      - 🇺🇸 Video 美国C-原生
-      - 🇫🇷 FR-51.159.111.208-1038
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国
+      - 🇬🇧 GB-51.143.138.171-1008
+      - 🇺🇸 美国2|@ripaojiedian
+      - 🇯🇵 Game 日本06-标准
+      - 🇫🇷 法国 巴黎Online S.A.S
+      - 🇳🇱 Netherlands 01
+      - 🇬🇧 GB-212.102.53.81-0986
+      - HK03
+      - 🇪🇬 Egypt 01
+      - HK02
+      - 🇨🇱 Chile 01
+      - 🇨🇳 Video 台湾D-标准
+      - 🇺🇸 US-38.75.136.135-8393
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇨🇳 Lv3 台湾 03 [2.0]
+      - 🇸🇬 Singapore 06
+      - 🇭🇰 Game 香港06-标准
+      - 🇧🇷 _BR_巴西
+      - IE-23.92.127.134-9665
+      - 🇺🇸 United States 01 @nodpai
+      - 🇨🇭 Manifold-瑞士01-标准
+      - 🇨🇳 台湾|@ripaojiedian
+      - RELAY-104.21.75.246-0310
+      - 🇺🇸 美国3|@ripaojiedian
+      - 🇨🇳 Game 台湾02-标准
+      - 🇨🇳 Taiwan Media 05
+      - 🇮🇳 github.com/freefq - 印度  3
+      - 🇺🇸 US-38.68.134.85-8988
+      - SG03
+      - RELAY-104.21.91.254-2688
+      - ZA-41.203.4.34-1061
+      - NO-185.90.61.153-1070
+      - 🇸🇬 Singapore 10
+      - 🇨🇳 Taiwan Media 01
+      - 🇸🇪 Manifold-瑞典01-标准
+      - 🇬🇧 GB-145.239.6.202-7348
+      - 🇨🇳 Game 台湾01-标准
+      - 🇺🇸 US-205.134.180.151-0972
+      - 🇺🇸 US-38.107.226.49-1155
+      - 🇺🇸 美国 华盛顿州昆西Microsoft公司
+      - 🇫🇷 France 01
+      - 🇭🇰 Manifold-香港01-原生
+      - 🇰🇷 Game 韩国08-通用
+      - 🇮🇪 Web 爱尔兰I-原生
+      - 🇧🇬 Video 保加利亚A-原生
+      - 🇨🇳 Taiwan Media 07
+      - 🇰🇷 Game 韩国02-标准
+      - 🇺🇸 US-167.88.63.71-0030
+      - 🇪🇸 Spain 01
+      - 🇭🇰 Hong Kong 08
+      - 🇺🇸 TG频道:@hkaa0▓美国
+      - RELAY-104.21.15.212-1515
+      - 🇰🇷 Game 韩国10-原生
+      - TG频道:@hkaa0▓中国
+      - 🇨🇳 Game 台湾07-标准
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇸🇬 Video 新加坡B-标准
-      - 🇯🇵 Game 日本04-原生
-      - 🇯🇵 JP-185.172.113.182-1109
-      - 🇺🇸 US-167.88.61.175-9203
-      - 🇺🇸 github.com/freefq - 美国Fastly全球Anycast节点 13
-      - 🇰🇷 韩国2|@ripaojiedian
-      - 🇺🇸 美国测试节点
-      - 🇨🇳 Video 台湾C-原生
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国
-      - 🇷🇺 Game 俄罗斯01-标准
-      - 🇸🇬 Singapore 06
-      - 🇺🇸 US-38.75.136.135-1172
-      - RELAY-172.67.172.127-4020
-      - 🇩🇪 Manifold-德国01-标准
-      - "Traffic Reset: 16 Day"
-      - 🇦🇺 Australia 04
-      - 🇯🇵 Game 日本03-标准
-      - 🇬🇧 GB-51.142.159.23-1036
-      - RELAY-172.67.131.150-2787
-      - 🇭🇰 Lv3 香港 05 [2.0]
-      - 🇬🇧 GB-18.133.104.13-1517
-      - 🇹🇭 Manifold-泰国01-标准
-      - 🇨🇳 Taiwan Media 02
-      - RELAY-172.67.132.15-1813
-      - TR-45.89.52.66-9669
-      - 🇸🇬 SG-103.172.116.103-4366
-      - 🇺🇸 US-38.68.134.85-8976
-      - 🇮🇳 India 01
-      - 🇺🇸 Lv3 美国 01 [2.0]
-      - RELAY-104.21.91.254-2753
-      - 🇺🇸 US-38.75.136.135-8283
-      - 🇫🇮 Manifold 芬兰01 原生
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇨🇳 Lv3 台湾 02 [2.0]
-      - 🇨🇳 Taiwan 09
-      - 🇺🇸 US-38.75.136.135-1183
-      - 🇺🇸 Manifold 美国02-原生
-      - 🇨🇳 Game 台湾02-标准
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 2
-      - 🇸🇪 Sweden 01
-      - "🏳️‍🌈 Expire: 2024-05-17"
-      - 🇯🇵 JP-18.181.194.63-4312
-      - 54.199.83.239:2333
-      - 🇺🇸 美国3|@ripaojiedian
-      - 🇺🇸 Video 美国A-标准
-      - 🇺🇸 US-38.75.136.135-1149
-      - 🇵🇰 Manifold 巴基斯坦01 标准
-      - Video 阿布扎比A- 标准
-      - 🇮🇳 github.com/freefq - 印度  2
-      - 🇺🇸 US-38.75.136.135-1142
-      - ""
-      - 🇭🇰 Hong Kong 21
-      - 🇲🇾 Malaysia 02
-      - RELAY-188.114.99.0-2744
-      - 🇺🇸 US-167.88.61.175-8809
-      - 🇮🇳 Web 印度I-通用
-      - 🇺🇸 US-38.68.134.85-1197
-      - 🇭🇰 香港2|@ripaojiedian
-      - RELAY-104.21.12.103-9423
+      - RELAY-172.67.164.184-7432
+      - 🇧🇪 Manifold-比利时01-原生
+      - 🇨🇱 Video 智利A-标准
+      - 🇸🇬 Singapore 05
+      - RELAY-104.21.31.183-2704
+      - 🇯🇵 JP-152.69.197.74-3538
+      - 🇺🇸 US-38.107.226.146-1132
+      - UK02
+      - 🇬🇧 TG频道:@hkaa0▓英国
+      - Manifold-缅甸01-标准
+      - 🇦🇺 Web 澳大利亚I-标准
+      - 🇭🇰 Hong Kong 10
+      - BA-185.164.35.9-1050
+      - TR-45.89.52.66-1100
+      - 🇺🇸 US-38.107.226.49-1144
+      - 🇭🇰 Game 香港05-标准
+      - 🇸🇬 Manifold-新加坡02-标准
+      - 🇺🇸 US-38.121.43.97-8029
+      - 🇲🇾 Malaysia 03
+      - 🇦🇹 Manifold-奥地利01-原生
       - 🇺🇸 Game 美国02-原生
-      - 🇯🇵 Video 日本B-解锁
-      - 🇺🇸 US-80.92.205.112-1064
       - 🇺🇸 United States 04
-      - 🇭🇰 Hong Kong Media 02
-      - 🇸🇬 Game 新加坡02-标准
-      - 🇺🇸 Manifold 美国01-解锁
-      - 🇯🇵 Video 日本A-标准
-      - 🇯🇵 JP-185.172.113.182-1118
-      - 🇺🇸 US-167.88.61.175-8659
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 3
-      - 🇭🇰 Hong Kong 18
-      - 🇭🇰 Hong Kong 19
-      - 🇯🇵 JP-185.172.113.182-1113
-      - 🇯🇵 日本特殊|@ripaojiedian
-      - " 2"
-      - 🇭🇰 Hong Kong Media 04
-      - 🇺🇸 Video 美国C-原生
-      - 🇫🇷 FR-51.159.111.208-1038
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国
+      - 🇬🇧 GB-51.143.138.171-1008
+      - 🇺🇸 美国2|@ripaojiedian
+      - 🇯🇵 Game 日本06-标准
+      - 🇫🇷 法国 巴黎Online S.A.S
+      - 🇳🇱 Netherlands 01
+      - 🇬🇧 GB-212.102.53.81-0986
+      - HK03
+      - 🇪🇬 Egypt 01
+      - HK02
+      - 🇨🇱 Chile 01
+      - 🇨🇳 Video 台湾D-标准
+      - 🇺🇸 US-38.75.136.135-8393
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇨🇳 Lv3 台湾 03 [2.0]
+      - 🇸🇬 Singapore 06
+      - 🇭🇰 Game 香港06-标准
+      - 🇧🇷 _BR_巴西
+      - IE-23.92.127.134-9665
+      - 🇺🇸 United States 01 @nodpai
+      - 🇨🇭 Manifold-瑞士01-标准
+      - 🇨🇳 台湾|@ripaojiedian
+      - RELAY-104.21.75.246-0310
+      - 🇺🇸 美国3|@ripaojiedian
+      - 🇨🇳 Game 台湾02-标准
+      - 🇨🇳 Taiwan Media 05
+      - 🇮🇳 github.com/freefq - 印度  3
+      - 🇺🇸 US-38.68.134.85-8988
+      - SG03
+      - RELAY-104.21.91.254-2688
+      - ZA-41.203.4.34-1061
+      - NO-185.90.61.153-1070
+      - 🇸🇬 Singapore 10
+      - 🇨🇳 Taiwan Media 01
+      - 🇸🇪 Manifold-瑞典01-标准
+      - 🇬🇧 GB-145.239.6.202-7348
+      - 🇨🇳 Game 台湾01-标准
+      - 🇺🇸 US-205.134.180.151-0972
+      - 🇺🇸 US-38.107.226.49-1155
+      - 🇺🇸 美国 华盛顿州昆西Microsoft公司
+      - 🇫🇷 France 01
+      - 🇭🇰 Manifold-香港01-原生
+      - 🇰🇷 Game 韩国08-通用
+      - 🇮🇪 Web 爱尔兰I-原生
+      - 🇧🇬 Video 保加利亚A-原生
+      - 🇨🇳 Taiwan Media 07
+      - 🇰🇷 Game 韩国02-标准
+      - 🇺🇸 US-167.88.63.71-0030
+      - 🇪🇸 Spain 01
+      - 🇭🇰 Hong Kong 08
+      - 🇺🇸 TG频道:@hkaa0▓美国
+      - RELAY-104.21.15.212-1515
+      - 🇰🇷 Game 韩国10-原生
+      - TG频道:@hkaa0▓中国
+      - 🇨🇳 Game 台湾07-标准
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -705,84 +697,83 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇸🇬 Video 新加坡B-标准
-      - 🇯🇵 Game 日本04-原生
-      - 🇯🇵 JP-185.172.113.182-1109
-      - 🇺🇸 US-167.88.61.175-9203
-      - 🇺🇸 github.com/freefq - 美国Fastly全球Anycast节点 13
-      - 🇰🇷 韩国2|@ripaojiedian
-      - 🇺🇸 美国测试节点
-      - 🇨🇳 Video 台湾C-原生
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国
-      - 🇷🇺 Game 俄罗斯01-标准
-      - 🇸🇬 Singapore 06
-      - 🇺🇸 US-38.75.136.135-1172
-      - RELAY-172.67.172.127-4020
-      - 🇩🇪 Manifold-德国01-标准
-      - "Traffic Reset: 16 Day"
-      - 🇦🇺 Australia 04
-      - 🇯🇵 Game 日本03-标准
-      - 🇬🇧 GB-51.142.159.23-1036
-      - RELAY-172.67.131.150-2787
-      - 🇭🇰 Lv3 香港 05 [2.0]
-      - 🇬🇧 GB-18.133.104.13-1517
-      - 🇹🇭 Manifold-泰国01-标准
-      - 🇨🇳 Taiwan Media 02
-      - RELAY-172.67.132.15-1813
-      - TR-45.89.52.66-9669
-      - 🇸🇬 SG-103.172.116.103-4366
-      - 🇺🇸 US-38.68.134.85-8976
-      - 🇮🇳 India 01
-      - 🇺🇸 Lv3 美国 01 [2.0]
-      - RELAY-104.21.91.254-2753
-      - 🇺🇸 US-38.75.136.135-8283
-      - 🇫🇮 Manifold 芬兰01 原生
-      - 🇯🇵 日本2|@ripaojiedian
-      - 🇨🇳 Lv3 台湾 02 [2.0]
-      - 🇨🇳 Taiwan 09
-      - 🇺🇸 US-38.75.136.135-1183
-      - 🇺🇸 Manifold 美国02-原生
-      - 🇨🇳 Game 台湾02-标准
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 2
-      - 🇸🇪 Sweden 01
-      - "🏳️‍🌈 Expire: 2024-05-17"
-      - 🇯🇵 JP-18.181.194.63-4312
-      - 54.199.83.239:2333
-      - 🇺🇸 美国3|@ripaojiedian
-      - 🇺🇸 Video 美国A-标准
-      - 🇺🇸 US-38.75.136.135-1149
-      - 🇵🇰 Manifold 巴基斯坦01 标准
-      - Video 阿布扎比A- 标准
-      - 🇮🇳 github.com/freefq - 印度  2
-      - 🇺🇸 US-38.75.136.135-1142
-      - ""
-      - 🇭🇰 Hong Kong 21
-      - 🇲🇾 Malaysia 02
-      - RELAY-188.114.99.0-2744
-      - 🇺🇸 US-167.88.61.175-8809
-      - 🇮🇳 Web 印度I-通用
-      - 🇺🇸 US-38.68.134.85-1197
-      - 🇭🇰 香港2|@ripaojiedian
-      - RELAY-104.21.12.103-9423
+      - RELAY-172.67.164.184-7432
+      - 🇧🇪 Manifold-比利时01-原生
+      - 🇨🇱 Video 智利A-标准
+      - 🇸🇬 Singapore 05
+      - RELAY-104.21.31.183-2704
+      - 🇯🇵 JP-152.69.197.74-3538
+      - 🇺🇸 US-38.107.226.146-1132
+      - UK02
+      - 🇬🇧 TG频道:@hkaa0▓英国
+      - Manifold-缅甸01-标准
+      - 🇦🇺 Web 澳大利亚I-标准
+      - 🇭🇰 Hong Kong 10
+      - BA-185.164.35.9-1050
+      - TR-45.89.52.66-1100
+      - 🇺🇸 US-38.107.226.49-1144
+      - 🇭🇰 Game 香港05-标准
+      - 🇸🇬 Manifold-新加坡02-标准
+      - 🇺🇸 US-38.121.43.97-8029
+      - 🇲🇾 Malaysia 03
+      - 🇦🇹 Manifold-奥地利01-原生
       - 🇺🇸 Game 美国02-原生
-      - 🇯🇵 Video 日本B-解锁
-      - 🇺🇸 US-80.92.205.112-1064
       - 🇺🇸 United States 04
-      - 🇭🇰 Hong Kong Media 02
-      - 🇸🇬 Game 新加坡02-标准
-      - 🇺🇸 Manifold 美国01-解锁
-      - 🇯🇵 Video 日本A-标准
-      - 🇯🇵 JP-185.172.113.182-1118
-      - 🇺🇸 US-167.88.61.175-8659
-      - 🇺🇸 _US_美国->🇩🇪_DE_德国 3
-      - 🇭🇰 Hong Kong 18
-      - 🇭🇰 Hong Kong 19
-      - 🇯🇵 JP-185.172.113.182-1113
-      - 🇯🇵 日本特殊|@ripaojiedian
-      - " 2"
-      - 🇭🇰 Hong Kong Media 04
-      - 🇺🇸 Video 美国C-原生
-      - 🇫🇷 FR-51.159.111.208-1038
+      - 🇺🇸 _US_美国->🇩🇪_DE_德国
+      - 🇬🇧 GB-51.143.138.171-1008
+      - 🇺🇸 美国2|@ripaojiedian
+      - 🇯🇵 Game 日本06-标准
+      - 🇫🇷 法国 巴黎Online S.A.S
+      - 🇳🇱 Netherlands 01
+      - 🇬🇧 GB-212.102.53.81-0986
+      - HK03
+      - 🇪🇬 Egypt 01
+      - HK02
+      - 🇨🇱 Chile 01
+      - 🇨🇳 Video 台湾D-标准
+      - 🇺🇸 US-38.75.136.135-8393
+      - 🇸🇬 新加坡2|@ripaojiedian
+      - 🇨🇳 Lv3 台湾 03 [2.0]
+      - 🇸🇬 Singapore 06
+      - 🇭🇰 Game 香港06-标准
+      - 🇧🇷 _BR_巴西
+      - IE-23.92.127.134-9665
+      - 🇺🇸 United States 01 @nodpai
+      - 🇨🇭 Manifold-瑞士01-标准
+      - 🇨🇳 台湾|@ripaojiedian
+      - RELAY-104.21.75.246-0310
+      - 🇺🇸 美国3|@ripaojiedian
+      - 🇨🇳 Game 台湾02-标准
+      - 🇨🇳 Taiwan Media 05
+      - 🇮🇳 github.com/freefq - 印度  3
+      - 🇺🇸 US-38.68.134.85-8988
+      - SG03
+      - RELAY-104.21.91.254-2688
+      - ZA-41.203.4.34-1061
+      - NO-185.90.61.153-1070
+      - 🇸🇬 Singapore 10
+      - 🇨🇳 Taiwan Media 01
+      - 🇸🇪 Manifold-瑞典01-标准
+      - 🇬🇧 GB-145.239.6.202-7348
+      - 🇨🇳 Game 台湾01-标准
+      - 🇺🇸 US-205.134.180.151-0972
+      - 🇺🇸 US-38.107.226.49-1155
+      - 🇺🇸 美国 华盛顿州昆西Microsoft公司
+      - 🇫🇷 France 01
+      - 🇭🇰 Manifold-香港01-原生
+      - 🇰🇷 Game 韩国08-通用
+      - 🇮🇪 Web 爱尔兰I-原生
+      - 🇧🇬 Video 保加利亚A-原生
+      - 🇨🇳 Taiwan Media 07
+      - 🇰🇷 Game 韩国02-标准
+      - 🇺🇸 US-167.88.63.71-0030
+      - 🇪🇸 Spain 01
+      - 🇭🇰 Hong Kong 08
+      - 🇺🇸 TG频道:@hkaa0▓美国
+      - RELAY-104.21.15.212-1515
+      - 🇰🇷 Game 韩国10-原生
+      - TG频道:@hkaa0▓中国
+      - 🇨🇳 Game 台湾07-标准
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
